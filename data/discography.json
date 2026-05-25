@@ -439,6 +439,9 @@
                   "language": "Hindi",
                   "title": "Love You Hamesha",
                   "date": "2001",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/0rYQmeDh8wD0ZmbZuSFVXA"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -11236,7 +11239,6 @@
         "language": "Hindi",
         "year": 1994,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
