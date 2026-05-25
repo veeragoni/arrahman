@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>A. R. Rahman — A Complete Discography</title>
+<meta name="description" content="A searchable, complete discography of A. R. Rahman: films, non-film albums, singles, advertisements, collaborations and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Manrope:wght@300..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0f1014;
+    --bg-elev: #16181f;
+    --bg-card: #1a1d26;
+    --ink: #ecead7;
+    --ink-dim: #a8a695;
+    --ink-faint: #6b6a5e;
+    --accent: #d4a574;
+    --accent-bright: #f0c187;
+    --accent-deep: #8b6a3f;
+    --vermillion: #c75a3b;
+    --line: rgba(212, 165, 116, 0.12);
+    --line-strong: rgba(212, 165, 116, 0.28);
+    --grain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.9 0 0 0 0 0.85 0 0 0 0 0.7 0 0 0 0.045 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    --display: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+    --body: 'Manrope', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: var(--grain);
+    opacity: 0.55;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 15% 5%, rgba(212, 165, 116, 0.10), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 90% 30%, rgba(199, 90, 59, 0.06), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrap { position: relative; z-index: 2; }
+
+  /* ===== HERO ===== */
+  .hero {
+    padding: 64px 8vw 48px;
+    position: relative;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+    margin-bottom: 64px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .hero-top .marker { color: var(--accent); }
+  .hero-top .sep { color: var(--ink-faint); margin: 0 8px; }
+
+  .hero h1 {
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: clamp(56px, 11vw, 168px);
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+    font-variation-settings: 'opsz' 144, 'SOFT' 100, 'WONK' 1;
+    color: var(--ink);
+    margin-bottom: 32px;
+  }
+
+  .hero h1 .amp {
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 200;
+    font-variation-settings: 'opsz' 144, 'SOFT' 100, 'WONK' 1;
+  }
+
+  .hero h1 .lower {
+    display: block;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 0.85em;
+    color: var(--ink-dim);
+  }
+
+  .hero-sub {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 64px;
+    margin-top: 48px;
+  }
+
+  @media (max-width: 820px) {
+    .hero-sub { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  .hero-lead {
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: clamp(20px, 2.4vw, 26px);
+    line-height: 1.35;
+    color: var(--ink-dim);
+    font-style: italic;
+    max-width: 38ch;
+  }
+
+  .hero-lead em {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 32px;
+    align-self: end;
+  }
+
+  .stat {
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .stat-num {
+    font-family: var(--display);
+    font-weight: 300;
+    font-variation-settings: 'opsz' 144;
+    font-size: 42px;
+    line-height: 1;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  /* ===== SEARCH ===== */
+  .search-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(15, 16, 20, 0.85);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 18px 8vw;
+  }
+
+  .search-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .search-input-wrap {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 8px;
+    transition: border-color 0.3s ease;
+  }
+
+  .search-input-wrap:focus-within {
+    border-bottom-color: var(--accent);
+  }
+
+  .search-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--ink);
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: 22px;
+    font-style: italic;
+    font-variation-settings: 'opsz' 32, 'SOFT' 50;
+  }
+
+  .search-input::placeholder {
+    color: var(--ink-faint);
+    font-style: italic;
+  }
+
+  .search-count {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    white-space: nowrap;
+  }
+
+  .search-count strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .clear-btn {
+    background: transparent;
+    border: 1px solid var(--line-strong);
+    color: var(--ink-dim);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+  }
+
+  .clear-btn:hover { color: var(--accent); border-color: var(--accent); }
+  .clear-btn[hidden] { display: none; }
+
+  /* ===== CATEGORY NAV ===== */
+  .cats {
+    padding: 22px 8vw;
+    border-bottom: 1px solid var(--line);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .cats::-webkit-scrollbar { display: none; }
+
+  .cats-inner {
+    display: flex;
+    gap: 8px;
+    min-width: max-content;
+  }
+
+  .cat-pill {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink-dim);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .cat-pill:hover {
+    color: var(--accent);
+    border-color: var(--line-strong);
+  }
+
+  .cat-pill.active {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ===== MAIN ===== */
+  main {
+    padding: 80px 8vw 120px;
+  }
+
+  .section {
+    margin-bottom: 96px;
+    scroll-margin-top: 120px;
+  }
+
+  .section.hidden { display: none; }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    margin-bottom: 36px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line-strong);
+  }
+
+  .section-num {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .section-title {
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: clamp(28px, 3.5vw, 44px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    font-variation-settings: 'opsz' 144, 'SOFT' 80;
+    flex: 1;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 200;
+  }
+
+  .section-count {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+
+  .subsection {
+    margin-bottom: 56px;
+  }
+
+  .subsection.hidden { display: none; }
+
+  .sub-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .sub-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    color: var(--accent-deep);
+  }
+
+  .sub-title {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+  }
+
+  .sub-count {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-faint);
+    letter-spacing: 0.16em;
+  }
+
+  /* ===== ENTRIES ===== */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .entry {
+    background: var(--bg);
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    transition: background 0.25s ease;
+    min-height: 110px;
+  }
+
+  .entry.hidden { display: none; }
+
+  .entry:hover {
+    background: var(--bg-card);
+  }
+
+  .entry-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .entry-title {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.2;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+    flex: 1;
+    font-variation-settings: 'opsz' 32, 'SOFT' 50;
+  }
+
+  .entry-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .entry-year {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  .entry-date {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-faint);
+    letter-spacing: 0.08em;
+  }
+
+  .entry-langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .lang {
+    font-family: var(--mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-dim);
+    border: 1px solid var(--line);
+    padding: 3px 8px;
+    border-radius: 100px;
+    background: var(--bg-elev);
+  }
+
+  .lang.primary {
+    color: var(--accent);
+    border-color: var(--line-strong);
+  }
+
+  .entry-note {
+    font-family: var(--body);
+    font-size: 12px;
+    color: var(--ink-faint);
+    font-style: italic;
+    line-height: 1.4;
+  }
+
+  .entry-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 8px;
+  }
+
+  .action-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    text-decoration: none;
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .action-link:hover {
+    color: var(--accent-bright);
+    border-bottom-color: var(--accent);
+  }
+
+  .action-link.spotify:hover { color: #1DB954; border-bottom-color: #1DB954; }
+  .action-link.youtube:hover { color: #ff5577; border-bottom-color: #ff5577; }
+
+  .action-link svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* ===== LIST VIEW for compact sections ===== */
+  .list-compact {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .item-compact {
+    background: var(--bg);
+    padding: 14px 18px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    transition: background 0.2s ease;
+  }
+
+  .item-compact.hidden { display: none; }
+
+  .item-compact:hover { background: var(--bg-card); }
+
+  .item-compact-title {
+    color: var(--ink);
+    line-height: 1.35;
+    font-weight: 400;
+  }
+
+  .item-compact-meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--accent);
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* ===== EMPTY STATE ===== */
+  .empty {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--ink-faint);
+    display: none;
+  }
+
+  .empty.show { display: block; }
+
+  .empty-title {
+    font-family: var(--display);
+    font-size: 28px;
+    font-style: italic;
+    color: var(--ink-dim);
+    margin-bottom: 8px;
+    font-variation-settings: 'opsz' 144, 'SOFT' 100;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    padding: 64px 8vw 80px;
+    border-top: 1px solid var(--line);
+    position: relative;
+    z-index: 2;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 64px;
+    margin-bottom: 48px;
+  }
+
+  @media (max-width: 720px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  .footer-q {
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(22px, 3vw, 36px);
+    line-height: 1.3;
+    color: var(--ink);
+    font-variation-settings: 'opsz' 144, 'SOFT' 100;
+  }
+
+  .footer-q em { color: var(--accent); }
+
+  .footer-meta {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--ink-faint);
+    line-height: 1.8;
+    align-self: end;
+  }
+
+  .footer-meta strong {
+    color: var(--accent);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+  }
+
+  .footer-credit {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    text-align: center;
+    border-top: 1px solid var(--line);
+    padding-top: 32px;
+  }
+
+  .footer-credit .accent { color: var(--accent); }
+
+  /* ===== ANIMATIONS ===== */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero h1, .hero-lead, .stats {
+    animation: fadeIn 0.8s ease forwards;
+  }
+  .hero-lead { animation-delay: 0.15s; opacity: 0; }
+  .stats { animation-delay: 0.3s; opacity: 0; }
+
+  /* highlight matched search text */
+  mark {
+    background: rgba(212, 165, 116, 0.25);
+    color: var(--accent-bright);
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-top">
+      <div>
+        <span class="marker">●</span> <span style="margin-left:8px">DISCOGRAPHY</span>
+        <span class="sep">/</span>
+        <span>Mozart of Madras</span>
+        <span class="sep">/</span>
+        <span>Allah Rakha Rahman</span>
+      </div>
+      <div>1992 — present</div>
+    </div>
+
+    <h1>
+      A. R. <span class="amp">Rahman</span>
+      <span class="lower">a complete discography</span>
+    </h1>
+
+    <div class="hero-sub">
+      <p class="hero-lead">
+        From <em>Roja</em> in 1992 to today — every film score, dub, single, advertisement, stage musical, documentary, collaboration and book associated with the composer, in one searchable archive.
+      </p>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num" id="stat-films">—</div>
+          <div class="stat-label">Films Scored</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="stat-singles">—</div>
+          <div class="stat-label">Singles &amp; Albums</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="stat-ads">—</div>
+          <div class="stat-label">Ads &amp; Anthems</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="stat-total">—</div>
+          <div class="stat-label">Total Entries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEARCH ===== -->
+  <div class="search-bar">
+    <div class="search-row">
+      <div class="search-input-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+        </svg>
+        <input type="text" class="search-input" id="search" placeholder="Search films, albums, singles, ads, collaborators…" autocomplete="off" spellcheck="false" />
+      </div>
+      <div class="search-count" id="count"><strong id="match-count">—</strong> entries</div>
+      <button class="clear-btn" id="clear" hidden>Clear</button>
+    </div>
+  </div>
+
+  <!-- ===== CATEGORY NAV ===== -->
+  <nav class="cats">
+    <div class="cats-inner" id="cats">
+      <!-- populated by JS -->
+    </div>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main">
+    <!-- populated by JS -->
+    <div class="empty" id="empty">
+      <div class="empty-title">No matches.</div>
+      <div>Try a different search term or clear filters.</div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <p class="footer-q">
+        <em>"Music is the second cousin of God"</em> — a body of work spanning four decades, dozens of languages, and a continent's worth of listeners.
+      </p>
+      <div class="footer-meta">
+        <strong>About the data</strong>
+        Compiled from the AR Rahman discography database curated by Gopal Srinivasan, Mohan Bhagavathi and Dinesh Vaidya. Film table current as of 27 January 2026; non-film table current as of 15 May 2026.
+        <br><br>
+        <strong>Listen</strong>
+        Every entry links to a Spotify and YouTube Music search for that title, so you can play it where you already listen.
+      </div>
+    </div>
+    <div class="footer-credit">
+      A complete archive · Built with care · <span class="accent">Click any entry to listen on Spotify or YouTube Music</span>
+    </div>
+  </footer>
+
+</div>
+
+<!-- data files: edit any of these to add/remove entries -->
+<script src="./data/01-films.js"></script>
+<script src="./data/02-nonfilm.js"></script>
+<script src="./data/03-ads.js"></script>
+<script src="./data/04-other.js"></script>
+<script src="./data/05-videos.js"></script>
+<script src="./data/index.js"></script>
+
+<!-- app logic -->
+<script src="./app.js"></script>
+</body>
+</html>
