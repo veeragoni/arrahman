@@ -157,7 +157,10 @@
             {
               "language": "Tamil",
               "title": "Kizhakku Cheemaiyile",
-              "date": "13-11-1993"
+              "date": "13-11-1993",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3NmzPnX5f7FLMYh7RyubxP"
+              }
             },
             {
               "language": "Telugu",
@@ -1145,7 +1148,7 @@
               "title": "Boys",
               "date": "29-08-2003",
               "links": {
-                "spotify": "https://open.spotify.com/album/2VjFHDqMCemQLRvCXlbEHf"
+                "spotify": "https://open.spotify.com/album/31iCArxZjUNAz6UKfQO3W1"
               }
             },
             {
@@ -1195,17 +1198,26 @@
             {
               "language": "Tamil",
               "title": "Aayutha Ezhuthu",
-              "date": "21-05-2004"
+              "date": "21-05-2004",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5ew5gwOY08KDzjhPidH64L"
+              }
             },
             {
               "language": "Telugu",
               "title": "Yuvaa",
-              "date": "2004"
+              "date": "2004",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6VmMe4ZYI8RFAPZd8e47U7"
+              }
             },
             {
               "language": "Hindi",
               "title": "Yuvaa",
-              "date": "2004"
+              "date": "2004",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2a1tA1wyFkHwHIxRQND6t6"
+              }
             }
           ]
         },
@@ -1224,7 +1236,10 @@
             {
               "language": "Telugu",
               "title": "Naani",
-              "date": "14-05-2004"
+              "date": "14-05-2004",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6mW0HmYHf0zKjpo7fcmtkl"
+              }
             }
           ]
         },
@@ -1279,7 +1294,10 @@
             {
               "language": "Tamil",
               "title": "Jillunu Oru Kaadhal/ SOK",
-              "date": "08-09-2006"
+              "date": "08-09-2006",
+              "links": {
+                "spotify": "https://open.spotify.com/album/46LwKebCsBnpZlYZ1B6LU9"
+              }
             },
             {
               "language": "Telugu",
@@ -1298,7 +1316,10 @@
             {
               "language": "Tamil",
               "title": "Varalaru/ God Father",
-              "date": "20-10-2006"
+              "date": "20-10-2006",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3RvvN1YsEAGJxIJzUhL9yr"
+              }
             },
             {
               "language": "Other",
@@ -1358,17 +1379,26 @@
             {
               "language": "Tamil",
               "title": "Shivaji The Boss",
-              "date": "15-06-2007"
+              "date": "15-06-2007",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6U9fwE5eyEfj2htufWf9we"
+              }
             },
             {
               "language": "Telugu",
               "title": "Shivaji The Boss",
-              "date": "2007"
+              "date": "2007",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6fKRRQr05gZTiodO6YoLWZ"
+              }
             },
             {
               "language": "Hindi",
               "title": "Shivaji The Boss",
-              "date": "2010"
+              "date": "2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1M4UPtoLfBMKseObxbHdNE"
+              }
             }
           ]
         },
@@ -1379,12 +1409,18 @@
             {
               "language": "Tamil",
               "title": "Azhagiya Tamizh Magan",
-              "date": "08-11-2007"
+              "date": "08-11-2007",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2TbIygsV5OBPugEA04aTcy"
+              }
             },
             {
               "language": "Telugu",
-              "title": "Mahamuduru",
-              "date": "2010"
+              "title": "Maha Muduru",
+              "date": "2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6fNuHzUiSCvsQR9b7y3vk7"
+              }
             }
           ]
         },
@@ -1444,30 +1480,6 @@
         },
         {
           "type": "film",
-          "year": 2007,
-          "versions": [
-            {
-              "language": "Telugu",
-              "title": "Prem Nagar",
-              "date": "2007",
-              "links": {
-                "spotify": "https://open.spotify.com/album/0xJdpDAIqOY2WLiq0vsive"
-              }
-            },
-            {
-              "language": "Malayalam",
-              "title": "Aye Taxi",
-              "date": "2007"
-            },
-            {
-              "language": "Other",
-              "title": "Love (Kannada)",
-              "date": "2007"
-            }
-          ]
-        },
-        {
-          "type": "film",
           "year": 2011,
           "versions": [
             {
@@ -1475,7 +1487,7 @@
               "title": "Blue",
               "date": "2011",
               "links": {
-                "spotify": "https://open.spotify.com/album/45HaaeQWPzIHJDpvVdYXm8"
+                "spotify": "https://open.spotify.com/album/65FA5i28UIjlscTdxyGwSb"
               }
             },
             {
@@ -1495,17 +1507,26 @@
             {
               "language": "Tamil",
               "title": "Vinnaithaandi Varuvaaya",
-              "date": "26-02-2010"
+              "date": "26-02-2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1VAR4nGvZh6KW3PLioooYM"
+              }
             },
             {
               "language": "Telugu",
               "title": "Ye Maaya Chesave",
-              "date": "2010"
+              "date": "2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7n61GzJSBuZGrm8U1V9TLd"
+              }
             },
             {
               "language": "Hindi",
               "title": "Ekk Dewanaa Thhaa",
-              "date": "17-02-2012"
+              "date": "17-02-2012",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7u8VFwwX4grIUnuHriflDf"
+              }
             }
           ]
         },
@@ -1564,7 +1585,7 @@
               "title": "Robot",
               "date": "2010",
               "links": {
-                "spotify": "https://open.spotify.com/album/66GypleNyBvRB81vfj15Ib"
+                "spotify": "https://open.spotify.com/album/764vydK49ztRXxngqAqmdn"
               }
             }
           ]
@@ -1628,7 +1649,10 @@
             {
               "language": "Hindi",
               "title": "Raanjhaana",
-              "date": "21-06-2013"
+              "date": "21-06-2013",
+              "links": {
+                "spotify": "https://open.spotify.com/album/24C47633GRlozws7WBth7t"
+              }
             }
           ]
         },
@@ -1639,17 +1663,26 @@
             {
               "language": "Tamil",
               "title": "Kochadaiyaan",
-              "date": "23-05-2014"
+              "date": "23-05-2014",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4aXqdmPwLcawxhTLyCTstL"
+              }
             },
             {
               "language": "Telugu",
               "title": "Vikram Simha",
-              "date": "2014"
+              "date": "2014",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4brMww9kTr636JbHbNtCrr"
+              }
             },
             {
               "language": "Hindi",
               "title": "Kochadaiyaan",
-              "date": "2014"
+              "date": "2014",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6JGTLj9bihSB30PlgWlooP"
+              }
             }
           ]
         },
@@ -1660,12 +1693,18 @@
             {
               "language": "Tamil",
               "title": "Kaaviya Thalaivan",
-              "date": "28-11-2014"
+              "date": "28-11-2014",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3mBTrK6nqL2U2tMXfXya68"
+              }
             },
             {
               "language": "Telugu",
               "title": "Premalayam",
-              "date": "2016"
+              "date": "2016",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3RI89AzBkDYBubQBGmWE0B"
+              }
             },
             {
               "language": "Malayalam",
