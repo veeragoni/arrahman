@@ -399,6 +399,54 @@ class ProviderLinkResolutionTests(unittest.TestCase):
             "Vande Mataram": ["spotify", "youtube"],
         })
 
+    def test_quality_gaps_are_sorted_newest_first(self) -> None:
+        categories = [
+            {
+                "id": "films",
+                "title": "Film Compositions",
+                "subsections": [
+                    {
+                        "id": "films-main",
+                        "title": "Films with multi-language releases",
+                        "providers": ["spotify", "youtube"],
+                        "items": [
+                            {
+                                "type": "film",
+                                "year": 1992,
+                                "versions": [
+                                    {"language": "Tamil", "title": "Older Film"}
+                                ],
+                            },
+                            {
+                                "type": "film",
+                                "year": 2025,
+                                "versions": [
+                                    {"language": "Tamil", "title": "Newer Film"}
+                                ],
+                            },
+                            {
+                                "type": "film",
+                                "versions": [
+                                    {"language": "Tamil", "title": "Unknown Year Film"}
+                                ],
+                            },
+                        ],
+                    }
+                ],
+            }
+        ]
+
+        quality = build.build_quality(categories)
+
+        self.assertEqual(
+            [item["label"] for item in quality["missingLinks"]],
+            ["Newer Film", "Older Film", "Unknown Year Film"],
+        )
+        self.assertEqual(
+            [item["label"] for item in quality["missingSources"]],
+            ["Newer Film", "Older Film", "Unknown Year Film"],
+        )
+
     def test_peddi_is_present_as_multilingual_film_entry(self) -> None:
         source = json.loads((Path(__file__).resolve().parent.parent / "data" / "source" / "01-films.json").read_text(encoding="utf-8"))
 
@@ -469,6 +517,16 @@ class ProviderLinkResolutionTests(unittest.TestCase):
         }
 
         self.assertEqual(sorted(expected_titles - source_titles), [])
+
+    def test_gandhi_talks_tamil_has_direct_links_instead_of_search_fallbacks(self) -> None:
+        categories = build.load_source_categories()
+        quality = build.build_quality(categories)
+        gandhi_talks_tamil = [
+            item for item in quality["missingLinks"]
+            if item["label"] == "Gandhi Talks" and item.get("language") == "Tamil"
+        ]
+
+        self.assertEqual(gandhi_talks_tamil, [])
 
     def test_pdf_audit_ignores_source_cited_film_main_additions(self) -> None:
         items = [

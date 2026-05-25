@@ -1028,11 +1028,33 @@ def build_quality(categories):
                 "year": subject.get("year"),
             }))
 
+    missing_links.sort(key=quality_gap_sort_key)
+    missing_sources.sort(key=quality_gap_sort_key)
+
     return {
         "providers": PROVIDERS,
         "missingLinks": missing_links,
         "missingSources": missing_sources,
     }
+
+
+def quality_gap_sort_key(item):
+    year = item.get("year")
+    if isinstance(year, int):
+        sort_year = year
+    elif isinstance(year, str) and year.isdigit():
+        sort_year = int(year)
+    else:
+        sort_year = -1
+
+    return (
+        -sort_year,
+        item.get("category", ""),
+        item.get("subsection", ""),
+        item.get("entryIndex") or 0,
+        item.get("versionIndex") or 0,
+        item.get("label", ""),
+    )
 
 
 def build_discography(
