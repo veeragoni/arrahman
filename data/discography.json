@@ -269,6 +269,9 @@
                   "language": "Telugu",
                   "title": "Palanaati Pourusham",
                   "date": "1994",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/7iJcEwGZGRdeIv5QrR4DyI"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -879,6 +882,9 @@
                   "language": "Telugu",
                   "title": "Bharatheeyudu",
                   "date": "1996",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/5wbNqlJ4LukhEsQcqty9Po"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -890,6 +896,9 @@
                   "language": "Hindi",
                   "title": "Hindusthani",
                   "date": "1996",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6aY47GXFNDi22HqiqSnwLy"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2468,6 +2477,9 @@
                   "language": "Telugu",
                   "title": "Villian",
                   "date": "2010",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/3jzCASUg4cl0vjGiBBjDu2"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -3642,7 +3654,7 @@
                   "title": "Ponniyin Selvan Part 1",
                   "date": "2022",
                   "links": {
-                    "spotify": "https://open.spotify.com/album/0aKkwn0Vq6oW8XmmcY8ouE"
+                    "spotify": "https://open.spotify.com/album/6vm8qVdc7lkP6eJZDs38Fp"
                   },
                   "providers": [
                     "spotify",
@@ -3748,6 +3760,9 @@
                   "language": "Telugu",
                   "title": "Ponniyin Selvan Part 2",
                   "date": "2023",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6XC1UegPd9g3s31Y9wW8dC"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -3849,6 +3864,9 @@
                   "language": "Telugu",
                   "title": "AGR",
                   "date": "02-01-2024",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/2DRIvzTjUQGjBwgYgMLwxS"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -4079,6 +4097,9 @@
                   "language": "Tamil",
                   "title": "Raayan",
                   "date": "06-07-2024",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6cqYgHZhpSKKb7xUuxJCAr"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -4090,6 +4111,9 @@
                   "language": "Telugu",
                   "title": "Raayan",
                   "date": "21-07-2024",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/5NIDzdM4orRdxMj7DmNrDJ"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -4227,6 +4251,9 @@
                   "language": "Hindi",
                   "title": "Chhaava",
                   "date": "28-03-2025",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/237a62e5OURRgvJ9G3yHM3"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -4306,6 +4333,9 @@
                   "language": "Telugu",
                   "title": "Amara Kavyam",
                   "date": "02-12-2025",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/762lOEmT06j5xdr38S447a"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -4317,6 +4347,9 @@
                   "language": "Hindi",
                   "title": "Tere Ishk Mein",
                   "date": "12-11-2025",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/3U6JvK5ij3bbhBmdotoNJ1"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -4984,6 +5017,9 @@
               "title": "Meenaxi: A Tale Of 3 Cities",
               "year": 2004,
               "date": "02-04-2004",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0016pJfQZkCAgume9aeE1i"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
@@ -5131,6 +5167,9 @@
               "title": "Jhootha Hi Sahi",
               "year": 2010,
               "date": "22-10-2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3Vacno0CZ2qkdldVE3NhPB"
+              },
               "sources": [
                 "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Original_scores"
               ],
@@ -5221,6 +5260,9 @@
               "title": "Mohenjodaro",
               "year": 2016,
               "date": "12-08-2016",
+              "links": {
+                "spotify": "https://open.spotify.com/album/36UJ90D0e295TvlU109Xvy"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
@@ -5805,6 +5847,9 @@
               "type": "work",
               "title": "Roja [Telugu, 1992]",
               "year": 1992,
+              "links": {
+                "spotify": "https://open.spotify.com/album/700R0gU93Jal21rivBK7EA"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
@@ -6590,6 +6635,9 @@
               "type": "work",
               "title": "Vande Mataram",
               "year": 1997,
+              "links": {
+                "spotify": "https://open.spotify.com/album/7zFbzmYGeZeIoplDTADF0Z"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
@@ -12178,7 +12226,6 @@
         "language": "Hindi",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12264,7 +12311,6 @@
         "language": "Telugu",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12282,7 +12328,6 @@
         "language": "Hindi",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12652,7 +12697,6 @@
         "language": "Tamil",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12670,7 +12714,6 @@
         "language": "Telugu",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12805,7 +12848,6 @@
         "language": "Telugu",
         "year": 2023,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12927,7 +12969,6 @@
         "language": "Telugu",
         "year": 2023,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -14482,7 +14523,6 @@
         "label": "Mohenjodaro",
         "year": 2016,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15361,7 +15401,6 @@
         "language": "Telugu",
         "year": 2010,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15476,7 +15515,6 @@
         "label": "Jhootha Hi Sahi",
         "year": 2010,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16435,7 +16473,6 @@
         "label": "Meenaxi: A Tale Of 3 Cities",
         "year": 2004,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17974,7 +18011,6 @@
         "label": "Vande Mataram",
         "year": 1997,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -18516,7 +18552,6 @@
         "language": "Telugu",
         "year": 1995,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -18534,7 +18569,6 @@
         "language": "Hindi",
         "year": 1995,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -19086,7 +19120,6 @@
         "language": "Telugu",
         "year": 1993,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -19199,7 +19232,6 @@
         "label": "Roja [Telugu, 1992]",
         "year": 1992,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
