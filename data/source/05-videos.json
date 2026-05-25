@@ -20,7 +20,10 @@
         {
           "type": "work",
           "title": "Yuvvraj — End Title Credit Mashup",
-          "year": 2008
+          "year": 2008,
+          "links": {
+            "youtube": "https://youtu.be/A5bscNhjQTg?t=198"
+          }
         },
         {
           "type": "work",
