@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "links": {
+    "films|hindi-undubbed|work|gandhi-vs-godse-ek-yudh||2023": {
+      "label": "Gandhi Vs Godse – Ek Yudh",
+      "language": "",
+      "providers": {
+        "spotify": {
+          "query": "site:open.spotify.com \"A R Rahman\" \"Gandhi Vs Godse – Ek Yudh\" \"Original Motion Picture Soundtrack\" album 2023",
+          "url": "https://open.spotify.com/album/6XyUYRNAao9f3vFVLqjz0T"
+        }
+      },
+      "year": 2023
+    }
+  }
+}

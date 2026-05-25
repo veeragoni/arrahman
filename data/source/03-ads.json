@@ -1,0 +1,303 @@
+{
+  "id": "ads",
+  "num": "07",
+  "title": "Advertisements & Ringtones",
+  "providers": ["youtube"],
+  "subsections": [
+    {
+      "id": "ads-pre",
+      "num": "7.1.1",
+      "title": "Advertisements — pre-2000",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Goldengate Apparels"
+        },
+        {
+          "type": "work",
+          "title": "Allwyn Trendy Watches"
+        },
+        {
+          "type": "work",
+          "title": "Leo Coffee"
+        },
+        {
+          "type": "work",
+          "title": "Titan Watches"
+        },
+        {
+          "type": "work",
+          "title": "Leo Sprinz Mineral Water"
+        },
+        {
+          "type": "work",
+          "title": "Premier Cooking Range"
+        },
+        {
+          "type": "work",
+          "title": "Remanika Sarees"
+        },
+        {
+          "type": "work",
+          "title": "Boost Chocolate Drink"
+        },
+        {
+          "type": "work",
+          "title": "Asian Paints"
+        },
+        {
+          "type": "work",
+          "title": "Tata Chola Tea"
+        },
+        {
+          "type": "work",
+          "title": "Prince Jewellery"
+        },
+        {
+          "type": "work",
+          "title": "Parry's Kasthuri Tea"
+        },
+        {
+          "type": "work",
+          "title": "MRF Tyres"
+        },
+        {
+          "type": "work",
+          "title": "Murugan Textiles"
+        },
+        {
+          "type": "work",
+          "title": "MGM Dizee World"
+        },
+        {
+          "type": "work",
+          "title": "Medimix Soaps"
+        },
+        {
+          "type": "work",
+          "title": "Hero Puch"
+        },
+        {
+          "type": "work",
+          "title": "Genic Chocolates"
+        },
+        {
+          "type": "work",
+          "title": "Khadi Craft"
+        },
+        {
+          "type": "work",
+          "title": "Tilda Basmati Rice"
+        },
+        {
+          "type": "work",
+          "title": "V-Guard Stabilizers"
+        },
+        {
+          "type": "work",
+          "title": "South Indian Bank"
+        },
+        {
+          "type": "work",
+          "title": "Cinthol Soaps"
+        },
+        {
+          "type": "work",
+          "title": "Tantex Garments"
+        },
+        {
+          "type": "work",
+          "title": "Hindu Young World"
+        },
+        {
+          "type": "work",
+          "title": "Bru Coffee"
+        }
+      ]
+    },
+    {
+      "id": "ads-post",
+      "num": "7.1.2",
+      "title": "Advertisements — post-2000",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Airtel Live Every Moment",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Airtel Express Yourself",
+          "year": 2004
+        },
+        {
+          "type": "work",
+          "title": "Wall's Magnum Ice Creams (Italian)",
+          "year": 2004
+        },
+        {
+          "type": "work",
+          "title": "Worldspace Satellite Radio",
+          "year": 2006
+        },
+        {
+          "type": "work",
+          "title": "Airtel No Barriers",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Lebara Mobiles",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Toyota Etios",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Airtel 3G",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Airtel Music Store",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Toyota Liva",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Hero MotoCorp",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "JBL Audio",
+          "year": 2012
+        },
+        {
+          "type": "work",
+          "title": "Renault Cars",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "Sulthan Diamonds & Gold Jewellery",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "Maaza",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Horlicks Fearless Songs",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "Apollo Tyres",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "Reliance Jio",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "JBL Club Headphones",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Hero MotoCorp — India Rebounds",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Adaar Studios",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "JSW Cement",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Sheenlac Speciality Coatings",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Mahindra eSUV",
+          "year": 2023,
+          "note": "2023; 2025"
+        },
+        {
+          "type": "work",
+          "title": "DAC Developers",
+          "year": 2026
+        },
+        {
+          "type": "work",
+          "title": "Yamaha",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": "ringtones",
+      "num": "7.2",
+      "title": "Ringtones",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Buddy",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Desire",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Dream",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Little One",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Sizzle",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Lebara Bird Call",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Celkon RahmanIshq Mobiles",
+          "year": 2013
+        }
+      ]
+    }
+  ],
+  "blurb": "A long career soundtracking Indian advertising — from Allwyn watches in the 1980s to Yamaha and Apple in 2026."
+}

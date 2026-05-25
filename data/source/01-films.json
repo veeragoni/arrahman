@@ -1,0 +1,2863 @@
+{
+  "id": "films",
+  "num": "01",
+  "title": "Film Compositions",
+  "subsections": [
+    {
+      "id": "films-main",
+      "num": "1–5",
+      "title": "Films with multi-language releases",
+      "type": "films",
+      "items": [
+        {
+          "type": "film",
+          "year": 1992,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Roja",
+              "date": "15-08-1992"
+            },
+            {
+              "language": "Telugu",
+              "title": "Roja",
+              "date": "1992"
+            },
+            {
+              "language": "Hindi",
+              "title": "Roja",
+              "date": "1994"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Roja",
+              "date": "1995"
+            },
+            {
+              "language": "Other",
+              "title": "Roja (Marathi)",
+              "date": "1996"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1994,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Asokan",
+              "date": "1994"
+            },
+            {
+              "language": "Telugu",
+              "title": "Yoddha",
+              "date": "1992"
+            },
+            {
+              "language": "Hindi",
+              "title": "Dharam Yoddha",
+              "date": "1996"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Yodha - Malayalam",
+              "date": "03-09-1992"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1993,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Puthiya Mugam",
+              "date": "28-05-1993"
+            },
+            {
+              "language": "Telugu",
+              "title": "Padmavyuham",
+              "date": "1993"
+            },
+            {
+              "language": "Hindi",
+              "title": "Vishwa Vidhaata",
+              "date": "1997"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1994,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Gentleman",
+              "date": "1994"
+            },
+            {
+              "language": "Telugu",
+              "title": "Gentleman",
+              "date": "1994"
+            },
+            {
+              "language": "Hindi",
+              "title": "The Gentleman",
+              "date": "1996"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1993,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Kizhakku Cheemaiyile",
+              "date": "13-11-1993"
+            },
+            {
+              "language": "Telugu",
+              "title": "Palanaati Pourusham",
+              "date": "1994"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1993,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Thiruda Thiruda",
+              "date": "13-11-1993"
+            },
+            {
+              "language": "Telugu",
+              "title": "Donga Donga",
+              "date": "1994"
+            },
+            {
+              "language": "Hindi",
+              "title": "Chor Chor",
+              "date": "1996"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1994,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Vandicholai Chinnaraasu",
+              "date": "15-04-1994"
+            },
+            {
+              "language": "Telugu",
+              "title": "Bobbili Paaparayudu",
+              "date": "1996"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1994,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Duet",
+              "date": "20-05-1994"
+            },
+            {
+              "language": "Telugu",
+              "title": "Duet",
+              "date": "1994"
+            },
+            {
+              "language": "Hindi",
+              "title": "Tu Hi Mera Dil",
+              "date": "1995"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1995,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Super Police",
+              "date": "1995"
+            },
+            {
+              "language": "Telugu",
+              "title": "Super Police",
+              "date": "23-06-1994"
+            },
+            {
+              "language": "Hindi",
+              "title": "Khel Khiladi Ka",
+              "date": "1998"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1995,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Manitha Manitha",
+              "date": "1995"
+            },
+            {
+              "language": "Telugu",
+              "title": "Gang Master",
+              "date": "15-07-1994"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1994,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "May Madham",
+              "date": "09-09-1994"
+            },
+            {
+              "language": "Telugu",
+              "title": "Hrudayaanjai",
+              "date": "1994"
+            },
+            {
+              "language": "Hindi",
+              "title": "Love You Hamesha",
+              "date": "2001"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1994,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Kadhalan",
+              "date": "17-09-1994"
+            },
+            {
+              "language": "Telugu",
+              "title": "Premikudu",
+              "date": "1994"
+            },
+            {
+              "language": "Hindi",
+              "title": "Hum Se Hain Muqabla",
+              "date": "1995"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1994,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Karuthamma",
+              "date": "03-11-1994"
+            },
+            {
+              "language": "Telugu",
+              "title": "Vanitha/Aada Brathuku/Osey Krishnamma",
+              "date": "1995"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1995,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Bombay",
+              "date": "10-03-1995"
+            },
+            {
+              "language": "Telugu",
+              "title": "Bombay",
+              "date": "1995"
+            },
+            {
+              "language": "Hindi",
+              "title": "Bombay",
+              "date": "1995"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1995,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Indira",
+              "date": "11-05-1995"
+            },
+            {
+              "language": "Telugu",
+              "title": "Indira",
+              "date": "1996"
+            },
+            {
+              "language": "Hindi",
+              "title": "Priyanka",
+              "date": "1996"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1995,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Rangeela",
+              "date": "1995"
+            },
+            {
+              "language": "Telugu",
+              "title": "Rangeli",
+              "date": "1995"
+            },
+            {
+              "language": "Hindi",
+              "title": "Rangeela",
+              "date": "08-11-1995"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1995,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Muthu",
+              "date": "23-10-1995"
+            },
+            {
+              "language": "Telugu",
+              "title": "Muthu",
+              "date": "1995"
+            },
+            {
+              "language": "Hindi",
+              "title": "Muthu Maharaja",
+              "date": "1998"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1996,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Love Birds",
+              "date": "15-01-1996"
+            },
+            {
+              "language": "Telugu",
+              "title": "Love Birds",
+              "date": "1996"
+            },
+            {
+              "language": "Hindi",
+              "title": "Love Birds",
+              "date": "1996"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1995,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Indian",
+              "date": "09-05-1995"
+            },
+            {
+              "language": "Telugu",
+              "title": "Bharatheeyudu",
+              "date": "1996"
+            },
+            {
+              "language": "Hindi",
+              "title": "Hindusthani",
+              "date": "1996"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1996,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Kaadhal Desam",
+              "date": "23-08-1996"
+            },
+            {
+              "language": "Telugu",
+              "title": "Prema Desam",
+              "date": "1996"
+            },
+            {
+              "language": "Hindi",
+              "title": "Duniya Dil Waalon ki",
+              "date": "1997"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1996,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Mr Romeo",
+              "date": "10-11-1996"
+            },
+            {
+              "language": "Telugu",
+              "title": "Mr Romeo",
+              "date": "1996"
+            },
+            {
+              "language": "Hindi",
+              "title": "Mr Romeo",
+              "date": "1997"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1997,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Minsara Kanavu",
+              "date": "14-01-1997"
+            },
+            {
+              "language": "Telugu",
+              "title": "Merupu Kalalu",
+              "date": "1997"
+            },
+            {
+              "language": "Hindi",
+              "title": "Sapnay",
+              "date": "1997"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1997,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Iruvar",
+              "date": "14-01-1997"
+            },
+            {
+              "language": "Telugu",
+              "title": "Iddaru",
+              "date": "1997"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1997,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Ottam",
+              "date": "1997"
+            },
+            {
+              "language": "Telugu",
+              "title": "50-50",
+              "date": "1997"
+            },
+            {
+              "language": "Hindi",
+              "title": "Daud",
+              "date": "22-08-1997"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1997,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Ratchagan",
+              "date": "30-10-1997"
+            },
+            {
+              "language": "Telugu",
+              "title": "Rakshakudu",
+              "date": "1998"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1997,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Monalisa",
+              "date": "1997"
+            },
+            {
+              "language": "Hindi",
+              "title": "Kabhi Na Kabhi",
+              "date": "17-04-1998"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1998,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Jeans",
+              "date": "24-04-1998"
+            },
+            {
+              "language": "Telugu",
+              "title": "Jeans",
+              "date": "1998"
+            },
+            {
+              "language": "Hindi",
+              "title": "Jeans",
+              "date": "1998"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1998,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Uyire",
+              "date": "1998"
+            },
+            {
+              "language": "Telugu",
+              "title": "Prematho",
+              "date": "1998"
+            },
+            {
+              "language": "Hindi",
+              "title": "Dil se",
+              "date": "21-08-1998"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1999,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Jodi",
+              "date": "1999"
+            },
+            {
+              "language": "Telugu",
+              "title": "Jodi",
+              "date": "1999"
+            },
+            {
+              "language": "Hindi",
+              "title": "Doli Sajake Rakhna",
+              "date": "27-11-1998"
+            },
+            {
+              "language": "Other",
+              "title": "Sajni (Kannada)",
+              "date": "2007"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1999,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "En Swasa Katrae",
+              "date": "26-02-1999"
+            },
+            {
+              "language": "Telugu",
+              "title": "Premante Pranamistha",
+              "date": "1999"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1999,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Padaiyappa",
+              "date": "10-04-1999"
+            },
+            {
+              "language": "Telugu",
+              "title": "Narasimha",
+              "date": "1999"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1999,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Kadhalar Dhinam",
+              "date": "09-07-1999"
+            },
+            {
+              "language": "Telugu",
+              "title": "Premikula Roju",
+              "date": "1999"
+            },
+            {
+              "language": "Hindi",
+              "title": "Dil Hi Dil Mein",
+              "date": "1999"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1999,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Thalam",
+              "date": "1999"
+            },
+            {
+              "language": "Hindi",
+              "title": "Taal",
+              "date": "13-08-1999"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 1999,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Mudhalvan",
+              "date": "07-11-1999"
+            },
+            {
+              "language": "Telugu",
+              "title": "Oke Okkadu",
+              "date": "1999"
+            },
+            {
+              "language": "Hindi",
+              "title": "Nayak",
+              "date": "2001"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2000,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Alai Payuthey",
+              "date": "14-04-2000"
+            },
+            {
+              "language": "Telugu",
+              "title": "Sakhi",
+              "date": "2000"
+            },
+            {
+              "language": "Hindi",
+              "title": "Saathiya",
+              "date": "20-12-2002"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2000,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Kandukondain Kandukondain",
+              "date": "05-05-2000"
+            },
+            {
+              "language": "Telugu",
+              "title": "Priyuralu Pilichindhi",
+              "date": "2000"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2000,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Rhythm",
+              "date": "15-09-2000"
+            },
+            {
+              "language": "Telugu",
+              "title": "Rhythm",
+              "date": "2000"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2000,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Thenaali",
+              "date": "26-10-2000"
+            },
+            {
+              "language": "Telugu",
+              "title": "Tenali",
+              "date": "2000"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2001,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Star",
+              "date": "27-07-2001"
+            },
+            {
+              "language": "Telugu",
+              "title": "Takkari Donga Chakkani Chukka",
+              "date": "2005"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2001,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Paarthaale Parvasam",
+              "date": "14-11-2001"
+            },
+            {
+              "language": "Telugu",
+              "title": "Paravasam",
+              "date": "2000"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2002,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Kannathil Muthamittal",
+              "date": "14-02-2002"
+            },
+            {
+              "language": "Telugu",
+              "title": "Amritha",
+              "date": "2002"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2002,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Baba",
+              "date": "15-08-2002"
+            },
+            {
+              "language": "Telugu",
+              "title": "Baba",
+              "date": "2002"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2003,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Parasuram",
+              "date": "30-05-2003"
+            },
+            {
+              "language": "Telugu",
+              "title": "Police Karthavyam",
+              "date": "2003"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2003,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Boys",
+              "date": "29-08-2003"
+            },
+            {
+              "language": "Telugu",
+              "title": "Boys",
+              "date": "2003"
+            },
+            {
+              "language": "Hindi",
+              "title": "Boys",
+              "date": "2012"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2003,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Enakku 20 Unakku 18",
+              "date": "19-12-2003"
+            },
+            {
+              "language": "Telugu",
+              "title": "Nee Manasu Naaku Telusu",
+              "date": "2005"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2004,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Aayutha Ezhuthu",
+              "date": "21-05-2004"
+            },
+            {
+              "language": "Telugu",
+              "title": "Yuvaa",
+              "date": "2004"
+            },
+            {
+              "language": "Hindi",
+              "title": "Yuvaa",
+              "date": "2004"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2004,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "New",
+              "date": "09-07-2004"
+            },
+            {
+              "language": "Telugu",
+              "title": "Naani",
+              "date": "14-05-2004"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2005,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Desam",
+              "date": "2005"
+            },
+            {
+              "language": "Hindi",
+              "title": "Swades",
+              "date": "17-12-2004"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2005,
+          "versions": [
+            {
+              "language": "Telugu",
+              "title": "Kisna",
+              "date": "2005"
+            },
+            {
+              "language": "Hindi",
+              "title": "Kisna",
+              "date": "21-01-2004"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2006,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Jillunu Oru Kaadhal/ SOK",
+              "date": "08-09-2006"
+            },
+            {
+              "language": "Telugu",
+              "title": "Nuvvu Nenu Prema",
+              "date": "2006"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2006,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Varalaru/ God Father",
+              "date": "20-10-2006"
+            },
+            {
+              "language": "Other",
+              "title": "God Father (Kannada)",
+              "date": "2012"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2007,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Guru",
+              "date": "2007"
+            },
+            {
+              "language": "Telugu",
+              "title": "Gurukanth",
+              "date": "2006"
+            },
+            {
+              "language": "Hindi",
+              "title": "Guru",
+              "date": "12-01-2007"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2007,
+          "versions": [
+            {
+              "language": "Other",
+              "title": "Provoked (English)",
+              "date": "06-04-2007"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2007,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Shivaji The Boss",
+              "date": "15-06-2007"
+            },
+            {
+              "language": "Telugu",
+              "title": "Shivaji The Boss",
+              "date": "2007"
+            },
+            {
+              "language": "Hindi",
+              "title": "Shivaji The Boss",
+              "date": "2010"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2007,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Azhagiya Tamizh Magan",
+              "date": "08-11-2007"
+            },
+            {
+              "language": "Telugu",
+              "title": "Mahamuduru",
+              "date": "2010"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2008,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Jodhaa Akbar",
+              "date": "2008"
+            },
+            {
+              "language": "Telugu",
+              "title": "Jodhaa Akbar",
+              "date": "2008"
+            },
+            {
+              "language": "Hindi",
+              "title": "Jodhaa Akbar",
+              "date": "15-02-2008"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2008,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Naanum Kodesiwaran",
+              "date": "2008"
+            },
+            {
+              "language": "Hindi",
+              "title": "Slumdog Crorepathi",
+              "date": "2008"
+            },
+            {
+              "language": "Other",
+              "title": "Slumdog Millionaire - OST",
+              "date": "25-12-2008"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2007,
+          "versions": [
+            {
+              "language": "Telugu",
+              "title": "Prem Nagar",
+              "date": "2007"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Aye Taxi",
+              "date": "2007"
+            },
+            {
+              "language": "Other",
+              "title": "Love (Kannada)",
+              "date": "2007"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2011,
+          "versions": [
+            {
+              "language": "Telugu",
+              "title": "Blue",
+              "date": "2011"
+            },
+            {
+              "language": "Hindi",
+              "title": "Blue",
+              "date": "16-10-2009"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2010,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Vinnaithaandi Varuvaaya",
+              "date": "26-02-2010"
+            },
+            {
+              "language": "Telugu",
+              "title": "Ye Maaya Chesave",
+              "date": "2010"
+            },
+            {
+              "language": "Hindi",
+              "title": "Ekk Dewanaa Thhaa",
+              "date": "17-02-2012"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2010,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Raavanan",
+              "date": "2010"
+            },
+            {
+              "language": "Telugu",
+              "title": "Villian",
+              "date": "2010"
+            },
+            {
+              "language": "Hindi",
+              "title": "Raavan",
+              "date": "18-06-2010"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2010,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Enthiran",
+              "date": "01-10-2010"
+            },
+            {
+              "language": "Telugu",
+              "title": "Robot",
+              "date": "2010"
+            },
+            {
+              "language": "Hindi",
+              "title": "Robot",
+              "date": "2010"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2012,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Kadal",
+              "date": "01-02-2012"
+            },
+            {
+              "language": "Telugu",
+              "title": "Kadali",
+              "date": "2012"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2013,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Maryan",
+              "date": "19-07-2013"
+            },
+            {
+              "language": "Telugu",
+              "title": "Mariyaan",
+              "date": "2015"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2013,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Ambikapathy",
+              "date": "2013"
+            },
+            {
+              "language": "Hindi",
+              "title": "Raanjhaana",
+              "date": "21-06-2013"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2014,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Kochadaiyaan",
+              "date": "23-05-2014"
+            },
+            {
+              "language": "Telugu",
+              "title": "Vikram Simha",
+              "date": "2014"
+            },
+            {
+              "language": "Hindi",
+              "title": "Kochadaiyaan",
+              "date": "2014"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2014,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Kaaviya Thalaivan",
+              "date": "28-11-2014"
+            },
+            {
+              "language": "Telugu",
+              "title": "Premalayam",
+              "date": "2016"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Pradhi Nayagan",
+              "date": "2015"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2014,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Lingaa",
+              "date": "12-12-2014"
+            },
+            {
+              "language": "Telugu",
+              "title": "Lingaa",
+              "date": "2014"
+            },
+            {
+              "language": "Hindi",
+              "title": "Lingaa",
+              "date": "2014"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2015,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "I the movie",
+              "date": "14-01-2015"
+            },
+            {
+              "language": "Telugu",
+              "title": "I Manoharudu",
+              "date": "2014"
+            },
+            {
+              "language": "Hindi",
+              "title": "I the movie",
+              "date": "2015"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2015,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "OK Kanmani",
+              "date": "17-04-2015"
+            },
+            {
+              "language": "Telugu",
+              "title": "OK Bangaram",
+              "date": "2015"
+            },
+            {
+              "language": "Hindi",
+              "title": "OK Jaanu",
+              "date": "13-01-2017"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2016,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "24",
+              "date": "06-05-2016"
+            },
+            {
+              "language": "Telugu",
+              "title": "24",
+              "date": "2016"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2016,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Achcham Yenbadhu Madamaiyada",
+              "date": "11-11-2016"
+            },
+            {
+              "language": "Telugu",
+              "title": "Saahasam Swasaga Saagipo",
+              "date": "2016"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2017,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Katru Veliyidai",
+              "date": "07-04-2017"
+            },
+            {
+              "language": "Telugu",
+              "title": "Cheliyaa",
+              "date": "2017"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2017,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Sachin - A Billion Dreams",
+              "date": "2017"
+            },
+            {
+              "language": "Telugu",
+              "title": "Sachin - A Billion Dreams",
+              "date": "2017"
+            },
+            {
+              "language": "Hindi",
+              "title": "Sachin - A Billion Dreams",
+              "date": "29-05-2017"
+            },
+            {
+              "language": "Other",
+              "title": "Sachin - A Billion Dreams (Marathi)",
+              "date": "2017"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2017,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "MOM",
+              "date": "2017"
+            },
+            {
+              "language": "Telugu",
+              "title": "MOM",
+              "date": "2017"
+            },
+            {
+              "language": "Hindi",
+              "title": "MOM",
+              "date": "07-07-2017"
+            },
+            {
+              "language": "Malayalam",
+              "title": "MOM",
+              "date": "2017"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2017,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Mersal",
+              "date": "08-10-2017"
+            },
+            {
+              "language": "Telugu",
+              "title": "Adirindhi",
+              "date": "2017"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2018,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Chekka Chivantha Vaanam",
+              "date": "27-09-2018"
+            },
+            {
+              "language": "Telugu",
+              "title": "Nawab",
+              "date": "2018"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2018,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Sarkar",
+              "date": "06-11-2018"
+            },
+            {
+              "language": "Telugu",
+              "title": "Sarkar",
+              "date": "2018"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2017,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "2.0",
+              "date": "29-11-2017"
+            },
+            {
+              "language": "Telugu",
+              "title": "2.0",
+              "date": "2017"
+            },
+            {
+              "language": "Hindi",
+              "title": "2.0",
+              "date": "2017"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2017,
+          "versions": [
+            {
+              "language": "Hindi",
+              "title": "Partition : 1947",
+              "date": "2017"
+            },
+            {
+              "language": "Other",
+              "title": "Viceroy's House English OST",
+              "date": "2017"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2019,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Sarvam Thaala Mayam",
+              "date": "09-02-2019"
+            },
+            {
+              "language": "Telugu",
+              "title": "Sarvam Thaala Mayam",
+              "date": "2019"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2019,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Bigil",
+              "date": "25-10-2019"
+            },
+            {
+              "language": "Telugu",
+              "title": "Whistle",
+              "date": "2019"
+            },
+            {
+              "language": "Other",
+              "title": "Bigil (Kannada)",
+              "date": "2019"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2019,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Avengers - Endgame",
+              "date": "2019"
+            },
+            {
+              "language": "Telugu",
+              "title": "Avengers-Endgame",
+              "date": "2019"
+            },
+            {
+              "language": "Hindi",
+              "title": "Avengers-Endgame",
+              "date": "2019"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2021,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "99 Songs",
+              "date": "2021"
+            },
+            {
+              "language": "Telugu",
+              "title": "99 Songs",
+              "date": "2021"
+            },
+            {
+              "language": "Hindi",
+              "title": "99 Songs",
+              "date": "16-04-2021"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2021,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "99 Songs online concert for JIO",
+              "date": "2021"
+            },
+            {
+              "language": "Telugu",
+              "title": "99 Songs online concert for JIO",
+              "date": "2021"
+            },
+            {
+              "language": "Hindi",
+              "title": "99 Songs online concert for JIO",
+              "date": "2021"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2021,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Song - Shirdi Sai",
+              "date": "2021"
+            },
+            {
+              "language": "Telugu",
+              "title": "Song - Shirdi Sai",
+              "date": "2021"
+            },
+            {
+              "language": "Hindi",
+              "title": "Song - Shirdi Sai",
+              "date": "2020"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2021,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Galatta Kalyanam",
+              "date": "2021"
+            },
+            {
+              "language": "Hindi",
+              "title": "Atrangi Re",
+              "date": "24-12-2021"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2022,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Cobra",
+              "date": "31-08-2022"
+            },
+            {
+              "language": "Telugu",
+              "title": "Cobra",
+              "date": "2022"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Cobra",
+              "date": "2022"
+            },
+            {
+              "language": "Other",
+              "title": "Cobra (Kannada)",
+              "date": "2022"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2022,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Ponniyin Selvan Part 1",
+              "date": "30-09-2022"
+            },
+            {
+              "language": "Telugu",
+              "title": "Ponniyin Selvan Part 1",
+              "date": "2022"
+            },
+            {
+              "language": "Hindi",
+              "title": "Ponniyin Selvan Part 1",
+              "date": "2022"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Ponniyin Selvan Part 1",
+              "date": "2022"
+            },
+            {
+              "language": "Other",
+              "title": "Ponniyin Selvan Part 1 (Kannada)",
+              "date": "2022"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2022,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Vendhu Thanindhathu Kaadu",
+              "date": "15-09-2022"
+            },
+            {
+              "language": "Telugu",
+              "title": "Life of Muthu ( VTK-Telugu)",
+              "date": "2022"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2023,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Ponniyin Selvan Part 2",
+              "date": "28-04-2023"
+            },
+            {
+              "language": "Telugu",
+              "title": "Ponniyin Selvan Part 2",
+              "date": "2023"
+            },
+            {
+              "language": "Hindi",
+              "title": "Ponniyin Selvan Part 2",
+              "date": "2023"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Ponniyin Selvan Part 2",
+              "date": "2023"
+            },
+            {
+              "language": "Other",
+              "title": "Ponniyin Selvan Part 2 (Kannada)",
+              "date": "2023"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2023,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Maamannan",
+              "date": "01-06-2023"
+            },
+            {
+              "language": "Telugu",
+              "title": "Nayakudu",
+              "date": "2023"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2023,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Pathu Thala",
+              "date": "18-03-2023"
+            },
+            {
+              "language": "Telugu",
+              "title": "AGR",
+              "date": "02-01-2024"
+            },
+            {
+              "language": "Hindi",
+              "title": "AGR",
+              "date": "02-01-2024"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2024,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Ayalaan",
+              "date": "10-01-2024"
+            },
+            {
+              "language": "Telugu",
+              "title": "Ayalaan",
+              "date": "10-12-2024"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2024,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Lal Salaam",
+              "date": "26-01-2024"
+            },
+            {
+              "language": "Telugu",
+              "title": "Lal Salaam",
+              "date": "15-02-2024"
+            },
+            {
+              "language": "Hindi",
+              "title": "Lal Salaam",
+              "date": "29-02-2024"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2024,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Aadujeevitham-The Goat Life",
+              "date": "18-03-2024"
+            },
+            {
+              "language": "Telugu",
+              "title": "Aadujeevitham-The Goat Life",
+              "date": "18-03-2024"
+            },
+            {
+              "language": "Hindi",
+              "title": "Aadujeevitham-The Goat Life",
+              "date": "18-03-2024"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Aadujeevitham-The Goat Life",
+              "date": "14-03-2024"
+            },
+            {
+              "language": "Other",
+              "title": "Aadujeevitham-The Goat Life (Kannada)",
+              "date": "18-03-2024"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2024,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Maidaan",
+              "date": "12-06-2024"
+            },
+            {
+              "language": "Telugu",
+              "title": "Maidaan",
+              "date": "12-06-2024"
+            },
+            {
+              "language": "Hindi",
+              "title": "Maidaan",
+              "date": "08-04-2024"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Maidaan",
+              "date": "12-06-2024"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2024,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Raayan",
+              "date": "06-07-2024"
+            },
+            {
+              "language": "Telugu",
+              "title": "Raayan",
+              "date": "21-07-2024"
+            },
+            {
+              "language": "Hindi",
+              "title": "Raayan",
+              "date": "21-07-2024"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Raayan",
+              "date": "27-08-2024"
+            },
+            {
+              "language": "Other",
+              "title": "Kaathavaraayan (Kannada)",
+              "date": "27-08-2024"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2025,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Kadhalikka Neramillai",
+              "date": "07-01-2025"
+            },
+            {
+              "language": "Telugu",
+              "title": "Kadhalikka Neramillai",
+              "date": "11-02-2025"
+            },
+            {
+              "language": "Hindi",
+              "title": "Kadhalikka Neramillai",
+              "date": "11-02-2025"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Kadhalikka Neramillai",
+              "date": "11-02-2025"
+            },
+            {
+              "language": "Other",
+              "title": "Kadhalikka Neramillai",
+              "date": "11-02-2025"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2025,
+          "versions": [
+            {
+              "language": "Telugu",
+              "title": "Chhaava",
+              "date": "12-02-2025"
+            },
+            {
+              "language": "Hindi",
+              "title": "Chhaava",
+              "date": "28-03-2025"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2025,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Thug Life",
+              "date": "24-05-2025"
+            },
+            {
+              "language": "Telugu",
+              "title": "Thug Life",
+              "date": "24-05-2025"
+            },
+            {
+              "language": "Hindi",
+              "title": "Thug Life",
+              "date": "24-05-2025"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2025,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Tere Ishk Mein",
+              "date": "02-12-2025"
+            },
+            {
+              "language": "Telugu",
+              "title": "Amara Kavyam",
+              "date": "02-12-2025"
+            },
+            {
+              "language": "Hindi",
+              "title": "Tere Ishk Mein",
+              "date": "12-11-2025"
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2026,
+          "versions": [
+            {
+              "language": "Tamil",
+              "title": "Gandhi Talks",
+              "date": "26-01-2026"
+            },
+            {
+              "language": "Telugu",
+              "title": "Gandhi Talks",
+              "date": "26-01-2026"
+            },
+            {
+              "language": "Malayalam",
+              "title": "Gandhi Talks",
+              "date": "26-01-2026"
+            },
+            {
+              "language": "Other",
+              "title": "Gandhi Talks (Marathi)",
+              "date": "26-01-2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tamil-undubbed",
+      "num": "1.1",
+      "title": "Tamil Undubbed",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Uzhavan",
+          "year": 1993,
+          "date": "13-11-1993"
+        },
+        {
+          "type": "work",
+          "title": "Pavithra",
+          "year": 1994,
+          "date": "02-11-1994"
+        },
+        {
+          "type": "work",
+          "title": "Puthiya Mannargal",
+          "year": 1994,
+          "date": "02-12-1994"
+        },
+        {
+          "type": "work",
+          "title": "Anthi Mandhaaarai",
+          "year": 1996,
+          "date": "01-06-1996"
+        },
+        {
+          "type": "work",
+          "title": "Sangamam",
+          "year": 1999,
+          "date": "16-07-1999"
+        },
+        {
+          "type": "work",
+          "title": "Taj Mahal",
+          "year": 1999,
+          "date": "07-11-1999"
+        },
+        {
+          "type": "work",
+          "title": "Alli Arjuna",
+          "year": 2002,
+          "date": "14-01-2002"
+        },
+        {
+          "type": "work",
+          "title": "Kaadhal Virus",
+          "year": 2002,
+          "date": "20-11-2002"
+        },
+        {
+          "type": "work",
+          "title": "Udhaya",
+          "year": 2004,
+          "date": "26-04-2004"
+        },
+        {
+          "type": "work",
+          "title": "Kangalal Kaidhu Sei",
+          "year": 2004,
+          "date": "20-02-2004"
+        },
+        {
+          "type": "work",
+          "title": "Ah Aah / Anbe Aaruyire",
+          "year": 2005,
+          "date": "09-09-2005"
+        },
+        {
+          "type": "work",
+          "title": "Sakkarakatti",
+          "year": 2008,
+          "date": "26-09-2008"
+        },
+        {
+          "type": "work",
+          "title": "Iravin Nizhal",
+          "year": 2022,
+          "date": "15-07-2022"
+        },
+        {
+          "type": "work",
+          "title": "Genie (Single)",
+          "year": 2025,
+          "date": "07-10-2025"
+        },
+        {
+          "type": "work",
+          "title": "MoonWalk",
+          "year": 2026,
+          "date": "12-01-2026"
+        }
+      ]
+    },
+    {
+      "id": "telugu-undubbed",
+      "num": "2.1",
+      "title": "Telugu Undubbed",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Komaram Puli",
+          "year": 2010,
+          "date": "10-09-2010"
+        }
+      ]
+    },
+    {
+      "id": "hindi-undubbed",
+      "num": "3.1",
+      "title": "Hindi Undubbed",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Fire",
+          "year": 1998,
+          "date": "05-11-1998"
+        },
+        {
+          "type": "work",
+          "title": "1947 Earth",
+          "year": 1999,
+          "date": "10-09-1999"
+        },
+        {
+          "type": "work",
+          "title": "Thakshak",
+          "year": 1999,
+          "date": "03-12-1999"
+        },
+        {
+          "type": "work",
+          "title": "Pukar",
+          "year": 2000,
+          "date": "04-02-2000"
+        },
+        {
+          "type": "work",
+          "title": "Fiza",
+          "year": 2000,
+          "date": "08-09-2000"
+        },
+        {
+          "type": "work",
+          "title": "Zubeidaa",
+          "year": 2001,
+          "date": "19-01-2001"
+        },
+        {
+          "type": "work",
+          "title": "One 2 Ka 4",
+          "year": 2001,
+          "date": "30-03-2001"
+        },
+        {
+          "type": "work",
+          "title": "Lagaan",
+          "year": 2001,
+          "date": "15-06-2001"
+        },
+        {
+          "type": "work",
+          "title": "The Legend Of Bhagath Singh",
+          "year": 2002,
+          "date": "07-06-2002"
+        },
+        {
+          "type": "work",
+          "title": "Nayak",
+          "year": 2001,
+          "date": "2001"
+        },
+        {
+          "type": "work",
+          "title": "Tehzeeb",
+          "year": 2003,
+          "date": "21-11-2003"
+        },
+        {
+          "type": "work",
+          "title": "Dil Ne Jise Apna Kaha",
+          "year": 2004,
+          "date": "10-09-2004"
+        },
+        {
+          "type": "work",
+          "title": "Lakeer",
+          "year": 2004,
+          "date": "14-05-2004"
+        },
+        {
+          "type": "work",
+          "title": "Meenaxi: A Tale Of 3 Cities",
+          "year": 2004,
+          "date": "02-04-2004"
+        },
+        {
+          "type": "work",
+          "title": "Bose: The Forgotten Hero",
+          "year": 2005,
+          "date": "13-05-2005"
+        },
+        {
+          "type": "work",
+          "title": "Mangal Pandey: The Rising",
+          "year": 2005,
+          "date": "12-08-2005"
+        },
+        {
+          "type": "work",
+          "title": "Water",
+          "year": 2005,
+          "date": "09-09-2005"
+        },
+        {
+          "type": "work",
+          "title": "Rang De Basanti",
+          "year": 2006,
+          "date": "27-01-2006"
+        },
+        {
+          "type": "work",
+          "title": "Ada",
+          "year": 2010,
+          "date": "31-12-2010"
+        },
+        {
+          "type": "work",
+          "title": "Ghajini",
+          "year": 2008,
+          "date": "25-12-2008"
+        },
+        {
+          "type": "work",
+          "title": "Jaane Tu Ya Jaane Naa",
+          "year": 2008,
+          "date": "04-07-2008"
+        },
+        {
+          "type": "work",
+          "title": "Yuvvraaj",
+          "year": 2008,
+          "date": "21-11-2008"
+        },
+        {
+          "type": "work",
+          "title": "Delhi 6",
+          "year": 2009,
+          "date": "20-02-2009"
+        },
+        {
+          "type": "work",
+          "title": "Jhoota Hi Sahi",
+          "year": 2010,
+          "date": "22-10-2010"
+        },
+        {
+          "type": "work",
+          "title": "Rockstar",
+          "year": 2011,
+          "date": "11-11-2011"
+        },
+        {
+          "type": "work",
+          "title": "Jab Tak Hai Jaan",
+          "year": 2012,
+          "date": "13-11-2012"
+        },
+        {
+          "type": "work",
+          "title": "Highway",
+          "year": 2014,
+          "date": "21-02-2014"
+        },
+        {
+          "type": "work",
+          "title": "Lekar Hum Deewana Dil",
+          "year": 2014,
+          "date": "04-07-2014"
+        },
+        {
+          "type": "work",
+          "title": "Tamasha",
+          "year": 2015,
+          "date": "27-11-2015"
+        },
+        {
+          "type": "work",
+          "title": "Mohenjodaro",
+          "year": 2016,
+          "date": "12-08-2016"
+        },
+        {
+          "type": "work",
+          "title": "Sanju",
+          "year": 2018,
+          "date": "29-06-2018",
+          "note": "2 tracks"
+        },
+        {
+          "type": "work",
+          "title": "Love Sonia",
+          "year": 2019,
+          "date": "06-09-2019",
+          "note": "1 track"
+        },
+        {
+          "type": "work",
+          "title": "The Fakir Of Venice",
+          "year": 2019,
+          "date": "08-12-2019"
+        },
+        {
+          "type": "work",
+          "title": "Dil Bechara",
+          "year": 2020,
+          "date": "24-07-2020"
+        },
+        {
+          "type": "work",
+          "title": "Mimi",
+          "year": 2021,
+          "date": "26-07-2021"
+        },
+        {
+          "type": "work",
+          "title": "Heropanti 2",
+          "year": 2022,
+          "date": "29-04-2022"
+        },
+        {
+          "type": "work",
+          "title": "Mili",
+          "year": 2022,
+          "date": "04-11-2022"
+        },
+        {
+          "type": "work",
+          "title": "Gandhi Vs Godse – Ek Yudh",
+          "year": 2023,
+          "date": "26-01-2023"
+        },
+        {
+          "type": "work",
+          "title": "Pippa",
+          "year": 2023,
+          "date": "07-11-2023"
+        },
+        {
+          "type": "work",
+          "title": "Amar Singh Chamkila",
+          "year": 2024,
+          "date": "26-03-2024"
+        },
+        {
+          "type": "work",
+          "title": "Ramayana (Introduction)",
+          "year": 2025,
+          "date": "04-07-2025"
+        },
+        {
+          "type": "work",
+          "title": "Uff Yeh Siyapaa",
+          "year": 2025,
+          "date": "12-09-2025"
+        },
+        {
+          "type": "work",
+          "title": "Main Vapas Aaunga",
+          "note": "Singles released"
+        }
+      ]
+    },
+    {
+      "id": "malayalam-undubbed",
+      "num": "4.1",
+      "title": "Malayalam Undubbed",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Malayan Kunju",
+          "year": 2022,
+          "date": "22-07-2022"
+        }
+      ]
+    },
+    {
+      "id": "foreign-ost",
+      "num": "5.1",
+      "title": "Foreign Language OST",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Fire",
+          "year": 1996,
+          "note": "OST"
+        },
+        {
+          "type": "work",
+          "title": "Earth",
+          "year": 1998,
+          "note": "OST"
+        },
+        {
+          "type": "work",
+          "title": "Warriors of Heaven & Earth",
+          "year": 2004,
+          "date": "16-10-2004"
+        },
+        {
+          "type": "work",
+          "title": "Water",
+          "year": 2006,
+          "note": "OST"
+        },
+        {
+          "type": "work",
+          "title": "Elizabeth — The Golden Age",
+          "year": 2007,
+          "date": "12-10-2007"
+        },
+        {
+          "type": "work",
+          "title": "Bombil and Betrice",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Couples Retreat",
+          "year": 2009,
+          "date": "09-10-2009"
+        },
+        {
+          "type": "work",
+          "title": "127 Hours",
+          "year": 2010,
+          "date": "02-11-2010"
+        },
+        {
+          "type": "work",
+          "title": "People Like Us",
+          "year": 2012,
+          "date": "29-06-2012"
+        },
+        {
+          "type": "work",
+          "title": "Million Dollar Arm",
+          "year": 2014,
+          "date": "16-05-2014"
+        },
+        {
+          "type": "work",
+          "title": "The Hundred-Foot Journey",
+          "year": 2014,
+          "date": "08-08-2014"
+        },
+        {
+          "type": "work",
+          "title": "Pele: Birth of a Legend",
+          "year": 2016,
+          "date": "06-05-2016"
+        },
+        {
+          "type": "work",
+          "title": "Viceroy's House",
+          "year": 2017,
+          "date": "18-08-2017"
+        },
+        {
+          "type": "work",
+          "title": "Beyond The Clouds",
+          "year": 2018,
+          "date": "20-04-2018"
+        },
+        {
+          "type": "work",
+          "title": "Blinded By The Light",
+          "year": 2019,
+          "date": "09-08-2019"
+        },
+        {
+          "type": "work",
+          "title": "Tell it Like a Woman",
+          "year": 2022
+        },
+        {
+          "type": "work",
+          "title": "Le Musk",
+          "year": 2024,
+          "date": "21-08-2024"
+        }
+      ]
+    },
+    {
+      "id": "chinese",
+      "num": "5.2",
+      "title": "Chinese",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Tian Di Ying Xiang",
+          "year": 2003,
+          "note": "Chinese"
+        }
+      ]
+    },
+    {
+      "id": "persian-arabic",
+      "num": "5.3",
+      "title": "Persian / Arabic",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Muhammed: Messenger of God",
+          "year": 2015,
+          "date": "12-02-2015"
+        }
+      ]
+    },
+    {
+      "id": "urdu",
+      "num": "5.4",
+      "title": "Urdu",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Al-Risalah",
+          "year": 2008
+        }
+      ]
+    },
+    {
+      "id": "film-instrumentals",
+      "num": "4.2",
+      "title": "Film Instrumentals",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Roja [Tamil, 1992]",
+          "year": 1992
+        },
+        {
+          "type": "work",
+          "title": "Roja [Telugu, 1992]",
+          "year": 1992
+        },
+        {
+          "type": "work",
+          "title": "Roja [Hindi, 1994]",
+          "year": 1994
+        },
+        {
+          "type": "work",
+          "title": "Gentleman [Tamil, 1993]",
+          "year": 1993
+        },
+        {
+          "type": "work",
+          "title": "Gentleman [Telugu, 1993]",
+          "year": 1993
+        },
+        {
+          "type": "work",
+          "title": "May Madham [Tamil, 1994]",
+          "year": 1994
+        }
+      ]
+    },
+    {
+      "id": "bgm-score",
+      "num": "4.3",
+      "title": "BGM Score / OST",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Endhiran",
+          "year": 2018,
+          "date": "28-11-2018"
+        },
+        {
+          "type": "work",
+          "title": "2.0",
+          "year": 2019,
+          "date": "29-06-2019"
+        },
+        {
+          "type": "work",
+          "title": "Shikara",
+          "year": 2020,
+          "date": "07-02-2020"
+        },
+        {
+          "type": "work",
+          "title": "99 Songs",
+          "year": 2022,
+          "date": "23-12-2022"
+        },
+        {
+          "type": "work",
+          "title": "Vendhu Thanindhathu Kaadu",
+          "year": 2023,
+          "date": "12-02-2023"
+        },
+        {
+          "type": "work",
+          "title": "Ponniyin Selvan",
+          "year": 2024,
+          "date": "06-01-2024"
+        },
+        {
+          "type": "work",
+          "title": "The Goat Life",
+          "year": 2024,
+          "date": "12-04-2024"
+        },
+        {
+          "type": "work",
+          "title": "Kadhalikka Neramillai"
+        },
+        {
+          "type": "work",
+          "title": "Aayalan (Score)",
+          "note": "Announced"
+        },
+        {
+          "type": "work",
+          "title": "Gandhi Talks Score"
+        }
+      ]
+    },
+    {
+      "id": "forthcoming",
+      "num": "—",
+      "title": "Forthcoming — In Progress",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Can I Go Home Now? (English Documentary)"
+        },
+        {
+          "type": "work",
+          "title": "Dilkashi",
+          "note": "Lijo Jose Pellissery / Hansal Mehta"
+        },
+        {
+          "type": "work",
+          "title": "BAAB",
+          "note": "UAE — Nayla Al Khaja"
+        },
+        {
+          "type": "work",
+          "title": "Lahore 1947"
+        },
+        {
+          "type": "work",
+          "title": "Gandhi — Web Series",
+          "note": "Hansal Mehta"
+        },
+        {
+          "type": "work",
+          "title": "Ramayana 1",
+          "note": "Nitesh Tiwari + Hans Zimmer · 2026"
+        },
+        {
+          "type": "work",
+          "title": "Ramayana 2",
+          "note": "Nitesh Tiwari + Hans Zimmer · 2027"
+        },
+        {
+          "type": "work",
+          "title": "KHOJ",
+          "note": "Previously Mahasangam / Bharat Bala"
+        },
+        {
+          "type": "work",
+          "title": "Killer",
+          "note": "SJ Suriya"
+        },
+        {
+          "type": "work",
+          "title": "No Land's Man"
+        },
+        {
+          "type": "work",
+          "title": "Mari Selvaraj + Dhanush + Ishari Ganesh Film"
+        },
+        {
+          "type": "work",
+          "title": "Mani Rathnam + Vijay Sethupathi + Sai Pallavi Film"
+        },
+        {
+          "type": "work",
+          "title": "Kamal aur Meena",
+          "note": "Siddharth Malhotra · 2025"
+        }
+      ]
+    },
+    {
+      "id": "announced",
+      "num": "—",
+      "title": "Announced Projects",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Bhanushali Studios Project",
+          "note": "Dir. Anthony D'Souza"
+        },
+        {
+          "type": "work",
+          "title": "One World One Family Mission Anthem"
+        },
+        {
+          "type": "work",
+          "title": "Imaginary Rain"
+        },
+        {
+          "type": "work",
+          "title": "SSGH Mission Hospital Healing Music Project"
+        },
+        {
+          "type": "work",
+          "title": "Dhruv 4",
+          "note": "Ramesh Varma untitled film"
+        },
+        {
+          "type": "work",
+          "title": "Rumi",
+          "note": "Arno Krimmer"
+        }
+      ]
+    },
+    {
+      "id": "no-updates",
+      "num": "—",
+      "title": "Projects — No Latest Updates",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "WhatsApp DP",
+          "note": "Kathir"
+        },
+        {
+          "type": "work",
+          "title": "Confessions",
+          "note": "VR film"
+        },
+        {
+          "type": "work",
+          "title": "Hands Around the World",
+          "note": "Announced"
+        },
+        {
+          "type": "work",
+          "title": "Sahara Sri — Subrata Roy Biopic"
+        },
+        {
+          "type": "work",
+          "title": "Slumdog Millionaire [Sequel]"
+        },
+        {
+          "type": "work",
+          "title": "Slumdog Millionaire [Musical]"
+        },
+        {
+          "type": "work",
+          "title": "Slumdog Millionaire [TV Series]"
+        },
+        {
+          "type": "work",
+          "title": "Elevate",
+          "note": "Nexa Music Album"
+        },
+        {
+          "type": "work",
+          "title": "Mulla Nasruddin [Musical]"
+        },
+        {
+          "type": "work",
+          "title": "Sharing a Ride",
+          "note": "Leena Yadav"
+        },
+        {
+          "type": "work",
+          "title": "Zuni",
+          "note": "Santosh Sivan"
+        },
+        {
+          "type": "work",
+          "title": "Ebony McQueen",
+          "note": "Shekar Kapur"
+        }
+      ]
+    }
+  ],
+  "blurb": "Multi-language releases — Tamil, Telugu, Hindi, Malayalam and others. Each entry shows the title and release date for every language version."
+}

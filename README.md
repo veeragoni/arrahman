@@ -1,166 +1,307 @@
-# A. R. Rahman — Complete Discography
+# arrahman
 
-A searchable, beautifully-typeset web archive of every film score, dub, single, album, advertisement, stage musical, documentary, collaboration, and book associated with the composer.
+A searchable web archive of A. R. Rahman's film scores, dubs, singles, albums, advertisements, stage work, documentary work, collaborations, books, and video performances.
 
 > Compiled from the discography database curated by Gopal Srinivasan, Mohan Bhagavathi, and Dinesh Vaidya. Film table edition: 27 January 2026. Non-film edition: 15 May 2026.
 
-**[Live demo →](./dist/arrahman-discography.html)** (or open `index.html` directly in any browser)
+**Live demo:** <https://veeragoni.github.io/arrahman/>
 
 ---
 
-## What's in here
+## Project Structure
 
 ```
 .
-├── index.html              # main page — open this locally or deploy to a host
-├── app.js                  # search, filter, render logic
-├── data/                   # ← edit these files to add or change entries
-│   ├── 01-films.js         # film compositions (Tamil/Telugu/Hindi/Malayalam/Other)
-│   ├── 02-nonfilm.js       # albums, singles, TV/web series, stage musicals, etc.
-│   ├── 03-ads.js           # advertisements and ringtones
-│   ├── 04-other.js         # labels, foundations, music supervision, books, etc.
-│   ├── 05-videos.js        # on-camera music release performances
-│   └── index.js            # section manifest (only edit if adding a new top-level category)
+├── index.html              # main static page
+├── app.js                  # rendering, search, filtering, result navigation
+├── data/
+│   ├── source/             # edit these category chunks
+│   │   ├── 01-films.json
+│   │   ├── 02-nonfilm.json
+│   │   ├── 03-ads.json
+│   │   ├── 04-noncreative.json
+│   │   └── 05-videos.json
+│   ├── provider-links.json # generated/direct provider link cache
+│   └── discography.json    # generated site data; do not edit by hand
 ├── scripts/
-│   └── build.py            # bundles everything into a single HTML file (optional)
-└── dist/
-    └── arrahman-discography.html   # single-file build output
+│   ├── build.py            # generates data/discography.json and dist HTML
+│   ├── audit_pdf_sources.py # checks source JSON against the source PDFs
+│   ├── migrate_legacy_data.py
+│   └── validate.py         # validates source data, generated data, and page wiring
+├── dist/
+│   └── arrahman-discography.html
+└── .github/workflows/
+    └── pages.yml           # builds, validates, and publishes GitHub Pages
 ```
 
-Total: **739 entries** across 5 categories. No external dependencies (Google Fonts loaded from CDN).
+The generated archive total is computed from `data/source/` during the build.
 
 ---
 
-## How to add or edit entries
+## What To Edit
 
-Every entry lives in one of the files in `data/`. The format is plain JavaScript — no JSON commas to fight, comments are allowed, trailing commas are fine.
+Edit files under `data/source/`.
 
-### 1. To add a film (`data/01-films.js`)
-
-Films are stored as rows where each language column is its own field. Use only the fields you need:
-
-```js
-{ y: 2025, t: "Some Tamil Title • 15-08-2025", h: "Hindi Dub Title • 22-08-2025" },
-```
-
-| Field  | Meaning                          | Example                       |
-|--------|----------------------------------|-------------------------------|
-| `y`    | Primary year (number, required)  | `2025`                        |
-| `t`    | Tamil release                    | `"Title • 15-08-2025"`        |
-| `te`   | Telugu release                   | `"Title • 2025"`              |
-| `h`    | Hindi release                    | `"Title • DD-MM-YYYY"`        |
-| `m`    | Malayalam release                | `"Title • DD-MM-YYYY"`        |
-| `o`    | Other language (Kannada, Marathi, English, etc.) | `"Title (Marathi) • 2026"` |
-| `note` | Free-text note shown in italics  | `"Score only"`                |
-
-The format inside each language field is `"<Title> • <Date>"`. Date can be either `DD-MM-YYYY` or just `YYYY`. The site renders it nicely either way.
-
-**Tamil-undubbed, Telugu-undubbed, Hindi-undubbed, etc.** have their own arrays at the bottom of `01-films.js` — same structure as the non-film entries below.
-
-### 2. To add a non-film entry (most other files)
-
-Singles, albums, TV series, ads, books, theme songs — they all use the same shape:
-
-```js
-{ title: "Song or Album Name", year: 2025, date: "15-08-2025", note: "Optional note" },
-```
-
-Only `title` is required. Find the right array (e.g. `SINGLES`, `ADS_POST_2000`, `BOOKS_SELF`) and append your entry.
-
-### 3. To add a brand-new category
-
-Open `data/index.js`. The `SECTIONS` array drives the entire UI. Add a new subsection inside an existing section, or define a whole new section:
-
-```js
-{
-  id: 'my-new-category',
-  num: '6.10',
-  title: 'My New Category',
-  type: 'list',
-  items: MY_NEW_ARRAY,  // defined in one of the data files
-},
-```
-
-Then declare `MY_NEW_ARRAY` in any data file. The page will pick it up automatically.
-
-### 4. To preview your changes
-
-Just open `index.html` in a browser. **No build step required.** If you have Python installed, you can also serve it locally to avoid `file://` quirks:
-
-```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
-
-### 5. (Optional) To build a single-file version
-
-If you want one self-contained HTML file you can email, attach, or upload anywhere:
+Do **not** edit `data/discography.json` directly. It is generated by:
 
 ```bash
 python3 scripts/build.py
-# → dist/arrahman-discography.html
 ```
 
-This produces a single ~90 KB HTML file with everything inlined.
+After editing source data, run the build and refresh the page. Search, filters, provider icons, missing-link reports, and the single-file `dist/` page all use the generated data.
+
+`data/provider-links.json` is a cache of direct provider URLs found during link resolution. You can edit direct links in `data/source/*.json` when you know them; source links win over cached links. The cache lets normal builds publish known direct links without making every build perform network searches.
+
+The homepage stat cards are also computed from the generated data. Their scopes are declared in `index.html` with `data-stat-categories`, `data-stat-subsections`, or `data-stat-total`.
+
+The PDFs in `data/source/` are the source of truth for the original tables. The validator reads the film PDF and checks that the multilingual film table is aligned to the PDF language columns.
+
+### Source Files
+
+- `data/source/01-films.json`: film albums and film-related lists
+- `data/source/02-nonfilm.json`: albums, singles, TV/web, stage, theme songs
+- `data/source/03-ads.json`: advertisements and ringtones
+- `data/source/04-noncreative.json`: labels, foundations, supervision, books, appearances
+- `data/source/05-videos.json`: video song performances
 
 ---
 
-## Deploy to GitHub Pages
+## Data Format
 
-1. Push to GitHub (see commands below).
-2. In your repo on github.com → **Settings → Pages**.
-3. Source: **Deploy from a branch**, branch: `main`, folder: `/ (root)`.
-4. Wait ~30 seconds. Your site will be live at `https://<username>.github.io/<reponame>/`.
+### Film Entries
 
-That's it — no build pipeline required because everything is static.
+Film entries use one parent item with one `versions` row per language. Links belong at the language/version level because each language album can have different provider URLs.
+
+```json
+{
+  "type": "film",
+  "year": 2025,
+  "note": "Optional note",
+  "versions": [
+    {
+      "language": "Tamil",
+      "title": "Some Tamil Title",
+      "date": "15-08-2025",
+      "links": {
+        "spotify": "https://open.spotify.com/...",
+        "youtubeMusic": "https://music.youtube.com/...",
+        "appleMusic": "https://music.apple.com/..."
+      },
+      "sources": ["https://example.com/source"]
+    }
+  ]
+}
+```
+
+Use `year`, not `y`.
+
+### Standard Work Entries
+
+Most non-film items use this shape:
+
+```json
+{
+  "type": "work",
+  "title": "Song or Album Name",
+  "year": 2025,
+  "date": "15-08-2025",
+  "note": "Optional note",
+  "links": {
+    "spotify": "https://open.spotify.com/...",
+    "youtubeMusic": "https://music.youtube.com/...",
+    "appleMusic": "https://music.apple.com/..."
+  },
+  "sources": ["https://example.com/source"]
+}
+```
+
+Only `type` and `title` are required for work entries.
+
+### Provider Links
+
+Supported provider keys:
+
+- `spotify`
+- `youtubeMusic`
+- `appleMusic`
+- `youtube`
+- `web`
+
+If direct links are missing, the page still shows generated search icons. Missing direct links and missing source citations are listed in the **Missing Links / Sources** category so contributors can improve the archive.
+
+Regular YouTube is included in the default music provider set because singles, albums, and films are often easiest to find there. YouTube Music remains separate for music-service searches.
+
+Spotify icons are direct-link only. If a Spotify URL is missing, the page does not send users to Google or Spotify search; the gap remains visible in **Missing Links / Sources** until a direct `open.spotify.com` album, track, or playlist URL is added.
+
+The preferred flow is direct provider links. Build-time link resolution uses a no-key DuckDuckGo HTML search fallback by default and can use Google Programmable Search when `GOOGLE_API_KEY` and `GOOGLE_CSE_ID` are configured. Resolved Spotify, YouTube Music, Apple Music, YouTube, and web reference URLs are stored in `data/provider-links.json`. Generated search URLs are fallbacks for non-Spotify providers that still do not have direct links.
+
+Film soundtrack entries must link to album-level provider pages, not individual songs. For example, Spotify links under `Film Compositions` must use `https://open.spotify.com/album/...`; song links such as `https://open.spotify.com/track/...` are intentionally rejected and left in **Missing Links / Sources** until an album URL is available.
+
+Video subsections can choose regular YouTube instead of music services:
+
+```json
+{
+  "id": "videos-film",
+  "title": "Video of Film Songs",
+  "type": "list",
+  "providers": ["youtube"],
+  "items": []
+}
+```
+
+Categories can also choose a provider once and let all subsections inherit it. Advertisements and ringtones use regular YouTube because Spotify and music services are often the wrong search target for ads:
+
+```json
+{
+  "id": "ads",
+  "title": "Advertisements & Ringtones",
+  "providers": ["youtube"],
+  "subsections": []
+}
+```
+
+`Other Work, Institutions & Curation` uses web reference links instead of music services because these entries are labels, institutions, affiliations, articles, or credits rather than A. R. Rahman albums:
+
+```json
+{
+  "id": "noncreative",
+  "title": "Other Work, Institutions & Curation",
+  "providers": ["web", "youtube"],
+  "subsections": []
+}
+```
+
+Appearance sections can override that default when the entry is video-first. For example, `Guest / Special Appearances — Films` and `Guest / Special Appearances — Documentaries` use `providers: ["youtube"]` so the icon points users toward video results instead of album services.
+
+When you know the page, add it as a direct web link:
+
+```json
+{
+  "type": "work",
+  "title": "KM Music Conservatory (KMMC)",
+  "links": {
+    "web": "https://www.kmmc.in/"
+  }
+}
+```
 
 ---
 
-## Initial git push
+## Contributing
 
-From your machine, in this directory:
+1. Edit the relevant file in `data/source/`.
+2. Add direct provider links when known.
+3. Add source URLs in `sources` when possible.
+4. Run:
 
 ```bash
-git init
-git add .
-git commit -m "Initial commit: A. R. Rahman discography site"
-git branch -M main
-
-# Replace with your repo URL:
-git remote add origin https://github.com/<your-username>/arrahman-discography.git
-git push -u origin main
+python3 scripts/build.py
+python3 scripts/validate.py
 ```
 
-If you don't have the repo yet:
+5. To resolve direct provider links for new entries, run:
 
 ```bash
-# Using GitHub CLI:
-gh repo create arrahman-discography --public --source=. --remote=origin --push
+python3 scripts/build.py --resolve-links
+python3 scripts/validate.py
+```
 
-# Or manually create it on github.com first, then run the `git remote add` + `git push` above.
+This uses DuckDuckGo without API keys. If Google Programmable Search credentials are present in the environment, the build uses Google instead. You can force a resolver when needed:
+
+```bash
+python3 scripts/build.py --resolve-links --search-engine duckduckgo
+python3 scripts/build.py --resolve-links --search-engine google
+```
+
+6. Preview locally:
+
+```bash
+python3 -m http.server 8000
+# open http://localhost:8000
+```
+
+7. Commit the source edit plus regenerated files:
+
+```bash
+git add data/source data/provider-links.json data/discography.json dist/arrahman-discography.html
+git commit -m "Update discography data"
 ```
 
 ---
 
-## How search works
+## Search
 
-- The top search bar filters every entry in real time. Matches are highlighted in amber.
-- The category pills below the search filter to a single section.
-- Press `/` from anywhere to focus the search box. Press `Esc` to clear.
-- Each entry links to Spotify and YouTube Music searches for that title (`A R Rahman <title>`), so clicks lead to real results — no fabricated album IDs.
-
----
-
-## Design
-
-The site uses **Fraunces** (variable serif) for display type and **Manrope** for body text, with **JetBrains Mono** for dates. The palette is a warm dark theme: deep midnight (`#0f1014`), cream ink (`#ecead7`), and a saffron-gold accent (`#d4a574`) that nods to Indian classical tradition.
-
-CSS lives inside `<style>` in `index.html`. All design tokens are CSS custom properties at the top — change one variable, the whole site updates.
+- The search bar filters every entry in real time.
+- Matches are highlighted.
+- The result navigator shows the active result as `current / total`.
+- Use the arrow buttons, `Enter`, or `Shift+Enter` to move through results.
+- Category pills limit results to a section.
+- Press `/` to focus search and `Esc` to clear it.
 
 ---
 
-## License & credits
+## Build And Validate
+
+Generate site data and the single-file HTML build:
+
+```bash
+python3 scripts/build.py
+```
+
+Resolve missing provider links during the build. This uses DuckDuckGo without API keys by default and updates `data/provider-links.json`; `--resolve-limit 0` removes the per-run cap.
+
+```bash
+python3 scripts/build.py --resolve-links
+```
+
+Optional Google Programmable Search credentials are still supported for higher-quality search results:
+
+```bash
+GOOGLE_API_KEY=... GOOGLE_CSE_ID=... python3 scripts/build.py --resolve-links --search-engine google
+```
+
+Validate source data, generated data, page wiring, and GitHub Pages workflow:
+
+```bash
+python3 scripts/validate.py
+```
+
+Re-sync the main multilingual film table from the film PDF after the source PDF changes:
+
+```bash
+python3 scripts/audit_pdf_sources.py --sync-film-main
+python3 scripts/build.py
+python3 scripts/validate.py
+```
+
+---
+
+## GitHub Pages
+
+The workflow at `.github/workflows/pages.yml` publishes automatically on every push to `main`. It runs build-time direct-link resolution with DuckDuckGo and does not require Google API secrets.
+
+GitHub Pages should be configured as:
+
+- Repository name: `arrahman`
+- Pages source: **GitHub Actions**
+- Published URL: <https://veeragoni.github.io/arrahman/>
+
+If creating the repository from scratch:
+
+```bash
+gh repo create arrahman --public --source=. --remote=origin --push
+```
+
+If the repository already exists under another name, rename it to `arrahman` in GitHub repository settings, then update the local remote:
+
+```bash
+git remote set-url origin git@github.com:veeragoni/arrahman.git
+```
+
+---
+
+## Credits
 
 Data compiled by Gopal Srinivasan, Mohan Bhagavathi, and Dinesh Vaidya from the source PDFs. This site is a fan archive and is not affiliated with A. R. Rahman or any of his labels.
 
-Spotify links use Spotify's public search URL pattern; YouTube Music links use YouTube Music's public search URL pattern. No private API keys or affiliations.
+Provider icons link to direct URLs when available. Non-Spotify providers can fall back to generated searches; Spotify is direct-link only. Build-time link resolution works without subscription credentials through DuckDuckGo, with optional Google Programmable Search support.

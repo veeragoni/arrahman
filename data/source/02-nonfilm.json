@@ -1,0 +1,997 @@
+{
+  "id": "nonfilm",
+  "num": "06",
+  "title": "Non-Film Compositions",
+  "subsections": [
+    {
+      "id": "albums",
+      "num": "6.1",
+      "title": "Albums / Collaborations",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Disco Disco",
+          "year": 1988
+        },
+        {
+          "type": "work",
+          "title": "Deen Isai Maalai",
+          "year": 1989
+        },
+        {
+          "type": "work",
+          "title": "Set Me Free",
+          "year": 1991
+        },
+        {
+          "type": "work",
+          "title": "Then Vandhu Paayedhu",
+          "year": 1994
+        },
+        {
+          "type": "work",
+          "title": "Vande Mataram",
+          "year": 1997
+        },
+        {
+          "type": "work",
+          "title": "Jana Gana Mana",
+          "year": 2001
+        },
+        {
+          "type": "work",
+          "title": "Indian Mantra",
+          "year": 2001,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Choreography",
+          "year": 2004,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Between Heaven and Earth",
+          "year": 2004
+        },
+        {
+          "type": "work",
+          "title": "Nokia Connections",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "Karen David — The Live Sessions EP",
+          "year": 2008,
+          "note": "2 songs"
+        },
+        {
+          "type": "work",
+          "title": "Karen David — Alive EP",
+          "year": 2008,
+          "note": "3 songs"
+        },
+        {
+          "type": "work",
+          "title": "Connections… A Journey Through Anthems",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Gems — The Duets Collection",
+          "year": 2011,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Rock The Tabla",
+          "year": 2011,
+          "note": "2 songs"
+        },
+        {
+          "type": "work",
+          "title": "SuperHeavy",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "84th Academy Awards — Celebrate The Music",
+          "year": 2012,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Raunaq",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "Peace Tracks",
+          "year": 2015,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Navaratna",
+          "year": 2015,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "The Flying Lotus",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Music to Inspire",
+          "year": 2017,
+          "note": "2 songs, reused"
+        },
+        {
+          "type": "work",
+          "title": "Waves of India",
+          "year": 2025,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Louis Vuitton Paris Men's Spring-Summer 2026 Show",
+          "year": 2025,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "A. R. Rahman — Firdaus Orchestra Album"
+        },
+        {
+          "type": "work",
+          "title": "Karthik Dial Seytha Yenn",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Call 1098 Stop Child Abuse",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Say No To Drugs",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "id": "tv-web",
+      "num": "6.2",
+      "title": "TV / Web Series",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "MTV Unplugged S02",
+          "year": 2012
+        },
+        {
+          "type": "work",
+          "title": "Coke Studio S03",
+          "year": 2013
+        },
+        {
+          "type": "work",
+          "title": "MTV Unplugged S06",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "Mirchi — Unplugged S01",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "Jammin S01",
+          "year": 2016,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Mirchi — Unplugged S02",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Jammin S02",
+          "year": 2018,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Harmony with A. R. Rahman",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Madras Gig S02",
+          "year": 2019,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "NEXA Music S01",
+          "year": 2020,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Tandav",
+          "year": 2021,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "The House of Secrets",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Navarasa",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Maajja Yaall Global Music Festival",
+          "year": 2022,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Firdaus Studio Sessions",
+          "year": 2022
+        },
+        {
+          "type": "work",
+          "title": "NEXA Music S02",
+          "year": 2023
+        },
+        {
+          "type": "work",
+          "title": "NEXA Music S03",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": "singles",
+      "num": "6.3",
+      "title": "Singles",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Oh Bosnia",
+          "year": 1996
+        },
+        {
+          "type": "work",
+          "title": "Maa Tuje Salaam (Vande Maatram)",
+          "year": 1997
+        },
+        {
+          "type": "work",
+          "title": "Zindagi Se Pyar Karo",
+          "year": 1998
+        },
+        {
+          "type": "work",
+          "title": "Desh Ka Salaam",
+          "year": 1999
+        },
+        {
+          "type": "work",
+          "title": "Hey Jawan Tuje Salaam",
+          "year": 1999
+        },
+        {
+          "type": "work",
+          "title": "Shakalaka Baby (Bombay Dreams)",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Tak Dheen (Bombay Dreams)",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Love's Never Easy (Bombay Dreams)",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Ignited Minds",
+          "year": 2003
+        },
+        {
+          "type": "work",
+          "title": "Pray For Me Brother",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "One Love",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Jai Ho — You Are My Destiny",
+          "year": 2009
+        },
+        {
+          "type": "work",
+          "title": "Miracle Worker (Superheavy)",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Satyameva Jayathe (Superheavy)",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Beautiful People (Superheavy)",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Changing Seasons",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Infinite Love",
+          "year": 2012
+        },
+        {
+          "type": "work",
+          "title": "Dhun",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "Light Upon Light",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "Ahimsa",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "Hum Haar Nahi Manange",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Farishton / Farishta",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Amar Shonar Bangla — 50 Years of Bangladesh",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Meri Pukaar Suno",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Humanitas — Proorismos — Alamal",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Someone's Watching Over",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Joy Bangladesh",
+          "year": 2022
+        },
+        {
+          "type": "work",
+          "title": "Starfield",
+          "year": 2022
+        },
+        {
+          "type": "work",
+          "title": "The Garden of our Heart",
+          "year": 2023
+        },
+        {
+          "type": "work",
+          "title": "Bheegi Bheegi",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": "featured",
+      "num": "6.4",
+      "title": "Featured in the work of other artistes",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Cedric Serpes songs",
+          "year": 1989,
+          "note": "Album"
+        },
+        {
+          "type": "work",
+          "title": "Indian Ocean",
+          "year": 2004
+        },
+        {
+          "type": "work",
+          "title": "We Can Make It Better",
+          "year": 2005
+        },
+        {
+          "type": "work",
+          "title": "Phir Mile Sur",
+          "year": 2010,
+          "note": "Cover"
+        },
+        {
+          "type": "work",
+          "title": "We Are The World 25 For Haiti",
+          "year": 2010,
+          "note": "Cover"
+        },
+        {
+          "type": "work",
+          "title": "Sumud",
+          "year": 2012,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Sumud-Acoustic",
+          "year": 2013,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "It's My Birthday",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "Lakhon Salaam — Jugni",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "Hum Ko Man Ki Shakthi Dena",
+          "year": 2015,
+          "note": "Cover"
+        },
+        {
+          "type": "work",
+          "title": "Mercedes-Benz Project X — Khushnuma",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "Rabeh Saqer — Ya Saudi (Saudi Arabia National Football Team Song)",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "ARRived Series Theme Song",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Amal Maher — Asl El Ehsas",
+          "year": 2019,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Amr Mostafa — Leiebt Maa'a El Assad",
+          "year": 2019,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Moonlight Sonata",
+          "year": 2022,
+          "note": "Cover"
+        },
+        {
+          "type": "work",
+          "title": "Don't Leave Me",
+          "year": 2023,
+          "note": "Cover"
+        },
+        {
+          "type": "work",
+          "title": "Adiye Sonali",
+          "year": 2023,
+          "note": "Co-lyricist"
+        },
+        {
+          "type": "work",
+          "title": "Dream a Little Dream of Me",
+          "year": 2024,
+          "note": "Cover"
+        },
+        {
+          "type": "work",
+          "title": "Amar Singh Chamkila",
+          "year": 2024,
+          "note": "Cover"
+        },
+        {
+          "type": "work",
+          "title": "Ek Dhaaga Toda Maine / Reminisce — Bobby Rishi Ki Love Story",
+          "year": 2025
+        },
+        {
+          "type": "work",
+          "title": "Exotic ft. Rika & Diane Warren",
+          "year": 2025
+        },
+        {
+          "type": "work",
+          "title": "Sami Yusuf — Ecstasy",
+          "year": 2026,
+          "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Undefeated"
+        },
+        {
+          "type": "work",
+          "title": "Nirvana (Qyuki)",
+          "note": "Announced"
+        }
+      ]
+    },
+    {
+      "id": "docs-collab",
+      "num": "6.5",
+      "title": "Documentaries / Concert Films / Collaborations",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Surabhi",
+          "year": 1993,
+          "note": "TV"
+        },
+        {
+          "type": "work",
+          "title": "Omnibus — Spotlights & Saris: Making of Bombay Dreams",
+          "year": 2002,
+          "note": "TV"
+        },
+        {
+          "type": "work",
+          "title": "Salaam Bombay Dreams",
+          "year": 2003
+        },
+        {
+          "type": "work",
+          "title": "Chale Chalo",
+          "year": 2005
+        },
+        {
+          "type": "work",
+          "title": "The Lord of the Rings",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Ru Ba Ru",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "SuperHeavy",
+          "year": 2012
+        },
+        {
+          "type": "work",
+          "title": "Jai Ho",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "One Heart",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "The Men Who Saved Killapara",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Louder Together",
+          "year": 2017
+        }
+      ]
+    },
+    {
+      "id": "shortfilms",
+      "num": "6.6",
+      "title": "Short Films",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Sangamam",
+          "year": 1994
+        },
+        {
+          "type": "work",
+          "title": "India On IMAX",
+          "year": 2001
+        },
+        {
+          "type": "work",
+          "title": "Indian Navy — International Fleet Review",
+          "year": 2001
+        },
+        {
+          "type": "work",
+          "title": "The Shakthi Foundation Disabled Film Series",
+          "year": 2004
+        },
+        {
+          "type": "work",
+          "title": "The Banyan",
+          "year": 2006
+        },
+        {
+          "type": "work",
+          "title": "Passage",
+          "year": 2009
+        },
+        {
+          "type": "work",
+          "title": "India Tomorrow / Dream",
+          "year": 2016
+        }
+      ]
+    },
+    {
+      "id": "vr",
+      "num": "6.7",
+      "title": "VR Films / Immersive Films",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Vande Mataram Live-in VR",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "Le Musk",
+          "year": 2024
+        },
+        {
+          "type": "work",
+          "title": "Dashavatar",
+          "year": 2024
+        },
+        {
+          "type": "work",
+          "title": "Secret Mountain",
+          "note": "In Progress"
+        },
+        {
+          "type": "work",
+          "title": "Karunamirthasagaram"
+        }
+      ]
+    },
+    {
+      "id": "musicals",
+      "num": "6.8",
+      "title": "Stage Musicals",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Bombay Dreams (West End)",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Bombay Dreams (Broadway)",
+          "year": 2004
+        },
+        {
+          "type": "work",
+          "title": "Bombay Dreams (North America Tour)",
+          "year": 2006
+        },
+        {
+          "type": "work",
+          "title": "TLOTR Musical (Toronto)",
+          "year": 2006
+        },
+        {
+          "type": "work",
+          "title": "TLOTR Musical (West End)",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Why? The Musical",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "TLOTR Musical — A Musical Tale (World Tour)",
+          "year": 2023,
+          "note": "Till date"
+        }
+      ]
+    },
+    {
+      "id": "signatures",
+      "num": "6.9",
+      "title": "Signature + Theme Songs",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Spirit Of Unity Concerts",
+          "year": 1990
+        },
+        {
+          "type": "work",
+          "title": "Chirakukal",
+          "year": 1995
+        },
+        {
+          "type": "work",
+          "title": "JJTV Tamil",
+          "year": 1995
+        },
+        {
+          "type": "work",
+          "title": "SAF Games",
+          "year": 1995
+        },
+        {
+          "type": "work",
+          "title": "Aamir Khan Productions",
+          "year": 2001
+        },
+        {
+          "type": "work",
+          "title": "National Games",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "NDTV India",
+          "year": 2003
+        },
+        {
+          "type": "work",
+          "title": "The Unity of Light Concerts",
+          "year": 2003
+        },
+        {
+          "type": "work",
+          "title": "Airtel Delhi Marathon",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "Big Band India Melody",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "Big Band India",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "Champions League Twenty20",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "TOI Chennai Changing Notes",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "Hyderabad RGI Airport",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "BSF Theme song",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "Commonwealth Games",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Radio DesiBeat",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Swarnim Gujarat (Gujarati & Hindi)",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "World Classical Tamil Conference — Semmozhi",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Eros International",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Josh 97.8 FM Dubai",
+          "year": 2012
+        },
+        {
+          "type": "work",
+          "title": "National Geographic Traveler's iPad",
+          "year": 2012
+        },
+        {
+          "type": "work",
+          "title": "London Olympics — Nimma Nimma",
+          "year": 2012
+        },
+        {
+          "type": "work",
+          "title": "Airforce Schools' Anthem",
+          "year": 2013
+        },
+        {
+          "type": "work",
+          "title": "Colour Yellow Pictures Ltd",
+          "year": 2013
+        },
+        {
+          "type": "work",
+          "title": "News 7 Tamil",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "Everest — Telenovala Series",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "Indian Films Cinematic ID",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "Indian Super League National Anthem",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "Indian Super League",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "17th Jio MAMI Mumbai Film Festival",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "Premier Futsal",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "Star Bharath",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Daughters of Destiny",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Star Plus",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Kavithaalaya Productions",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Odisha Men's Hockey Worldcup",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Thamizh Naatin Kural",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "YM Movies",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "Mission Paani Anthem",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Tokyo Olympics Cheer Anthem — Hindustani Way",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Telangana Jagruthi Bathukamma Song",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Chennai Chess Olympiad",
+          "year": 2022
+        },
+        {
+          "type": "work",
+          "title": "Valluvam Pottradum Silver Jubilee Festival",
+          "year": 2025
+        },
+        {
+          "type": "work",
+          "title": "Blue Tigers London Anthem",
+          "year": 2025
+        },
+        {
+          "type": "work",
+          "title": "Jamal / Song of Hope",
+          "year": 2025
+        },
+        {
+          "type": "work",
+          "title": "Nagpur's Futala Lake Fountain Show",
+          "note": "Announced"
+        }
+      ]
+    }
+  ],
+  "blurb": "Albums, collaborations, TV and web series, singles, short films, immersive works, stage musicals and theme songs spanning four decades."
+}

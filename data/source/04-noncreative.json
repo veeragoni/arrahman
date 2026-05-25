@@ -1,0 +1,1210 @@
+{
+  "id": "noncreative",
+  "num": "08",
+  "title": "Other Work, Institutions & Curation",
+  "providers": ["web", "youtube"],
+  "subsections": [
+    {
+      "id": "labels",
+      "num": "8.1",
+      "title": "Labels",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "KM Musiq"
+        },
+        {
+          "type": "work",
+          "title": "Qyuki"
+        },
+        {
+          "type": "work",
+          "title": "YM Movies"
+        },
+        {
+          "type": "work",
+          "title": "A.R. Rahman App"
+        },
+        {
+          "type": "work",
+          "title": "AR X AR App"
+        },
+        {
+          "type": "work",
+          "title": "www.arrahman.com"
+        },
+        {
+          "type": "work",
+          "title": "ARR Studios"
+        },
+        {
+          "type": "work",
+          "title": "ARR Immersive Entertainment"
+        },
+        {
+          "type": "work",
+          "title": "Ustream"
+        },
+        {
+          "type": "work",
+          "title": "AR-Rahman Limited"
+        }
+      ]
+    },
+    {
+      "id": "initiatives",
+      "num": "8.2",
+      "title": "Initiatives (Self)",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "KM Music Conservatory (KMMC)",
+          "links": {
+            "web": "https://www.kmmc.in/"
+          },
+          "sources": ["https://www.kmmc.in/"]
+        },
+        {
+          "type": "work",
+          "title": "KMMC — Middlesex University Music Degree Collaboration",
+          "links": {
+            "web": "https://www.kmmc.in/the-conservatory/"
+          },
+          "sources": ["https://www.kmmc.in/the-conservatory/"]
+        },
+        {
+          "type": "work",
+          "title": "JBL — KMMC Sound Scholarship",
+          "links": {
+            "web": "https://www.radioandmusic.com/content/editorial/news-releases/harman-announces-jbl-sound-scholarship-ar-rahmans-premier-music-institute"
+          },
+          "sources": ["https://www.radioandmusic.com/content/editorial/news-releases/harman-announces-jbl-sound-scholarship-ar-rahmans-premier-music-institute"]
+        },
+        {
+          "type": "work",
+          "title": "AR Rahman & Firdaus Studio",
+          "year": 2024,
+          "links": {
+            "web": "https://www.thenationalnews.com/uae/2022/10/02/inside-the-firdaus-studio-by-a-r-rahman-at-expo-city-dubai/"
+          },
+          "sources": ["https://www.thenationalnews.com/uae/2022/10/02/inside-the-firdaus-studio-by-a-r-rahman-at-expo-city-dubai/"]
+        },
+        {
+          "type": "work",
+          "title": "The Dharavi Dream Project (Qyuki)",
+          "links": {
+            "web": "https://thedharavidreamproject.org/about/"
+          },
+          "sources": ["https://thedharavidreamproject.org/about/"]
+        },
+        {
+          "type": "work",
+          "title": "NAFS (Qyuki)",
+          "links": {
+            "web": "https://www.business-standard.com/article/news-ani/a-r-rahman-launches-first-video-of-nafs-115081201388_1.html"
+          },
+          "sources": ["https://www.business-standard.com/article/news-ani/a-r-rahman-launches-first-video-of-nafs-115081201388_1.html"]
+        },
+        {
+          "type": "work",
+          "title": "Qutub-E-Kripa",
+          "links": {
+            "web": "https://en.wikipedia.org/wiki/Qutub-E-Kripa"
+          },
+          "sources": ["https://en.wikipedia.org/wiki/Qutub-E-Kripa"]
+        },
+        {
+          "type": "work",
+          "title": "KM Sufi Ensemble",
+          "links": {
+            "web": "https://www.newindianexpress.com/cities/bengaluru/2024/Dec/18/the-divine-connection-of-sufi-music"
+          },
+          "sources": ["https://www.newindianexpress.com/cities/bengaluru/2024/Dec/18/the-divine-connection-of-sufi-music"]
+        },
+        {
+          "type": "work",
+          "title": "Ahhaa App — KMMC Collaboration",
+          "links": {
+            "web": "https://www.prweb.com/releases/2015/04/prweb12640866.htm"
+          },
+          "sources": ["https://www.prweb.com/releases/2015/04/prweb12640866.htm"]
+        },
+        {
+          "type": "work",
+          "title": "The Berklee — A. R. Rahman Scholarship",
+          "links": {
+            "web": "https://college.berklee.edu/focused/india-exchange/scholarship"
+          },
+          "sources": ["https://college.berklee.edu/focused/india-exchange/scholarship"]
+        },
+        {
+          "type": "work",
+          "title": "Apple — KMMC Scholarship",
+          "links": {
+            "web": "https://www.apple.com/in/newsroom/2017/10/apple-music-and-km-music-conservatory-announce-new-mac-labs-in-chennai-and-mumbai-india/"
+          },
+          "sources": ["https://www.apple.com/in/newsroom/2017/10/apple-music-and-km-music-conservatory-announce-new-mac-labs-in-chennai-and-mumbai-india/"]
+        },
+        {
+          "type": "work",
+          "title": "MAC — KMMC Lab",
+          "links": {
+            "web": "https://www.apple.com/in/newsroom/2017/10/apple-music-and-km-music-conservatory-announce-new-mac-labs-in-chennai-and-mumbai-india/"
+          },
+          "sources": ["https://www.apple.com/in/newsroom/2017/10/apple-music-and-km-music-conservatory-announce-new-mac-labs-in-chennai-and-mumbai-india/"]
+        },
+        {
+          "type": "work",
+          "title": "Nagaland's CM Music Scholarship — TaFMA — KMMC",
+          "links": {
+            "web": "https://nagalandpost.com/metha-a-r-rahman-discusses-development-of-music-in-nagaland/"
+          },
+          "sources": ["https://nagalandpost.com/metha-a-r-rahman-discusses-development-of-music-in-nagaland/"]
+        },
+        {
+          "type": "work",
+          "title": "KMMC Bharat Maestro Awards",
+          "links": {
+            "web": "https://www.digitalmusicnews.com/2025/01/06/bharat-maestro-awards-indian-classical-music/"
+          },
+          "sources": ["https://www.digitalmusicnews.com/2025/01/06/bharat-maestro-awards-indian-classical-music/"]
+        },
+        {
+          "type": "work",
+          "title": "Indian Classical Music Ensemble — Jhaala Rahman",
+          "links": {
+            "web": "https://www.newsbytesapp.com/news/entertainment/ar-rahmans-band-to-debut-at-waves-2025/story"
+          },
+          "sources": ["https://www.newsbytesapp.com/news/entertainment/ar-rahmans-band-to-debut-at-waves-2025/story"]
+        },
+        {
+          "type": "work",
+          "title": "All Women Sufi Music Ensemble — Rooh-e-Noor",
+          "links": {
+            "web": "https://www.musicplus.in/ar-rahman-rooh-e-noor-an-all-women-ensemble-km-musiq/"
+          },
+          "sources": ["https://www.musicplus.in/ar-rahman-rooh-e-noor-an-all-women-ensemble-km-musiq/"]
+        },
+        {
+          "type": "work",
+          "title": "Ta Futures",
+          "note": "Announced",
+          "links": {
+            "web": "https://timesofindia.indiatimes.com/entertainment/tamil/music/during-times-of-protests-and-war-the-duty-of-an-artiste-is-to-make-something-beautiful-ar-rahman/articleshow/73139277.cms"
+          },
+          "sources": ["https://timesofindia.indiatimes.com/entertainment/tamil/music/during-times-of-protests-and-war-the-duty-of-an-artiste-is-to-make-something-beautiful-ar-rahman/articleshow/73139277.cms"]
+        },
+        {
+          "type": "work",
+          "title": "Katraar",
+          "note": "Announced",
+          "links": {
+            "web": "https://www.musicplus.in/a-r-rahman-introduces-exclusive-new-metaverse-platform-katraar/"
+          },
+          "sources": ["https://www.musicplus.in/a-r-rahman-introduces-exclusive-new-metaverse-platform-katraar/"]
+        }
+      ]
+    },
+    {
+      "id": "foundation",
+      "num": "8.3",
+      "title": "A. R. Rahman Foundation",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "The Sunshine Orchestra (Chennai)"
+        },
+        {
+          "type": "work",
+          "title": "One Heart Foundation"
+        },
+        {
+          "type": "work",
+          "title": "The Sunshine Orchestra (Nagaland)"
+        },
+        {
+          "type": "work",
+          "title": "Futureproof",
+          "note": "Announced"
+        }
+      ]
+    },
+    {
+      "id": "foundation-support",
+      "num": "8.3.1",
+      "title": "Foundation — Support for Others",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "MGR Higher Secondary School"
+        },
+        {
+          "type": "work",
+          "title": "SlumGods"
+        },
+        {
+          "type": "work",
+          "title": "Faizal & Shabana Foundation"
+        },
+        {
+          "type": "work",
+          "title": "IIMUN"
+        },
+        {
+          "type": "work",
+          "title": "Internshala — Intern with Icon (IwI)",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "Firdaus Women's Orchestra — Expo 2020 Dubai"
+        },
+        {
+          "type": "work",
+          "title": "Firdaus Studio & Music Lab — Expo 2020 Dubai"
+        },
+        {
+          "type": "work",
+          "title": "HBAR Foundation"
+        },
+        {
+          "type": "work",
+          "title": "Firdaus Orchestral Qawwali Project"
+        },
+        {
+          "type": "work",
+          "title": "Nita Mukesh Ambani Cultural Centre (NMACC)"
+        },
+        {
+          "type": "work",
+          "title": "JBL Music Academy"
+        },
+        {
+          "type": "work",
+          "title": "Tulah Clinical Wellness"
+        },
+        {
+          "type": "work",
+          "title": "Rooh Records with Warner Music"
+        },
+        {
+          "type": "work",
+          "title": "Dolly J Studio",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": "misc",
+      "num": "8.4",
+      "title": "Miscellaneous",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Peace Garden"
+        },
+        {
+          "type": "work",
+          "title": "Hajiyani Kareema's Kitchen"
+        }
+      ]
+    },
+    {
+      "id": "ms-film-ost",
+      "num": "8.5.1",
+      "title": "Music Supervisor — Film OST",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Lake of Fire",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Nanak Shah Fakir",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Firdaus Studio Performances",
+          "year": 2022
+        }
+      ]
+    },
+    {
+      "id": "ms-nonfilm",
+      "num": "8.5.2",
+      "title": "Music Supervisor — Non-Film Albums",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Ooh La La La (Tamil)",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Ooh La La La (Telugu)",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Rhyme Skool with Katrina Kaif Vol. 1",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Rhyme Skool with Katrina Kaif Vol. 2",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Call Me Rashid",
+          "year": 2012
+        },
+        {
+          "type": "work",
+          "title": "Navaratna",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "Kuhu Kuhu",
+          "year": 2023
+        },
+        {
+          "type": "work",
+          "title": "Kunangudi Mastan Sahib Sufi Album (C&U)"
+        }
+      ]
+    },
+    {
+      "id": "ms-feature",
+      "num": "8.5.3",
+      "title": "Music Supervisor — Feature Film",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Atkan Chatkan",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "id": "ms-doc",
+      "num": "8.5.4",
+      "title": "Music Supervisor — Documentary",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Bismillah Of Benaras",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "Cinema Veeran",
+          "year": 2017
+        }
+      ]
+    },
+    {
+      "id": "ms-tv",
+      "num": "8.5.5",
+      "title": "Music Supervisor — TV / Web Series",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Mission Ustad",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Everest",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "Jammin S01",
+          "year": 2016,
+          "note": "Qyuki"
+        },
+        {
+          "type": "work",
+          "title": "Project X",
+          "year": 2016,
+          "note": "Qyuki"
+        },
+        {
+          "type": "work",
+          "title": "Jammin S02",
+          "year": 2018,
+          "note": "Qyuki"
+        },
+        {
+          "type": "work",
+          "title": "Arrived",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Haq Se Hip Hop",
+          "year": 2019,
+          "note": "Qyuki"
+        },
+        {
+          "type": "work",
+          "title": "NEXA Music Lounge",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "id": "ms-concerts",
+      "num": "8.5.6",
+      "title": "Music Supervisor — Concerts / Interactive Sessions",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Qyuki Mixer",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "Haq Se Hip Hop Hindustan Concert",
+          "year": 2019,
+          "note": "Qyuki"
+        },
+        {
+          "type": "work",
+          "title": "Epic Fam Jam",
+          "year": 2020,
+          "note": "Qyuki"
+        }
+      ]
+    },
+    {
+      "id": "ms-short",
+      "num": "8.5.7",
+      "title": "Music Supervisor — Short Films",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Indian Legends",
+          "year": 2001
+        },
+        {
+          "type": "work",
+          "title": "Thaalam — Rhythm of Nation",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "Triumph Of Nithila",
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "id": "guest-films",
+      "num": "8.6.1",
+      "title": "Guest / Special Appearances — Films",
+      "type": "list",
+      "providers": ["youtube"],
+      "items": [
+        {
+          "type": "work",
+          "title": "Kadhal Virus",
+          "year": 2002
+        },
+        {
+          "type": "work",
+          "title": "Mission Mangal",
+          "year": 2019,
+          "note": "Film Character"
+        },
+        {
+          "type": "work",
+          "title": "Aaraattu",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "id": "guest-docs",
+      "num": "8.6.2",
+      "title": "Guest / Special Appearances — Documentaries",
+      "type": "list",
+      "providers": ["youtube"],
+      "items": [
+        {
+          "type": "work",
+          "title": "Chotta Muthal Chudala Vare",
+          "year": 2003
+        },
+        {
+          "type": "work",
+          "title": "Bollywood Indiens Kligendes Keno",
+          "year": 2005
+        },
+        {
+          "type": "work",
+          "title": "Son of a Preacherman",
+          "year": 2010,
+          "note": "Promos only"
+        },
+        {
+          "type": "work",
+          "title": "The Nation's Favourite Dance Moment",
+          "year": 2013
+        },
+        {
+          "type": "work",
+          "title": "The Distortion of Sound",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "A Tribute to Aadesh Shrivasatava",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "Roots",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "National Geographic Mega Icons",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "The Journey of India",
+          "year": 2022
+        },
+        {
+          "type": "work",
+          "title": "The Reinvent Series",
+          "year": 2023
+        },
+        {
+          "type": "work",
+          "title": "From Headhunting to Beatboxing — The Naga Story",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": "guest-tv",
+      "num": "8.6.3",
+      "title": "Guest / Special Appearances — TV / Radio / Web Series",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "L'Oeil Du Cyclone",
+          "year": 1997
+        },
+        {
+          "type": "work",
+          "title": "India Rocks",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Aahaa FM Rahmania",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Champions with A. R. Rahman",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "The A. R. Rahman Show",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "I Love ARR Podcast",
+          "year": 2020,
+          "note": "2020–"
+        },
+        {
+          "type": "work",
+          "title": "Rahman Music Sheets",
+          "year": 2021,
+          "note": "2021–"
+        }
+      ]
+    },
+    {
+      "id": "guest-concerts",
+      "num": "8.6.4",
+      "title": "Guest / Special Appearances — Concert Films",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Soundtrack of our Lives",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "id": "guest-mv",
+      "num": "8.6.5",
+      "title": "Guest / Special Appearances — Music Videos",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Akon's Beautiful (Freedom)",
+          "year": 2009
+        }
+      ]
+    },
+    {
+      "id": "guest-ads",
+      "num": "8.6.7",
+      "title": "Guest / Special Appearances — Ad / Promotional Films",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Airtel Music on Demand",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Nokia Xpress Music",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "Airtel DTH / Digital TV",
+          "year": 2009
+        },
+        {
+          "type": "work",
+          "title": "Marcodi's Harpejji",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Union Bank of India",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "ROLI's Seaboard RISE",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "Zuka Chocolate Café",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "Casio",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Apple Music AirPods",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Apple Mac",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Apple iPhone X",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "ROLI's Colours of India Soundpack",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "iPhone 11",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "Dolby Atmos in Apple Music",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Canon India",
+          "year": 2022
+        },
+        {
+          "type": "work",
+          "title": "Sea Board RISE 2",
+          "year": 2022
+        },
+        {
+          "type": "work",
+          "title": "Expressive Osmose",
+          "year": 2023
+        },
+        {
+          "type": "work",
+          "title": "Spotify Premium",
+          "year": 2023
+        },
+        {
+          "type": "work",
+          "title": "JWC",
+          "year": 2023
+        },
+        {
+          "type": "work",
+          "title": "Macbook Pro M2 Max",
+          "year": 2023
+        },
+        {
+          "type": "work",
+          "title": "JBL Authentics",
+          "year": 2024
+        },
+        {
+          "type": "work",
+          "title": "Sonorium Zomato",
+          "year": 2025
+        },
+        {
+          "type": "work",
+          "title": "JBL Tour Pro 3 Earbuds",
+          "year": 2025
+        },
+        {
+          "type": "work",
+          "title": "50 Years of Apple",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": "guest-causes",
+      "num": "8.6.8",
+      "title": "Campaigns for Causes",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "UN MDG End Poverty 2015",
+          "year": 2005
+        },
+        {
+          "type": "work",
+          "title": "UN MDG End Poverty 2015",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "UN MDG Stand Up Take Action End Poverty 2015",
+          "year": 2008
+        },
+        {
+          "type": "work",
+          "title": "End Polio Now",
+          "year": 2014
+        },
+        {
+          "type": "work",
+          "title": "UN GGSD We The People",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "UN GGSD — Big Magic Quality Education",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "UN GGSD — Hello Mag The Power of Giving",
+          "year": 2015
+        },
+        {
+          "type": "work",
+          "title": "NDTV — Piramal Group Cultivating Hope",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "Income Tax Declaration Scheme",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "Save an Orphan",
+          "year": 2016
+        },
+        {
+          "type": "work",
+          "title": "BTC World Blood Cancer Day For Indians By Indians",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "The Quint Letter to India",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "TNC Chennai Wetlands Restoration",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "COVID-19 Crisis — Words of Encouragement",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Class of 2020 India",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Water Matters",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Mission Paani Water Warrior",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "The Hans Foundation Mental Health",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "The Ability Foundation Inclusive Education",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Alert NGO Save Lives",
+          "year": 2020
+        },
+        {
+          "type": "work",
+          "title": "Tamil Nadu Elections Voting Rights",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Film Heritage Foundation Film Preservation",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Bharatiya Vidya Bhavan US Mission's Support",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "ILO-JMI MACL Competition",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Covid-19 Vaccination",
+          "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "IIMUN Lok Sabha Elections My First Vote",
+          "year": 2024
+        },
+        {
+          "type": "work",
+          "title": "IIMUN Lok Sabha Elections My Vote My Voice",
+          "year": 2024
+        },
+        {
+          "type": "work",
+          "title": "World Para Athletics Championships",
+          "year": 2025
+        },
+        {
+          "type": "work",
+          "title": "Voice Against the Voiceless",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "num": "8.7",
+      "title": "Others",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Cosmopolitan Mag February — Shoot Director ft. Khatija Rahman",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "id": "books-self",
+      "num": "8.8.1",
+      "title": "Books & Literature (Self)",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "India Matters — Shyam Goenka and VM Badola",
+          "year": 1998
+        },
+        {
+          "type": "work",
+          "title": "Icons from the World of Arts — Ranjitha Ashok",
+          "year": 2004
+        },
+        {
+          "type": "work",
+          "title": "Face to Face India — Conversations with Karan Thapar",
+          "year": 2006
+        },
+        {
+          "type": "work",
+          "title": "Nineteen Hours and Fourteen Minutes — James Gooding",
+          "year": 2009
+        },
+        {
+          "type": "work",
+          "title": "Oru Kanavin Isai (Vikatan Prasuram) — Krishna Davinci",
+          "year": 2009
+        },
+        {
+          "type": "work",
+          "title": "Oscar Nayagan A R Rahman — Sabitha Joseph",
+          "year": 2009
+        },
+        {
+          "type": "work",
+          "title": "Oscar Winner A. R. Rahman 100 — Sabitha Joseph",
+          "year": 2009
+        },
+        {
+          "type": "work",
+          "title": "Jai Ho AR Rahman — N Chokkan",
+          "year": 2009
+        },
+        {
+          "type": "work",
+          "title": "Musical Storm — Kamini Mathai",
+          "year": 2009
+        },
+        {
+          "type": "work",
+          "title": "A Journey Down Memory Lane — Raju Bharatan",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Global Indians — The Times of India Group",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Flashback — The Times of India Group",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "The Spirit of Music — Nasreen Munni Kabhir (NMK)",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Ananda Vikatan — Pokkisham — Vikatan Pirasuram",
+          "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "The Spirit of Music — Additional Chapters (NMK)",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Bollywood's 70 Iconic Power Brands — Rajita & Arindam Chaudhuri",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Bollywood — The Films! The Songs! The Stars! — DK",
+          "year": 2017
+        },
+        {
+          "type": "work",
+          "title": "Namste A. R. Rahman — Sunanda Verma & Carolin Spannuth",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Notes of a Dream — Krishna Trilok",
+          "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "Naveena Indhiya Thiriraiyisaiyan Adaiyallam — Vijay Mahendran",
+          "year": 2019
+        },
+        {
+          "type": "work",
+          "title": "Beyond Rahman: Culture Globally — Rupa Chakravarti",
+          "year": 2024
+        },
+        {
+          "type": "work",
+          "title": "Role Models — Shehla Rashid",
+          "year": 2024
+        },
+        {
+          "type": "work",
+          "title": "World's Greatest Musicians — Wonder House Books",
+          "year": 2024
+        },
+        {
+          "type": "work",
+          "title": "Against the Grain — Pankaj Mishra",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": "books-others",
+      "num": "8.8.2",
+      "title": "Books & Literature (For Others)",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Fathers & Sons — Anjali Vinal Ambani and Amar Vimal Ambani",
+          "year": 2009,
+          "note": "Featurette"
+        },
+        {
+          "type": "work",
+          "title": "TIME Magazine 100 featuring Chetan Bhagat",
+          "year": 2010,
+          "note": "Profile Writer"
+        },
+        {
+          "type": "work",
+          "title": "Glimpses of Indian Autographs — Praful Thakkar",
+          "year": 2011,
+          "note": "Celebrity Autograph Featurette"
+        },
+        {
+          "type": "work",
+          "title": "Conversations with Maniratnam — Bharadwaj Rangan",
+          "year": 2012,
+          "note": "Foreword"
+        },
+        {
+          "type": "work",
+          "title": "TIME Magazine 100 featuring Aamir Khan",
+          "year": 2013,
+          "note": "Profile Writer"
+        },
+        {
+          "type": "work",
+          "title": "Oscars Notebook",
+          "year": 2016,
+          "note": "Celebrity Message"
+        },
+        {
+          "type": "work",
+          "title": "The Rule of One — Narayan Sundararajan & Others",
+          "year": 2019,
+          "note": "Review Notes"
+        },
+        {
+          "type": "work",
+          "title": "Nagaland Hornbill Festival Photo Book",
+          "year": 2019,
+          "note": "Photo Featurette"
+        },
+        {
+          "type": "work",
+          "title": "Nagme, Kisse, Baatein, Yaadein — Rakesh Anand Bakshi",
+          "year": 2021,
+          "note": "Experiences"
+        },
+        {
+          "type": "work",
+          "title": "The Stranger in the Mirror — Rakeysh OMP Mehra",
+          "year": 2021,
+          "note": "Foreword"
+        },
+        {
+          "type": "work",
+          "title": "Festival Beyond Borders — LGMF",
+          "year": 2023,
+          "note": "Guest Appearance"
+        }
+      ]
+    },
+    {
+      "id": "foundation-merch",
+      "num": "8.8.3",
+      "title": "A. R. Rahman Foundation — Merchandise",
+      "type": "list",
+      "items": [
+        {
+          "type": "work",
+          "title": "Pray For Me Brother Colouring Books Vol. 1–5",
+          "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "A. R. Rahman Foundation Calendar",
+          "year": 2009
+        },
+        {
+          "type": "work",
+          "title": "A. R. Rahman Foundation Calendar",
+          "year": 2010
+        },
+        {
+          "type": "work",
+          "title": "Reflections Coffee Table Book",
+          "year": 2013
+        },
+        {
+          "type": "work",
+          "title": "Wonderment World Tour Merchandise",
+          "year": 2025
+        }
+      ]
+    }
+  ],
+  "blurb": "Labels, conservatories, foundations, the Firdaus initiatives, music supervision, and guest appearances — work beyond composing."
+}

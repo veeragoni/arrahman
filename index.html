@@ -183,17 +183,19 @@
     -webkit-backdrop-filter: blur(14px) saturate(140%);
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
-    padding: 18px 8vw;
+    padding: 18px 8vw 14px;
   }
 
   .search-row {
     display: flex;
     align-items: center;
     gap: 24px;
+    flex-wrap: wrap;
   }
 
   .search-input-wrap {
     flex: 1;
+    min-width: 260px;
     position: relative;
     display: flex;
     align-items: center;
@@ -216,6 +218,7 @@
 
   .search-input {
     flex: 1;
+    min-width: 0;
     background: transparent;
     border: none;
     outline: none;
@@ -246,6 +249,57 @@
     font-weight: 500;
   }
 
+  .result-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ink-faint);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .result-nav[hidden] { display: none; }
+
+  .result-nav-btn {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--line-strong);
+    color: var(--ink-dim);
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: var(--mono);
+    font-size: 18px;
+    line-height: 1;
+    transition: all 0.2s ease;
+  }
+
+  .result-nav-btn:hover:not(:disabled) {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .result-nav-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  .result-position {
+    min-width: 54px;
+    text-align: center;
+  }
+
+  @media (max-width: 720px) {
+    .search-row { gap: 12px 16px; }
+    .search-input-wrap { flex-basis: 100%; min-width: 0; }
+  }
+
   .clear-btn {
     background: transparent;
     border: 1px solid var(--line-strong);
@@ -265,8 +319,9 @@
 
   /* ===== CATEGORY NAV ===== */
   .cats {
-    padding: 22px 8vw;
-    border-bottom: 1px solid var(--line);
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
     overflow-x: auto;
     scrollbar-width: none;
   }
@@ -421,6 +476,12 @@
     background: var(--bg-card);
   }
 
+  .entry.active-result {
+    background: var(--bg-card);
+    outline: 1px solid var(--accent);
+    outline-offset: -1px;
+  }
+
   .entry-top {
     display: flex;
     justify-content: space-between;
@@ -460,11 +521,19 @@
     letter-spacing: 0.08em;
   }
 
-  .entry-langs {
+  .entry-versions {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 6px;
     margin-top: 4px;
+  }
+
+  .entry-version {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 8px;
+    min-height: 26px;
   }
 
   .lang {
@@ -499,32 +568,88 @@
     padding-top: 8px;
   }
 
-  .action-link {
+  .version-title {
+    min-width: 0;
+    font-size: 12px;
+    color: var(--ink-dim);
+    overflow-wrap: anywhere;
+  }
+
+  .version-date {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-faint);
+    white-space: nowrap;
+  }
+
+  .version-actions {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 7px;
+  }
+
+  .provider-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    color: var(--ink-faint);
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+
+  .provider-link:hover {
+    color: var(--accent-bright);
+    border-color: var(--accent);
+  }
+
+  .provider-link.generated {
+    opacity: 0.58;
+  }
+
+  .provider-link.spotify:hover { color: #1DB954; border-color: #1DB954; }
+  .provider-link.youtube:hover { color: #ff5577; border-color: #ff5577; }
+  .provider-link.apple:hover { color: #f5f5f5; border-color: #f5f5f5; }
+  .provider-link.web:hover { color: #69d6ff; border-color: #69d6ff; }
+
+  .provider-link svg,
+  .missing-provider svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .missing-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 22px;
+  }
+
+  .missing-provider {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: var(--ink-faint);
+    border: 1px solid var(--line);
+    border-radius: 50%;
+  }
+
+  .missing-provider.spotify { color: #1DB954; }
+  .missing-provider.youtube { color: #ff5577; }
+  .missing-provider.apple { color: #f5f5f5; }
+  .missing-provider.web { color: #69d6ff; }
+
+  .source-missing {
     font-family: var(--mono);
     font-size: 10px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--ink-faint);
-    text-decoration: none;
-    padding: 4px 0;
-    border-bottom: 1px solid transparent;
-    transition: all 0.2s ease;
-  }
-
-  .action-link:hover {
-    color: var(--accent-bright);
-    border-bottom-color: var(--accent);
-  }
-
-  .action-link.spotify:hover { color: #1DB954; border-bottom-color: #1DB954; }
-  .action-link.youtube:hover { color: #ff5577; border-bottom-color: #ff5577; }
-
-  .action-link svg {
-    width: 12px;
-    height: 12px;
   }
 
   /* ===== LIST VIEW for compact sections ===== */
@@ -695,19 +820,19 @@
       </p>
       <div class="stats">
         <div class="stat">
-          <div class="stat-num" id="stat-films">—</div>
+          <div class="stat-num" id="stat-films" data-stat-subsections="films-main,tamil-undubbed,telugu-undubbed,hindi-undubbed,malayalam-undubbed,foreign-ost,chinese,persian-arabic,urdu,film-instrumentals,bgm-score">—</div>
           <div class="stat-label">Films Scored</div>
         </div>
         <div class="stat">
-          <div class="stat-num" id="stat-singles">—</div>
+          <div class="stat-num" id="stat-singles" data-stat-subsections="albums,singles">—</div>
           <div class="stat-label">Singles &amp; Albums</div>
         </div>
         <div class="stat">
-          <div class="stat-num" id="stat-ads">—</div>
+          <div class="stat-num" id="stat-ads" data-stat-subsections="ads-pre,ads-post,ringtones,signatures">—</div>
           <div class="stat-label">Ads &amp; Anthems</div>
         </div>
         <div class="stat">
-          <div class="stat-num" id="stat-total">—</div>
+          <div class="stat-num" id="stat-total" data-stat-total="true">—</div>
           <div class="stat-label">Total Entries</div>
         </div>
       </div>
@@ -724,16 +849,21 @@
         <input type="text" class="search-input" id="search" placeholder="Search films, albums, singles, ads, collaborators…" autocomplete="off" spellcheck="false" />
       </div>
       <div class="search-count" id="count"><strong id="match-count">—</strong> entries</div>
+      <div class="result-nav" id="result-nav" aria-label="Search result navigation" hidden>
+        <button class="result-nav-btn" id="result-prev" type="button" aria-label="Previous result" title="Previous result">‹</button>
+        <span class="result-position" id="result-position">—</span>
+        <button class="result-nav-btn" id="result-next" type="button" aria-label="Next result" title="Next result">›</button>
+      </div>
       <button class="clear-btn" id="clear" hidden>Clear</button>
     </div>
-  </div>
 
-  <!-- ===== CATEGORY NAV ===== -->
-  <nav class="cats">
-    <div class="cats-inner" id="cats">
-      <!-- populated by JS -->
-    </div>
-  </nav>
+    <!-- ===== CATEGORY NAV ===== -->
+    <nav class="cats" aria-label="Discography sections">
+      <div class="cats-inner" id="cats">
+        <!-- populated by JS -->
+      </div>
+    </nav>
+  </div>
 
   <!-- ===== MAIN ===== -->
   <main id="main">
@@ -765,15 +895,7 @@
 
 </div>
 
-<!-- data files: edit any of these to add/remove entries -->
-<script src="./data/01-films.js"></script>
-<script src="./data/02-nonfilm.js"></script>
-<script src="./data/03-ads.js"></script>
-<script src="./data/04-other.js"></script>
-<script src="./data/05-videos.js"></script>
-<script src="./data/index.js"></script>
-
-<!-- app logic -->
+<!-- app logic; loads data/discography.json -->
 <script src="./app.js"></script>
 </body>
 </html>
