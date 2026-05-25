@@ -261,7 +261,7 @@ def main() -> None:
     require("appleMusic" in app_js, "app.js must support Apple Music links")
     require("web:" in app_js, "app.js must support Web reference links")
     require("'https://www.google.com/search?q=' + encodeURIComponent(q + ' spotify')" not in app_js, "Spotify must not fall back to Google search")
-    require("'https://open.spotify.com/search/'" not in app_js, "Spotify fallback must not use Spotify internal search")
+    require("'https://open.spotify.com/search/' + encodeURIComponent('A R Rahman ' + q)" in app_js, "Spotify fallback must use Spotify search")
     require("if (!directUrl && !provider.search) return ''" in app_js, "app.js must hide providers without direct links or generated search fallbacks")
     require("youtube:" in app_js, "app.js must support YouTube links")
     require("function filmProviderQuery" in app_js, "app.js must build film provider searches with language context")
@@ -273,7 +273,7 @@ def main() -> None:
     require(DIST_HTML.exists(), "missing dist/arrahman-discography.html")
     dist_html = DIST_HTML.read_text(encoding="utf-8")
     require("'https://www.google.com/search?q=' + encodeURIComponent(q + ' spotify')" not in dist_html, "dist HTML must not use Google for Spotify fallback search")
-    require("'https://open.spotify.com/search/'" not in dist_html, "dist HTML must not contain Spotify internal search fallback")
+    require("'https://open.spotify.com/search/' + encodeURIComponent('A R Rahman ' + q)" in dist_html, "dist HTML must use Spotify search fallback")
 
     audit = subprocess.run([sys.executable, str(PDF_AUDIT)], cwd=ROOT, text=True, capture_output=True)
     require(audit.returncode == 0, (audit.stderr or audit.stdout).strip())

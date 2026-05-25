@@ -131,9 +131,9 @@ If direct links are missing, the page still shows generated search icons. Missin
 
 Regular YouTube is included in the default music provider set because singles, albums, and films are often easiest to find there. YouTube Music remains separate for music-service searches.
 
-Spotify icons are direct-link only. If a Spotify URL is missing, the page does not send users to Google or Spotify search; the gap remains visible in **Missing Links / Sources** until a direct `open.spotify.com` album, track, or playlist URL is added.
+Spotify icons use direct `open.spotify.com` URLs when available and otherwise fall back to Spotify search. Film language rows include the language in the generated query, so Tamil, Telugu, Hindi, Malayalam, and other releases search separately. Missing direct Spotify URLs still remain visible in **Missing Links / Sources** until an album, track, or playlist URL is added.
 
-The preferred flow is direct provider links. Build-time link resolution uses a no-key DuckDuckGo HTML search fallback by default and can use Google Programmable Search when `GOOGLE_API_KEY` and `GOOGLE_CSE_ID` are configured. Resolved Spotify, YouTube Music, Apple Music, YouTube, and web reference URLs are stored in `data/provider-links.json`. Generated search URLs are fallbacks for non-Spotify providers that still do not have direct links.
+The preferred flow is direct provider links. Build-time link resolution uses a no-key DuckDuckGo HTML search fallback by default and can use Google Programmable Search when `GOOGLE_API_KEY` and `GOOGLE_CSE_ID` are configured. Resolved Spotify, YouTube Music, Apple Music, YouTube, and web reference URLs are stored in `data/provider-links.json`. Generated search URLs are fallbacks for entries that still do not have direct links.
 
 Film soundtrack entries must link to album-level provider pages, not individual songs. For example, Spotify links under `Film Compositions` must use `https://open.spotify.com/album/...`; song links such as `https://open.spotify.com/track/...` are intentionally rejected and left in **Missing Links / Sources** until an album URL is available.
 
@@ -304,4 +304,4 @@ git remote set-url origin git@github.com:veeragoni/arrahman.git
 
 Data compiled by Gopal Srinivasan, Mohan Bhagavathi, and Dinesh Vaidya from the source PDFs. This site is a fan archive and is not affiliated with A. R. Rahman or any of his labels.
 
-Provider icons link to direct URLs when available. Non-Spotify providers can fall back to generated searches; Spotify is direct-link only. Build-time link resolution works without subscription credentials through DuckDuckGo, with optional Google Programmable Search support.
+Provider icons link to direct URLs when available and generated provider searches otherwise. Build-time link resolution works without subscription credentials through DuckDuckGo, with optional Google Programmable Search support.

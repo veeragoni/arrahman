@@ -69,6 +69,7 @@
       label: 'Spotify',
       className: 'spotify',
       icon: iconSpotify,
+      search: (q) => 'https://open.spotify.com/search/' + encodeURIComponent('A R Rahman ' + q),
     },
     youtubeMusic: {
       label: 'YouTube Music',
