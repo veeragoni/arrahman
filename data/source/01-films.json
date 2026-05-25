@@ -2571,15 +2571,7 @@
               "date": "26-01-2026"
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "recent-multilingual",
-      "num": "1.6",
-      "title": "Recent multi-language releases",
-      "type": "films",
-      "items": [
+        },
         {
           "type": "film",
           "year": 2026,

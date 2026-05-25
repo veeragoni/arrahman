@@ -343,9 +343,20 @@ def comparable_film_main(items: list[dict]) -> list[dict]:
     return comparable
 
 
+def has_source_citation(item: dict) -> bool:
+    if item.get("sources"):
+        return True
+    return any(version.get("sources") for version in item.get("versions", []))
+
+
+def pdf_audited_film_main_items(items: list[dict]) -> list[dict]:
+    return [item for item in items if not has_source_citation(item)]
+
+
 def audit_film_main() -> list[str]:
     expected = comparable_film_main(film_main_from_pdf())
-    actual = comparable_film_main(find_subsection(load_film_source(), "films-main").get("items", []))
+    source_items = find_subsection(load_film_source(), "films-main").get("items", [])
+    actual = comparable_film_main(pdf_audited_film_main_items(source_items))
     if expected == actual:
         return []
 

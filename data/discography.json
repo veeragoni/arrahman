@@ -41,6 +41,9 @@
                   "language": "Telugu",
                   "title": "Roja",
                   "date": "1992",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/700R0gU93Jal21rivBK7EA"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -66,6 +69,9 @@
                   "language": "Malayalam",
                   "title": "Roja",
                   "date": "1995",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/2ou4GeN2fDNV8DEoSSJyc7"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -77,6 +83,9 @@
                   "language": "Other",
                   "title": "Roja (Marathi)",
                   "date": "1996",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/1qvrzUMYf0axJOJ8FZRDny"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -94,6 +103,9 @@
                   "language": "Tamil",
                   "title": "Asokan",
                   "date": "1994",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/0ulH4y3o2xSeFLaIWpVDpD"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -133,6 +145,9 @@
                   "language": "Malayalam",
                   "title": "Yodha - Malayalam",
                   "date": "03-09-1992",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/35YVDGDJIFpCh8DtVU9z55"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -150,6 +165,9 @@
                   "language": "Tamil",
                   "title": "Puthiya Mugam",
                   "date": "28-05-1993",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/41C2DoK8FZqe2rtg4KAxm5"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -1171,7 +1189,7 @@
                   "title": "Jeans",
                   "date": "1998",
                   "links": {
-                    "spotify": "https://open.spotify.com/album/7tJng3wvP3e4VXTadYCKYp"
+                    "spotify": "https://open.spotify.com/album/0RBpuFPULFMbkTKhZ2M1eH"
                   },
                   "providers": [
                     "spotify",
@@ -1185,7 +1203,7 @@
                   "title": "Jeans",
                   "date": "1998",
                   "links": {
-                    "spotify": "https://open.spotify.com/album/7tJng3wvP3e4VXTadYCKYp"
+                    "spotify": "https://open.spotify.com/album/1Al7B7KSdxhqha5K0dijTn"
                   },
                   "providers": [
                     "spotify",
@@ -4267,21 +4285,7 @@
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "id": "recent-multilingual",
-          "num": "1.6",
-          "title": "Recent multi-language releases",
-          "type": "films",
-          "providers": [
-            "spotify",
-            "youtubeMusic",
-            "appleMusic",
-            "youtube"
-          ],
-          "items": [
+            },
             {
               "type": "film",
               "year": 2026,
@@ -11276,7 +11280,6 @@
         "language": "Telugu",
         "year": 1992,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -11311,7 +11314,6 @@
         "language": "Malayalam",
         "year": 1992,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -11329,7 +11331,6 @@
         "language": "Other",
         "year": 1992,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -11347,7 +11348,6 @@
         "language": "Tamil",
         "year": 1994,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -11399,7 +11399,6 @@
         "language": "Malayalam",
         "year": 1994,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -11417,7 +11416,6 @@
         "language": "Tamil",
         "year": 1993,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16193,9 +16191,9 @@
       {
         "categoryId": "films",
         "category": "Film Compositions",
-        "subsectionId": "recent-multilingual",
-        "subsection": "Recent multi-language releases",
-        "entryIndex": 1,
+        "subsectionId": "films-main",
+        "subsection": "Films with multi-language releases",
+        "entryIndex": 104,
         "versionIndex": 1,
         "type": "filmVersion",
         "label": "Peddi",
@@ -16211,9 +16209,9 @@
       {
         "categoryId": "films",
         "category": "Film Compositions",
-        "subsectionId": "recent-multilingual",
-        "subsection": "Recent multi-language releases",
-        "entryIndex": 1,
+        "subsectionId": "films-main",
+        "subsection": "Films with multi-language releases",
+        "entryIndex": 104,
         "versionIndex": 2,
         "type": "filmVersion",
         "label": "Peddi",
@@ -16229,9 +16227,9 @@
       {
         "categoryId": "films",
         "category": "Film Compositions",
-        "subsectionId": "recent-multilingual",
-        "subsection": "Recent multi-language releases",
-        "entryIndex": 1,
+        "subsectionId": "films-main",
+        "subsection": "Films with multi-language releases",
+        "entryIndex": 104,
         "versionIndex": 3,
         "type": "filmVersion",
         "label": "Peddi",
@@ -16247,9 +16245,9 @@
       {
         "categoryId": "films",
         "category": "Film Compositions",
-        "subsectionId": "recent-multilingual",
-        "subsection": "Recent multi-language releases",
-        "entryIndex": 1,
+        "subsectionId": "films-main",
+        "subsection": "Films with multi-language releases",
+        "entryIndex": 104,
         "versionIndex": 4,
         "type": "filmVersion",
         "label": "Peddi",
@@ -16265,9 +16263,9 @@
       {
         "categoryId": "films",
         "category": "Film Compositions",
-        "subsectionId": "recent-multilingual",
-        "subsection": "Recent multi-language releases",
-        "entryIndex": 1,
+        "subsectionId": "films-main",
+        "subsection": "Films with multi-language releases",
+        "entryIndex": 104,
         "versionIndex": 5,
         "type": "filmVersion",
         "label": "Peddi",

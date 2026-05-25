@@ -12,6 +12,7 @@ import tempfile
 import urllib.error
 import unittest
 
+import audit_pdf_sources
 import build
 
 
@@ -401,16 +402,13 @@ class ProviderLinkResolutionTests(unittest.TestCase):
     def test_peddi_is_present_as_multilingual_film_entry(self) -> None:
         source = json.loads((Path(__file__).resolve().parent.parent / "data" / "source" / "01-films.json").read_text(encoding="utf-8"))
 
+        self.assertNotIn("recent-multilingual", {subsection.get("id") for subsection in source["subsections"]})
+        films_main = next(subsection for subsection in source["subsections"] if subsection.get("id") == "films-main")
         peddi_versions = []
-        for subsection in source["subsections"]:
-            if subsection.get("type") != "films":
-                continue
-            for item in subsection.get("items", []):
-                versions = item.get("versions", [])
-                if any(version.get("title") == "Peddi" for version in versions):
-                    peddi_versions = versions
-                    break
-            if peddi_versions:
+        for item in films_main.get("items", []):
+            versions = item.get("versions", [])
+            if any(version.get("title") == "Peddi" for version in versions):
+                peddi_versions = versions
                 break
 
         self.assertTrue(peddi_versions, "Peddi should be listed as a film entry")
@@ -419,6 +417,45 @@ class ProviderLinkResolutionTests(unittest.TestCase):
             {"Telugu", "Hindi", "Tamil", "Kannada", "Malayalam"},
         )
         self.assertTrue(all(version.get("date") == "04-06-2026" for version in peddi_versions))
+
+    def test_pdf_audit_ignores_source_cited_film_main_additions(self) -> None:
+        items = [
+            {
+                "type": "film",
+                "year": 1992,
+                "versions": [
+                    {"language": "Tamil", "title": "Roja", "date": "15-08-1992"}
+                ],
+            },
+            {
+                "type": "film",
+                "year": 2026,
+                "versions": [
+                    {
+                        "language": "Telugu",
+                        "title": "Peddi",
+                        "date": "04-06-2026",
+                        "sources": ["https://peddimovie.vercel.app/"],
+                    }
+                ],
+            },
+        ]
+
+        comparable = audit_pdf_sources.comparable_film_main(
+            audit_pdf_sources.pdf_audited_film_main_items(items)
+        )
+
+        self.assertEqual(
+            comparable,
+            [
+                {
+                    "year": 1992,
+                    "versions": [
+                        {"language": "Tamil", "title": "Roja", "date": "15-08-1992"}
+                    ],
+                }
+            ],
+        )
 
     def test_blocked_search_backend_stops_resolution_after_one_failure(self) -> None:
         class BlockedResolver:
