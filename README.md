@@ -50,7 +50,7 @@ python3 scripts/build.py
 
 After editing source data, run the build and refresh the page. Search, filters, provider icons, missing-link reports, and the single-file `dist/` page all use the generated data.
 
-`data/provider-links.json` is a generated cache of URLs found during link resolution. Direct links in `data/source/*.json` win over generated cache entries. The cache lets normal builds publish known direct links without making every build perform network searches.
+`data/provider-links.json` is a generated cache for generic provider-link resolution. Direct links in `data/source/*.json` win over generated cache entries. Spotify album resolution writes accepted film links directly into the matching source JSON entry so humans can manage links beside the album metadata.
 
 The homepage stat cards are also computed from the generated data. Their scopes are declared in `index.html` with `data-stat-categories`, `data-stat-subsections`, or `data-stat-total`.
 
@@ -133,7 +133,7 @@ Regular YouTube is included in the default music provider set because singles, a
 
 Spotify icons use direct `open.spotify.com` URLs when available and otherwise fall back to Spotify search. Film language rows include the language in the generated query, so Tamil, Telugu, Hindi, Malayalam, and other releases search separately. Missing direct Spotify URLs still remain visible in **Missing Links / Sources** until an album, track, or playlist URL is added.
 
-The preferred flow is direct provider links. Build-time link resolution uses a no-key DuckDuckGo HTML search fallback by default and can use Google Programmable Search when `GOOGLE_API_KEY` and `GOOGLE_CSE_ID` are configured. Resolved Spotify, YouTube Music, Apple Music, YouTube, and web reference URLs are stored in `data/provider-links.json`. Generated search URLs are fallbacks for entries that still do not have direct links.
+The preferred flow is direct provider links in `data/source/*.json`. Film Spotify gaps can be resolved through Spotify's album search API with `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET`; the resolver only checks film entries that are missing a Spotify URL, only accepts `open.spotify.com/album/...` results, and writes accepted links into the matching source JSON entry. Generic provider-link resolution is still available for other providers through DuckDuckGo or optional Google Programmable Search and stores those results in `data/provider-links.json`.
 
 Film soundtrack entries must link to album-level provider pages, not individual songs. For example, Spotify links under `Film Compositions` must use `https://open.spotify.com/album/...`; song links such as `https://open.spotify.com/track/...` are intentionally rejected and left in **Missing Links / Sources** until an album URL is available.
 
@@ -250,28 +250,33 @@ python3 scripts/build.py
 python3 scripts/validate.py
 ```
 
-5. To resolve direct provider links for new entries, run:
+5. To resolve missing film Spotify album links, run:
 
 ```bash
-python3 scripts/build.py --resolve-links
+python3 scripts/build.py --resolve-spotify-albums
 python3 scripts/validate.py
 ```
 
-This uses DuckDuckGo without API keys. If Google Programmable Search credentials are present in the environment, the build uses Google instead. You can force a resolver when needed:
+This uses `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` from the environment, checks only film entries missing Spotify, and writes accepted album URLs directly into the matching `data/source/*.json` language entry.
+
+6. To resolve other direct provider links for new entries, run:
 
 ```bash
+python3 scripts/build.py --resolve-links
 python3 scripts/build.py --resolve-links --search-engine duckduckgo
 python3 scripts/build.py --resolve-links --search-engine google
 ```
 
-6. Preview locally:
+This generic resolver uses DuckDuckGo without API keys by default. If Google Programmable Search credentials are present in the environment, the build can use Google instead.
+
+7. Preview locally:
 
 ```bash
 python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-7. Commit the source edit plus regenerated files. Include `data/provider-links.json` only if you ran `--resolve-links` and want to keep newly resolved cache entries:
+8. Commit the source edit plus regenerated files. Include `data/provider-links.json` only if you ran the generic provider resolver and want to keep newly resolved cache entries:
 
 ```bash
 git add data/source data/provider-links.json data/discography.json dist/arrahman-discography.html
@@ -305,6 +310,12 @@ Resolve missing provider links during the build. This uses DuckDuckGo without AP
 python3 scripts/build.py --resolve-links
 ```
 
+Resolve missing film Spotify album links with Spotify app credentials. This only queries entries in `Film Compositions` that are missing a Spotify link, skips entries already linked in source data, accepts only Spotify album URLs, and writes accepted links back to `data/source/*.json`.
+
+```bash
+SPOTIFY_CLIENT_ID=... SPOTIFY_CLIENT_SECRET=... python3 scripts/build.py --resolve-spotify-albums
+```
+
 Optional Google Programmable Search credentials are still supported for higher-quality search results:
 
 ```bash
@@ -329,9 +340,9 @@ python3 scripts/validate.py
 
 ## GitHub Pages
 
-The workflow at `.github/workflows/pages.yml` publishes automatically on every push to `main`. It performs an offline build from committed source JSON plus `data/provider-links.json`; it does not run live provider-link resolution and does not require Google API secrets.
+The workflow at `.github/workflows/pages.yml` publishes automatically on every push to `main`. It builds from committed source JSON plus `data/provider-links.json`, then uses `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` repository secrets to resolve only missing film Spotify album links before publishing.
 
-If you resolve provider links locally with `python3 scripts/build.py --resolve-links`, commit the updated `data/provider-links.json` along with regenerated `data/discography.json` and `dist/arrahman-discography.html`. GitHub Pages will publish the committed direct links on the next push.
+If the Spotify secrets are not configured, the build skips Spotify album resolution and still publishes with committed direct links plus fallback searches. If you resolve Spotify links locally, commit the updated `data/source/*.json` along with regenerated `data/discography.json` and `dist/arrahman-discography.html`. If you use the generic provider resolver, also commit the updated `data/provider-links.json`.
 
 GitHub Pages should be configured as:
 
@@ -357,4 +368,4 @@ git remote set-url origin git@github.com:veeragoni/arrahman.git
 
 Data compiled by Gopal Srinivasan, Mohan Bhagavathi, and Dinesh Vaidya from the source PDFs. This site is a fan archive and is not affiliated with A. R. Rahman or any of his labels.
 
-Provider icons link to direct URLs when available and generated provider searches otherwise. Build-time link resolution works without subscription credentials through DuckDuckGo, with optional Google Programmable Search support.
+Provider icons link to direct URLs when available and generated provider searches otherwise. Film Spotify album gaps can be resolved with Spotify app credentials; generic provider-link resolution works without subscription credentials through DuckDuckGo, with optional Google Programmable Search support.

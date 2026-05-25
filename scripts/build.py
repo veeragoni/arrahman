@@ -5,11 +5,14 @@ Build a single-file HTML bundle from the multi-file source.
 Usage:
     python3 scripts/build.py            # produces dist/arrahman-discography.html
     python3 scripts/build.py --output custom.html
+    python3 scripts/build.py --resolve-spotify-albums
     python3 scripts/build.py --resolve-links
 """
 
 import sys
 import argparse
+import base64
+from dataclasses import dataclass
 from html.parser import HTMLParser
 import json
 import math
@@ -20,6 +23,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+from typing import Optional
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
@@ -33,6 +37,8 @@ PROVIDERS = ["spotify", "youtubeMusic", "appleMusic", "youtube", "web"]
 DEFAULT_PROVIDERS = ["spotify", "youtubeMusic", "appleMusic", "youtube"]
 GOOGLE_CSE_ENDPOINT = "https://www.googleapis.com/customsearch/v1"
 DUCKDUCKGO_HTML_ENDPOINT = "https://duckduckgo.com/html/"
+SPOTIFY_TOKEN_ENDPOINT = "https://accounts.spotify.com/api/token"
+SPOTIFY_SEARCH_ENDPOINT = "https://api.spotify.com/v1/search"
 PROVIDER_SEARCH_SITES = {
     "spotify": "open.spotify.com",
     "youtubeMusic": "music.youtube.com",
@@ -46,6 +52,16 @@ PROVIDER_URL_PATTERNS = {
     "youtube": re.compile(r"^https://(www\.)?(youtube\.com/(watch|playlist)|youtu\.be/)"),
     "web": re.compile(r"^https?://"),
 }
+
+
+@dataclass
+class SpotifyAlbumResolution:
+    url: Optional[str]
+    query: str
+    candidate_count: int = 0
+    best_name: str = ""
+    best_score: int = -1
+    best_url: str = ""
 FILM_SOUNDTRACK_URL_PATTERNS = {
     "spotify": re.compile(r"^https://open\.spotify\.com/album/"),
     "youtubeMusic": re.compile(r"^https://music\.youtube\.com/(playlist|browse)"),
@@ -56,6 +72,16 @@ COMMON_TITLE_TOKENS = {
     "score", "single", "song", "songs", "soundtrack", "the", "version", "with",
     "hindi", "kannada", "malayalam", "marathi", "tamil", "telugu",
 }
+SPOTIFY_LANGUAGE_ALIASES = {
+    "tamil": {"tamil", "tamizh", "thamizh", "thamizha"},
+    "telugu": {"telugu"},
+    "hindi": {"hindi"},
+    "malayalam": {"malayalam"},
+    "marathi": {"marathi"},
+    "kannada": {"kannada"},
+}
+FILM_LINK_AUDIT_EXCLUDED_SUBSECTIONS = {"forthcoming", "announced", "no-updates"}
+NONFILM_LINK_AUDIT_SUBSECTIONS = {"albums", "singles"}
 
 
 def compact_empty(value):
@@ -83,6 +109,58 @@ def normalize_search_text(value):
 
 def slugify(value):
     return normalize_search_text(value).replace(" ", "-")
+
+
+def extract_year(value):
+    match = re.search(r"(?:19|20)\d{2}", str(value or ""))
+    return int(match.group(0)) if match else None
+
+
+def language_key(value):
+    normalized = normalize_search_text(value)
+    for key, aliases in SPOTIFY_LANGUAGE_ALIASES.items():
+        if normalized == key or normalized in aliases:
+            return key
+    return ""
+
+
+def detected_spotify_languages(value):
+    normalized = normalize_search_text(value)
+    if not normalized:
+        return set()
+    tokens = set(normalized.split())
+    detected = set()
+    for key, aliases in SPOTIFY_LANGUAGE_ALIASES.items():
+        for alias in aliases:
+            normalized_alias = normalize_search_text(alias)
+            if not normalized_alias:
+                continue
+            if " " in normalized_alias:
+                if normalized_alias in normalized:
+                    detected.add(key)
+                    break
+            elif normalized_alias in tokens:
+                detected.add(key)
+                break
+    return detected
+
+
+def spotify_expected_language(subject):
+    language = language_key(subject.get("language", ""))
+    if language:
+        return language
+    detected = detected_spotify_languages(subject.get("label", ""))
+    return next(iter(sorted(detected)), "")
+
+
+def should_audit_missing_direct_links(subject):
+    category_id = subject.get("categoryId")
+    subsection_id = subject.get("subsectionId")
+    if category_id == "films":
+        return subsection_id not in FILM_LINK_AUDIT_EXCLUDED_SUBSECTIONS
+    if category_id == "nonfilm":
+        return subsection_id in NONFILM_LINK_AUDIT_SUBSECTIONS
+    return False
 
 
 def subject_cache_key(subject):
@@ -134,6 +212,14 @@ def provider_candidate_score(provider, subject, item):
         item.get("snippet", ""),
         url,
     ])
+    if provider == "spotify":
+        expected_language = spotify_expected_language(subject)
+        detected_languages = detected_spotify_languages(haystack)
+        if expected_language and detected_languages and expected_language not in detected_languages:
+            return -1
+        if subject.get("languageEvidenceRequired") and expected_language and expected_language not in detected_languages:
+            return -1
+
     score = title_token_match_score(subject.get("label", ""), haystack)
     if score < 0:
         return -1
@@ -160,6 +246,196 @@ def pick_provider_link(provider, subject, items):
             best_url = item.get("link")
             best_score = score
     return best_url if best_score >= 0 else None
+
+
+def spotify_album_url(album):
+    external_urls = album.get("external_urls") if isinstance(album, dict) else {}
+    return external_urls.get("spotify", "") if isinstance(external_urls, dict) else ""
+
+
+def spotify_album_artist_text(album):
+    artists = album.get("artists", []) if isinstance(album, dict) else []
+    if not isinstance(artists, list):
+        return ""
+    return " ".join(
+        artist.get("name", "")
+        for artist in artists
+        if isinstance(artist, dict)
+    )
+
+
+def spotify_album_track_text(album):
+    if not isinstance(album, dict):
+        return ""
+    tracks = album.get("tracks", {})
+    items = tracks.get("items", []) if isinstance(tracks, dict) else tracks
+    if not isinstance(items, list):
+        return ""
+    return " ".join(
+        track.get("name", "")
+        for track in items
+        if isinstance(track, dict)
+    )
+
+
+def spotify_album_score(subject, album):
+    url = spotify_album_url(album)
+    if not provider_url_allowed("spotify", url, subject):
+        return -1
+
+    name = album.get("name", "") if isinstance(album, dict) else ""
+    artist_text = spotify_album_artist_text(album)
+    haystack = " ".join([
+        name,
+        artist_text,
+        album.get("release_date", ""),
+        album.get("label", ""),
+        spotify_album_track_text(album),
+    ])
+    expected_language = spotify_expected_language(subject)
+    detected_languages = detected_spotify_languages(haystack)
+    if expected_language and detected_languages and expected_language not in detected_languages:
+        return -1
+    if subject.get("languageEvidenceRequired") and expected_language and expected_language not in detected_languages:
+        return -1
+
+    score = title_token_match_score(subject.get("label", ""), haystack)
+    if score < 0:
+        return -1
+
+    normalized_name = normalize_search_text(name)
+    normalized_haystack = normalize_search_text(haystack)
+    normalized_label = normalize_search_text(subject.get("label", ""))
+    if normalized_label and normalized_label in normalized_name:
+        score += 50
+    if "rahman" in normalized_haystack:
+        score += 30
+    if any(term in normalized_haystack for term in ("soundtrack", "motion picture", "original score", "ost")):
+        score += 20
+
+    album_type = normalize_search_text(album.get("album_type", ""))
+    if album_type == "album":
+        score += 10
+    elif album_type == "compilation":
+        score -= 10
+
+    total_tracks = album.get("total_tracks")
+    if isinstance(total_tracks, int) and total_tracks >= 3:
+        score += 10
+
+    release_year = extract_year(album.get("release_date", ""))
+    subject_year = subject.get("versionYear") or extract_year(subject.get("date", "")) or subject.get("year")
+    if release_year and subject_year:
+        delta = abs(int(release_year) - int(subject_year))
+        if delta == 0:
+            score += 15
+        elif delta <= 1:
+            score += 8
+
+    if expected_language and expected_language in detected_languages:
+        score += 20
+
+    return score
+
+
+def pick_spotify_album_link(subject, albums, minimum_score=80):
+    return spotify_album_resolution(subject, albums, minimum_score=minimum_score).url
+
+
+def spotify_album_resolution(subject, albums, query="", minimum_score=80):
+    best_url = None
+    best_score = -1
+    best_name = ""
+    for album in albums:
+        score = spotify_album_score(subject, album)
+        if score > best_score:
+            best_url = spotify_album_url(album)
+            best_score = score
+            best_name = album.get("name", "") if isinstance(album, dict) else ""
+    return SpotifyAlbumResolution(
+        url=best_url if best_url and best_score >= minimum_score else None,
+        query=query,
+        candidate_count=len(albums),
+        best_name=best_name,
+        best_score=best_score,
+        best_url=best_url or "",
+    )
+
+
+def spotify_album_queries(subject):
+    label = subject.get("label", "")
+    language = subject.get("language", "")
+    query_parts = [
+        f'album:"{label}" artist:"A.R. Rahman"',
+        f'"{label}" "A.R. Rahman" "Original Motion Picture Soundtrack"',
+        f'"{label}" "A R Rahman" album',
+    ]
+    if language and language not in {"Other", "Version"}:
+        query_parts.insert(1, f'"{label}" "{language}" "A.R. Rahman"')
+    return query_parts
+
+
+class SpotifyAlbumResolver:
+    def __init__(self, client_id=None, client_secret=None, market="IN"):
+        self.client_id = client_id or os.environ.get("SPOTIFY_CLIENT_ID")
+        self.client_secret = client_secret or os.environ.get("SPOTIFY_CLIENT_SECRET")
+        self.market = market
+        self._access_token = None
+
+    @property
+    def available(self):
+        return bool(self.client_id and self.client_secret)
+
+    def access_token(self):
+        if self._access_token:
+            return self._access_token
+
+        credentials = f"{self.client_id}:{self.client_secret}".encode("utf-8")
+        request = urllib.request.Request(
+            SPOTIFY_TOKEN_ENDPOINT,
+            data=urllib.parse.urlencode({"grant_type": "client_credentials"}).encode("utf-8"),
+            headers={
+                "Authorization": "Basic " + base64.b64encode(credentials).decode("ascii"),
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            method="POST",
+        )
+        with urllib.request.urlopen(request, timeout=15) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        self._access_token = payload["access_token"]
+        return self._access_token
+
+    def search_albums(self, query):
+        params = {
+            "q": query,
+            "type": "album",
+            "limit": 10,
+        }
+        if self.market:
+            params["market"] = self.market
+        request = urllib.request.Request(
+            f"{SPOTIFY_SEARCH_ENDPOINT}?{urllib.parse.urlencode(params)}",
+            headers={
+                "Authorization": f"Bearer {self.access_token()}",
+                "User-Agent": "arrahman-discography-spotify-resolver/1.0",
+            },
+        )
+        with urllib.request.urlopen(request, timeout=15) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        return payload.get("albums", {}).get("items", [])
+
+    def resolve_album(self, subject):
+        albums = []
+        seen_urls = set()
+        last_query = ""
+        for query in spotify_album_queries(subject):
+            last_query = query
+            for album in self.search_albums(query):
+                url = spotify_album_url(album)
+                if url and url not in seen_urls:
+                    albums.append(album)
+                    seen_urls.add(url)
+        return spotify_album_resolution(subject, albums, query=last_query)
 
 
 def normalize_sources(value):
@@ -204,7 +480,19 @@ def iter_link_targets(categories):
                     "entryIndex": index,
                 }
                 if item.get("type") == "film":
-                    for version_index, version in enumerate(item.get("versions", []), start=1):
+                    versions = item.get("versions", [])
+                    title_languages = {}
+                    for version in versions:
+                        title = slugify(version.get("title", ""))
+                        language = language_key(version.get("language", ""))
+                        if title and language:
+                            title_languages.setdefault(title, set()).add(language)
+                    language_evidence_titles = {
+                        title
+                        for title, languages in title_languages.items()
+                        if len(languages) > 1
+                    }
+                    for version_index, version in enumerate(versions, start=1):
                         yield {
                             **base,
                             "type": "filmVersion",
@@ -212,7 +500,10 @@ def iter_link_targets(categories):
                             "label": version.get("title", ""),
                             "language": version.get("language", ""),
                             "year": item.get("year"),
+                            "date": version.get("date", ""),
+                            "versionYear": extract_year(version.get("date", "")) or item.get("year"),
                             "providers": version.get("providers") or item.get("providers") or subsection.get("providers") or DEFAULT_PROVIDERS,
+                            "languageEvidenceRequired": slugify(version.get("title", "")) in language_evidence_titles,
                         }, version
                 else:
                     yield {
@@ -221,7 +512,10 @@ def iter_link_targets(categories):
                         "label": item.get("title", ""),
                         "language": "",
                         "year": item.get("year"),
+                        "date": item.get("date", ""),
+                        "versionYear": extract_year(item.get("date", "")) or item.get("year"),
                         "providers": item.get("providers") or subsection.get("providers") or DEFAULT_PROVIDERS,
+                        "languageEvidenceRequired": False,
                     }, item
 
 
@@ -442,6 +736,157 @@ def resolve_missing_links(categories, cache, limit=50, provider_filter=None, sea
     return resolved
 
 
+def find_source_category(source_dir, category_id):
+    for path in sorted(Path(source_dir).glob("*.json")):
+        category = json.loads(path.read_text(encoding="utf-8"))
+        if category.get("id") == category_id:
+            return path, category
+    return None, None
+
+
+def source_target_matches(target, subject):
+    if not isinstance(target, dict):
+        return False
+    if target.get("title") != subject.get("label"):
+        return False
+    language = subject.get("language")
+    if language and target.get("language") != language:
+        return False
+    return True
+
+
+def write_provider_link_to_source(source_dir, subject, provider, url):
+    path, category = find_source_category(source_dir, subject.get("categoryId", ""))
+    if not path or not category:
+        return False
+
+    subsection = next(
+        (
+            candidate
+            for candidate in category.get("subsections", [])
+            if candidate.get("id") == subject.get("subsectionId")
+        ),
+        None,
+    )
+    if not subsection:
+        return False
+
+    item_index = int(subject.get("entryIndex") or 0) - 1
+    items = subsection.get("items", [])
+    if item_index < 0 or item_index >= len(items):
+        return False
+    item = items[item_index]
+
+    if subject.get("type") == "filmVersion":
+        version_index = int(subject.get("versionIndex") or 0) - 1
+        versions = item.get("versions", [])
+        if version_index < 0 or version_index >= len(versions):
+            return False
+        target = versions[version_index]
+    else:
+        target = item
+
+    if not source_target_matches(target, subject):
+        return False
+    if target.get("links", {}).get(provider):
+        return False
+
+    target.setdefault("links", {})[provider] = url
+    path.write_text(json.dumps(category, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return True
+
+
+def normalize_spotify_resolution(value):
+    if isinstance(value, SpotifyAlbumResolution):
+        return value
+    url, query = value
+    return SpotifyAlbumResolution(url=url, query=query)
+
+
+def resolve_missing_spotify_album_links(categories, cache, limit=0, resolver=None, source_dir=None):
+    resolver = resolver or SpotifyAlbumResolver()
+    if not resolver.available:
+        print(
+            "Skipping Spotify album resolution: SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET are required.",
+            file=sys.stderr,
+        )
+        return 0
+
+    targets = []
+    for subject, target in iter_link_targets(categories):
+        if subject.get("categoryId") != "films" or "spotify" not in subject.get("providers", []):
+            continue
+        if target.get("links", {}).get("spotify"):
+            continue
+        targets.append((subject, target))
+
+    total_missing = len(targets)
+    if limit:
+        targets = targets[:limit]
+
+    if not targets:
+        print("Spotify album resolution: no missing film Spotify album links to check.", file=sys.stderr)
+        return 0
+
+    if limit and total_missing > len(targets):
+        print(
+            f"Spotify album resolution: checking {len(targets)} of {total_missing} missing film Spotify album links (limit {limit}).",
+            file=sys.stderr,
+        )
+    else:
+        print(
+            f"Spotify album resolution: checking {len(targets)} missing film Spotify album links.",
+            file=sys.stderr,
+        )
+
+    resolved = 0
+    failures = 0
+    for checked, (subject, target) in enumerate(targets, start=1):
+        context = ", ".join(
+            str(part)
+            for part in (subject.get("language"), subject.get("versionYear") or subject.get("year"))
+            if part
+        )
+        suffix = f" ({context})" if context else ""
+        print(f"  [{checked}/{len(targets)}] {subject['label']}{suffix}", file=sys.stderr)
+        try:
+            result = normalize_spotify_resolution(resolver.resolve_album(subject))
+        except urllib.error.HTTPError as exc:
+            print(f"WARNING: Spotify album resolution failed for {subject['label']}: HTTP {exc.code}", file=sys.stderr)
+            failures += 1
+        except Exception as exc:
+            print(f"WARNING: Spotify album resolution failed for {subject['label']}: {exc}", file=sys.stderr)
+            failures += 1
+        else:
+            url = result.url
+            if not url:
+                detail = "no confident album match"
+                if result.candidate_count:
+                    detail += f"; {result.candidate_count} candidates"
+                    if result.best_name:
+                        detail += f"; best rejected: {result.best_name} (score {result.best_score})"
+                    if result.best_url:
+                        detail += f" {result.best_url}"
+                print(f"      {detail}", file=sys.stderr)
+                continue
+            failures = 0
+            target.setdefault("links", {})["spotify"] = url
+            resolved += 1
+            print(f"      resolved {url}", file=sys.stderr)
+            if source_dir:
+                if write_provider_link_to_source(source_dir, subject, "spotify", url):
+                    print("      wrote source JSON", file=sys.stderr)
+                else:
+                    print("      source JSON not updated; entry already linked or not found", file=sys.stderr)
+            continue
+
+        if failures >= 5:
+            print(f"Stopping Spotify album resolution after {failures} failures.", file=sys.stderr)
+            return resolved
+    print(f"Spotify album resolution: resolved {resolved} of {len(targets)} checked links.", file=sys.stderr)
+    return resolved
+
+
 def normalize_item(item, subsection_type, providers=None):
     if item.get("type") == "film" or subsection_type == "films":
         item_providers = normalize_providers(item.get("providers") or providers)
@@ -555,7 +1000,7 @@ def build_quality(categories):
     missing_sources = []
     for subject in quality_subjects(categories):
         missing = [provider for provider in subject["providers"] if not subject["links"].get(provider)]
-        if missing:
+        if missing and should_audit_missing_direct_links(subject):
             missing_links.append(compact_empty({
                 "categoryId": subject["categoryId"],
                 "category": subject["category"],
@@ -590,9 +1035,27 @@ def build_quality(categories):
     }
 
 
-def build_discography(link_cache_path=LINK_CACHE, resolve_links=False, resolve_limit=50, resolve_providers=None, search_engine="auto"):
+def build_discography(
+    link_cache_path=LINK_CACHE,
+    resolve_links=False,
+    resolve_limit=50,
+    resolve_providers=None,
+    search_engine="auto",
+    resolve_spotify_albums=False,
+    spotify_album_limit=0,
+):
     categories = load_source_categories()
     cache = load_link_cache(Path(link_cache_path))
+    cache_dirty = False
+    if resolve_spotify_albums:
+        resolved = resolve_missing_spotify_album_links(
+            categories,
+            cache,
+            limit=spotify_album_limit,
+            source_dir=SOURCE_DIR,
+        )
+        if resolved:
+            print(f"✓ Resolved {resolved} Spotify album links into {SOURCE_DIR}")
     apply_cached_links(categories, cache)
     if resolve_links:
         resolved = resolve_missing_links(
@@ -603,8 +1066,10 @@ def build_discography(link_cache_path=LINK_CACHE, resolve_links=False, resolve_l
             search_engine=search_engine,
         )
         if resolved:
-            save_link_cache(cache, Path(link_cache_path))
+            cache_dirty = True
             print(f"✓ Resolved {resolved} provider links into {link_cache_path}")
+    if cache_dirty:
+        save_link_cache(cache, Path(link_cache_path))
     return {
         "schemaVersion": 2,
         "generatedFrom": "data/source/*.json",
@@ -626,6 +1091,14 @@ def main():
     parser.add_argument(
         "--resolve-links", action="store_true",
         help="Resolve missing direct provider links using the selected search backend"
+    )
+    parser.add_argument(
+        "--resolve-spotify-albums", action="store_true",
+        help="Resolve missing film Spotify links through Spotify album search using SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET"
+    )
+    parser.add_argument(
+        "--spotify-album-limit", type=int, default=0,
+        help="Maximum missing film Spotify album links to query; use 0 for no limit"
     )
     parser.add_argument(
         "--resolve-limit", type=int, default=50,
@@ -652,6 +1125,8 @@ def main():
         resolve_limit=args.resolve_limit,
         resolve_providers=args.resolve_provider,
         search_engine=args.search_engine,
+        resolve_spotify_albums=args.resolve_spotify_albums,
+        spotify_album_limit=args.spotify_album_limit,
     )
     DATA_JSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     data_json = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

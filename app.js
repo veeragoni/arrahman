@@ -59,9 +59,10 @@
       .replace(/'/g, '&#39;');
   };
 
-  const iconSpotify = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12C24 5.4 18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>`;
+  const iconSpotify = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11.4" fill="#1DB954"/><path d="M17.82 9.98c-3.13-1.86-7.58-2.03-10.58-1.12-.5.15-1.03-.13-1.18-.63s.13-1.02.63-1.18c3.45-1.05 8.45-.84 12.09 1.32.45.27.6.85.33 1.3-.27.44-.85.58-1.29.31zm-.56 3.02c-.23.38-.72.5-1.1.27-2.61-1.6-6.58-2.07-9.66-1.13-.43.13-.87-.11-1-.53-.13-.42.11-.87.53-1 3.55-1.08 7.94-.56 10.96 1.29.38.23.5.72.27 1.1zm-1.31 2.83c-.18.3-.57.39-.87.21-2.28-1.39-5.16-1.7-8.55-.93-.34.08-.68-.13-.76-.47-.08-.34.13-.68.47-.76 3.73-.85 6.92-.49 9.51 1.09.3.18.39.57.2.86z" fill="#000000"/></svg>`;
   const iconYouTube = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>`;
-  const iconApple = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.7 3.4c-.9.1-2 .7-2.7 1.5-.6.7-1.1 1.8-1 2.8 1 .1 2-.5 2.7-1.3.7-.8 1.1-1.9 1-3zM21 17.4c-.5 1.1-.8 1.6-1.5 2.6-1 1.4-2.4 3.1-4.1 3.1-1.5 0-1.9-1-3.9-1s-2.5 1-4 1c-1.7 0-3-1.6-4-3C1.2 16.8.9 10.8 2.5 8.1c1.1-1.9 2.9-3.1 4.6-3.1 1.8 0 2.9 1 4.3 1 1.4 0 2.3-1 4.4-1 1.6 0 3.3.9 4.4 2.4-3.9 2.1-3.3 7.6.8 10z"/></svg>`;
+  const iconYouTubeMusic = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11.4" fill="#ff0033"/><circle cx="12" cy="12" r="8.1" fill="#ff1744"/><circle cx="12" cy="12" r="5.45" fill="none" stroke="#ffffff" stroke-width="1.4"/><path d="M10.2 8.85v6.3L15.65 12z" fill="#ffffff"/></svg>`;
+  const iconAppleMusic = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="5" fill="#fa2d55"/><path d="M16.8 5.1v9.8c0 1.55-1.31 2.72-3.02 2.72-1.43 0-2.48-.82-2.48-1.96 0-1.19 1.08-2.05 2.55-2.05.54 0 1.02.12 1.39.33V8.72l-5.35 1.05v6.13c0 1.55-1.31 2.72-3.02 2.72-1.43 0-2.48-.82-2.48-1.96 0-1.19 1.08-2.05 2.55-2.05.54 0 1.02.12 1.39.33V7.95l8.47-1.68z" fill="#ffffff"/></svg>`;
   const iconWeb = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20"/><path d="M12 2a15.3 15.3 0 0 0 0 20"/></svg>`;
 
   const providers = {
@@ -73,8 +74,8 @@
     },
     youtubeMusic: {
       label: 'YouTube Music',
-      className: 'youtube',
-      icon: iconYouTube,
+      className: 'ytmusic',
+      icon: iconYouTubeMusic,
       search: (q) => 'https://music.youtube.com/search?q=' + encodeURIComponent('A R Rahman ' + q),
     },
     youtube: {
@@ -86,8 +87,8 @@
     appleMusic: {
       label: 'Apple Music',
       className: 'apple',
-      icon: iconApple,
-      search: (q) => 'https://music.apple.com/search?term=' + encodeURIComponent('A R Rahman ' + q),
+      icon: iconAppleMusic,
+      search: (q) => 'https://music.apple.com/us/search?term=' + encodeURIComponent('A R Rahman ' + q),
     },
     web: {
       label: 'Web',
@@ -142,6 +143,60 @@
     }, []);
   }
 
+  function languageKey(language) {
+    const value = (language || 'Version').toString().trim().toLowerCase();
+    if (!value) return 'version';
+    if (value.includes('tamil')) return 'tamil';
+    if (value.includes('telugu')) return 'telugu';
+    if (value.includes('hindi')) return 'hindi';
+    if (value.includes('malayalam')) return 'malayalam';
+    if (value.includes('kannada')) return 'kannada';
+    if (value.includes('other')) return 'other';
+    return value.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'version';
+  }
+
+  function languageLabel(key) {
+    const labels = {
+      tamil: 'Tamil',
+      telugu: 'Telugu',
+      hindi: 'Hindi',
+      malayalam: 'Malayalam',
+      kannada: 'Kannada',
+      other: 'Other',
+      version: 'Version',
+    };
+    return labels[key] || key.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
+  }
+
+  function langClass(language) {
+    return 'lang-' + languageKey(language);
+  }
+
+  function collectLanguages(sections) {
+    const labels = new Map();
+    sections.forEach(section => {
+      (section.subsections || []).forEach(subsection => {
+        (subsection.items || []).forEach(item => {
+          if (item.type !== 'film' && subsection.type !== 'films') return;
+          const versions = Array.isArray(item.versions) ? item.versions : legacyVersions(item);
+          versions.forEach(version => {
+            const key = languageKey(version.language || 'Version');
+            if (!labels.has(key)) labels.set(key, languageLabel(key));
+          });
+        });
+      });
+    });
+
+    const priority = ['tamil', 'telugu', 'hindi', 'malayalam', 'kannada', 'other', 'version'];
+    const priorityLanguages = priority
+      .filter(key => labels.has(key))
+      .map(key => ({ id: key, label: labels.get(key) }));
+    const remainingLanguages = Array.from(labels.entries())
+      .filter(([key]) => !priority.includes(key))
+      .map(([id, label]) => ({ id, label }));
+    return priorityLanguages.concat(remainingLanguages);
+  }
+
   function filmProviderQuery(title, language) {
     const usefulLanguage = language && language !== 'Other' && language !== 'Version' ? language : '';
     return [title, usefulLanguage].filter(Boolean).join(' ');
@@ -153,27 +208,32 @@
 
     const primaryVersion = versions[0];
     const primaryTitle = primaryVersion.title || '';
+    const languageKeys = versions.map(version => languageKey(version.language || 'Version'));
+    const uniqueLanguageKeys = Array.from(new Set(languageKeys));
 
     // searchable text (used for filter)
     const searchText = (
       versions.map(v => [v.language, v.title, v.date].join(' ')).join(' ') + ' ' + (film.note || '') + ' ' + (film.year || film.y || '')
     ).toLowerCase();
+    const entryMeta = ((film.note || '') + ' ' + (film.year || film.y || '')).toLowerCase();
 
     const yearStr = film.year || film.y || '';
     const noteHtml = film.note ? `<div class="entry-note">${highlight(film.note)}</div>` : '';
 
-    const versionsHtml = versions.map((version, versionIndex) => {
+    const versionsHtml = versions.map((version) => {
       const title = version.title || '';
       const date = version.date || '';
-      return `<div class="entry-version">
-        <span class="lang ${versionIndex === 0 ? 'primary' : ''}">${escapeHtml(version.language || 'Version')}</span>
+      const versionLanguage = version.language || 'Version';
+      const versionSearch = [versionLanguage, title, date].join(' ').toLowerCase();
+      return `<div class="entry-version" data-language="${escapeHtml(languageKey(versionLanguage))}" data-search="${escapeHtml(versionSearch)}">
+        <span class="lang ${escapeHtml(langClass(versionLanguage))}">${escapeHtml(versionLanguage)}</span>
         <span class="version-title">${highlight(title)}</span>
         ${date ? `<span class="version-date">${highlight(date)}</span>` : ''}
         <span class="version-actions">${renderProviderLinks(filmProviderQuery(title, version.language), version.links, version.providers || film.providers || subsectionProviders)}</span>
       </div>`;
     }).join('');
 
-    return `<div class="entry" data-search="${escapeHtml(searchText)}">
+    return `<div class="entry" data-search="${escapeHtml(searchText)}" data-entry-meta="${escapeHtml(entryMeta)}" data-languages="${escapeHtml(uniqueLanguageKeys.join(' '))}">
       <div class="entry-top">
         <div class="entry-title">${highlight(primaryTitle)}</div>
         <div class="entry-year">${yearStr}</div>
@@ -293,9 +353,9 @@
         <div class="section-count">${missingLinks.length + missingSources.length} gaps</div>
       </div>
       <p style="color:var(--ink-dim);font-size:14px;max-width:70ch;margin-bottom:32px;line-height:1.6;font-style:italic;">
-        Direct provider links and source citations can be added in the source JSON files. Generated search links remain available in the main archive while these gaps are filled.
+        Direct album and release links can be added in the source JSON files. Generated search links remain available in the main archive while these gaps are filled.
       </p>
-      ${renderQualitySubsection('missing-links', 'Missing direct provider links', missingLinks, 'links')}
+      ${renderQualitySubsection('missing-links', 'Missing album / release direct links', missingLinks, 'links')}
       ${renderQualitySubsection('missing-sources', 'Missing source citations', missingSources, 'sources')}
     </section>`;
   }
@@ -312,6 +372,7 @@
 
   // ---------- Build category nav ----------
   const catsContainer = document.getElementById('cats');
+  const languageContainer = document.getElementById('languages');
   const stickyBar = document.querySelector('.search-bar');
   const cats = [{ id: 'all', label: 'All' }]
     .concat(sections.map(s => ({ id: s.id, label: s.title })))
@@ -319,10 +380,22 @@
   catsContainer.innerHTML = cats.map((c, i) =>
     `<button class="cat-pill ${i === 0 ? 'active' : ''}" type="button" data-cat="${c.id}" aria-pressed="${i === 0 ? 'true' : 'false'}">${escapeHtml(c.label)}</button>`
   ).join('');
+  const languages = [{ id: 'all', label: 'All Languages' }].concat(collectLanguages(sections));
+  languageContainer.innerHTML = languages.map((language, i) =>
+    `<button class="lang-pill ${i === 0 ? 'active' : ''}" type="button" data-language="${escapeHtml(language.id)}" aria-pressed="${i === 0 ? 'true' : 'false'}">${escapeHtml(language.label)}</button>`
+  ).join('');
 
   function setActiveCategoryButton(categoryId) {
     document.querySelectorAll('.cat-pill').forEach(pill => {
       const isActive = pill.getAttribute('data-cat') === categoryId;
+      pill.classList.toggle('active', isActive);
+      pill.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+  }
+
+  function setActiveLanguageButton(languageId) {
+    document.querySelectorAll('.lang-pill').forEach(pill => {
+      const isActive = pill.getAttribute('data-language') === languageId;
       pill.classList.toggle('active', isActive);
       pill.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
@@ -375,6 +448,7 @@
   const resultNext = document.getElementById('result-next');
   const resultPosition = document.getElementById('result-position');
   let activeCat = 'all';
+  let activeLang = 'all';
   let activeResultIndex = -1;
   let visibleResults = [];
 
@@ -383,8 +457,35 @@
   const allSubsections = Array.from(document.querySelectorAll('.subsection'));
   const allSections = Array.from(document.querySelectorAll('.section'));
 
+  function syncVersionRows(el) {
+    const versionRows = Array.from(el.querySelectorAll('.entry-version[data-language]'));
+    if (!versionRows.length) return activeLang === 'all';
+
+    let visibleRows = 0;
+    versionRows.forEach(row => {
+      const matchesLanguage = activeLang === 'all' || row.getAttribute('data-language') === activeLang;
+      row.classList.toggle('hidden', !matchesLanguage);
+      if (matchesLanguage) visibleRows++;
+    });
+
+    return activeLang === 'all' || visibleRows > 0;
+  }
+
+  function entrySearchText(el) {
+    if (activeLang === 'all') return el.getAttribute('data-search') || '';
+
+    const versionRows = Array.from(el.querySelectorAll('.entry-version[data-language]'));
+    const matchingRows = versionRows.filter(row => row.getAttribute('data-language') === activeLang);
+    if (!matchingRows.length) return '';
+    return (
+      matchingRows.map(row => row.getAttribute('data-search') || row.textContent || '').join(' ') +
+      ' ' +
+      (el.getAttribute('data-entry-meta') || '')
+    ).toLowerCase();
+  }
+
   function syncResultNav() {
-    const hasScopedResults = visibleResults.length > 0 && (currentQuery || activeCat !== 'all');
+    const hasScopedResults = visibleResults.length > 0 && (currentQuery || activeCat !== 'all' || activeLang !== 'all');
     resultNav.hidden = !hasScopedResults;
     resultPrev.disabled = !hasScopedResults || visibleResults.length <= 1;
     resultNext.disabled = !hasScopedResults || visibleResults.length <= 1;
@@ -427,9 +528,10 @@
 
     // First pass: entries
     allEntries.forEach(el => {
-      const text = el.getAttribute('data-search') || '';
+      const matchesLanguage = syncVersionRows(el);
+      const text = entrySearchText(el);
       const matchesQuery = !query || text.indexOf(query) !== -1;
-      if (matchesQuery) {
+      if (matchesLanguage && matchesQuery) {
         el.classList.remove('hidden');
         visibleCount++;
       } else {
@@ -461,14 +563,14 @@
     });
 
     countEl.textContent = visibleCount;
-    clearBtn.hidden = (!query && activeCat === 'all');
+    clearBtn.hidden = (!query && activeCat === 'all' && activeLang === 'all');
     visibleResults = allEntries.filter(el => {
       if (el.classList.contains('hidden')) return false;
       const section = el.closest('.section');
       return section && !section.classList.contains('hidden');
     });
 
-    if (visibleResults.length > 0 && (query || activeCat !== 'all')) {
+    if (visibleResults.length > 0 && (query || activeCat !== 'all' || activeLang !== 'all')) {
       const retainedIndex = previousActive ? visibleResults.indexOf(previousActive) : -1;
       const nextIndex = retainedIndex >= 0 ? retainedIndex : 0;
       setActiveResult(nextIndex, Boolean(options.scrollToFirst && query && query !== previousQuery));
@@ -478,7 +580,7 @@
 
     // empty state
     const allHidden = !Array.from(document.querySelectorAll('.section')).some(s => !s.classList.contains('hidden'));
-    empty.classList.toggle('show', allHidden && (query || activeCat !== 'all'));
+    empty.classList.toggle('show', allHidden && (query || activeCat !== 'all' || activeLang !== 'all'));
 
     // re-highlight: requires re-render of visible matches. For perf, only highlight on query change.
     if (query) {
@@ -494,7 +596,7 @@
     if (!query) return;
     const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const re = new RegExp('(' + escaped + ')', 'gi');
-    const selectors = '.entry:not(.hidden) .entry-title, .entry:not(.hidden) .entry-note, .entry:not(.hidden) .version-title, .entry:not(.hidden) .version-date, .entry:not(.hidden) .missing-list';
+    const selectors = '.entry:not(.hidden) .entry-title, .entry:not(.hidden) .entry-note, .entry:not(.hidden) .entry-version:not(.hidden) .version-title, .entry:not(.hidden) .entry-version:not(.hidden) .version-date, .entry:not(.hidden) .missing-list';
     document.querySelectorAll(selectors).forEach(el => {
       // skip if already highlighted
       if (el.querySelector('mark')) return;
@@ -529,7 +631,9 @@
   clearBtn.addEventListener('click', () => {
     searchInput.value = '';
     activeCat = 'all';
+    activeLang = 'all';
     setActiveCategoryButton(activeCat);
+    setActiveLanguageButton(activeLang);
     applyFilter();
     searchInput.focus();
   });
@@ -552,6 +656,14 @@
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+  });
+
+  languageContainer.addEventListener('click', (e) => {
+    const btn = e.target.closest('.lang-pill');
+    if (!btn) return;
+    activeLang = btn.getAttribute('data-language');
+    setActiveLanguageButton(activeLang);
+    applyFilter({ scrollToFirst: true });
   });
 
   resultPrev.addEventListener('click', () => navigateResults(-1));

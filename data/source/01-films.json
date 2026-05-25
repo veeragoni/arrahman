@@ -16,7 +16,10 @@
             {
               "language": "Tamil",
               "title": "Roja",
-              "date": "15-08-1992"
+              "date": "15-08-1992",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1yhVLCFqvjIAARRbzbhY30"
+              }
             },
             {
               "language": "Telugu",
@@ -26,7 +29,10 @@
             {
               "language": "Hindi",
               "title": "Roja",
-              "date": "1994"
+              "date": "1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2lORIs7BAIYVH7xxcXsUn7"
+              }
             },
             {
               "language": "Malayalam",
@@ -52,12 +58,18 @@
             {
               "language": "Telugu",
               "title": "Yoddha",
-              "date": "1992"
+              "date": "1992",
+              "links": {
+                "spotify": "https://open.spotify.com/album/35YVDGDJIFpCh8DtVU9z55"
+              }
             },
             {
               "language": "Hindi",
               "title": "Dharam Yoddha",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6x1t9cw0dfVGeSMgEdVLWL"
+              }
             },
             {
               "language": "Malayalam",
@@ -83,7 +95,10 @@
             {
               "language": "Hindi",
               "title": "Vishwa Vidhaata",
-              "date": "1997"
+              "date": "1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7n2LnI7McP6J3Jsc9ZmFQe"
+              }
             }
           ]
         },
@@ -94,17 +109,26 @@
             {
               "language": "Tamil",
               "title": "Gentleman",
-              "date": "1994"
+              "date": "1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6aO84HI1Psa48OLXJMZLRM"
+              }
             },
             {
               "language": "Telugu",
               "title": "Gentleman",
-              "date": "1994"
+              "date": "1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6aO84HI1Psa48OLXJMZLRM"
+              }
             },
             {
               "language": "Hindi",
               "title": "The Gentleman",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6a3DRD4GaWRXON1j1RbZyN"
+              }
             }
           ]
         },
@@ -131,17 +155,26 @@
             {
               "language": "Tamil",
               "title": "Thiruda Thiruda",
-              "date": "13-11-1993"
+              "date": "13-11-1993",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4ZainykpWQep1A7T7YHhK6"
+              }
             },
             {
               "language": "Telugu",
               "title": "Donga Donga",
-              "date": "1994"
+              "date": "1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5KMG2UKnAQbbkVXtu7KYRM"
+              }
             },
             {
               "language": "Hindi",
               "title": "Chor Chor",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4uIrOH6m0hgpPyq2qwq1Ld"
+              }
             }
           ]
         },
@@ -168,17 +201,26 @@
             {
               "language": "Tamil",
               "title": "Duet",
-              "date": "20-05-1994"
+              "date": "20-05-1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3OmP0dk4emTmCwliKuPY7j"
+              }
             },
             {
               "language": "Telugu",
               "title": "Duet",
-              "date": "1994"
+              "date": "1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3OmP0dk4emTmCwliKuPY7j"
+              }
             },
             {
               "language": "Hindi",
               "title": "Tu Hi Mera Dil",
-              "date": "1995"
+              "date": "1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0YvytTk1eqopnyg5CiOhd5"
+              }
             }
           ]
         },
@@ -189,17 +231,26 @@
             {
               "language": "Tamil",
               "title": "Super Police",
-              "date": "1995"
+              "date": "1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2C1fpjDU4U8YLswJbslWFU"
+              }
             },
             {
               "language": "Telugu",
               "title": "Super Police",
-              "date": "23-06-1994"
+              "date": "23-06-1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2C1fpjDU4U8YLswJbslWFU"
+              }
             },
             {
               "language": "Hindi",
               "title": "Khel Khiladi Ka",
-              "date": "1998"
+              "date": "1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/32PLrvNkhWg7ZQqe4Ddnnp"
+              }
             }
           ]
         },
@@ -210,7 +261,10 @@
             {
               "language": "Tamil",
               "title": "Manitha Manitha",
-              "date": "1995"
+              "date": "1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4EHjLVh8VF0l3WtxDLwZDP"
+              }
             },
             {
               "language": "Telugu",
@@ -226,7 +280,10 @@
             {
               "language": "Tamil",
               "title": "May Madham",
-              "date": "09-09-1994"
+              "date": "09-09-1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2cr3fCKkiDYE2lsZL2GoOc"
+              }
             },
             {
               "language": "Telugu",
@@ -255,7 +312,10 @@
             {
               "language": "Telugu",
               "title": "Premikudu",
-              "date": "1994"
+              "date": "1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/68k7QMGYN8eiEY1CAl5sEy"
+              }
             },
             {
               "language": "Hindi",
@@ -290,17 +350,26 @@
             {
               "language": "Tamil",
               "title": "Bombay",
-              "date": "10-03-1995"
+              "date": "10-03-1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3EbZ15hRMrD2uGZWzuJQQE"
+              }
             },
             {
               "language": "Telugu",
               "title": "Bombay",
-              "date": "1995"
+              "date": "1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3EbZ15hRMrD2uGZWzuJQQE"
+              }
             },
             {
               "language": "Hindi",
               "title": "Bombay",
-              "date": "1995"
+              "date": "1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3EbZ15hRMrD2uGZWzuJQQE"
+              }
             }
           ]
         },
@@ -311,17 +380,26 @@
             {
               "language": "Tamil",
               "title": "Indira",
-              "date": "11-05-1995"
+              "date": "11-05-1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6qtCCtADRtEmiSAD5qcdjr"
+              }
             },
             {
               "language": "Telugu",
               "title": "Indira",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6qtCCtADRtEmiSAD5qcdjr"
+              }
             },
             {
               "language": "Hindi",
               "title": "Priyanka",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/55kkprSML5QKdhpuMAkefP"
+              }
             }
           ]
         },
@@ -332,17 +410,26 @@
             {
               "language": "Tamil",
               "title": "Rangeela",
-              "date": "1995"
+              "date": "1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1Wbsq2OF6KPbGDfedG0XX6"
+              }
             },
             {
               "language": "Telugu",
               "title": "Rangeli",
-              "date": "1995"
+              "date": "1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3JFatY2ZowfMMDUIuZiVfs"
+              }
             },
             {
               "language": "Hindi",
               "title": "Rangeela",
-              "date": "08-11-1995"
+              "date": "08-11-1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1Wbsq2OF6KPbGDfedG0XX6"
+              }
             }
           ]
         },
@@ -353,17 +440,26 @@
             {
               "language": "Tamil",
               "title": "Muthu",
-              "date": "23-10-1995"
+              "date": "23-10-1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2WqYqafDXsCSy9q5DFJZ27"
+              }
             },
             {
               "language": "Telugu",
               "title": "Muthu",
-              "date": "1995"
+              "date": "1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2WqYqafDXsCSy9q5DFJZ27"
+              }
             },
             {
               "language": "Hindi",
               "title": "Muthu Maharaja",
-              "date": "1998"
+              "date": "1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/01oKgx0W1I1w1z4FatNlK5"
+              }
             }
           ]
         },
@@ -374,17 +470,26 @@
             {
               "language": "Tamil",
               "title": "Love Birds",
-              "date": "15-01-1996"
+              "date": "15-01-1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/42XW7YaJnzkMhPQPnlu54i"
+              }
             },
             {
               "language": "Telugu",
               "title": "Love Birds",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/42XW7YaJnzkMhPQPnlu54i"
+              }
             },
             {
               "language": "Hindi",
               "title": "Love Birds",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/42XW7YaJnzkMhPQPnlu54i"
+              }
             }
           ]
         },
@@ -395,7 +500,10 @@
             {
               "language": "Tamil",
               "title": "Indian",
-              "date": "09-05-1995"
+              "date": "09-05-1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6vC6jvbclKQ02dk5Ut12fM"
+              }
             },
             {
               "language": "Telugu",
@@ -421,7 +529,10 @@
             {
               "language": "Telugu",
               "title": "Prema Desam",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3Tb8euaGrKQtutY0rvgnqv"
+              }
             },
             {
               "language": "Hindi",
@@ -437,17 +548,26 @@
             {
               "language": "Tamil",
               "title": "Mr Romeo",
-              "date": "10-11-1996"
+              "date": "10-11-1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3PxphLHk9HQDTTjhqM56sd"
+              }
             },
             {
               "language": "Telugu",
               "title": "Mr Romeo",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3PxphLHk9HQDTTjhqM56sd"
+              }
             },
             {
               "language": "Hindi",
               "title": "Mr Romeo",
-              "date": "1997"
+              "date": "1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3PxphLHk9HQDTTjhqM56sd"
+              }
             }
           ]
         },
@@ -458,17 +578,26 @@
             {
               "language": "Tamil",
               "title": "Minsara Kanavu",
-              "date": "14-01-1997"
+              "date": "14-01-1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/79sIQEpPymbRpykImP7u2e"
+              }
             },
             {
               "language": "Telugu",
               "title": "Merupu Kalalu",
-              "date": "1997"
+              "date": "1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3DyGSfAWdkNgUA5CbSWPel"
+              }
             },
             {
               "language": "Hindi",
               "title": "Sapnay",
-              "date": "1997"
+              "date": "1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0TrDzwkRB768aoi2680LZT"
+              }
             }
           ]
         },
@@ -479,12 +608,18 @@
             {
               "language": "Tamil",
               "title": "Iruvar",
-              "date": "14-01-1997"
+              "date": "14-01-1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/09p4icXnEyH39Ud41pbTel"
+              }
             },
             {
               "language": "Telugu",
               "title": "Iddaru",
-              "date": "1997"
+              "date": "1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3BQo5xJMds0LOpSZqnsHpx"
+              }
             }
           ]
         },
@@ -495,17 +630,26 @@
             {
               "language": "Tamil",
               "title": "Ottam",
-              "date": "1997"
+              "date": "1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2O02t1W40XBCCnpml9rQWF"
+              }
             },
             {
               "language": "Telugu",
               "title": "50-50",
-              "date": "1997"
+              "date": "1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2gig0rLYAwnQQVAGzpThrt"
+              }
             },
             {
               "language": "Hindi",
               "title": "Daud",
-              "date": "22-08-1997"
+              "date": "22-08-1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3kSlPXyVJTzxDM5J7ywvGc"
+              }
             }
           ]
         },
@@ -521,7 +665,10 @@
             {
               "language": "Telugu",
               "title": "Rakshakudu",
-              "date": "1998"
+              "date": "1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0xTyeKjVLy5in9t548ofXR"
+              }
             }
           ]
         },
@@ -532,12 +679,18 @@
             {
               "language": "Tamil",
               "title": "Monalisa",
-              "date": "1997"
+              "date": "1997",
+              "links": {
+                "spotify": "https://open.spotify.com/album/17p9yDCQaD83UMfO9iJJDM"
+              }
             },
             {
               "language": "Hindi",
               "title": "Kabhi Na Kabhi",
-              "date": "17-04-1998"
+              "date": "17-04-1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4rK3bxZ8AHllG6RFF61tAv"
+              }
             }
           ]
         },
@@ -548,17 +701,26 @@
             {
               "language": "Tamil",
               "title": "Jeans",
-              "date": "24-04-1998"
+              "date": "24-04-1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7tJng3wvP3e4VXTadYCKYp"
+              }
             },
             {
               "language": "Telugu",
               "title": "Jeans",
-              "date": "1998"
+              "date": "1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7tJng3wvP3e4VXTadYCKYp"
+              }
             },
             {
               "language": "Hindi",
               "title": "Jeans",
-              "date": "1998"
+              "date": "1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7tJng3wvP3e4VXTadYCKYp"
+              }
             }
           ]
         },
@@ -569,17 +731,26 @@
             {
               "language": "Tamil",
               "title": "Uyire",
-              "date": "1998"
+              "date": "1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0k86Kvn1tWnPdBucZEfRhW"
+              }
             },
             {
               "language": "Telugu",
               "title": "Prematho",
-              "date": "1998"
+              "date": "1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7wdYLj7GQIeNon7USxAQGt"
+              }
             },
             {
               "language": "Hindi",
               "title": "Dil se",
-              "date": "21-08-1998"
+              "date": "21-08-1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/54NUwj7U1MOhA1ZGbnhiMz"
+              }
             }
           ]
         },
@@ -590,17 +761,26 @@
             {
               "language": "Tamil",
               "title": "Jodi",
-              "date": "1999"
+              "date": "1999",
+              "links": {
+                "spotify": "https://open.spotify.com/album/530Ue2hZyDFcgiDubkR5FY"
+              }
             },
             {
               "language": "Telugu",
               "title": "Jodi",
-              "date": "1999"
+              "date": "1999",
+              "links": {
+                "spotify": "https://open.spotify.com/album/530Ue2hZyDFcgiDubkR5FY"
+              }
             },
             {
               "language": "Hindi",
               "title": "Doli Sajake Rakhna",
-              "date": "27-11-1998"
+              "date": "27-11-1998",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2pxH6q1Vc7L4iXh8UtwCYg"
+              }
             },
             {
               "language": "Other",
@@ -632,12 +812,18 @@
             {
               "language": "Tamil",
               "title": "Padaiyappa",
-              "date": "10-04-1999"
+              "date": "10-04-1999",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6o4v88RU1YBb0mjjQPt83k"
+              }
             },
             {
               "language": "Telugu",
               "title": "Narasimha",
-              "date": "1999"
+              "date": "1999",
+              "links": {
+                "spotify": "https://open.spotify.com/album/52CI6SmtabQYXCE2pPfUc2"
+              }
             }
           ]
         },
@@ -648,17 +834,26 @@
             {
               "language": "Tamil",
               "title": "Kadhalar Dhinam",
-              "date": "09-07-1999"
+              "date": "09-07-1999",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4sklz5X4bxEpDlzgY8KtE2"
+              }
             },
             {
               "language": "Telugu",
               "title": "Premikula Roju",
-              "date": "1999"
+              "date": "1999",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6g1ZgfkzPrpDsavuLqusjS"
+              }
             },
             {
               "language": "Hindi",
               "title": "Dil Hi Dil Mein",
-              "date": "1999"
+              "date": "1999",
+              "links": {
+                "spotify": "https://open.spotify.com/album/15wpQtYDmZO2sFuKG5RUDM"
+              }
             }
           ]
         },
@@ -674,7 +869,10 @@
             {
               "language": "Hindi",
               "title": "Taal",
-              "date": "13-08-1999"
+              "date": "13-08-1999",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3bqIzWWbArrjJ963HKeZcd"
+              }
             }
           ]
         },
@@ -685,17 +883,26 @@
             {
               "language": "Tamil",
               "title": "Mudhalvan",
-              "date": "07-11-1999"
+              "date": "07-11-1999",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4F7dfzbcgeQC6LgeoRXWf2"
+              }
             },
             {
               "language": "Telugu",
               "title": "Oke Okkadu",
-              "date": "1999"
+              "date": "1999",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0WsER3BJQlG3BmS2D5jR4d"
+              }
             },
             {
               "language": "Hindi",
               "title": "Nayak",
-              "date": "2001"
+              "date": "2001",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5W1ubgKFekZLnfy7lZ5H2w"
+              }
             }
           ]
         },
@@ -711,12 +918,18 @@
             {
               "language": "Telugu",
               "title": "Sakhi",
-              "date": "2000"
+              "date": "2000",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0x25Nwzk4BVwlUaZq5Hczu"
+              }
             },
             {
               "language": "Hindi",
               "title": "Saathiya",
-              "date": "20-12-2002"
+              "date": "20-12-2002",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6BJPcgCN37gDKtPh7gmJ3p"
+              }
             }
           ]
         },
@@ -727,7 +940,10 @@
             {
               "language": "Tamil",
               "title": "Kandukondain Kandukondain",
-              "date": "05-05-2000"
+              "date": "05-05-2000",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7lBR9rkxi63RrNz9aWvAgK"
+              }
             },
             {
               "language": "Telugu",
@@ -743,12 +959,18 @@
             {
               "language": "Tamil",
               "title": "Rhythm",
-              "date": "15-09-2000"
+              "date": "15-09-2000",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1g4wry4ULxJGiSMlV1RAsC"
+              }
             },
             {
               "language": "Telugu",
               "title": "Rhythm",
-              "date": "2000"
+              "date": "2000",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1g4wry4ULxJGiSMlV1RAsC"
+              }
             }
           ]
         },
@@ -775,7 +997,10 @@
             {
               "language": "Tamil",
               "title": "Star",
-              "date": "27-07-2001"
+              "date": "27-07-2001",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3lMwUgro0GLV5Gt68sfd5k"
+              }
             },
             {
               "language": "Telugu",
@@ -796,7 +1021,10 @@
             {
               "language": "Telugu",
               "title": "Paravasam",
-              "date": "2000"
+              "date": "2000",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2Nr1c2SszouPRn10yTuYHo"
+              }
             }
           ]
         },
@@ -807,12 +1035,18 @@
             {
               "language": "Tamil",
               "title": "Kannathil Muthamittal",
-              "date": "14-02-2002"
+              "date": "14-02-2002",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0E8R33I35UIQx0eQBF3B1L"
+              }
             },
             {
               "language": "Telugu",
               "title": "Amritha",
-              "date": "2002"
+              "date": "2002",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3azkIGiPYwfvGmAgDQsq0p"
+              }
             }
           ]
         },
@@ -823,12 +1057,18 @@
             {
               "language": "Tamil",
               "title": "Baba",
-              "date": "15-08-2002"
+              "date": "15-08-2002",
+              "links": {
+                "spotify": "https://open.spotify.com/album/31j749q1y4bEyrMy1huewm"
+              }
             },
             {
               "language": "Telugu",
               "title": "Baba",
-              "date": "2002"
+              "date": "2002",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1EGBSC9ZGRVC3MLbYGnm71"
+              }
             }
           ]
         },
@@ -839,7 +1079,10 @@
             {
               "language": "Tamil",
               "title": "Parasuram",
-              "date": "30-05-2003"
+              "date": "30-05-2003",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4CaKR69oPK9dqb0CSqqt9O"
+              }
             },
             {
               "language": "Telugu",
@@ -855,17 +1098,26 @@
             {
               "language": "Tamil",
               "title": "Boys",
-              "date": "29-08-2003"
+              "date": "29-08-2003",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2VjFHDqMCemQLRvCXlbEHf"
+              }
             },
             {
               "language": "Telugu",
               "title": "Boys",
-              "date": "2003"
+              "date": "2003",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2VjFHDqMCemQLRvCXlbEHf"
+              }
             },
             {
               "language": "Hindi",
               "title": "Boys",
-              "date": "2012"
+              "date": "2012",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2VjFHDqMCemQLRvCXlbEHf"
+              }
             }
           ]
         },
@@ -876,12 +1128,18 @@
             {
               "language": "Tamil",
               "title": "Enakku 20 Unakku 18",
-              "date": "19-12-2003"
+              "date": "19-12-2003",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3TWRNsEZN52wwdGTEC1tc8"
+              }
             },
             {
               "language": "Telugu",
               "title": "Nee Manasu Naaku Telusu",
-              "date": "2005"
+              "date": "2005",
+              "links": {
+                "spotify": "https://open.spotify.com/album/14ssSeZ0JOsaBITu0pGX3y"
+              }
             }
           ]
         },
@@ -913,7 +1171,10 @@
             {
               "language": "Tamil",
               "title": "New",
-              "date": "09-07-2004"
+              "date": "09-07-2004",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6fyRVDVfa7VMSPTWJ8bUVE"
+              }
             },
             {
               "language": "Telugu",
@@ -929,12 +1190,18 @@
             {
               "language": "Tamil",
               "title": "Desam",
-              "date": "2005"
+              "date": "2005",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1T0h8a04zxOiIp9bpFQLlr"
+              }
             },
             {
               "language": "Hindi",
               "title": "Swades",
-              "date": "17-12-2004"
+              "date": "17-12-2004",
+              "links": {
+                "spotify": "https://open.spotify.com/album/72oHSx1OrxR0gig6JcVAEW"
+              }
             }
           ]
         },
@@ -945,12 +1212,18 @@
             {
               "language": "Telugu",
               "title": "Kisna",
-              "date": "2005"
+              "date": "2005",
+              "links": {
+                "spotify": "https://open.spotify.com/album/17RWh0VqIZTUR0LmA6g7gw"
+              }
             },
             {
               "language": "Hindi",
               "title": "Kisna",
-              "date": "21-01-2004"
+              "date": "21-01-2004",
+              "links": {
+                "spotify": "https://open.spotify.com/album/17RWh0VqIZTUR0LmA6g7gw"
+              }
             }
           ]
         },
@@ -966,7 +1239,10 @@
             {
               "language": "Telugu",
               "title": "Nuvvu Nenu Prema",
-              "date": "2006"
+              "date": "2006",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3osoTBcE4YcjPtLCSF9Hq9"
+              }
             }
           ]
         },
@@ -982,7 +1258,10 @@
             {
               "language": "Other",
               "title": "God Father (Kannada)",
-              "date": "2012"
+              "date": "2012",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5WHTiib38X6k5SaPGUKO69"
+              }
             }
           ]
         },
@@ -993,17 +1272,26 @@
             {
               "language": "Tamil",
               "title": "Guru",
-              "date": "2007"
+              "date": "2007",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1KUhs5DCSDhq6V1AcgjXab"
+              }
             },
             {
               "language": "Telugu",
               "title": "Gurukanth",
-              "date": "2006"
+              "date": "2006",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1Yy9IJzbvmd5T8lHGkGJKQ"
+              }
             },
             {
               "language": "Hindi",
               "title": "Guru",
-              "date": "12-01-2007"
+              "date": "12-01-2007",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1KUhs5DCSDhq6V1AcgjXab"
+              }
             }
           ]
         },
@@ -1062,17 +1350,26 @@
             {
               "language": "Tamil",
               "title": "Jodhaa Akbar",
-              "date": "2008"
+              "date": "2008",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3s9f4Tuzbvt2dvzY4UUgU7"
+              }
             },
             {
               "language": "Telugu",
               "title": "Jodhaa Akbar",
-              "date": "2008"
+              "date": "2008",
+              "links": {
+                "spotify": "https://open.spotify.com/album/01zoWPIQr9jSrAPy7cnBi7"
+              }
             },
             {
               "language": "Hindi",
               "title": "Jodhaa Akbar",
-              "date": "15-02-2008"
+              "date": "15-02-2008",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3s9f4Tuzbvt2dvzY4UUgU7"
+              }
             }
           ]
         },
@@ -1093,7 +1390,10 @@
             {
               "language": "Other",
               "title": "Slumdog Millionaire - OST",
-              "date": "25-12-2008"
+              "date": "25-12-2008",
+              "links": {
+                "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM"
+              }
             }
           ]
         },
@@ -1104,7 +1404,10 @@
             {
               "language": "Telugu",
               "title": "Prem Nagar",
-              "date": "2007"
+              "date": "2007",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0xJdpDAIqOY2WLiq0vsive"
+              }
             },
             {
               "language": "Malayalam",
@@ -1125,12 +1428,18 @@
             {
               "language": "Telugu",
               "title": "Blue",
-              "date": "2011"
+              "date": "2011",
+              "links": {
+                "spotify": "https://open.spotify.com/album/45HaaeQWPzIHJDpvVdYXm8"
+              }
             },
             {
               "language": "Hindi",
               "title": "Blue",
-              "date": "16-10-2009"
+              "date": "16-10-2009",
+              "links": {
+                "spotify": "https://open.spotify.com/album/45HaaeQWPzIHJDpvVdYXm8"
+              }
             }
           ]
         },
@@ -1162,7 +1471,10 @@
             {
               "language": "Tamil",
               "title": "Raavanan",
-              "date": "2010"
+              "date": "2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7ywJmodDrksHrxbnqHSDuT"
+              }
             },
             {
               "language": "Telugu",
@@ -1172,7 +1484,10 @@
             {
               "language": "Hindi",
               "title": "Raavan",
-              "date": "18-06-2010"
+              "date": "18-06-2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5VZBNteoMladEq8McyODLx"
+              }
             }
           ]
         },
@@ -1183,17 +1498,26 @@
             {
               "language": "Tamil",
               "title": "Enthiran",
-              "date": "01-10-2010"
+              "date": "01-10-2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3bxnbterkUaeYkhTUEKBZP"
+              }
             },
             {
               "language": "Telugu",
               "title": "Robot",
-              "date": "2010"
+              "date": "2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/66GypleNyBvRB81vfj15Ib"
+              }
             },
             {
               "language": "Hindi",
               "title": "Robot",
-              "date": "2010"
+              "date": "2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/66GypleNyBvRB81vfj15Ib"
+              }
             }
           ]
         },
@@ -1204,12 +1528,18 @@
             {
               "language": "Tamil",
               "title": "Kadal",
-              "date": "01-02-2012"
+              "date": "01-02-2012",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3j8iyHi0RxqLLV97ZGOCPm"
+              }
             },
             {
               "language": "Telugu",
               "title": "Kadali",
-              "date": "2012"
+              "date": "2012",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7wGrzHQIUO8UGH017zfIqx"
+              }
             }
           ]
         },
@@ -1220,12 +1550,18 @@
             {
               "language": "Tamil",
               "title": "Maryan",
-              "date": "19-07-2013"
+              "date": "19-07-2013",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4NHRsm0K6U2PhxFgNhEBby"
+              }
             },
             {
               "language": "Telugu",
               "title": "Mariyaan",
-              "date": "2015"
+              "date": "2015",
+              "links": {
+                "spotify": "https://open.spotify.com/album/41uG5Q27NGJM3Uyb9FKZJI"
+              }
             }
           ]
         },
@@ -1236,7 +1572,10 @@
             {
               "language": "Tamil",
               "title": "Ambikapathy",
-              "date": "2013"
+              "date": "2013",
+              "links": {
+                "spotify": "https://open.spotify.com/album/40cDD0g08a1o03jkhigJn6"
+              }
             },
             {
               "language": "Hindi",
@@ -1283,7 +1622,10 @@
             {
               "language": "Malayalam",
               "title": "Pradhi Nayagan",
-              "date": "2015"
+              "date": "2015",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0pHIOQ5rFN7QCp9kF0B0dO"
+              }
             }
           ]
         },
@@ -1294,17 +1636,26 @@
             {
               "language": "Tamil",
               "title": "Lingaa",
-              "date": "12-12-2014"
+              "date": "12-12-2014",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5UAf4SwecevD9TVzHchZ31"
+              }
             },
             {
               "language": "Telugu",
               "title": "Lingaa",
-              "date": "2014"
+              "date": "2014",
+              "links": {
+                "spotify": "https://open.spotify.com/album/34Hheldd8xIVTvLNZNED6Y"
+              }
             },
             {
               "language": "Hindi",
               "title": "Lingaa",
-              "date": "2014"
+              "date": "2014",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6p5KqHoNl9CjRHxHdpTOkt"
+              }
             }
           ]
         },
@@ -1315,12 +1666,18 @@
             {
               "language": "Tamil",
               "title": "I the movie",
-              "date": "14-01-2015"
+              "date": "14-01-2015",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0dVOnFdwJX44jUH1bs8O5h"
+              }
             },
             {
               "language": "Telugu",
               "title": "I Manoharudu",
-              "date": "2014"
+              "date": "2014",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0PqDwbg5QiH6S0uZTPWJR8"
+              }
             },
             {
               "language": "Hindi",
@@ -1336,17 +1693,26 @@
             {
               "language": "Tamil",
               "title": "OK Kanmani",
-              "date": "17-04-2015"
+              "date": "17-04-2015",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6XBC9UsX48MzHICIr9m0hj"
+              }
             },
             {
               "language": "Telugu",
               "title": "OK Bangaram",
-              "date": "2015"
+              "date": "2015",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2ACTCMr0Zb8h2AsqjpFUPF"
+              }
             },
             {
               "language": "Hindi",
               "title": "OK Jaanu",
-              "date": "13-01-2017"
+              "date": "13-01-2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3Ha8CM9px7D2fn25K4ijl6"
+              }
             }
           ]
         },
@@ -1357,12 +1723,18 @@
             {
               "language": "Tamil",
               "title": "24",
-              "date": "06-05-2016"
+              "date": "06-05-2016",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0dVOnFdwJX44jUH1bs8O5h"
+              }
             },
             {
               "language": "Telugu",
               "title": "24",
-              "date": "2016"
+              "date": "2016",
+              "links": {
+                "spotify": "https://open.spotify.com/album/74WLAlx1ffdAyX3jX0S9Y7"
+              }
             }
           ]
         },
@@ -1373,12 +1745,18 @@
             {
               "language": "Tamil",
               "title": "Achcham Yenbadhu Madamaiyada",
-              "date": "11-11-2016"
+              "date": "11-11-2016",
+              "links": {
+                "spotify": "https://open.spotify.com/album/28LJ6j4TXWj95KSU7VyDE8"
+              }
             },
             {
               "language": "Telugu",
               "title": "Saahasam Swasaga Saagipo",
-              "date": "2016"
+              "date": "2016",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2AVXf1Pdi3oud8FQ6NcC2S"
+              }
             }
           ]
         },
@@ -1394,7 +1772,10 @@
             {
               "language": "Telugu",
               "title": "Cheliyaa",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7pI3y4nmiOtqCPWPPltP0d"
+              }
             }
           ]
         },
@@ -1405,22 +1786,34 @@
             {
               "language": "Tamil",
               "title": "Sachin - A Billion Dreams",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6ppvLftZIWFQMlVTT6zpHA"
+              }
             },
             {
               "language": "Telugu",
               "title": "Sachin - A Billion Dreams",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6ppvLftZIWFQMlVTT6zpHA"
+              }
             },
             {
               "language": "Hindi",
               "title": "Sachin - A Billion Dreams",
-              "date": "29-05-2017"
+              "date": "29-05-2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6ppvLftZIWFQMlVTT6zpHA"
+              }
             },
             {
               "language": "Other",
               "title": "Sachin - A Billion Dreams (Marathi)",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6ppvLftZIWFQMlVTT6zpHA"
+              }
             }
           ]
         },
@@ -1431,22 +1824,34 @@
             {
               "language": "Tamil",
               "title": "MOM",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6rN8gFUuvMkw9yyKInqyOx"
+              }
             },
             {
               "language": "Telugu",
               "title": "MOM",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6rN8gFUuvMkw9yyKInqyOx"
+              }
             },
             {
               "language": "Hindi",
               "title": "MOM",
-              "date": "07-07-2017"
+              "date": "07-07-2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6rN8gFUuvMkw9yyKInqyOx"
+              }
             },
             {
               "language": "Malayalam",
               "title": "MOM",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6rN8gFUuvMkw9yyKInqyOx"
+              }
             }
           ]
         },
@@ -1457,12 +1862,18 @@
             {
               "language": "Tamil",
               "title": "Mersal",
-              "date": "08-10-2017"
+              "date": "08-10-2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0MDh58cA1cxQVOK5G7o2J5"
+              }
             },
             {
               "language": "Telugu",
               "title": "Adirindhi",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2sZ7TxoVW4krpe6Flm4EEj"
+              }
             }
           ]
         },
@@ -1473,12 +1884,18 @@
             {
               "language": "Tamil",
               "title": "Chekka Chivantha Vaanam",
-              "date": "27-09-2018"
+              "date": "27-09-2018",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6UCpyUkUVuNbWYUSefQVLc"
+              }
             },
             {
               "language": "Telugu",
               "title": "Nawab",
-              "date": "2018"
+              "date": "2018",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4qvZIh9L4jfjwPaAnvTfCZ"
+              }
             }
           ]
         },
@@ -1489,7 +1906,10 @@
             {
               "language": "Tamil",
               "title": "Sarkar",
-              "date": "06-11-2018"
+              "date": "06-11-2018",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0BsAtQgtYtnVPPs0v9UO0n"
+              }
             },
             {
               "language": "Telugu",
@@ -1505,17 +1925,26 @@
             {
               "language": "Tamil",
               "title": "2.0",
-              "date": "29-11-2017"
+              "date": "29-11-2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5fM5j2lslrO9AhkjsmGABU"
+              }
             },
             {
               "language": "Telugu",
               "title": "2.0",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6s7HfYhfVSlF4tRDhFpi21"
+              }
             },
             {
               "language": "Hindi",
               "title": "2.0",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3aQiBqxpDKJKGAlUSFFaHc"
+              }
             }
           ]
         },
@@ -1526,7 +1955,10 @@
             {
               "language": "Hindi",
               "title": "Partition : 1947",
-              "date": "2017"
+              "date": "2017",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1ChbdSwrPRZyqpuAntEXyh"
+              }
             },
             {
               "language": "Other",
@@ -1542,12 +1974,18 @@
             {
               "language": "Tamil",
               "title": "Sarvam Thaala Mayam",
-              "date": "09-02-2019"
+              "date": "09-02-2019",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4Q4hhE4O0Lx4avRvcX7lZL"
+              }
             },
             {
               "language": "Telugu",
               "title": "Sarvam Thaala Mayam",
-              "date": "2019"
+              "date": "2019",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4Q4hhE4O0Lx4avRvcX7lZL"
+              }
             }
           ]
         },
@@ -1558,17 +1996,26 @@
             {
               "language": "Tamil",
               "title": "Bigil",
-              "date": "25-10-2019"
+              "date": "25-10-2019",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2G7JyChJHrZYCBb0jL2N5t"
+              }
             },
             {
               "language": "Telugu",
               "title": "Whistle",
-              "date": "2019"
+              "date": "2019",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0Iuw5VaeWw9GX9Z76C9gq8"
+              }
             },
             {
               "language": "Other",
               "title": "Bigil (Kannada)",
-              "date": "2019"
+              "date": "2019",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2G7JyChJHrZYCBb0jL2N5t"
+              }
             }
           ]
         },
@@ -1579,7 +2026,10 @@
             {
               "language": "Tamil",
               "title": "Avengers - Endgame",
-              "date": "2019"
+              "date": "2019",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6r4Vfnoifx2CLiTKCaKji8"
+              }
             },
             {
               "language": "Telugu",
@@ -1589,7 +2039,10 @@
             {
               "language": "Hindi",
               "title": "Avengers-Endgame",
-              "date": "2019"
+              "date": "2019",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6r4Vfnoifx2CLiTKCaKji8"
+              }
             }
           ]
         },
@@ -1600,17 +2053,26 @@
             {
               "language": "Tamil",
               "title": "99 Songs",
-              "date": "2021"
+              "date": "2021",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4EcPtS9idSB8zy98Cl5yEf"
+              }
             },
             {
               "language": "Telugu",
               "title": "99 Songs",
-              "date": "2021"
+              "date": "2021",
+              "links": {
+                "spotify": "https://open.spotify.com/album/35GdOmCjKeyiMcJVtpAwoG"
+              }
             },
             {
               "language": "Hindi",
               "title": "99 Songs",
-              "date": "16-04-2021"
+              "date": "16-04-2021",
+              "links": {
+                "spotify": "https://open.spotify.com/album/35GdOmCjKeyiMcJVtpAwoG"
+              }
             }
           ]
         },
@@ -1642,17 +2104,26 @@
             {
               "language": "Tamil",
               "title": "Song - Shirdi Sai",
-              "date": "2021"
+              "date": "2021",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7L3nPC5OxJbIYj7sKZiRVR"
+              }
             },
             {
               "language": "Telugu",
               "title": "Song - Shirdi Sai",
-              "date": "2021"
+              "date": "2021",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7L3nPC5OxJbIYj7sKZiRVR"
+              }
             },
             {
               "language": "Hindi",
               "title": "Song - Shirdi Sai",
-              "date": "2020"
+              "date": "2020",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7L3nPC5OxJbIYj7sKZiRVR"
+              }
             }
           ]
         },
@@ -1668,7 +2139,10 @@
             {
               "language": "Hindi",
               "title": "Atrangi Re",
-              "date": "24-12-2021"
+              "date": "24-12-2021",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3UkMnMdm9Jq7eXIfv0YMXm"
+              }
             }
           ]
         },
@@ -1679,22 +2153,34 @@
             {
               "language": "Tamil",
               "title": "Cobra",
-              "date": "31-08-2022"
+              "date": "31-08-2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4nyx5HRA6OL5BR6HtAJPM0"
+              }
             },
             {
               "language": "Telugu",
               "title": "Cobra",
-              "date": "2022"
+              "date": "2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6haBl2H3dApFPOIfacu1lO"
+              }
             },
             {
               "language": "Malayalam",
               "title": "Cobra",
-              "date": "2022"
+              "date": "2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4nyx5HRA6OL5BR6HtAJPM0"
+              }
             },
             {
               "language": "Other",
               "title": "Cobra (Kannada)",
-              "date": "2022"
+              "date": "2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1qSwn3PO718zhJ7UhYBO0K"
+              }
             }
           ]
         },
@@ -1705,27 +2191,42 @@
             {
               "language": "Tamil",
               "title": "Ponniyin Selvan Part 1",
-              "date": "30-09-2022"
+              "date": "30-09-2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0aKkwn0Vq6oW8XmmcY8ouE"
+              }
             },
             {
               "language": "Telugu",
               "title": "Ponniyin Selvan Part 1",
-              "date": "2022"
+              "date": "2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0aKkwn0Vq6oW8XmmcY8ouE"
+              }
             },
             {
               "language": "Hindi",
               "title": "Ponniyin Selvan Part 1",
-              "date": "2022"
+              "date": "2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0aKkwn0Vq6oW8XmmcY8ouE"
+              }
             },
             {
               "language": "Malayalam",
               "title": "Ponniyin Selvan Part 1",
-              "date": "2022"
+              "date": "2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0aKkwn0Vq6oW8XmmcY8ouE"
+              }
             },
             {
               "language": "Other",
               "title": "Ponniyin Selvan Part 1 (Kannada)",
-              "date": "2022"
+              "date": "2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/49suOMXRb3AJIseI97Qu1J"
+              }
             }
           ]
         },
@@ -2050,6 +2551,65 @@
               "language": "Other",
               "title": "Gandhi Talks (Marathi)",
               "date": "26-01-2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recent-multilingual",
+      "num": "1.6",
+      "title": "Recent multi-language releases",
+      "type": "films",
+      "items": [
+        {
+          "type": "film",
+          "year": 2026,
+          "versions": [
+            {
+              "language": "Telugu",
+              "title": "Peddi",
+              "date": "04-06-2026",
+              "sources": [
+                "https://peddimovie.vercel.app/",
+                "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
+              ]
+            },
+            {
+              "language": "Hindi",
+              "title": "Peddi",
+              "date": "04-06-2026",
+              "sources": [
+                "https://peddimovie.vercel.app/",
+                "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
+              ]
+            },
+            {
+              "language": "Tamil",
+              "title": "Peddi",
+              "date": "04-06-2026",
+              "sources": [
+                "https://peddimovie.vercel.app/",
+                "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
+              ]
+            },
+            {
+              "language": "Kannada",
+              "title": "Peddi",
+              "date": "04-06-2026",
+              "sources": [
+                "https://peddimovie.vercel.app/",
+                "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
+              ]
+            },
+            {
+              "language": "Malayalam",
+              "title": "Peddi",
+              "date": "04-06-2026",
+              "sources": [
+                "https://peddimovie.vercel.app/",
+                "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
+              ]
             }
           ]
         }
