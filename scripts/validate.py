@@ -238,8 +238,9 @@ def main() -> None:
     require(WORKFLOW.exists(), "missing GitHub Pages workflow")
     workflow = WORKFLOW.read_text(encoding="utf-8")
     require("actions/deploy-pages" in workflow, "workflow must deploy with actions/deploy-pages")
-    require("--resolve-links" in workflow, "workflow must support build-time provider link resolution")
-    require("--search-engine duckduckgo" in workflow, "workflow must force DuckDuckGo link resolution")
+    require("python3 scripts/build.py" in workflow, "workflow must build generated site data")
+    require("--resolve-links" not in workflow, "workflow must not perform live provider link resolution")
+    require("--search-engine" not in workflow, "workflow must not depend on a live search backend")
     require("GOOGLE_API_KEY" not in workflow, "workflow must not depend on GOOGLE_API_KEY")
     require("GOOGLE_CSE_ID" not in workflow, "workflow must not depend on GOOGLE_CSE_ID")
 

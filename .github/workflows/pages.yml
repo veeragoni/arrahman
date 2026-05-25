@@ -29,7 +29,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build generated site data
-        run: python3 scripts/build.py --resolve-links --search-engine duckduckgo --resolve-limit 200
+        run: python3 scripts/build.py
 
       - name: Validate static site
         run: python3 scripts/validate.py

@@ -268,7 +268,10 @@
             {
               "language": "Tamil",
               "title": "Karuthamma",
-              "date": "03-11-1994"
+              "date": "03-11-1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6rUXwGOZ2Znsav84TwAMOu"
+              }
             },
             {
               "language": "Telugu",
@@ -2395,7 +2398,10 @@
           "type": "work",
           "title": "Gandhi Vs Godse – Ek Yudh",
           "year": 2023,
-          "date": "26-01-2023"
+          "date": "26-01-2023",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6XyUYRNAao9f3vFVLqjz0T"
+          }
         },
         {
           "type": "work",
