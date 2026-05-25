@@ -1950,7 +1950,10 @@
             {
               "language": "Telugu",
               "title": "Sarkar",
-              "date": "2018"
+              "date": "2018",
+              "links": {
+                "spotify": "https://open.spotify.com/album/79fwbrb205ZUf5E0pnoAsA"
+              }
             }
           ]
         },
@@ -2273,12 +2276,18 @@
             {
               "language": "Tamil",
               "title": "Vendhu Thanindhathu Kaadu",
-              "date": "15-09-2022"
+              "date": "15-09-2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5N3d00pvonn9vvse6TI42m"
+              }
             },
             {
               "language": "Telugu",
               "title": "Life of Muthu ( VTK-Telugu)",
-              "date": "2022"
+              "date": "2022",
+              "links": {
+                "spotify": "https://open.spotify.com/album/72dzyOkLrt83l7G3znCn97"
+              }
             }
           ]
         },
@@ -2309,7 +2318,10 @@
             {
               "language": "Other",
               "title": "Ponniyin Selvan Part 2 (Kannada)",
-              "date": "2023"
+              "date": "2023",
+              "links": {
+                "spotify": "https://open.spotify.com/album/49suOMXRb3AJIseI97Qu1J"
+              }
             }
           ]
         },
@@ -2320,12 +2332,18 @@
             {
               "language": "Tamil",
               "title": "Maamannan",
-              "date": "01-06-2023"
+              "date": "01-06-2023",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7pMOd6mZQQDi7hz6NYOKL0"
+              }
             },
             {
               "language": "Telugu",
               "title": "Nayakudu",
-              "date": "2023"
+              "date": "2023",
+              "links": {
+                "spotify": "https://open.spotify.com/album/48sa3XtM7QQBabRMLYqtgZ"
+              }
             }
           ]
         },
@@ -2336,7 +2354,10 @@
             {
               "language": "Tamil",
               "title": "Pathu Thala",
-              "date": "18-03-2023"
+              "date": "18-03-2023",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6y3yImd357ZGmMfb0mb1ts"
+              }
             },
             {
               "language": "Telugu",
@@ -2346,7 +2367,10 @@
             {
               "language": "Hindi",
               "title": "AGR",
-              "date": "02-01-2024"
+              "date": "02-01-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2PYD4Vv767N23fDtqRJV7T"
+              }
             }
           ]
         },
@@ -2362,7 +2386,10 @@
             {
               "language": "Telugu",
               "title": "Ayalaan",
-              "date": "10-12-2024"
+              "date": "10-12-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7JwmwrPrK41jqWB75PdzRz"
+              }
             }
           ]
         },
@@ -2378,12 +2405,18 @@
             {
               "language": "Telugu",
               "title": "Lal Salaam",
-              "date": "15-02-2024"
+              "date": "15-02-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/06WsEYnFZMI2uk6GTnPfHx"
+              }
             },
             {
               "language": "Hindi",
               "title": "Lal Salaam",
-              "date": "29-02-2024"
+              "date": "29-02-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1TeF9qpNSmewhmBzMbqPyn"
+              }
             }
           ]
         },
@@ -2414,7 +2447,10 @@
             {
               "language": "Other",
               "title": "Aadujeevitham-The Goat Life (Kannada)",
-              "date": "18-03-2024"
+              "date": "18-03-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4xh8b46TsysD9SK9QtD29k"
+              }
             }
           ]
         },
@@ -2425,12 +2461,18 @@
             {
               "language": "Tamil",
               "title": "Maidaan",
-              "date": "12-06-2024"
+              "date": "12-06-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3RcZ7BPQcNvz84loonQFqM"
+              }
             },
             {
               "language": "Telugu",
               "title": "Maidaan",
-              "date": "12-06-2024"
+              "date": "12-06-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/39znQhf1dN9clozTnKlPGY"
+              }
             },
             {
               "language": "Hindi",
@@ -2440,7 +2482,10 @@
             {
               "language": "Malayalam",
               "title": "Maidaan",
-              "date": "12-06-2024"
+              "date": "12-06-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3VvyFVcCgtmwb69TEiokGc"
+              }
             }
           ]
         },
@@ -2487,22 +2532,34 @@
             {
               "language": "Telugu",
               "title": "Kadhalikka Neramillai",
-              "date": "11-02-2025"
+              "date": "11-02-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1U8HniR8hhVjXzvqxhZnTg"
+              }
             },
             {
               "language": "Hindi",
               "title": "Kadhalikka Neramillai",
-              "date": "11-02-2025"
+              "date": "11-02-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1RhXXE86YFE1XSKakD6cay"
+              }
             },
             {
               "language": "Malayalam",
               "title": "Kadhalikka Neramillai",
-              "date": "11-02-2025"
+              "date": "11-02-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0EqWxQF5wAfvqeEyEobTc3"
+              }
             },
             {
               "language": "Other",
               "title": "Kadhalikka Neramillai",
-              "date": "11-02-2025"
+              "date": "11-02-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6bjgX7zQlQv9mmmtOJAMuM"
+              }
             }
           ]
         },
@@ -2513,7 +2570,10 @@
             {
               "language": "Telugu",
               "title": "Chhaava",
-              "date": "12-02-2025"
+              "date": "12-02-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5VufKHhqZdhNWyGfmfWrOB"
+              }
             },
             {
               "language": "Hindi",
@@ -2529,17 +2589,26 @@
             {
               "language": "Tamil",
               "title": "Thug Life",
-              "date": "24-05-2025"
+              "date": "24-05-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1q6GzjsUS9kyQmEDH7D1Ak"
+              }
             },
             {
               "language": "Telugu",
               "title": "Thug Life",
-              "date": "24-05-2025"
+              "date": "24-05-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5aGCeUNc2iIMsmIYuOJoeE"
+              }
             },
             {
               "language": "Hindi",
               "title": "Thug Life",
-              "date": "24-05-2025"
+              "date": "24-05-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4dgK8VU5soqJgsNUJTd6W7"
+              }
             }
           ]
         },
@@ -2550,7 +2619,10 @@
             {
               "language": "Tamil",
               "title": "Tere Ishk Mein",
-              "date": "02-12-2025"
+              "date": "02-12-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2b0Ub6NATfFZuBQvxnTuuk"
+              }
             },
             {
               "language": "Telugu",
@@ -2571,22 +2643,34 @@
             {
               "language": "Tamil",
               "title": "Gandhi Talks",
-              "date": "26-01-2026"
+              "date": "26-01-2026",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4L4d9tUGLSJz5G2SwsQYJ6"
+              }
             },
             {
               "language": "Telugu",
               "title": "Gandhi Talks",
-              "date": "26-01-2026"
+              "date": "26-01-2026",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4EwNouPLy2CIcrDovEsoBx"
+              }
             },
             {
               "language": "Malayalam",
               "title": "Gandhi Talks",
-              "date": "26-01-2026"
+              "date": "26-01-2026",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2oKKtrHoe7xVo253TQGyIo"
+              }
             },
             {
               "language": "Other",
               "title": "Gandhi Talks (Marathi)",
-              "date": "26-01-2026"
+              "date": "26-01-2026",
+              "links": {
+                "spotify": "https://open.spotify.com/album/67pKrNVAVEnHdY6pRauBeD"
+              }
             }
           ]
         },
@@ -2601,7 +2685,10 @@
               "sources": [
                 "https://peddimovie.vercel.app/",
                 "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6mWpQgxrYAxpz5VGN5AQjV"
+              }
             },
             {
               "language": "Hindi",
@@ -2610,7 +2697,10 @@
               "sources": [
                 "https://peddimovie.vercel.app/",
                 "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/4XkVajdR0hZr3vWbV0CCjm"
+              }
             },
             {
               "language": "Tamil",
@@ -2619,7 +2709,10 @@
               "sources": [
                 "https://peddimovie.vercel.app/",
                 "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/3cd0Aqy1aCtehh54uSqY7m"
+              }
             },
             {
               "language": "Kannada",
@@ -2628,7 +2721,10 @@
               "sources": [
                 "https://peddimovie.vercel.app/",
                 "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2pFADLJunl7Bsc82xeCG4a"
+              }
             },
             {
               "language": "Malayalam",
@@ -2637,7 +2733,10 @@
               "sources": [
                 "https://peddimovie.vercel.app/",
                 "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5sMQ1ZZeZwI7vaTMffJjEA"
+              }
             }
           ]
         }
@@ -2653,13 +2752,19 @@
           "type": "work",
           "title": "Uzhavan",
           "year": 1993,
-          "date": "13-11-1993"
+          "date": "13-11-1993",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2gNNINmLSnj4tDOoPb1SXd"
+          }
         },
         {
           "type": "work",
           "title": "Pavithra",
           "year": 1994,
-          "date": "02-11-1994"
+          "date": "02-11-1994",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5oY1YNfjXeMpHg2FLsYIUj"
+          }
         },
         {
           "type": "work",
@@ -2677,67 +2782,100 @@
           "type": "work",
           "title": "Sangamam",
           "year": 1999,
-          "date": "16-07-1999"
+          "date": "16-07-1999",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4usIqGbj46ZA8RD6PT8Ktz"
+          }
         },
         {
           "type": "work",
           "title": "Taj Mahal",
           "year": 1999,
-          "date": "07-11-1999"
+          "date": "07-11-1999",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5DcUVMWoylf2fKpVsqKWpA"
+          }
         },
         {
           "type": "work",
           "title": "Alli Arjuna",
           "year": 2002,
-          "date": "14-01-2002"
+          "date": "14-01-2002",
+          "links": {
+            "spotify": "https://open.spotify.com/album/3UzsMnTTD2eBo7Xhs1KiWn"
+          }
         },
         {
           "type": "work",
           "title": "Kaadhal Virus",
           "year": 2002,
-          "date": "20-11-2002"
+          "date": "20-11-2002",
+          "links": {
+            "spotify": "https://open.spotify.com/album/30eHEL91DRBP6JJ1nNjZs5"
+          }
         },
         {
           "type": "work",
           "title": "Udhaya",
           "year": 2004,
-          "date": "26-04-2004"
+          "date": "26-04-2004",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6UUnb7Xy4wD14wvh4zL0mi"
+          }
         },
         {
           "type": "work",
           "title": "Kangalal Kaidhu Sei",
           "year": 2004,
-          "date": "20-02-2004"
+          "date": "20-02-2004",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4lhTQ9erlBUvRlnign5aG9"
+          }
         },
         {
           "type": "work",
           "title": "Ah Aah / Anbe Aaruyire",
           "year": 2005,
-          "date": "09-09-2005"
+          "date": "09-09-2005",
+          "links": {
+            "spotify": "https://open.spotify.com/album/1BxShjICZ0e5AsWhdTNIM8"
+          }
         },
         {
           "type": "work",
           "title": "Sakkarakatti",
           "year": 2008,
-          "date": "26-09-2008"
+          "date": "26-09-2008",
+          "links": {
+            "spotify": "https://open.spotify.com/album/60WDIMQNU3toN91FiRkF8Z"
+          }
         },
         {
           "type": "work",
           "title": "Iravin Nizhal",
           "year": 2022,
-          "date": "15-07-2022"
+          "date": "15-07-2022",
+          "links": {
+            "spotify": "https://open.spotify.com/album/1EaRNMcvcSXULmMpPbHoCY"
+          }
         },
         {
           "type": "work",
           "title": "Genie (Single)",
           "year": 2025,
-          "date": "07-10-2025"
+          "date": "07-10-2025",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6bNzVFUsWr6KLsrD8rIMjB"
+          }
         },
         {
           "type": "work",
           "title": "MoonWalk",
           "year": 2026,
-          "date": "12-01-2026"
+          "date": "12-01-2026",
+          "links": {
+            "spotify": "https://open.spotify.com/album/7omX16YyXSriNwsHkE2OFh"
+          }
         }
       ]
     },
@@ -2760,7 +2898,10 @@
           "type": "work",
           "title": "Komaram Puli",
           "year": 2010,
-          "date": "10-09-2010"
+          "date": "10-09-2010",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2KuHX2KKB5225pSiA1h7m9"
+          }
         }
       ]
     },
@@ -2774,79 +2915,118 @@
           "type": "work",
           "title": "Fire",
           "year": 1998,
-          "date": "05-11-1998"
+          "date": "05-11-1998",
+          "links": {
+            "spotify": "https://open.spotify.com/album/55PO9HphOaC7SNduWk91OD"
+          }
         },
         {
           "type": "work",
           "title": "1947 Earth",
           "year": 1999,
-          "date": "10-09-1999"
+          "date": "10-09-1999",
+          "links": {
+            "spotify": "https://open.spotify.com/album/0oq0AombofB0CYEvpUsIdH"
+          }
         },
         {
           "type": "work",
           "title": "Thakshak",
           "year": 1999,
-          "date": "03-12-1999"
+          "date": "03-12-1999",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5jP0N8GkHRNjF6XrHffN6l"
+          }
         },
         {
           "type": "work",
           "title": "Pukar",
           "year": 2000,
-          "date": "04-02-2000"
+          "date": "04-02-2000",
+          "links": {
+            "spotify": "https://open.spotify.com/album/3OQnAi9EjuGLW3AMJ2zOry"
+          }
         },
         {
           "type": "work",
           "title": "Fiza",
           "year": 2000,
-          "date": "08-09-2000"
+          "date": "08-09-2000",
+          "links": {
+            "spotify": "https://open.spotify.com/album/70pmpUOtbnOc5YtuH20ehU"
+          }
         },
         {
           "type": "work",
           "title": "Zubeidaa",
           "year": 2001,
-          "date": "19-01-2001"
+          "date": "19-01-2001",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5t0wkaiJ86D3MtdBhUevkd"
+          }
         },
         {
           "type": "work",
           "title": "One 2 Ka 4",
           "year": 2001,
-          "date": "30-03-2001"
+          "date": "30-03-2001",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5cl8EbIGa1CAYVxg0cBI2j"
+          }
         },
         {
           "type": "work",
           "title": "Lagaan",
           "year": 2001,
-          "date": "15-06-2001"
+          "date": "15-06-2001",
+          "links": {
+            "spotify": "https://open.spotify.com/album/1emmJiAJRnSYETup4o1UsM"
+          }
         },
         {
           "type": "work",
           "title": "The Legend Of Bhagath Singh",
           "year": 2002,
-          "date": "07-06-2002"
+          "date": "07-06-2002",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2hjjQExD4P8a9woX7zPNHZ"
+          }
         },
         {
           "type": "work",
           "title": "Nayak",
           "year": 2001,
-          "date": "2001"
+          "date": "2001",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5W1ubgKFekZLnfy7lZ5H2w"
+          }
         },
         {
           "type": "work",
           "title": "Tehzeeb",
           "year": 2003,
-          "date": "21-11-2003"
+          "date": "21-11-2003",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4dfidKTSDGx95a3Roorvjx"
+          }
         },
         {
           "type": "work",
           "title": "Dil Ne Jise Apna Kaha",
           "year": 2004,
-          "date": "10-09-2004"
+          "date": "10-09-2004",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2aeSrDnUhcPA5rbq1Oefc3"
+          }
         },
         {
           "type": "work",
           "title": "Lakeer",
           "year": 2004,
-          "date": "14-05-2004"
+          "date": "14-05-2004",
+          "links": {
+            "spotify": "https://open.spotify.com/album/7FVIARVWyUNGp63HL4iEfD"
+          }
         },
         {
           "type": "work",
@@ -2858,55 +3038,82 @@
           "type": "work",
           "title": "Bose: The Forgotten Hero",
           "year": 2005,
-          "date": "13-05-2005"
+          "date": "13-05-2005",
+          "links": {
+            "spotify": "https://open.spotify.com/album/11beux5Zf6f3cvh1C81bX5"
+          }
         },
         {
           "type": "work",
           "title": "Mangal Pandey: The Rising",
           "year": 2005,
-          "date": "12-08-2005"
+          "date": "12-08-2005",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4t5ANJHFRMJ6HhiiEokSlV"
+          }
         },
         {
           "type": "work",
           "title": "Water",
           "year": 2005,
-          "date": "09-09-2005"
+          "date": "09-09-2005",
+          "links": {
+            "spotify": "https://open.spotify.com/album/7eV9XTMCIF7zjmI4USXeCt"
+          }
         },
         {
           "type": "work",
           "title": "Rang De Basanti",
           "year": 2006,
-          "date": "27-01-2006"
+          "date": "27-01-2006",
+          "links": {
+            "spotify": "https://open.spotify.com/album/0NKNDn80mhKn4Xi6nHrsqQ"
+          }
         },
         {
           "type": "work",
           "title": "Ada",
           "year": 2010,
-          "date": "31-12-2010"
+          "date": "31-12-2010",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6cRQxAiA06NgYECbuSVuOe"
+          }
         },
         {
           "type": "work",
           "title": "Ghajini",
           "year": 2008,
-          "date": "25-12-2008"
+          "date": "25-12-2008",
+          "links": {
+            "spotify": "https://open.spotify.com/album/1bakFVqPdxrSCSZI2HUGhJ"
+          }
         },
         {
           "type": "work",
           "title": "Jaane Tu Ya Jaane Naa",
           "year": 2008,
-          "date": "04-07-2008"
+          "date": "04-07-2008",
+          "links": {
+            "spotify": "https://open.spotify.com/album/7J5iE51Mk97Mf0BjjwYXUZ"
+          }
         },
         {
           "type": "work",
           "title": "Yuvvraaj",
           "year": 2008,
-          "date": "21-11-2008"
+          "date": "21-11-2008",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2fUOkCayofd6txiAS9AyLu"
+          }
         },
         {
           "type": "work",
           "title": "Delhi 6",
           "year": 2009,
-          "date": "20-02-2009"
+          "date": "20-02-2009",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2oEJvIPxiVWejbACLjq6Lh"
+          }
         },
         {
           "type": "work",
@@ -2921,31 +3128,46 @@
           "type": "work",
           "title": "Rockstar",
           "year": 2011,
-          "date": "11-11-2011"
+          "date": "11-11-2011",
+          "links": {
+            "spotify": "https://open.spotify.com/album/3RZxrS2dDZlbsYtMRM89v8"
+          }
         },
         {
           "type": "work",
           "title": "Jab Tak Hai Jaan",
           "year": 2012,
-          "date": "13-11-2012"
+          "date": "13-11-2012",
+          "links": {
+            "spotify": "https://open.spotify.com/album/3G0diKadKaufyFybV3TzuP"
+          }
         },
         {
           "type": "work",
           "title": "Highway",
           "year": 2014,
-          "date": "21-02-2014"
+          "date": "21-02-2014",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4MRvvPTLIVBHVEMfVC20jI"
+          }
         },
         {
           "type": "work",
           "title": "Lekar Hum Deewana Dil",
           "year": 2014,
-          "date": "04-07-2014"
+          "date": "04-07-2014",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6TPM0rGjG7QLrPtILu2yGH"
+          }
         },
         {
           "type": "work",
           "title": "Tamasha",
           "year": 2015,
-          "date": "27-11-2015"
+          "date": "27-11-2015",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2CUXo26JAWIbQx0EVMnjpA"
+          }
         },
         {
           "type": "work",
@@ -2958,7 +3180,10 @@
           "title": "Sanju",
           "year": 2018,
           "date": "29-06-2018",
-          "note": "2 tracks"
+          "note": "2 tracks",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2uZYzAlfetvbdWlpSfeNk0"
+          }
         },
         {
           "type": "work",
@@ -2971,31 +3196,46 @@
           "type": "work",
           "title": "The Fakir Of Venice",
           "year": 2019,
-          "date": "08-12-2019"
+          "date": "08-12-2019",
+          "links": {
+            "spotify": "https://open.spotify.com/album/0QaLKnB61YwXYaynfUI1N0"
+          }
         },
         {
           "type": "work",
           "title": "Dil Bechara",
           "year": 2020,
-          "date": "24-07-2020"
+          "date": "24-07-2020",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5zrZPXoYsu772sB3CwVuxr"
+          }
         },
         {
           "type": "work",
           "title": "Mimi",
           "year": 2021,
-          "date": "26-07-2021"
+          "date": "26-07-2021",
+          "links": {
+            "spotify": "https://open.spotify.com/album/0DUOcMjmHGVLqFkWqfNC0z"
+          }
         },
         {
           "type": "work",
           "title": "Heropanti 2",
           "year": 2022,
-          "date": "29-04-2022"
+          "date": "29-04-2022",
+          "links": {
+            "spotify": "https://open.spotify.com/album/41wBSiCw4pFzNFgZp4zhXV"
+          }
         },
         {
           "type": "work",
           "title": "Mili",
           "year": 2022,
-          "date": "04-11-2022"
+          "date": "04-11-2022",
+          "links": {
+            "spotify": "https://open.spotify.com/album/44IlLeBiOs5j5r3IkSAaim"
+          }
         },
         {
           "type": "work",
@@ -3010,25 +3250,37 @@
           "type": "work",
           "title": "Pippa",
           "year": 2023,
-          "date": "07-11-2023"
+          "date": "07-11-2023",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5y6G8IMGY5L6H1VHLntHaa"
+          }
         },
         {
           "type": "work",
           "title": "Amar Singh Chamkila",
           "year": 2024,
-          "date": "26-03-2024"
+          "date": "26-03-2024",
+          "links": {
+            "spotify": "https://open.spotify.com/album/3XBoJ6awI7H0aRvMWDszp3"
+          }
         },
         {
           "type": "work",
           "title": "Ramayana (Introduction)",
           "year": 2025,
-          "date": "04-07-2025"
+          "date": "04-07-2025",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2WyIux6Vy5Skz7xC68rzSQ"
+          }
         },
         {
           "type": "work",
           "title": "Uff Yeh Siyapaa",
           "year": 2025,
-          "date": "12-09-2025"
+          "date": "12-09-2025",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6eo1gDeSAvtzojhEAd4Quc"
+          }
         },
         {
           "type": "work",
@@ -3036,7 +3288,10 @@
           "note": "Singles released",
           "sources": [
             "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
-          ]
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/album/0C5hxl6tOmNgFSxX6nr14g"
+          }
         }
       ]
     },
@@ -3064,13 +3319,19 @@
           "type": "work",
           "title": "Fire",
           "year": 1996,
-          "note": "OST"
+          "note": "OST",
+          "links": {
+            "spotify": "https://open.spotify.com/album/55PO9HphOaC7SNduWk91OD"
+          }
         },
         {
           "type": "work",
           "title": "Earth",
           "year": 1998,
-          "note": "OST"
+          "note": "OST",
+          "links": {
+            "spotify": "https://open.spotify.com/album/0oq0AombofB0CYEvpUsIdH"
+          }
         },
         {
           "type": "work",
@@ -3082,7 +3343,10 @@
           "type": "work",
           "title": "Water",
           "year": 2006,
-          "note": "OST"
+          "note": "OST",
+          "links": {
+            "spotify": "https://open.spotify.com/album/7eV9XTMCIF7zjmI4USXeCt"
+          }
         },
         {
           "type": "work",
@@ -3099,7 +3363,10 @@
           "type": "work",
           "title": "Couples Retreat",
           "year": 2009,
-          "date": "09-10-2009"
+          "date": "09-10-2009",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6HDEKi9zfO4lyjYrB89wKV"
+          }
         },
         {
           "type": "work",
@@ -3111,19 +3378,28 @@
           "type": "work",
           "title": "People Like Us",
           "year": 2012,
-          "date": "29-06-2012"
+          "date": "29-06-2012",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4e4v1Bwu0RJAkEgj0RnMe1"
+          }
         },
         {
           "type": "work",
           "title": "Million Dollar Arm",
           "year": 2014,
-          "date": "16-05-2014"
+          "date": "16-05-2014",
+          "links": {
+            "spotify": "https://open.spotify.com/album/60nBYKeZ1MMH0oNdYiir0I"
+          }
         },
         {
           "type": "work",
           "title": "The Hundred-Foot Journey",
           "year": 2014,
-          "date": "08-08-2014"
+          "date": "08-08-2014",
+          "links": {
+            "spotify": "https://open.spotify.com/album/3VCFFFv1HDjim03d7FxX7g"
+          }
         },
         {
           "type": "work",
@@ -3141,7 +3417,10 @@
           "type": "work",
           "title": "Beyond The Clouds",
           "year": 2018,
-          "date": "20-04-2018"
+          "date": "20-04-2018",
+          "links": {
+            "spotify": "https://open.spotify.com/album/407E0npGz085kKFAiKvEtz"
+          }
         },
         {
           "type": "work",
@@ -3158,7 +3437,10 @@
           "type": "work",
           "title": "Le Musk",
           "year": 2024,
-          "date": "21-08-2024"
+          "date": "21-08-2024",
+          "links": {
+            "spotify": "https://open.spotify.com/album/31xnft6hKf7Rt5AbB2YGYR"
+          }
         }
       ]
     },
@@ -3199,7 +3481,10 @@
         {
           "type": "work",
           "title": "Al-Risalah",
-          "year": 2008
+          "year": 2008,
+          "links": {
+            "spotify": "https://open.spotify.com/album/0rbMkAPvbkwmPRjwFeVtJl"
+          }
         }
       ]
     },
@@ -3212,7 +3497,10 @@
         {
           "type": "work",
           "title": "Roja [Tamil, 1992]",
-          "year": 1992
+          "year": 1992,
+          "links": {
+            "spotify": "https://open.spotify.com/album/1CfGCFiwkTcAVOJFOeDS6M"
+          }
         },
         {
           "type": "work",
@@ -3222,22 +3510,34 @@
         {
           "type": "work",
           "title": "Roja [Hindi, 1994]",
-          "year": 1994
+          "year": 1994,
+          "links": {
+            "spotify": "https://open.spotify.com/album/2lORIs7BAIYVH7xxcXsUn7"
+          }
         },
         {
           "type": "work",
           "title": "Gentleman [Tamil, 1993]",
-          "year": 1993
+          "year": 1993,
+          "links": {
+            "spotify": "https://open.spotify.com/album/6aO84HI1Psa48OLXJMZLRM"
+          }
         },
         {
           "type": "work",
           "title": "Gentleman [Telugu, 1993]",
-          "year": 1993
+          "year": 1993,
+          "links": {
+            "spotify": "https://open.spotify.com/album/6aO84HI1Psa48OLXJMZLRM"
+          }
         },
         {
           "type": "work",
           "title": "May Madham [Tamil, 1994]",
-          "year": 1994
+          "year": 1994,
+          "links": {
+            "spotify": "https://open.spotify.com/album/2cr3fCKkiDYE2lsZL2GoOc"
+          }
         }
       ]
     },
@@ -3257,7 +3557,10 @@
           "type": "work",
           "title": "2.0",
           "year": 2019,
-          "date": "29-06-2019"
+          "date": "29-06-2019",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6s7HfYhfVSlF4tRDhFpi21"
+          }
         },
         {
           "type": "work",
@@ -3269,29 +3572,44 @@
           "type": "work",
           "title": "99 Songs",
           "year": 2022,
-          "date": "23-12-2022"
+          "date": "23-12-2022",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6dLjvsbsgfPIapd1CAiMLg"
+          }
         },
         {
           "type": "work",
           "title": "Vendhu Thanindhathu Kaadu",
           "year": 2023,
-          "date": "12-02-2023"
+          "date": "12-02-2023",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5N3d00pvonn9vvse6TI42m"
+          }
         },
         {
           "type": "work",
           "title": "Ponniyin Selvan",
           "year": 2024,
-          "date": "06-01-2024"
+          "date": "06-01-2024",
+          "links": {
+            "spotify": "https://open.spotify.com/album/49suOMXRb3AJIseI97Qu1J"
+          }
         },
         {
           "type": "work",
           "title": "The Goat Life",
           "year": 2024,
-          "date": "12-04-2024"
+          "date": "12-04-2024",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4xh8b46TsysD9SK9QtD29k"
+          }
         },
         {
           "type": "work",
-          "title": "Kadhalikka Neramillai"
+          "title": "Kadhalikka Neramillai",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6bjgX7zQlQv9mmmtOJAMuM"
+          }
         },
         {
           "type": "work",
@@ -3300,7 +3618,10 @@
         },
         {
           "type": "work",
-          "title": "Gandhi Talks Score"
+          "title": "Gandhi Talks Score",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5qgZc1IJvWcjZmq4WCVCSq"
+          }
         }
       ]
     },
@@ -3317,7 +3638,10 @@
         {
           "type": "work",
           "title": "Dilkashi",
-          "note": "Lijo Jose Pellissery / Hansal Mehta"
+          "note": "Lijo Jose Pellissery / Hansal Mehta",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5WKUoM4pPUiuM0SzDbJuvm"
+          }
         },
         {
           "type": "work",
@@ -3353,12 +3677,18 @@
         {
           "type": "work",
           "title": "KHOJ",
-          "note": "Previously Mahasangam / Bharat Bala"
+          "note": "Previously Mahasangam / Bharat Bala",
+          "links": {
+            "spotify": "https://open.spotify.com/album/75mhxrVTNXrnmiY1z3n9DC"
+          }
         },
         {
           "type": "work",
           "title": "Killer",
-          "note": "SJ Suriya"
+          "note": "SJ Suriya",
+          "links": {
+            "spotify": "https://open.spotify.com/album/28bd96tbsfh7ii02qKsvaY"
+          }
         },
         {
           "type": "work",
@@ -3415,7 +3745,10 @@
           "title": "Karna",
           "sources": [
             "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
-          ]
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/album/3V6h9vZSyGMOjVGyy5APRy"
+          }
         },
         {
           "type": "work",
@@ -3462,7 +3795,10 @@
         {
           "type": "work",
           "title": "Confessions",
-          "note": "VR film"
+          "note": "VR film",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2MPiNEaNM1apvpRzYHFVm8"
+          }
         },
         {
           "type": "work",
@@ -3475,20 +3811,32 @@
         },
         {
           "type": "work",
-          "title": "Slumdog Millionaire [Sequel]"
+          "title": "Slumdog Millionaire [Sequel]",
+          "links": {
+            "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM"
+          }
         },
         {
           "type": "work",
-          "title": "Slumdog Millionaire [Musical]"
+          "title": "Slumdog Millionaire [Musical]",
+          "links": {
+            "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM"
+          }
         },
         {
           "type": "work",
-          "title": "Slumdog Millionaire [TV Series]"
+          "title": "Slumdog Millionaire [TV Series]",
+          "links": {
+            "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM"
+          }
         },
         {
           "type": "work",
           "title": "Elevate",
-          "note": "Nexa Music Album"
+          "note": "Nexa Music Album",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5VzYpgYHw1J7XU1Kiwpq46"
+          }
         },
         {
           "type": "work",

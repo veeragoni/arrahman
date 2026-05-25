@@ -3178,7 +3178,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/79fwbrb205ZUf5E0pnoAsA"
+                  }
                 }
               ]
             },
@@ -3705,7 +3708,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/5N3d00pvonn9vvse6TI42m"
+                  }
                 },
                 {
                   "language": "Telugu",
@@ -3716,7 +3722,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/72dzyOkLrt83l7G3znCn97"
+                  }
                 }
               ]
             },
@@ -3777,7 +3786,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/49suOMXRb3AJIseI97Qu1J"
+                  }
                 }
               ]
             },
@@ -3794,7 +3806,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/7pMOd6mZQQDi7hz6NYOKL0"
+                  }
                 },
                 {
                   "language": "Telugu",
@@ -3805,7 +3820,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/48sa3XtM7QQBabRMLYqtgZ"
+                  }
                 }
               ]
             },
@@ -3822,7 +3840,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6y3yImd357ZGmMfb0mb1ts"
+                  }
                 },
                 {
                   "language": "Telugu",
@@ -3844,7 +3865,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/2PYD4Vv767N23fDtqRJV7T"
+                  }
                 }
               ]
             },
@@ -3872,7 +3896,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/7JwmwrPrK41jqWB75PdzRz"
+                  }
                 }
               ]
             },
@@ -3900,7 +3927,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/06WsEYnFZMI2uk6GTnPfHx"
+                  }
                 },
                 {
                   "language": "Hindi",
@@ -3911,7 +3941,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/1TeF9qpNSmewhmBzMbqPyn"
+                  }
                 }
               ]
             },
@@ -3972,7 +4005,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/4xh8b46TsysD9SK9QtD29k"
+                  }
                 }
               ]
             },
@@ -3989,7 +4025,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/3RcZ7BPQcNvz84loonQFqM"
+                  }
                 },
                 {
                   "language": "Telugu",
@@ -4000,7 +4039,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/39znQhf1dN9clozTnKlPGY"
+                  }
                 },
                 {
                   "language": "Hindi",
@@ -4022,7 +4064,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/3VvyFVcCgtmwb69TEiokGc"
+                  }
                 }
               ]
             },
@@ -4111,7 +4156,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/1U8HniR8hhVjXzvqxhZnTg"
+                  }
                 },
                 {
                   "language": "Hindi",
@@ -4122,7 +4170,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/1RhXXE86YFE1XSKakD6cay"
+                  }
                 },
                 {
                   "language": "Malayalam",
@@ -4133,7 +4184,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/0EqWxQF5wAfvqeEyEobTc3"
+                  }
                 },
                 {
                   "language": "Other",
@@ -4144,7 +4198,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6bjgX7zQlQv9mmmtOJAMuM"
+                  }
                 }
               ]
             },
@@ -4161,7 +4218,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/5VufKHhqZdhNWyGfmfWrOB"
+                  }
                 },
                 {
                   "language": "Hindi",
@@ -4189,7 +4249,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/1q6GzjsUS9kyQmEDH7D1Ak"
+                  }
                 },
                 {
                   "language": "Telugu",
@@ -4200,7 +4263,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/5aGCeUNc2iIMsmIYuOJoeE"
+                  }
                 },
                 {
                   "language": "Hindi",
@@ -4211,7 +4277,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/4dgK8VU5soqJgsNUJTd6W7"
+                  }
                 }
               ]
             },
@@ -4228,7 +4297,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/2b0Ub6NATfFZuBQvxnTuuk"
+                  }
                 },
                 {
                   "language": "Telugu",
@@ -4267,7 +4339,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/4L4d9tUGLSJz5G2SwsQYJ6"
+                  }
                 },
                 {
                   "language": "Telugu",
@@ -4278,7 +4353,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/4EwNouPLy2CIcrDovEsoBx"
+                  }
                 },
                 {
                   "language": "Malayalam",
@@ -4289,7 +4367,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/2oKKtrHoe7xVo253TQGyIo"
+                  }
                 },
                 {
                   "language": "Other",
@@ -4300,7 +4381,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/67pKrNVAVEnHdY6pRauBeD"
+                  }
                 }
               ]
             },
@@ -4321,7 +4405,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6mWpQgxrYAxpz5VGN5AQjV"
+                  }
                 },
                 {
                   "language": "Hindi",
@@ -4336,7 +4423,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/4XkVajdR0hZr3vWbV0CCjm"
+                  }
                 },
                 {
                   "language": "Tamil",
@@ -4351,7 +4441,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/3cd0Aqy1aCtehh54uSqY7m"
+                  }
                 },
                 {
                   "language": "Kannada",
@@ -4366,7 +4459,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/2pFADLJunl7Bsc82xeCG4a"
+                  }
                 },
                 {
                   "language": "Malayalam",
@@ -4381,7 +4477,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/5sMQ1ZZeZwI7vaTMffJjEA"
+                  }
                 }
               ]
             }
@@ -4409,7 +4508,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2gNNINmLSnj4tDOoPb1SXd"
+              }
             },
             {
               "type": "work",
@@ -4421,7 +4523,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5oY1YNfjXeMpHg2FLsYIUj"
+              }
             },
             {
               "type": "work",
@@ -4457,7 +4562,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/4usIqGbj46ZA8RD6PT8Ktz"
+              }
             },
             {
               "type": "work",
@@ -4469,7 +4577,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5DcUVMWoylf2fKpVsqKWpA"
+              }
             },
             {
               "type": "work",
@@ -4481,7 +4592,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/3UzsMnTTD2eBo7Xhs1KiWn"
+              }
             },
             {
               "type": "work",
@@ -4493,7 +4607,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/30eHEL91DRBP6JJ1nNjZs5"
+              }
             },
             {
               "type": "work",
@@ -4505,7 +4622,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6UUnb7Xy4wD14wvh4zL0mi"
+              }
             },
             {
               "type": "work",
@@ -4517,7 +4637,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/4lhTQ9erlBUvRlnign5aG9"
+              }
             },
             {
               "type": "work",
@@ -4529,7 +4652,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/1BxShjICZ0e5AsWhdTNIM8"
+              }
             },
             {
               "type": "work",
@@ -4541,7 +4667,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/60WDIMQNU3toN91FiRkF8Z"
+              }
             },
             {
               "type": "work",
@@ -4553,7 +4682,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/1EaRNMcvcSXULmMpPbHoCY"
+              }
             },
             {
               "type": "work",
@@ -4565,7 +4697,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6bNzVFUsWr6KLsrD8rIMjB"
+              }
             },
             {
               "type": "work",
@@ -4577,7 +4712,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/7omX16YyXSriNwsHkE2OFh"
+              }
             }
           ]
         },
@@ -4618,7 +4756,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2KuHX2KKB5225pSiA1h7m9"
+              }
             }
           ]
         },
@@ -4644,7 +4785,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/55PO9HphOaC7SNduWk91OD"
+              }
             },
             {
               "type": "work",
@@ -4656,7 +4800,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/0oq0AombofB0CYEvpUsIdH"
+              }
             },
             {
               "type": "work",
@@ -4668,7 +4815,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5jP0N8GkHRNjF6XrHffN6l"
+              }
             },
             {
               "type": "work",
@@ -4680,7 +4830,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/3OQnAi9EjuGLW3AMJ2zOry"
+              }
             },
             {
               "type": "work",
@@ -4692,7 +4845,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/70pmpUOtbnOc5YtuH20ehU"
+              }
             },
             {
               "type": "work",
@@ -4704,7 +4860,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5t0wkaiJ86D3MtdBhUevkd"
+              }
             },
             {
               "type": "work",
@@ -4716,7 +4875,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5cl8EbIGa1CAYVxg0cBI2j"
+              }
             },
             {
               "type": "work",
@@ -4728,7 +4890,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/1emmJiAJRnSYETup4o1UsM"
+              }
             },
             {
               "type": "work",
@@ -4740,7 +4905,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2hjjQExD4P8a9woX7zPNHZ"
+              }
             },
             {
               "type": "work",
@@ -4752,7 +4920,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5W1ubgKFekZLnfy7lZ5H2w"
+              }
             },
             {
               "type": "work",
@@ -4764,7 +4935,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/4dfidKTSDGx95a3Roorvjx"
+              }
             },
             {
               "type": "work",
@@ -4776,7 +4950,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2aeSrDnUhcPA5rbq1Oefc3"
+              }
             },
             {
               "type": "work",
@@ -4788,7 +4965,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/7FVIARVWyUNGp63HL4iEfD"
+              }
             },
             {
               "type": "work",
@@ -4812,7 +4992,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/11beux5Zf6f3cvh1C81bX5"
+              }
             },
             {
               "type": "work",
@@ -4824,7 +5007,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/4t5ANJHFRMJ6HhiiEokSlV"
+              }
             },
             {
               "type": "work",
@@ -4836,7 +5022,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/7eV9XTMCIF7zjmI4USXeCt"
+              }
             },
             {
               "type": "work",
@@ -4848,7 +5037,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/0NKNDn80mhKn4Xi6nHrsqQ"
+              }
             },
             {
               "type": "work",
@@ -4860,7 +5052,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6cRQxAiA06NgYECbuSVuOe"
+              }
             },
             {
               "type": "work",
@@ -4872,7 +5067,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/1bakFVqPdxrSCSZI2HUGhJ"
+              }
             },
             {
               "type": "work",
@@ -4884,7 +5082,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/7J5iE51Mk97Mf0BjjwYXUZ"
+              }
             },
             {
               "type": "work",
@@ -4896,7 +5097,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2fUOkCayofd6txiAS9AyLu"
+              }
             },
             {
               "type": "work",
@@ -4908,7 +5112,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2oEJvIPxiVWejbACLjq6Lh"
+              }
             },
             {
               "type": "work",
@@ -4935,7 +5142,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/3RZxrS2dDZlbsYtMRM89v8"
+              }
             },
             {
               "type": "work",
@@ -4947,7 +5157,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/3G0diKadKaufyFybV3TzuP"
+              }
             },
             {
               "type": "work",
@@ -4959,7 +5172,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/4MRvvPTLIVBHVEMfVC20jI"
+              }
             },
             {
               "type": "work",
@@ -4971,7 +5187,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6TPM0rGjG7QLrPtILu2yGH"
+              }
             },
             {
               "type": "work",
@@ -4983,7 +5202,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2CUXo26JAWIbQx0EVMnjpA"
+              }
             },
             {
               "type": "work",
@@ -5008,7 +5230,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2uZYzAlfetvbdWlpSfeNk0"
+              }
             },
             {
               "type": "work",
@@ -5033,7 +5258,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/0QaLKnB61YwXYaynfUI1N0"
+              }
             },
             {
               "type": "work",
@@ -5045,7 +5273,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5zrZPXoYsu772sB3CwVuxr"
+              }
             },
             {
               "type": "work",
@@ -5057,7 +5288,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/0DUOcMjmHGVLqFkWqfNC0z"
+              }
             },
             {
               "type": "work",
@@ -5069,7 +5303,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/41wBSiCw4pFzNFgZp4zhXV"
+              }
             },
             {
               "type": "work",
@@ -5081,7 +5318,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/44IlLeBiOs5j5r3IkSAaim"
+              }
             },
             {
               "type": "work",
@@ -5108,7 +5348,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5y6G8IMGY5L6H1VHLntHaa"
+              }
             },
             {
               "type": "work",
@@ -5120,7 +5363,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/3XBoJ6awI7H0aRvMWDszp3"
+              }
             },
             {
               "type": "work",
@@ -5132,7 +5378,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2WyIux6Vy5Skz7xC68rzSQ"
+              }
             },
             {
               "type": "work",
@@ -5144,7 +5393,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6eo1gDeSAvtzojhEAd4Quc"
+              }
             },
             {
               "type": "work",
@@ -5158,7 +5410,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/0C5hxl6tOmNgFSxX6nr14g"
+              }
             }
           ]
         },
@@ -5210,7 +5465,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/55PO9HphOaC7SNduWk91OD"
+              }
             },
             {
               "type": "work",
@@ -5222,7 +5480,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/0oq0AombofB0CYEvpUsIdH"
+              }
             },
             {
               "type": "work",
@@ -5246,7 +5507,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/7eV9XTMCIF7zjmI4USXeCt"
+              }
             },
             {
               "type": "work",
@@ -5281,7 +5545,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6HDEKi9zfO4lyjYrB89wKV"
+              }
             },
             {
               "type": "work",
@@ -5305,7 +5572,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/4e4v1Bwu0RJAkEgj0RnMe1"
+              }
             },
             {
               "type": "work",
@@ -5317,7 +5587,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/60nBYKeZ1MMH0oNdYiir0I"
+              }
             },
             {
               "type": "work",
@@ -5329,7 +5602,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/3VCFFFv1HDjim03d7FxX7g"
+              }
             },
             {
               "type": "work",
@@ -5365,7 +5641,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/407E0npGz085kKFAiKvEtz"
+              }
             },
             {
               "type": "work",
@@ -5400,7 +5679,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/31xnft6hKf7Rt5AbB2YGYR"
+              }
             }
           ]
         },
@@ -5477,7 +5759,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/0rbMkAPvbkwmPRjwFeVtJl"
+              }
             }
           ]
         },
@@ -5502,7 +5787,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/1CfGCFiwkTcAVOJFOeDS6M"
+              }
             },
             {
               "type": "work",
@@ -5524,7 +5812,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2lORIs7BAIYVH7xxcXsUn7"
+              }
             },
             {
               "type": "work",
@@ -5535,7 +5826,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6aO84HI1Psa48OLXJMZLRM"
+              }
             },
             {
               "type": "work",
@@ -5546,7 +5840,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6aO84HI1Psa48OLXJMZLRM"
+              }
             },
             {
               "type": "work",
@@ -5557,7 +5854,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2cr3fCKkiDYE2lsZL2GoOc"
+              }
             }
           ]
         },
@@ -5595,7 +5895,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6s7HfYhfVSlF4tRDhFpi21"
+              }
             },
             {
               "type": "work",
@@ -5619,7 +5922,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6dLjvsbsgfPIapd1CAiMLg"
+              }
             },
             {
               "type": "work",
@@ -5631,7 +5937,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5N3d00pvonn9vvse6TI42m"
+              }
             },
             {
               "type": "work",
@@ -5643,7 +5952,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/49suOMXRb3AJIseI97Qu1J"
+              }
             },
             {
               "type": "work",
@@ -5655,7 +5967,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/4xh8b46TsysD9SK9QtD29k"
+              }
             },
             {
               "type": "work",
@@ -5665,7 +5980,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6bjgX7zQlQv9mmmtOJAMuM"
+              }
             },
             {
               "type": "work",
@@ -5686,7 +6004,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5qgZc1IJvWcjZmq4WCVCSq"
+              }
             }
           ]
         },
@@ -5721,7 +6042,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5WKUoM4pPUiuM0SzDbJuvm"
+              }
             },
             {
               "type": "work",
@@ -5799,7 +6123,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/75mhxrVTNXrnmiY1z3n9DC"
+              }
             },
             {
               "type": "work",
@@ -5810,7 +6137,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/28bd96tbsfh7ii02qKsvaY"
+              }
             },
             {
               "type": "work",
@@ -5921,7 +6251,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/3V6h9vZSyGMOjVGyy5APRy"
+              }
             },
             {
               "type": "work",
@@ -6022,7 +6355,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2MPiNEaNM1apvpRzYHFVm8"
+              }
             },
             {
               "type": "work",
@@ -6053,7 +6389,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM"
+              }
             },
             {
               "type": "work",
@@ -6063,7 +6402,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM"
+              }
             },
             {
               "type": "work",
@@ -6073,7 +6415,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM"
+              }
             },
             {
               "type": "work",
@@ -6084,7 +6429,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/5VzYpgYHw1J7XU1Kiwpq46"
+              }
             },
             {
               "type": "work",
@@ -15039,7 +15387,6 @@
         "language": "Telugu",
         "year": 2018,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15624,7 +15971,6 @@
         "language": "Tamil",
         "year": 2022,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15642,7 +15988,6 @@
         "language": "Telugu",
         "year": 2022,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15732,7 +16077,6 @@
         "language": "Other",
         "year": 2023,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15750,7 +16094,6 @@
         "language": "Tamil",
         "year": 2023,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15768,7 +16111,6 @@
         "language": "Telugu",
         "year": 2023,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15786,7 +16128,6 @@
         "language": "Tamil",
         "year": 2023,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15822,7 +16163,6 @@
         "language": "Hindi",
         "year": 2023,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15858,7 +16198,6 @@
         "language": "Telugu",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15894,7 +16233,6 @@
         "language": "Telugu",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15912,7 +16250,6 @@
         "language": "Hindi",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16002,7 +16339,6 @@
         "language": "Other",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16020,7 +16356,6 @@
         "language": "Tamil",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16038,7 +16373,6 @@
         "language": "Telugu",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16074,7 +16408,6 @@
         "language": "Malayalam",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16200,7 +16533,6 @@
         "language": "Telugu",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16218,7 +16550,6 @@
         "language": "Hindi",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16236,7 +16567,6 @@
         "language": "Malayalam",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16254,7 +16584,6 @@
         "language": "Other",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16272,7 +16601,6 @@
         "language": "Telugu",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16308,7 +16636,6 @@
         "language": "Tamil",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16326,7 +16653,6 @@
         "language": "Telugu",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16344,7 +16670,6 @@
         "language": "Hindi",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16362,7 +16687,6 @@
         "language": "Tamil",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16416,7 +16740,6 @@
         "language": "Tamil",
         "year": 2026,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16434,7 +16757,6 @@
         "language": "Telugu",
         "year": 2026,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16452,7 +16774,6 @@
         "language": "Malayalam",
         "year": 2026,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16470,7 +16791,6 @@
         "language": "Other",
         "year": 2026,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16488,7 +16808,6 @@
         "language": "Telugu",
         "year": 2026,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16506,7 +16825,6 @@
         "language": "Hindi",
         "year": 2026,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16524,7 +16842,6 @@
         "language": "Tamil",
         "year": 2026,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16542,7 +16859,6 @@
         "language": "Kannada",
         "year": 2026,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16560,7 +16876,6 @@
         "language": "Malayalam",
         "year": 2026,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16576,7 +16891,6 @@
         "label": "Uzhavan",
         "year": 1993,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16592,7 +16906,6 @@
         "label": "Pavithra",
         "year": 1994,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16640,7 +16953,6 @@
         "label": "Sangamam",
         "year": 1999,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16656,7 +16968,6 @@
         "label": "Taj Mahal",
         "year": 1999,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16672,7 +16983,6 @@
         "label": "Alli Arjuna",
         "year": 2002,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16688,7 +16998,6 @@
         "label": "Kaadhal Virus",
         "year": 2002,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16704,7 +17013,6 @@
         "label": "Udhaya",
         "year": 2004,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16720,7 +17028,6 @@
         "label": "Kangalal Kaidhu Sei",
         "year": 2004,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16736,7 +17043,6 @@
         "label": "Ah Aah / Anbe Aaruyire",
         "year": 2005,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16752,7 +17058,6 @@
         "label": "Sakkarakatti",
         "year": 2008,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16768,7 +17073,6 @@
         "label": "Iravin Nizhal",
         "year": 2022,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16784,7 +17088,6 @@
         "label": "Genie (Single)",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16800,7 +17103,6 @@
         "label": "MoonWalk",
         "year": 2026,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16832,7 +17134,6 @@
         "label": "Komaram Puli",
         "year": 2010,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16848,7 +17149,6 @@
         "label": "Fire",
         "year": 1998,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16864,7 +17164,6 @@
         "label": "1947 Earth",
         "year": 1999,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16880,7 +17179,6 @@
         "label": "Thakshak",
         "year": 1999,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16896,7 +17194,6 @@
         "label": "Pukar",
         "year": 2000,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16912,7 +17209,6 @@
         "label": "Fiza",
         "year": 2000,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16928,7 +17224,6 @@
         "label": "Zubeidaa",
         "year": 2001,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16944,7 +17239,6 @@
         "label": "One 2 Ka 4",
         "year": 2001,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16960,7 +17254,6 @@
         "label": "Lagaan",
         "year": 2001,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16976,7 +17269,6 @@
         "label": "The Legend Of Bhagath Singh",
         "year": 2002,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16992,7 +17284,6 @@
         "label": "Nayak",
         "year": 2001,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17008,7 +17299,6 @@
         "label": "Tehzeeb",
         "year": 2003,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17024,7 +17314,6 @@
         "label": "Dil Ne Jise Apna Kaha",
         "year": 2004,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17040,7 +17329,6 @@
         "label": "Lakeer",
         "year": 2004,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17072,7 +17360,6 @@
         "label": "Bose: The Forgotten Hero",
         "year": 2005,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17088,7 +17375,6 @@
         "label": "Mangal Pandey: The Rising",
         "year": 2005,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17104,7 +17390,6 @@
         "label": "Water",
         "year": 2005,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17120,7 +17405,6 @@
         "label": "Rang De Basanti",
         "year": 2006,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17136,7 +17420,6 @@
         "label": "Ada",
         "year": 2010,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17152,7 +17435,6 @@
         "label": "Ghajini",
         "year": 2008,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17168,7 +17450,6 @@
         "label": "Jaane Tu Ya Jaane Naa",
         "year": 2008,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17184,7 +17465,6 @@
         "label": "Yuvvraaj",
         "year": 2008,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17200,7 +17480,6 @@
         "label": "Delhi 6",
         "year": 2009,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17232,7 +17511,6 @@
         "label": "Rockstar",
         "year": 2011,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17248,7 +17526,6 @@
         "label": "Jab Tak Hai Jaan",
         "year": 2012,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17264,7 +17541,6 @@
         "label": "Highway",
         "year": 2014,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17280,7 +17556,6 @@
         "label": "Lekar Hum Deewana Dil",
         "year": 2014,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17296,7 +17571,6 @@
         "label": "Tamasha",
         "year": 2015,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17328,7 +17602,6 @@
         "label": "Sanju",
         "year": 2018,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17360,7 +17633,6 @@
         "label": "The Fakir Of Venice",
         "year": 2019,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17376,7 +17648,6 @@
         "label": "Dil Bechara",
         "year": 2020,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17392,7 +17663,6 @@
         "label": "Mimi",
         "year": 2021,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17408,7 +17678,6 @@
         "label": "Heropanti 2",
         "year": 2022,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17424,7 +17693,6 @@
         "label": "Mili",
         "year": 2022,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17455,7 +17723,6 @@
         "label": "Pippa",
         "year": 2023,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17471,7 +17738,6 @@
         "label": "Amar Singh Chamkila",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17487,7 +17753,6 @@
         "label": "Ramayana (Introduction)",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17503,7 +17768,6 @@
         "label": "Uff Yeh Siyapaa",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17518,7 +17782,6 @@
         "type": "work",
         "label": "Main Vaapas Aaunga",
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17550,7 +17813,6 @@
         "label": "Fire",
         "year": 1996,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17566,7 +17828,6 @@
         "label": "Earth",
         "year": 1998,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17598,7 +17859,6 @@
         "label": "Water",
         "year": 2006,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17646,7 +17906,6 @@
         "label": "Couples Retreat",
         "year": 2009,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17678,7 +17937,6 @@
         "label": "People Like Us",
         "year": 2012,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17694,7 +17952,6 @@
         "label": "Million Dollar Arm",
         "year": 2014,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17710,7 +17967,6 @@
         "label": "The Hundred-Foot Journey",
         "year": 2014,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17758,7 +18014,6 @@
         "label": "Beyond The Clouds",
         "year": 2018,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17806,7 +18061,6 @@
         "label": "Le Musk",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17854,7 +18108,6 @@
         "label": "Al-Risalah",
         "year": 2008,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17870,7 +18123,6 @@
         "label": "Roja [Tamil, 1992]",
         "year": 1992,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17902,7 +18154,6 @@
         "label": "Roja [Hindi, 1994]",
         "year": 1994,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17918,7 +18169,6 @@
         "label": "Gentleman [Tamil, 1993]",
         "year": 1993,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17934,7 +18184,6 @@
         "label": "Gentleman [Telugu, 1993]",
         "year": 1993,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17950,7 +18199,6 @@
         "label": "May Madham [Tamil, 1994]",
         "year": 1994,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -17982,7 +18230,6 @@
         "label": "2.0",
         "year": 2019,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -18014,7 +18261,6 @@
         "label": "99 Songs",
         "year": 2022,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -18030,7 +18276,6 @@
         "label": "Vendhu Thanindhathu Kaadu",
         "year": 2023,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -18046,7 +18291,6 @@
         "label": "Ponniyin Selvan",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -18062,7 +18306,6 @@
         "label": "The Goat Life",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -18077,7 +18320,6 @@
         "type": "work",
         "label": "Kadhalikka Neramillai",
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -18107,7 +18349,6 @@
         "type": "work",
         "label": "Gandhi Talks Score",
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
