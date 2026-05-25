@@ -418,6 +418,19 @@ class ProviderLinkResolutionTests(unittest.TestCase):
         )
         self.assertTrue(all(version.get("date") == "04-06-2026" for version in peddi_versions))
 
+    def test_choreography_lists_ragas_dance_with_spotify_track(self) -> None:
+        source = json.loads((Path(__file__).resolve().parent.parent / "data" / "source" / "02-nonfilm.json").read_text(encoding="utf-8"))
+        albums = next(subsection for subsection in source["subsections"] if subsection.get("id") == "albums")
+        item = next(candidate for candidate in albums["items"] if candidate.get("title", "").startswith("Choreography"))
+
+        self.assertIn("Raga's Dance", item["title"])
+        self.assertIn("instrumental", item.get("note", "").lower())
+        self.assertEqual(
+            item.get("links", {}).get("spotify"),
+            "https://open.spotify.com/track/1b9oeKb6CJVQFvsisPci4G",
+        )
+        self.assertIn("https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums", item.get("sources", []))
+
     def test_pdf_audit_ignores_source_cited_film_main_additions(self) -> None:
         items = [
             {

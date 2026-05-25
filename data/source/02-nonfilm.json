@@ -47,9 +47,15 @@
         },
         {
           "type": "work",
-          "title": "Choreography",
+          "title": "Choreography — Raga's Dance",
           "year": 2004,
-          "note": "1 song"
+          "note": "Instrumental; 1 of 10 tracks on Vanessa-Mae's Choreography album",
+          "links": {
+            "spotify": "https://open.spotify.com/track/1b9oeKb6CJVQFvsisPci4G"
+          },
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
+          ]
         },
         {
           "type": "work",
