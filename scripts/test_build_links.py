@@ -7,6 +7,7 @@ import contextlib
 import io
 import json
 from pathlib import Path
+import re
 import tempfile
 import urllib.error
 import unittest
@@ -20,6 +21,17 @@ class ProviderLinkResolutionTests(unittest.TestCase):
             build.normalize_providers(None),
             ["spotify", "youtubeMusic", "appleMusic", "youtube"],
         )
+
+    def test_youtube_icon_uses_red_brand_fill_by_default(self) -> None:
+        app_js = (Path(__file__).resolve().parent.parent / "app.js").read_text(encoding="utf-8")
+
+        icon_match = re.search(r"const iconYouTube = `([^`]+)`;", app_js)
+
+        self.assertIsNotNone(icon_match)
+        icon_svg = icon_match.group(1)
+        self.assertNotIn('fill="currentColor"', icon_svg)
+        self.assertIn('fill="#FF0000"', icon_svg)
+        self.assertIn('fill="#FFFFFF"', icon_svg)
 
     def test_film_soundtrack_spotify_selection_requires_album_url(self) -> None:
         subject = {
