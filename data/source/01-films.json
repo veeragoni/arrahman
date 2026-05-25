@@ -162,7 +162,10 @@
             {
               "language": "Telugu",
               "title": "Palanaati Pourusham",
-              "date": "1994"
+              "date": "1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7iJcEwGZGRdeIv5QrR4DyI"
+              }
             }
           ]
         },
@@ -544,12 +547,18 @@
             {
               "language": "Telugu",
               "title": "Bharatheeyudu",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5wbNqlJ4LukhEsQcqty9Po"
+              }
             },
             {
               "language": "Hindi",
               "title": "Hindusthani",
-              "date": "1996"
+              "date": "1996",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6aY47GXFNDi22HqiqSnwLy"
+              }
             }
           ]
         },
@@ -1515,7 +1524,10 @@
             {
               "language": "Telugu",
               "title": "Villian",
-              "date": "2010"
+              "date": "2010",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3jzCASUg4cl0vjGiBBjDu2"
+              }
             },
             {
               "language": "Hindi",
@@ -2240,7 +2252,7 @@
               "title": "Ponniyin Selvan Part 1",
               "date": "2022",
               "links": {
-                "spotify": "https://open.spotify.com/album/0aKkwn0Vq6oW8XmmcY8ouE"
+                "spotify": "https://open.spotify.com/album/6vm8qVdc7lkP6eJZDs38Fp"
               }
             },
             {
@@ -2303,7 +2315,10 @@
             {
               "language": "Telugu",
               "title": "Ponniyin Selvan Part 2",
-              "date": "2023"
+              "date": "2023",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6XC1UegPd9g3s31Y9wW8dC"
+              }
             },
             {
               "language": "Hindi",
@@ -2362,7 +2377,10 @@
             {
               "language": "Telugu",
               "title": "AGR",
-              "date": "02-01-2024"
+              "date": "02-01-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2DRIvzTjUQGjBwgYgMLwxS"
+              }
             },
             {
               "language": "Hindi",
@@ -2496,12 +2514,18 @@
             {
               "language": "Tamil",
               "title": "Raayan",
-              "date": "06-07-2024"
+              "date": "06-07-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6cqYgHZhpSKKb7xUuxJCAr"
+              }
             },
             {
               "language": "Telugu",
               "title": "Raayan",
-              "date": "21-07-2024"
+              "date": "21-07-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5NIDzdM4orRdxMj7DmNrDJ"
+              }
             },
             {
               "language": "Hindi",
@@ -2578,7 +2602,10 @@
             {
               "language": "Hindi",
               "title": "Chhaava",
-              "date": "28-03-2025"
+              "date": "28-03-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/237a62e5OURRgvJ9G3yHM3"
+              }
             }
           ]
         },
@@ -2627,12 +2654,18 @@
             {
               "language": "Telugu",
               "title": "Amara Kavyam",
-              "date": "02-12-2025"
+              "date": "02-12-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/762lOEmT06j5xdr38S447a"
+              }
             },
             {
               "language": "Hindi",
               "title": "Tere Ishk Mein",
-              "date": "12-11-2025"
+              "date": "12-11-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3U6JvK5ij3bbhBmdotoNJ1"
+              }
             }
           ]
         },
@@ -3041,7 +3074,10 @@
           "type": "work",
           "title": "Meenaxi: A Tale Of 3 Cities",
           "year": 2004,
-          "date": "02-04-2004"
+          "date": "02-04-2004",
+          "links": {
+            "spotify": "https://open.spotify.com/album/0016pJfQZkCAgume9aeE1i"
+          }
         },
         {
           "type": "work",
@@ -3129,6 +3165,9 @@
           "title": "Jhootha Hi Sahi",
           "year": 2010,
           "date": "22-10-2010",
+          "links": {
+            "spotify": "https://open.spotify.com/album/3Vacno0CZ2qkdldVE3NhPB"
+          }
           "sources": [
             "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Original_scores"
           ]
@@ -3182,7 +3221,10 @@
           "type": "work",
           "title": "Mohenjodaro",
           "year": 2016,
-          "date": "12-08-2016"
+          "date": "12-08-2016",
+          "links": {
+            "spotify": "https://open.spotify.com/album/36UJ90D0e295TvlU109Xvy"
+          }
         },
         {
           "type": "work",
@@ -3514,7 +3556,10 @@
         {
           "type": "work",
           "title": "Roja [Telugu, 1992]",
-          "year": 1992
+          "year": 1992,
+          "links": {
+            "spotify": "https://open.spotify.com/track/4v7UeSSY2cGZZHClkgU0Vy"
+          }
         },
         {
           "type": "work",

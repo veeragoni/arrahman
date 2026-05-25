@@ -59,7 +59,10 @@
         {
           "type": "work",
           "title": "Vande Mataram",
-          "year": 1997
+          "year": 1997,
+          "links": {
+            "spotify": "https://open.spotify.com/album/7zFbzmYGeZeIoplDTADF0Z"
+          }
         },
         {
           "type": "work",
