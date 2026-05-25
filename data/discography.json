@@ -571,6 +571,9 @@
                   "language": "Hindi",
                   "title": "Hum Se Hain Muqabla",
                   "date": "1995",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/48g3Sp71fD9mVZNd619VFf"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -602,6 +605,9 @@
                   "language": "Telugu",
                   "title": "Vanitha/Aada Brathuku/Osey Krishnamma",
                   "date": "1995",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/5j9LGn1qrDej7a0dNxs7yj"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -634,7 +640,7 @@
                   "title": "Bombay",
                   "date": "1995",
                   "links": {
-                    "spotify": "https://open.spotify.com/album/3EbZ15hRMrD2uGZWzuJQQE"
+                    "spotify": "https://open.spotify.com/album/50iJYe6QgTwfB7VRzs1yRZ"
                   },
                   "providers": [
                     "spotify",
@@ -648,7 +654,7 @@
                   "title": "Bombay",
                   "date": "1995",
                   "links": {
-                    "spotify": "https://open.spotify.com/album/3EbZ15hRMrD2uGZWzuJQQE"
+                    "spotify": "https://open.spotify.com/album/2oPdRL0fDdnW9e1zoMnrDk"
                   },
                   "providers": [
                     "spotify",
@@ -682,7 +688,7 @@
                   "title": "Indira",
                   "date": "1996",
                   "links": {
-                    "spotify": "https://open.spotify.com/album/6qtCCtADRtEmiSAD5qcdjr"
+                    "spotify": "https://open.spotify.com/album/142U0j7IAMPe22XmxXnpye"
                   },
                   "providers": [
                     "spotify",
@@ -12150,7 +12156,6 @@
         "language": "Hindi",
         "year": 1994,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12185,7 +12190,6 @@
         "language": "Telugu",
         "year": 1994,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
