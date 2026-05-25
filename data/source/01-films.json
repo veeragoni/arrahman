@@ -1416,7 +1416,7 @@
             },
             {
               "language": "Telugu",
-              "title": "Maha Muduru",
+              "title": "Mahamuduru",
               "date": "2010",
               "links": {
                 "spotify": "https://open.spotify.com/album/6fNuHzUiSCvsQR9b7y3vk7"
@@ -1475,6 +1475,30 @@
               "links": {
                 "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM"
               }
+            }
+          ]
+        },
+        {
+          "type": "film",
+          "year": 2007,
+          "versions": [
+            {
+              "language": "Telugu",
+              "title": "Prem Nagar",
+              "date": "2007",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0xJdpDAIqOY2WLiq0vsive"
+              }
+            },
+            {
+              "language": "Malayalam",
+              "title": "Aye Taxi",
+              "date": "2007"
+            },
+            {
+              "language": "Other",
+              "title": "Love (Kannada)",
+              "date": "2007"
             }
           ]
         },

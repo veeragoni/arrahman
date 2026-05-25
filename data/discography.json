@@ -258,6 +258,9 @@
                   "language": "Tamil",
                   "title": "Kizhakku Cheemaiyile",
                   "date": "13-11-1993",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/3NmzPnX5f7FLMYh7RyubxP"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -1845,7 +1848,7 @@
                   "title": "Boys",
                   "date": "29-08-2003",
                   "links": {
-                    "spotify": "https://open.spotify.com/album/2VjFHDqMCemQLRvCXlbEHf"
+                    "spotify": "https://open.spotify.com/album/31iCArxZjUNAz6UKfQO3W1"
                   },
                   "providers": [
                     "spotify",
@@ -1926,6 +1929,9 @@
                   "language": "Tamil",
                   "title": "Aayutha Ezhuthu",
                   "date": "21-05-2004",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/5ew5gwOY08KDzjhPidH64L"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -1937,6 +1943,9 @@
                   "language": "Telugu",
                   "title": "Yuvaa",
                   "date": "2004",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6VmMe4ZYI8RFAPZd8e47U7"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -1948,6 +1957,9 @@
                   "language": "Hindi",
                   "title": "Yuvaa",
                   "date": "2004",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/2a1tA1wyFkHwHIxRQND6t6"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -1979,6 +1991,9 @@
                   "language": "Telugu",
                   "title": "Naani",
                   "date": "14-05-2004",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6mW0HmYHf0zKjpo7fcmtkl"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2064,6 +2079,9 @@
                   "language": "Tamil",
                   "title": "Jillunu Oru Kaadhal/ SOK",
                   "date": "08-09-2006",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/46LwKebCsBnpZlYZ1B6LU9"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2095,6 +2113,9 @@
                   "language": "Tamil",
                   "title": "Varalaru/ God Father",
                   "date": "20-10-2006",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/3RvvN1YsEAGJxIJzUhL9yr"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2191,6 +2212,9 @@
                   "language": "Tamil",
                   "title": "Shivaji The Boss",
                   "date": "15-06-2007",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6U9fwE5eyEfj2htufWf9we"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2202,6 +2226,9 @@
                   "language": "Telugu",
                   "title": "Shivaji The Boss",
                   "date": "2007",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6fKRRQr05gZTiodO6YoLWZ"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2213,6 +2240,9 @@
                   "language": "Hindi",
                   "title": "Shivaji The Boss",
                   "date": "2010",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/1M4UPtoLfBMKseObxbHdNE"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2230,6 +2260,9 @@
                   "language": "Tamil",
                   "title": "Azhagiya Tamizh Magan",
                   "date": "08-11-2007",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/2TbIygsV5OBPugEA04aTcy"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2241,6 +2274,9 @@
                   "language": "Telugu",
                   "title": "Mahamuduru",
                   "date": "2010",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6fNuHzUiSCvsQR9b7y3vk7"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2391,7 +2427,7 @@
                   "title": "Blue",
                   "date": "2011",
                   "links": {
-                    "spotify": "https://open.spotify.com/album/45HaaeQWPzIHJDpvVdYXm8"
+                    "spotify": "https://open.spotify.com/album/65FA5i28UIjlscTdxyGwSb"
                   },
                   "providers": [
                     "spotify",
@@ -2424,6 +2460,9 @@
                   "language": "Tamil",
                   "title": "Vinnaithaandi Varuvaaya",
                   "date": "26-02-2010",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/1VAR4nGvZh6KW3PLioooYM"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2435,6 +2474,9 @@
                   "language": "Telugu",
                   "title": "Ye Maaya Chesave",
                   "date": "2010",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/7n61GzJSBuZGrm8U1V9TLd"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2446,6 +2488,9 @@
                   "language": "Hindi",
                   "title": "Ekk Dewanaa Thhaa",
                   "date": "17-02-2012",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/7u8VFwwX4grIUnuHriflDf"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2540,7 +2585,7 @@
                   "title": "Robot",
                   "date": "2010",
                   "links": {
-                    "spotify": "https://open.spotify.com/album/66GypleNyBvRB81vfj15Ib"
+                    "spotify": "https://open.spotify.com/album/764vydK49ztRXxngqAqmdn"
                   },
                   "providers": [
                     "spotify",
@@ -2641,6 +2686,9 @@
                   "language": "Hindi",
                   "title": "Raanjhaana",
                   "date": "21-06-2013",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/24C47633GRlozws7WBth7t"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2658,6 +2706,9 @@
                   "language": "Tamil",
                   "title": "Kochadaiyaan",
                   "date": "23-05-2014",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/4aXqdmPwLcawxhTLyCTstL"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2669,6 +2720,9 @@
                   "language": "Telugu",
                   "title": "Vikram Simha",
                   "date": "2014",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/4brMww9kTr636JbHbNtCrr"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2680,6 +2734,9 @@
                   "language": "Hindi",
                   "title": "Kochadaiyaan",
                   "date": "2014",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/6JGTLj9bihSB30PlgWlooP"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2697,6 +2754,9 @@
                   "language": "Tamil",
                   "title": "Kaaviya Thalaivan",
                   "date": "28-11-2014",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/3mBTrK6nqL2U2tMXfXya68"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -2708,6 +2768,9 @@
                   "language": "Telugu",
                   "title": "Premalayam",
                   "date": "2016",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/3RI89AzBkDYBubQBGmWE0B"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -11441,6 +11504,9 @@
               "type": "work",
               "title": "Yuvvraj — End Title Credit Mashup",
               "year": 2008,
+              "links": {
+                "youtube": "https://youtu.be/A5bscNhjQTg?t=198"
+              },
               "providers": [
                 "youtube"
               ]
@@ -14706,7 +14772,6 @@
         "language": "Tamil",
         "year": 2014,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -14724,7 +14789,6 @@
         "language": "Telugu",
         "year": 2014,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -14742,7 +14806,6 @@
         "language": "Hindi",
         "year": 2014,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -14760,7 +14823,6 @@
         "language": "Tamil",
         "year": 2014,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -14778,7 +14840,6 @@
         "language": "Telugu",
         "year": 2014,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15007,7 +15068,6 @@
         "language": "Hindi",
         "year": 2013,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15330,7 +15390,6 @@
         "language": "Tamil",
         "year": 2010,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15348,7 +15407,6 @@
         "language": "Telugu",
         "year": 2010,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15366,7 +15424,6 @@
         "language": "Hindi",
         "year": 2010,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15905,7 +15962,6 @@
         "language": "Tamil",
         "year": 2007,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15923,7 +15979,6 @@
         "language": "Telugu",
         "year": 2007,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15941,7 +15996,6 @@
         "language": "Hindi",
         "year": 2007,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15959,7 +16013,6 @@
         "language": "Tamil",
         "year": 2007,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15977,7 +16030,6 @@
         "language": "Telugu",
         "year": 2007,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16112,7 +16164,6 @@
         "language": "Tamil",
         "year": 2006,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16147,7 +16198,6 @@
         "language": "Tamil",
         "year": 2006,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16340,7 +16390,6 @@
         "language": "Tamil",
         "year": 2004,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16358,7 +16407,6 @@
         "language": "Telugu",
         "year": 2004,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16376,7 +16424,6 @@
         "language": "Hindi",
         "year": 2004,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -16411,7 +16458,6 @@
         "language": "Telugu",
         "year": 2004,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -19102,7 +19148,6 @@
         "language": "Tamil",
         "year": 1993,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
