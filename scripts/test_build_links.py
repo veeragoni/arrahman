@@ -431,6 +431,45 @@ class ProviderLinkResolutionTests(unittest.TestCase):
         )
         self.assertIn("https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums", item.get("sources", []))
 
+    def test_wikipedia_discography_missing_rows_are_covered(self) -> None:
+        source_titles = set()
+        for source_file in (Path(__file__).resolve().parent.parent / "data" / "source").glob("*.json"):
+            category = json.loads(source_file.read_text(encoding="utf-8"))
+            for subsection in category.get("subsections", []):
+                for item in subsection.get("items", []):
+                    if item.get("type") == "film":
+                        source_titles.update(version.get("title", "") for version in item.get("versions", []))
+                    else:
+                        source_titles.add(item.get("title", ""))
+
+        expected_titles = {
+            "Nippu Ravva",
+            "Jhootha Hi Sahi",
+            "Main Vaapas Aaunga",
+            "Batwara 1947",
+            "Anthony D'Souza - Michael Bay Untitled Film",
+            "Karna",
+            "D56 / Mari Selvaraj + Dhanush + Ishari Ganesh Film",
+            "Untitled Vijay Sethupathi - Sai Pallavi Film / Mani Ratnam Film",
+            "Velpari",
+            "Ebony McQueen",
+            "Gotte Kanakavva",
+            "Colours",
+            "Fantasy / Andhi Maalai",
+            "Gurus of Peace",
+            "Harem",
+            "Connections",
+            "A.R. Ameen — Sago",
+            "Allipoola Vennela",
+            "Oscar Sangamam",
+            "Marhaba Mustapha",
+            "Ek Rahen Ek Nazaria",
+            "Ekam Satyam",
+            "Rama",
+        }
+
+        self.assertEqual(sorted(expected_titles - source_titles), [])
+
     def test_pdf_audit_ignores_source_cited_film_main_additions(self) -> None:
         items = [
             {

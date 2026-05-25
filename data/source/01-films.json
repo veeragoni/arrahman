@@ -293,7 +293,10 @@
             {
               "language": "Telugu",
               "title": "Gang Master",
-              "date": "15-07-1994"
+              "date": "15-07-1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2F9xEjS85QETvlzDIh7CRR"
+              }
             }
           ]
         },
@@ -331,7 +334,10 @@
             {
               "language": "Tamil",
               "title": "Kadhalan",
-              "date": "17-09-1994"
+              "date": "17-09-1994",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0LHedE5rMWPPhCRTcomlTW"
+              }
             },
             {
               "language": "Telugu",
@@ -344,7 +350,10 @@
             {
               "language": "Hindi",
               "title": "Hum Se Hain Muqabla",
-              "date": "1995"
+              "date": "1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/48g3Sp71fD9mVZNd619VFf"
+              }
             }
           ]
         },
@@ -363,7 +372,10 @@
             {
               "language": "Telugu",
               "title": "Vanitha/Aada Brathuku/Osey Krishnamma",
-              "date": "1995"
+              "date": "1995",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5j9LGn1qrDej7a0dNxs7yj"
+              }
             }
           ]
         },
@@ -384,7 +396,7 @@
               "title": "Bombay",
               "date": "1995",
               "links": {
-                "spotify": "https://open.spotify.com/album/3EbZ15hRMrD2uGZWzuJQQE"
+                "spotify": "https://open.spotify.com/album/50iJYe6QgTwfB7VRzs1yRZ"
               }
             },
             {
@@ -392,7 +404,7 @@
               "title": "Bombay",
               "date": "1995",
               "links": {
-                "spotify": "https://open.spotify.com/album/3EbZ15hRMrD2uGZWzuJQQE"
+                "spotify": "https://open.spotify.com/album/2oPdRL0fDdnW9e1zoMnrDk"
               }
             }
           ]
@@ -414,7 +426,7 @@
               "title": "Indira",
               "date": "1996",
               "links": {
-                "spotify": "https://open.spotify.com/album/6qtCCtADRtEmiSAD5qcdjr"
+                "spotify": "https://open.spotify.com/album/142U0j7IAMPe22XmxXnpye"
               }
             },
             {
@@ -2737,6 +2749,15 @@
       "items": [
         {
           "type": "work",
+          "title": "Nippu Ravva",
+          "year": 1993,
+          "note": "Score only",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Original_scores"
+          ]
+        },
+        {
+          "type": "work",
           "title": "Komaram Puli",
           "year": 2010,
           "date": "10-09-2010"
@@ -2889,9 +2910,12 @@
         },
         {
           "type": "work",
-          "title": "Jhoota Hi Sahi",
+          "title": "Jhootha Hi Sahi",
           "year": 2010,
-          "date": "22-10-2010"
+          "date": "22-10-2010",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Original_scores"
+          ]
         },
         {
           "type": "work",
@@ -3008,8 +3032,11 @@
         },
         {
           "type": "work",
-          "title": "Main Vapas Aaunga",
-          "note": "Singles released"
+          "title": "Main Vaapas Aaunga",
+          "note": "Singles released",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
+          ]
         }
       ]
     },
@@ -3303,6 +3330,13 @@
         },
         {
           "type": "work",
+          "title": "Batwara 1947",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
+          ]
+        },
+        {
+          "type": "work",
           "title": "Gandhi — Web Series",
           "note": "Hansal Mehta"
         },
@@ -3332,11 +3366,24 @@
         },
         {
           "type": "work",
-          "title": "Mari Selvaraj + Dhanush + Ishari Ganesh Film"
+          "title": "D56 / Mari Selvaraj + Dhanush + Ishari Ganesh Film",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
+          ]
         },
         {
           "type": "work",
-          "title": "Mani Rathnam + Vijay Sethupathi + Sai Pallavi Film"
+          "title": "Untitled Vijay Sethupathi - Sai Pallavi Film / Mani Ratnam Film",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
+          ]
+        },
+        {
+          "type": "work",
+          "title": "Ebony McQueen",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
+          ]
         },
         {
           "type": "work",
@@ -3355,6 +3402,27 @@
           "type": "work",
           "title": "Bhanushali Studios Project",
           "note": "Dir. Anthony D'Souza"
+        },
+        {
+          "type": "work",
+          "title": "Anthony D'Souza - Michael Bay Untitled Film",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
+          ]
+        },
+        {
+          "type": "work",
+          "title": "Karna",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
+          ]
+        },
+        {
+          "type": "work",
+          "title": "Velpari",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
+          ]
         },
         {
           "type": "work",
@@ -3435,11 +3503,6 @@
           "type": "work",
           "title": "Zuni",
           "note": "Santosh Sivan"
-        },
-        {
-          "type": "work",
-          "title": "Ebony McQueen",
-          "note": "Shekar Kapur"
         }
       ]
     }

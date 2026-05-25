@@ -11,6 +11,15 @@
       "items": [
         {
           "type": "work",
+          "title": "Gotte Kanakavva",
+          "year": 1987,
+          "note": "Record producer",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
+          ]
+        },
+        {
+          "type": "work",
           "title": "Disco Disco",
           "year": 1988
         },
@@ -26,13 +35,40 @@
         },
         {
           "type": "work",
+          "title": "Colours",
+          "year": 1992,
+          "note": "Background score only",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
+          ]
+        },
+        {
+          "type": "work",
           "title": "Then Vandhu Paayedhu",
           "year": 1994
         },
         {
           "type": "work",
+          "title": "Fantasy / Andhi Maalai",
+          "year": 1994,
+          "note": "Keyboardist credit",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
+          ]
+        },
+        {
+          "type": "work",
           "title": "Vande Mataram",
           "year": 1997
+        },
+        {
+          "type": "work",
+          "title": "Gurus of Peace",
+          "year": 1998,
+          "note": "1 of 4 tracks",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
+          ]
         },
         {
           "type": "work",
@@ -44,6 +80,15 @@
           "title": "Indian Mantra",
           "year": 2001,
           "note": "1 song"
+        },
+        {
+          "type": "work",
+          "title": "Harem",
+          "year": 2003,
+          "note": "The Journey Home; 1 of 14 tracks on Sarah Brightman's Harem album",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
+          ]
         },
         {
           "type": "work",
@@ -78,6 +123,14 @@
           "title": "Karen David — Alive EP",
           "year": 2008,
           "note": "3 songs"
+        },
+        {
+          "type": "work",
+          "title": "Connections",
+          "year": 2011,
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
+          ]
         },
         {
           "type": "work",
@@ -290,6 +343,14 @@
         },
         {
           "type": "work",
+          "title": "Ekam Satyam",
+          "year": 1998,
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#As_lead_artist"
+          ]
+        },
+        {
+          "type": "work",
           "title": "Desh Ka Salaam",
           "year": 1999
         },
@@ -315,6 +376,14 @@
         },
         {
           "type": "work",
+          "title": "Ek Rahen Ek Nazaria",
+          "year": 2002,
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#As_lead_artist"
+          ]
+        },
+        {
+          "type": "work",
           "title": "Ignited Minds",
           "year": 2003
         },
@@ -327,6 +396,14 @@
           "type": "work",
           "title": "One Love",
           "year": 2007
+        },
+        {
+          "type": "work",
+          "title": "Marhaba Mustapha",
+          "year": 2008,
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#As_lead_artist"
+          ]
         },
         {
           "type": "work",
@@ -352,6 +429,14 @@
           "type": "work",
           "title": "Changing Seasons",
           "year": 2011
+        },
+        {
+          "type": "work",
+          "title": "Oscar Sangamam",
+          "year": 2012,
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#As_lead_artist"
+          ]
         },
         {
           "type": "work",
@@ -387,6 +472,14 @@
           "type": "work",
           "title": "Amar Shonar Bangla — 50 Years of Bangladesh",
           "year": 2021
+        },
+        {
+          "type": "work",
+          "title": "Allipoola Vennela",
+          "year": 2021,
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#As_lead_artist"
+          ]
         },
         {
           "type": "work",
@@ -436,6 +529,15 @@
           "title": "Cedric Serpes songs",
           "year": 1989,
           "note": "Album"
+        },
+        {
+          "type": "work",
+          "title": "Rama",
+          "year": 1995,
+          "note": "Writer credit",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Writer"
+          ]
         },
         {
           "type": "work",
@@ -501,6 +603,15 @@
           "type": "work",
           "title": "ARRived Series Theme Song",
           "year": 2018
+        },
+        {
+          "type": "work",
+          "title": "A.R. Ameen — Sago",
+          "year": 2019,
+          "note": "Composition and co-producer credit",
+          "sources": [
+            "https://en.wikipedia.org/wiki/A._R._Rahman_discography#As_lead_artist"
+          ]
         },
         {
           "type": "work",
