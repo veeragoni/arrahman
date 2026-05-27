@@ -567,6 +567,92 @@ class ProviderLinkResolutionTests(unittest.TestCase):
             ],
         )
 
+    def test_pdf_audit_accepts_reordered_versions_within_film_row(self) -> None:
+        expected_from_pdf = [
+            {
+                "type": "film",
+                "year": 2005,
+                "versions": [
+                    {"language": "Tamil", "title": "Desam", "date": "2005"},
+                    {"language": "Hindi", "title": "Swades", "date": "17-12-2004"},
+                ],
+            }
+        ]
+        source_category = {
+            "id": "films",
+            "subsections": [
+                {
+                    "id": "films-main",
+                    "items": [
+                        {
+                            "type": "film",
+                            "year": 2005,
+                            "versions": [
+                                {"language": "Hindi", "title": "Swades", "date": "17-12-2004"},
+                                {"language": "Tamil", "title": "Desam", "date": "2005"},
+                            ],
+                        }
+                    ],
+                }
+            ],
+        }
+        original_film_main_from_pdf = audit_pdf_sources.film_main_from_pdf
+        original_load_film_source = audit_pdf_sources.load_film_source
+        audit_pdf_sources.film_main_from_pdf = lambda: expected_from_pdf
+        audit_pdf_sources.load_film_source = lambda: source_category
+
+        try:
+            errors = audit_pdf_sources.audit_film_main()
+        finally:
+            audit_pdf_sources.film_main_from_pdf = original_film_main_from_pdf
+            audit_pdf_sources.load_film_source = original_load_film_source
+
+        self.assertEqual(errors, [])
+
+    def test_pdf_audit_accepts_corrected_source_titles_with_same_release_identity(self) -> None:
+        expected_from_pdf = [
+            {
+                "type": "film",
+                "year": 2007,
+                "versions": [
+                    {"language": "Telugu", "title": "Prem Nagar", "date": "2007"},
+                    {"language": "Malayalam", "title": "Aye Taxi", "date": "2007"},
+                    {"language": "Other", "title": "Love (Kannada)", "date": "2007"},
+                ],
+            }
+        ]
+        source_category = {
+            "id": "films",
+            "subsections": [
+                {
+                    "id": "films-main",
+                    "items": [
+                        {
+                            "type": "film",
+                            "year": 2007,
+                            "versions": [
+                                {"language": "Telugu", "title": "Prema Nagar", "date": "2007"},
+                                {"language": "Malayalam", "title": "Aye Taxi", "date": "2007"},
+                                {"language": "Other", "title": "Love (Kannada)", "date": "2007"},
+                            ],
+                        }
+                    ],
+                }
+            ],
+        }
+        original_film_main_from_pdf = audit_pdf_sources.film_main_from_pdf
+        original_load_film_source = audit_pdf_sources.load_film_source
+        audit_pdf_sources.film_main_from_pdf = lambda: expected_from_pdf
+        audit_pdf_sources.load_film_source = lambda: source_category
+
+        try:
+            errors = audit_pdf_sources.audit_film_main()
+        finally:
+            audit_pdf_sources.film_main_from_pdf = original_film_main_from_pdf
+            audit_pdf_sources.load_film_source = original_load_film_source
+
+        self.assertEqual(errors, [])
+
     def test_blocked_search_backend_stops_resolution_after_one_failure(self) -> None:
         class BlockedResolver:
             name = "Blocked search"

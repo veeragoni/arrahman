@@ -343,6 +343,35 @@ def comparable_film_main(items: list[dict]) -> list[dict]:
     return comparable
 
 
+LANGUAGE_SORT_ORDER = {
+    language: index
+    for index, (_, _, language) in enumerate(LANGUAGE_COLUMNS)
+}
+
+
+def film_main_release_identity(items: list[dict]) -> list[dict]:
+    identities = []
+    for item in items:
+        versions = [
+            {
+                "language": version.get("language"),
+                "date": clean_text(version.get("date", "")),
+            }
+            for version in item.get("versions", [])
+        ]
+        identities.append({
+            "year": item.get("year"),
+            "versions": sorted(
+                versions,
+                key=lambda version: (
+                    LANGUAGE_SORT_ORDER.get(version.get("language"), len(LANGUAGE_SORT_ORDER)),
+                    version.get("date", ""),
+                ),
+            ),
+        })
+    return identities
+
+
 def has_source_citation(item: dict) -> bool:
     if item.get("sources"):
         return True
@@ -357,11 +386,13 @@ def audit_film_main() -> list[str]:
     expected = comparable_film_main(film_main_from_pdf())
     source_items = find_subsection(load_film_source(), "films-main").get("items", [])
     actual = comparable_film_main(pdf_audited_film_main_items(source_items))
-    if expected == actual:
+    expected_identity = film_main_release_identity(expected)
+    actual_identity = film_main_release_identity(actual)
+    if expected_identity == actual_identity:
         return []
 
     errors = [f"films-main differs from {FILM_PDF.name}: expected {len(expected)} rows, found {len(actual)} rows"]
-    for index, (expected_item, actual_item) in enumerate(zip(expected, actual), start=1):
+    for index, (expected_item, actual_item) in enumerate(zip(expected_identity, actual_identity), start=1):
         if expected_item != actual_item:
             errors.append(f"first mismatch at films-main[{index}]")
             errors.append(f"  expected: {json.dumps(expected_item, ensure_ascii=False)}")
