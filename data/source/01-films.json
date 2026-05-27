@@ -1248,19 +1248,19 @@
           "year": 2005,
           "versions": [
             {
-              "language": "Tamil",
-              "title": "Desam",
-              "date": "2005",
-              "links": {
-                "spotify": "https://open.spotify.com/album/1T0h8a04zxOiIp9bpFQLlr"
-              }
-            },
-            {
               "language": "Hindi",
               "title": "Swades",
               "date": "17-12-2004",
               "links": {
                 "spotify": "https://open.spotify.com/album/72oHSx1OrxR0gig6JcVAEW"
+              }
+            },
+                        {
+              "language": "Tamil",
+              "title": "Desam",
+              "date": "2005",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1T0h8a04zxOiIp9bpFQLlr"
               }
             }
           ]
