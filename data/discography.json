@@ -4501,9 +4501,6 @@
                   "language": "Telugu",
                   "title": "Peddi",
                   "date": "04-06-2026",
-                  "links": {
-                    "spotify": "https://open.spotify.com/album/6mWpQgxrYAxpz5VGN5AQjV"
-                  },
                   "sources": [
                     "https://peddimovie.vercel.app/",
                     "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
@@ -4519,9 +4516,6 @@
                   "language": "Hindi",
                   "title": "Peddi",
                   "date": "04-06-2026",
-                  "links": {
-                    "spotify": "https://open.spotify.com/album/4XkVajdR0hZr3vWbV0CCjm"
-                  },
                   "sources": [
                     "https://peddimovie.vercel.app/",
                     "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
@@ -4537,9 +4531,6 @@
                   "language": "Tamil",
                   "title": "Peddi",
                   "date": "04-06-2026",
-                  "links": {
-                    "spotify": "https://open.spotify.com/album/3cd0Aqy1aCtehh54uSqY7m"
-                  },
                   "sources": [
                     "https://peddimovie.vercel.app/",
                     "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
@@ -4555,9 +4546,6 @@
                   "language": "Kannada",
                   "title": "Peddi",
                   "date": "04-06-2026",
-                  "links": {
-                    "spotify": "https://open.spotify.com/album/2pFADLJunl7Bsc82xeCG4a"
-                  },
                   "sources": [
                     "https://peddimovie.vercel.app/",
                     "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
@@ -4573,9 +4561,6 @@
                   "language": "Malayalam",
                   "title": "Peddi",
                   "date": "04-06-2026",
-                  "links": {
-                    "spotify": "https://open.spotify.com/album/5sMQ1ZZeZwI7vaTMffJjEA"
-                  },
                   "sources": [
                     "https://peddimovie.vercel.app/",
                     "https://www.bollywoodhungama.com/news/bollywood/ram-charan-starrer-peddi-locks-june-4-2026-for-its-release/"
@@ -12073,6 +12058,7 @@
         "language": "Telugu",
         "year": 2026,
         "missing": [
+          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12090,6 +12076,7 @@
         "language": "Hindi",
         "year": 2026,
         "missing": [
+          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12107,6 +12094,7 @@
         "language": "Tamil",
         "year": 2026,
         "missing": [
+          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12124,6 +12112,7 @@
         "language": "Kannada",
         "year": 2026,
         "missing": [
+          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -12141,6 +12130,7 @@
         "language": "Malayalam",
         "year": 2026,
         "missing": [
+          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
