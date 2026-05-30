@@ -42,6 +42,21 @@ def require(condition: bool, message: str) -> None:
         raise SystemExit(f"ERROR: {message}")
 
 
+def require_analytics_notice(html: str, path: str) -> None:
+    require("https://www.googletagmanager.com/gtag/js?id=G-6VD8ZYDD5J" in html, f"{path} must load the configured Google Analytics tag")
+    require("gtag('config', 'G-6VD8ZYDD5J')" in html, f"{path} must configure Google Analytics with G-6VD8ZYDD5J")
+    require('id="analytics-notice"' in html, f"{path} must include an analytics notice banner")
+    require('class="analytics-notice"' in html, f"{path} analytics notice must use the analytics-notice class")
+    require('id="analytics-notice-close"' in html, f"{path} analytics notice must include a dismiss control")
+    require("Google Analytics" in html, f"{path} analytics notice must name Google Analytics")
+    notice_match = re.search(r'<aside[^>]+id="analytics-notice"[\s\S]*?</aside>', html)
+    require(notice_match is not None, f"{path} analytics notice must be an aside")
+    notice_text = notice_match.group(0).lower()
+    require("accept" not in notice_text, f"{path} analytics notice must not include accept language")
+    require("deny" not in notice_text, f"{path} analytics notice must not include deny language")
+    require("gtag('consent" not in html, f"{path} must not gate analytics behind consent mode")
+
+
 def count_entries(category: dict) -> int:
     return sum(len(subsection.get("items", [])) for subsection in category.get("subsections", []))
 
@@ -226,6 +241,7 @@ def main() -> None:
     require(not legacy_data_files, f"legacy data JS files remain: {', '.join(legacy_data_files)}")
 
     html = INDEX_HTML.read_text(encoding="utf-8")
+    require_analytics_notice(html, "index.html")
     require('<script src="./app.js"></script>' in html, "index.html must load app.js")
     require('src="./data/' not in html, "index.html must not load data as JavaScript")
     require('data-stat-total="true"' in html, "index.html total stat must be data-driven")
@@ -264,6 +280,10 @@ def main() -> None:
     require(isinstance(missing_sources, list), "quality.missingSources must be a list")
 
     app_js = (ROOT / "app.js").read_text(encoding="utf-8")
+    require("function initAnalyticsNotice" in app_js, "app.js must initialize the analytics notice")
+    require("analytics-notice-dismissed" in app_js, "app.js must remember dismissed analytics notices")
+    require("analytics-notice-close" in app_js, "app.js must wire the analytics notice dismiss control")
+    require("gtag('consent" not in app_js, "app.js must not gate analytics behind consent mode")
     for stat_id in ("stat-films", "stat-singles", "stat-ads", "stat-total"):
         require(f"getElementById('{stat_id}')" not in app_js, "app.js must compute hero stats from data-stat attributes")
     require("appleMusic" in app_js, "app.js must support Apple Music links")
@@ -289,6 +309,7 @@ def main() -> None:
 
     require(DIST_HTML.exists(), "missing dist/arrahman-discography.html")
     dist_html = DIST_HTML.read_text(encoding="utf-8")
+    require_analytics_notice(dist_html, "dist/arrahman-discography.html")
     require("'https://www.google.com/search?q=' + encodeURIComponent(q + ' spotify')" not in dist_html, "dist HTML must not use Google for Spotify fallback search")
     require("'https://open.spotify.com/search/' + encodeURIComponent('A R Rahman ' + q)" in dist_html, "dist HTML must use Spotify search fallback")
     require("'https://music.apple.com/us/search?term=' + encodeURIComponent('A R Rahman ' + q)" in dist_html, "dist HTML must use a storefront-scoped Apple Music search fallback")

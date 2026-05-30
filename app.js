@@ -48,6 +48,32 @@
     empty.classList.add('show');
   }
 
+  function initAnalyticsNotice() {
+    const notice = document.getElementById('analytics-notice');
+    const close = document.getElementById('analytics-notice-close');
+    if (!notice || !close) return;
+
+    const storageKey = 'analytics-notice-dismissed';
+    let isDismissed = false;
+    try {
+      isDismissed = window.localStorage.getItem(storageKey) === 'true';
+    } catch (error) {
+      isDismissed = false;
+    }
+
+    if (isDismissed) return;
+    notice.hidden = false;
+
+    close.addEventListener('click', () => {
+      notice.hidden = true;
+      try {
+        window.localStorage.setItem(storageKey, 'true');
+      } catch (error) {
+        // Storage can be blocked; the close action should still work for this page view.
+      }
+    });
+  }
+
   // ---------- Helpers ----------
   const escapeHtml = (str) => {
     if (str == null) return '';
@@ -697,5 +723,6 @@
     }
   }
 
+  initAnalyticsNotice();
   start();
 })();

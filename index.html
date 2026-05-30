@@ -855,6 +855,66 @@
 
   .footer-credit .accent { color: var(--accent); }
 
+  /* ===== ANALYTICS NOTICE ===== */
+  .analytics-notice {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 20;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: min(420px, calc(100vw - 32px));
+    padding: 12px 14px;
+    border: 1px solid var(--line-strong);
+    background: rgba(22, 24, 31, 0.94);
+    color: var(--ink-dim);
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+    backdrop-filter: blur(14px);
+  }
+
+  .analytics-notice[hidden] { display: none; }
+
+  .analytics-notice p {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    line-height: 1.7;
+    text-transform: uppercase;
+  }
+
+  .analytics-notice strong {
+    color: var(--accent-bright);
+    font-weight: 500;
+  }
+
+  .analytics-notice button {
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink-faint);
+    font: 18px/1 var(--body);
+    cursor: pointer;
+  }
+
+  .analytics-notice button:hover,
+  .analytics-notice button:focus-visible {
+    border-color: var(--line-strong);
+    color: var(--ink);
+    outline: none;
+  }
+
+  @media (max-width: 560px) {
+    .analytics-notice {
+      right: 12px;
+      bottom: 12px;
+      width: calc(100vw - 24px);
+    }
+  }
+
   /* ===== ANIMATIONS ===== */
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(8px); }
@@ -983,6 +1043,11 @@
   </footer>
 
 </div>
+
+<aside class="analytics-notice" id="analytics-notice" aria-label="Analytics notice" hidden>
+  <p><strong>Analytics notice.</strong> arrahman.space uses Google Analytics to collect usage data and improve the archive.</p>
+  <button type="button" id="analytics-notice-close" aria-label="Dismiss analytics notice" title="Dismiss analytics notice"><span aria-hidden="true">&times;</span></button>
+</aside>
 
 <!-- app logic; loads data/discography.json -->
 <script src="./app.js"></script>
