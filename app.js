@@ -469,6 +469,10 @@
   const quality = discography.quality || { missingLinks: [], missingSources: [] };
   const main = document.getElementById('main');
   const empty = document.getElementById('empty');
+  const dataUpdated = document.getElementById('data-updated');
+  if (dataUpdated && discography.generatedAt) {
+    dataUpdated.textContent = `Data current as of ${formatDisplayDate(discography.generatedAt)}.`;
+  }
   const sectionsHtml = sections.map(renderSection).join('') + renderQualitySection(quality);
   // Insert before empty state
   main.insertAdjacentHTML('afterbegin', sectionsHtml);

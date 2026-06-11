@@ -13,6 +13,7 @@ import sys
 import argparse
 import base64
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from html.parser import HTMLParser
 import json
 import math
@@ -1095,6 +1096,7 @@ def build_discography(
     return {
         "schemaVersion": 2,
         "generatedFrom": "data/source/*.json",
+        "generatedAt": datetime.now(timezone.utc).strftime("%d-%m-%Y"),
         "categories": categories,
         "quality": build_quality(categories),
     }

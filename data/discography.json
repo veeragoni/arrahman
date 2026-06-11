@@ -1,6 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
+  "generatedAt": "11-06-2026",
   "categories": [
     {
       "id": "films",
