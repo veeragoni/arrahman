@@ -223,6 +223,33 @@
     return priorityLanguages.concat(remainingLanguages);
   }
 
+  function releaseYear(date, fallback) {
+    const match = /(19|20)\d{2}/.exec((date || '').toString());
+    if (match) return match[0];
+    return (fallback || '').toString().trim();
+  }
+
+  function collectYears(sections) {
+    const years = new Set();
+    sections.forEach(section => {
+      (section.subsections || []).forEach(subsection => {
+        (subsection.items || []).forEach(item => {
+          if (item.type === 'film' || subsection.type === 'films') {
+            const versions = Array.isArray(item.versions) ? item.versions : legacyVersions(item);
+            versions.forEach(version => {
+              const year = releaseYear(version.date, item.year || item.y);
+              if (year) years.add(year);
+            });
+          } else {
+            const year = releaseYear(item.date, item.year || item.y);
+            if (year) years.add(year);
+          }
+        });
+      });
+    });
+    return Array.from(years).sort().reverse();
+  }
+
   function filmProviderQuery(title, language) {
     const usefulLanguage = language && language !== 'Other' && language !== 'Version' ? language : '';
     return [title, usefulLanguage].filter(Boolean).join(' ');
@@ -251,7 +278,8 @@
       const date = version.date || '';
       const versionLanguage = version.language || 'Version';
       const versionSearch = [versionLanguage, title, date].join(' ').toLowerCase();
-      return `<div class="entry-version" data-language="${escapeHtml(languageKey(versionLanguage))}" data-search="${escapeHtml(versionSearch)}">
+      const versionYear = releaseYear(date, film.year || film.y);
+      return `<div class="entry-version" data-language="${escapeHtml(languageKey(versionLanguage))}" data-year="${escapeHtml(versionYear)}" data-search="${escapeHtml(versionSearch)}">
         <span class="lang ${escapeHtml(langClass(versionLanguage))}">${escapeHtml(versionLanguage)}</span>
         <span class="version-title">${highlight(title)}</span>
         ${date ? `<span class="version-date">${highlight(date)}</span>` : ''}
@@ -281,7 +309,8 @@
     const searchText = (title + ' ' + date + ' ' + year + ' ' + note).toLowerCase();
     const noteHtml = note ? ` <em style="color:var(--ink-faint);font-style:italic;">· ${highlight(note)}</em>` : '';
     const q = title;
-    return `<div class="entry" data-search="${escapeHtml(searchText)}">
+    const entryYear = releaseYear(date, year);
+    return `<div class="entry" data-year="${escapeHtml(entryYear)}" data-search="${escapeHtml(searchText)}">
       <div class="entry-top">
         <div class="entry-title">${highlight(title)}${noteHtml}</div>
         <div class="entry-year">${meta}</div>
@@ -410,6 +439,11 @@
   languageContainer.innerHTML = languages.map((language, i) =>
     `<button class="lang-pill ${i === 0 ? 'active' : ''}" type="button" data-language="${escapeHtml(language.id)}" aria-pressed="${i === 0 ? 'true' : 'false'}">${escapeHtml(language.label)}</button>`
   ).join('');
+  const yearSelect = document.getElementById('years');
+  const years = ['all'].concat(collectYears(sections));
+  yearSelect.innerHTML = years.map(year =>
+    `<option value="${escapeHtml(year)}">${year === 'all' ? 'All Years' : escapeHtml(year)}</option>`
+  ).join('');
 
   function setActiveCategoryButton(categoryId) {
     document.querySelectorAll('.cat-pill').forEach(pill => {
@@ -475,6 +509,7 @@
   const resultPosition = document.getElementById('result-position');
   let activeCat = 'all';
   let activeLang = 'all';
+  let activeYear = 'all';
   let activeResultIndex = -1;
   let visibleResults = [];
 
@@ -483,25 +518,35 @@
   const allSubsections = Array.from(document.querySelectorAll('.subsection'));
   const allSections = Array.from(document.querySelectorAll('.section'));
 
+  function rowMatchesFilters(row) {
+    const matchesLanguage = activeLang === 'all' || row.getAttribute('data-language') === activeLang;
+    const matchesYear = activeYear === 'all' || row.getAttribute('data-year') === activeYear;
+    return matchesLanguage && matchesYear;
+  }
+
   function syncVersionRows(el) {
     const versionRows = Array.from(el.querySelectorAll('.entry-version[data-language]'));
-    if (!versionRows.length) return activeLang === 'all';
+    if (!versionRows.length) {
+      if (activeLang !== 'all') return false;
+      return activeYear === 'all' || (el.getAttribute('data-year') || '') === activeYear;
+    }
 
     let visibleRows = 0;
     versionRows.forEach(row => {
-      const matchesLanguage = activeLang === 'all' || row.getAttribute('data-language') === activeLang;
-      row.classList.toggle('hidden', !matchesLanguage);
-      if (matchesLanguage) visibleRows++;
+      const matches = rowMatchesFilters(row);
+      row.classList.toggle('hidden', !matches);
+      if (matches) visibleRows++;
     });
 
-    return activeLang === 'all' || visibleRows > 0;
+    return (activeLang === 'all' && activeYear === 'all') || visibleRows > 0;
   }
 
   function entrySearchText(el) {
-    if (activeLang === 'all') return el.getAttribute('data-search') || '';
+    if (activeLang === 'all' && activeYear === 'all') return el.getAttribute('data-search') || '';
 
     const versionRows = Array.from(el.querySelectorAll('.entry-version[data-language]'));
-    const matchingRows = versionRows.filter(row => row.getAttribute('data-language') === activeLang);
+    if (!versionRows.length) return el.getAttribute('data-search') || '';
+    const matchingRows = versionRows.filter(rowMatchesFilters);
     if (!matchingRows.length) return '';
     return (
       matchingRows.map(row => row.getAttribute('data-search') || row.textContent || '').join(' ') +
@@ -511,7 +556,7 @@
   }
 
   function syncResultNav() {
-    const hasScopedResults = visibleResults.length > 0 && (currentQuery || activeCat !== 'all' || activeLang !== 'all');
+    const hasScopedResults = visibleResults.length > 0 && (currentQuery || activeCat !== 'all' || activeLang !== 'all' || activeYear !== 'all');
     resultNav.hidden = !hasScopedResults;
     resultPrev.disabled = !hasScopedResults || visibleResults.length <= 1;
     resultNext.disabled = !hasScopedResults || visibleResults.length <= 1;
@@ -589,14 +634,14 @@
     });
 
     countEl.textContent = visibleCount;
-    clearBtn.hidden = (!query && activeCat === 'all' && activeLang === 'all');
+    clearBtn.hidden = (!query && activeCat === 'all' && activeLang === 'all' && activeYear === 'all');
     visibleResults = allEntries.filter(el => {
       if (el.classList.contains('hidden')) return false;
       const section = el.closest('.section');
       return section && !section.classList.contains('hidden');
     });
 
-    if (visibleResults.length > 0 && (query || activeCat !== 'all' || activeLang !== 'all')) {
+    if (visibleResults.length > 0 && (query || activeCat !== 'all' || activeLang !== 'all' || activeYear !== 'all')) {
       const retainedIndex = previousActive ? visibleResults.indexOf(previousActive) : -1;
       const nextIndex = retainedIndex >= 0 ? retainedIndex : 0;
       setActiveResult(nextIndex, Boolean(options.scrollToFirst && query && query !== previousQuery));
@@ -606,7 +651,7 @@
 
     // empty state
     const allHidden = !Array.from(document.querySelectorAll('.section')).some(s => !s.classList.contains('hidden'));
-    empty.classList.toggle('show', allHidden && (query || activeCat !== 'all' || activeLang !== 'all'));
+    empty.classList.toggle('show', allHidden && (query || activeCat !== 'all' || activeLang !== 'all' || activeYear !== 'all'));
 
     // re-highlight: requires re-render of visible matches. For perf, only highlight on query change.
     if (query) {
@@ -658,8 +703,11 @@
     searchInput.value = '';
     activeCat = 'all';
     activeLang = 'all';
+    activeYear = 'all';
     setActiveCategoryButton(activeCat);
     setActiveLanguageButton(activeLang);
+    yearSelect.value = 'all';
+    yearSelect.classList.remove('active');
     applyFilter();
     searchInput.focus();
   });
@@ -689,6 +737,12 @@
     if (!btn) return;
     activeLang = btn.getAttribute('data-language');
     setActiveLanguageButton(activeLang);
+    applyFilter({ scrollToFirst: true });
+  });
+
+  yearSelect.addEventListener('change', () => {
+    activeYear = yearSelect.value || 'all';
+    yearSelect.classList.toggle('active', activeYear !== 'all');
     applyFilter({ scrollToFirst: true });
   });
 

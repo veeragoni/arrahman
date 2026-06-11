@@ -6,13 +6,13 @@
 <title>A. R. Rahman — A Complete Discography</title>
 <meta name="description" content="A searchable, complete discography of A. R. Rahman: films, non-film albums, singles, advertisements, collaborations and more." />
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6VD8ZYDD5J"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BCFG606ELC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-6VD8ZYDD5J');
+  gtag('config', 'G-BCFG606ELC');
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -401,6 +401,56 @@
     border-color: var(--ink);
     background: var(--ink);
     font-weight: 500;
+  }
+
+  .years {
+    margin-top: 8px;
+  }
+
+  .years-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .year-label {
+    color: var(--ink-faint);
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .year-select {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+  }
+
+  .year-select:hover {
+    color: var(--ink);
+    border-color: var(--line-strong);
+  }
+
+  .year-select.active {
+    color: var(--bg);
+    border-color: var(--ink);
+    background: var(--ink);
+    font-weight: 500;
+  }
+
+  .year-select option {
+    background: var(--bg);
+    color: var(--ink);
   }
 
   /* ===== MAIN ===== */
@@ -1010,6 +1060,15 @@
     <nav class="langs" aria-label="Album language filter">
       <div class="langs-inner" id="languages">
         <!-- populated by JS -->
+      </div>
+    </nav>
+
+    <nav class="years" aria-label="Release year filter">
+      <div class="years-inner">
+        <label class="year-label" for="years">Year</label>
+        <select class="year-select" id="years">
+          <!-- populated by JS -->
+        </select>
       </div>
     </nav>
   </div>

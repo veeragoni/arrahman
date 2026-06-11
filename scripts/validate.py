@@ -19,6 +19,8 @@ DIST_HTML = ROOT / "dist" / "arrahman-discography.html"
 WORKFLOW = ROOT / ".github" / "workflows" / "pages.yml"
 PDF_AUDIT = ROOT / "scripts" / "audit_pdf_sources.py"
 PROVIDERS = {"spotify", "youtubeMusic", "appleMusic", "youtube", "web"}
+ANALYTICS_MEASUREMENT_ID = "G-BCFG606ELC"
+OLD_ANALYTICS_MEASUREMENT_IDS = {"G-6VD8ZYDD5J"}
 PROVIDER_URL_PATTERNS = {
     "spotify": re.compile(r"^https://open\.spotify\.com/(album|track|playlist)/"),
     "youtubeMusic": re.compile(r"^https://music\.youtube\.com/(watch|playlist|browse)"),
@@ -43,8 +45,10 @@ def require(condition: bool, message: str) -> None:
 
 
 def require_analytics_notice(html: str, path: str) -> None:
-    require("https://www.googletagmanager.com/gtag/js?id=G-6VD8ZYDD5J" in html, f"{path} must load the configured Google Analytics tag")
-    require("gtag('config', 'G-6VD8ZYDD5J')" in html, f"{path} must configure Google Analytics with G-6VD8ZYDD5J")
+    require(f"https://www.googletagmanager.com/gtag/js?id={ANALYTICS_MEASUREMENT_ID}" in html, f"{path} must load the configured Google Analytics tag")
+    require(f"gtag('config', '{ANALYTICS_MEASUREMENT_ID}')" in html, f"{path} must configure Google Analytics with {ANALYTICS_MEASUREMENT_ID}")
+    for old_id in OLD_ANALYTICS_MEASUREMENT_IDS:
+        require(old_id not in html, f"{path} must not reference old Google Analytics measurement ID {old_id}")
     require('id="analytics-notice"' in html, f"{path} must include an analytics notice banner")
     require('class="analytics-notice"' in html, f"{path} analytics notice must use the analytics-notice class")
     require('id="analytics-notice-close"' in html, f"{path} analytics notice must include a dismiss control")

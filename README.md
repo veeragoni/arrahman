@@ -20,18 +20,22 @@ A searchable web archive of A. R. Rahman's film scores, dubs, singles, albums, a
 │   │   ├── 02-nonfilm.json
 │   │   ├── 03-ads.json
 │   │   ├── 04-noncreative.json
-│   │   └── 05-videos.json
+│   │   ├── 05-videos.json
+│   │   └── 06-new-releases.json # auto-discovered releases pending curation
 │   ├── provider-links.json # generated/direct provider link cache
+│   ├── discovery-state.json # Spotify album ids already processed by discovery
 │   └── discography.json    # generated site data; do not edit by hand
 ├── scripts/
 │   ├── build.py            # generates data/discography.json and dist HTML
+│   ├── discover_albums.py  # weekly release discovery + Apple Music link resolution
 │   ├── audit_pdf_sources.py # checks source JSON against the source PDFs
 │   ├── migrate_legacy_data.py
 │   └── validate.py         # validates source data, generated data, and page wiring
 ├── dist/
 │   └── arrahman-discography.html
 └── .github/workflows/
-    └── pages.yml           # builds, validates, and publishes GitHub Pages
+    ├── pages.yml           # builds, validates, and publishes GitHub Pages
+    └── weekly-update.yml   # weekly release discovery, link updates, auto-commit
 ```
 
 The generated archive total is computed from `data/source/` during the build.
@@ -322,10 +326,29 @@ Optional Google Programmable Search credentials are still supported for higher-q
 GOOGLE_API_KEY=... GOOGLE_CSE_ID=... python3 scripts/build.py --resolve-links --search-engine google
 ```
 
+Discover new releases and resolve exact Apple Music links. Discovery walks the full Spotify artist catalog (albums and singles in every language), skips entries already curated anywhere in `data/source/`, and appends the rest to `data/source/06-new-releases.json`. Releases are filtered and bucketed:
+
+- Multi-composer compilations are rejected: Rahman must be credited on at least 60% of tracks (`--min-track-share`).
+- Remixes, lofi, instrumentals, unplugged, and similar alternate versions are kept but placed in their own **Remixes, Instrumentals & Alternate Versions** subsection instead of mixing with actual albums.
+- Singles whose tracks are all contained in a known album (newly discovered or already curated) are dropped; singles with genuinely new or different versions are kept because their track names differ.
+
+Apple Music links need no Apple developer account: the UPC barcode from each Spotify album is looked up through the public iTunes Lookup API (exact same release, exact link), with a scored iTunes term search as fallback. `--backfill-apple` additionally fills missing `appleMusic` links on existing curated entries that already have a Spotify album link. `--reaudit` re-checks previously auto-added entries against all of the rules above (useful after a full album lands and obsoletes its pre-release singles). State lives in `data/discovery-state.json` so processed Spotify albums are never re-added after manual curation.
+
+```bash
+SPOTIFY_CLIENT_ID=... SPOTIFY_CLIENT_SECRET=... python3 scripts/discover_albums.py --dry-run
+SPOTIFY_CLIENT_ID=... SPOTIFY_CLIENT_SECRET=... python3 scripts/discover_albums.py --reaudit --backfill-apple --backfill-limit 25
+```
+
 Validate source data, generated data, page wiring, and GitHub Pages workflow:
 
 ```bash
 python3 scripts/validate.py
+```
+
+Run the unit tests:
+
+```bash
+cd scripts && python3 -m unittest test_build_links test_discover_albums
 ```
 
 Re-sync the main multilingual film table from the film PDF after the source PDF changes:
@@ -341,6 +364,8 @@ python3 scripts/validate.py
 ## GitHub Pages
 
 The workflow at `.github/workflows/pages.yml` publishes automatically on every push to `main`. It builds from committed source JSON plus `data/provider-links.json`, then uses `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` repository secrets to resolve only missing film Spotify album links before publishing.
+
+The workflow at `.github/workflows/weekly-update.yml` runs every Monday (and on demand via **Run workflow**, where the discovery window and Apple backfill limit can be overridden). It discovers new releases across all languages from the Spotify artist catalog, resolves exact Apple Music links through the public iTunes API, re-audits previously auto-added entries (removing compilations and singles that a since-released album has absorbed), backfills missing Apple Music links on existing entries, rebuilds and validates the site, commits any changes, and dispatches the Pages deployment. It uses the same two Spotify repository secrets; no Apple credentials are required. To backfill the whole catalog at once, dispatch it manually with the backfill limit set to `0`.
 
 If the Spotify secrets are not configured, the build skips Spotify album resolution and still publishes with committed direct links plus fallback searches. If you resolve Spotify links locally, commit the updated `data/source/*.json` along with regenerated `data/discography.json` and `dist/arrahman-discography.html`. If you use the generic provider resolver, also commit the updated `data/provider-links.json`.
 

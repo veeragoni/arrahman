@@ -11990,6 +11990,481 @@
         }
       ],
       "blurb": "On-camera music release performances and music videos — across film and non-film work."
+    },
+    {
+      "id": "new-releases",
+      "num": "10",
+      "title": "Latest Releases",
+      "subsections": [
+        {
+          "id": "auto-discovered",
+          "num": "10.1",
+          "title": "Albums & Singles",
+          "type": "list",
+          "providers": [
+            "spotify",
+            "youtubeMusic",
+            "appleMusic",
+            "youtube"
+          ],
+          "items": [
+            {
+              "type": "work",
+              "title": "Main Vaapas Aaunga (Original Motion Picture Soundtrack)",
+              "year": 2026,
+              "date": "10-06-2026",
+              "note": "Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3JZBsPrhhT1qYdEzZfSsog",
+                "appleMusic": "https://music.apple.com/in/album/main-vaapas-aaunga-original-motion-picture-soundtrack/6778782199"
+              },
+              "sources": [
+                "https://open.spotify.com/album/3JZBsPrhhT1qYdEzZfSsog"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Kuchi Kuchi Rakkamma",
+              "year": 2026,
+              "date": "13-05-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1vik5amHrQcZdul1ljetlm",
+                "appleMusic": "https://music.apple.com/in/album/future-talk-kuchi-kuchi-rakkamma-single/6766454939"
+              },
+              "sources": [
+                "https://open.spotify.com/album/1vik5amHrQcZdul1ljetlm"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Rama Theme (From \"Ramayana\")",
+              "year": 2026,
+              "date": "02-04-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6bHGa8TfrkyTkTc07Mjymw",
+                "appleMusic": "https://music.apple.com/in/album/rama-theme-from-ramayana-original-motion-picture-soundtrack/1889942914"
+              },
+              "sources": [
+                "https://open.spotify.com/album/6bHGa8TfrkyTkTc07Mjymw"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Ecstasy",
+              "year": 2026,
+              "date": "31-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2MZN0GGX3tLcoEcYgGKKXP",
+                "appleMusic": "https://music.apple.com/in/album/ecstasy-ep/1889304138"
+              },
+              "sources": [
+                "https://open.spotify.com/album/2MZN0GGX3tLcoEcYgGKKXP"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Main Vaapas Aaunga Teaser Theme",
+              "year": 2026,
+              "date": "20-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1UuOJhe5Y943sE3LCHvUXq",
+                "appleMusic": "https://music.apple.com/in/album/main-vaapas-aaunga-teaser-theme-single/1886701896"
+              },
+              "sources": [
+                "https://open.spotify.com/album/1UuOJhe5Y943sE3LCHvUXq"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Shyama Sundara Kera Kedaara Bhoomi",
+              "year": 2026,
+              "date": "07-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0cATzrpCsOwGHk0F9UHfVr",
+                "appleMusic": "https://music.apple.com/in/album/shyama-sundara-kera-kedaara-bhoomi-single/1883050156"
+              },
+              "sources": [
+                "https://open.spotify.com/album/0cATzrpCsOwGHk0F9UHfVr"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Bhagwe Ki Shaan (Aaya Re Toofaan)",
+              "year": 2026,
+              "date": "04-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6gB0uK4dxySOsQFhbN2wPY",
+                "appleMusic": "https://music.apple.com/in/album/bhagwe-ki-shaan-aaya-re-toofaan-single/1882330750"
+              },
+              "sources": [
+                "https://open.spotify.com/album/6gB0uK4dxySOsQFhbN2wPY"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Aaya Re Toofan (Shubh Gudi Padwa - Marathi New Year Celebration)",
+              "year": 2026,
+              "date": "04-03-2026",
+              "note": "Marathi · Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3lkAO4Q3HLAeMnci7whMqZ",
+                "appleMusic": "https://music.apple.com/in/album/aaya-re-toofan-shubh-gudi-padwa-marathi-new-year-celebration/1882330912"
+              },
+              "sources": [
+                "https://open.spotify.com/album/3lkAO4Q3HLAeMnci7whMqZ"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Muthu (Original Motion Picture Soundtrack)",
+              "year": 2026,
+              "date": "02-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7mQu2nULXVI7I39gy7OVnq",
+                "appleMusic": "https://music.apple.com/in/album/muthu-original-motion-picture-soundtrack-ep/1881535158"
+              },
+              "sources": [
+                "https://open.spotify.com/album/7mQu2nULXVI7I39gy7OVnq"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Rogi Mai (Kehna Hi Kya)",
+              "year": 2026,
+              "date": "27-02-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3PHqsACWNOJndLlPd7Rowg",
+                "appleMusic": "https://music.apple.com/in/album/rogi-mai-kehna-hi-kya-single/1878089750"
+              },
+              "sources": [
+                "https://open.spotify.com/album/3PHqsACWNOJndLlPd7Rowg"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "auto-versions",
+          "num": "10.2",
+          "title": "Remixes, Instrumentals & Alternate Versions",
+          "type": "list",
+          "providers": [
+            "spotify",
+            "youtubeMusic",
+            "appleMusic",
+            "youtube"
+          ],
+          "items": [
+            {
+              "type": "work",
+              "title": "Kay Sera Sera (Remix)",
+              "year": 2026,
+              "date": "22-05-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2DaV6iIRa4YkEjlIP39XGy",
+                "appleMusic": "https://music.apple.com/in/album/kay-sera-sera-remix-single/6771803423"
+              },
+              "sources": [
+                "https://open.spotify.com/album/2DaV6iIRa4YkEjlIP39XGy"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Kadhal Sadugudu – Chill Mix",
+              "year": 2026,
+              "date": "05-05-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5TZzdtOefdtPqs2IrJoa8j",
+                "appleMusic": "https://music.apple.com/in/album/kadhal-sadugudu-from-alaipayuthey-single-trap-mix-single/1687939744"
+              },
+              "sources": [
+                "https://open.spotify.com/album/5TZzdtOefdtPqs2IrJoa8j"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Luka Chuppi (Synthwave)",
+              "year": 2026,
+              "date": "01-05-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1BFscPYaMnvJu3FTJPzI03",
+                "appleMusic": "https://music.apple.com/in/album/luka-chuppi-synthwave-single/1895946408"
+              },
+              "sources": [
+                "https://open.spotify.com/album/1BFscPYaMnvJu3FTJPzI03"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Netru Illatha Maatram (Rendition)",
+              "year": 2026,
+              "date": "27-04-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/76tmCnYgwtcQAhs3I76vOK",
+                "appleMusic": "https://music.apple.com/in/album/netru-illatha-maatram-rendition-single/1895378208"
+              },
+              "sources": [
+                "https://open.spotify.com/album/76tmCnYgwtcQAhs3I76vOK"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Yenge Enathu Kavithai - Afro DnB",
+              "year": 2026,
+              "date": "24-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3eZh7pcSYykiMSN2rC5RIw",
+                "appleMusic": "https://music.apple.com/in/album/yenge-enathu-kavithai-deep-house-mix-single/1882628554"
+              },
+              "sources": [
+                "https://open.spotify.com/album/3eZh7pcSYykiMSN2rC5RIw"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Nenjukkule (Instrumental)",
+              "year": 2026,
+              "date": "21-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0dhXmhsF0FoVO7W1y62b4B",
+                "appleMusic": "https://music.apple.com/in/album/nenjukkule-instrumental-cover-single/1886720119"
+              },
+              "sources": [
+                "https://open.spotify.com/album/0dhXmhsF0FoVO7W1y62b4B"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Yenge Enathu Kavithai - Deep House Mix",
+              "year": 2026,
+              "date": "18-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/71pGYArMcJqK8AtTX1Aq7i",
+                "appleMusic": "https://music.apple.com/in/album/yenge-enathu-kavithai-deep-house-mix-single/1882628554"
+              },
+              "sources": [
+                "https://open.spotify.com/album/71pGYArMcJqK8AtTX1Aq7i"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Nahin Saamne Tu (Instrumental)",
+              "year": 2026,
+              "date": "18-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1uVPUB0sR8s0sStDSvKHZP",
+                "appleMusic": "https://music.apple.com/in/album/nahin-saamne-tu-instrumental-single/1883974613"
+              },
+              "sources": [
+                "https://open.spotify.com/album/1uVPUB0sR8s0sStDSvKHZP"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Yede Yedeydey - Drill Mix",
+              "year": 2026,
+              "date": "12-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2UZbSu69g6yV5AhHrX5E0I",
+                "appleMusic": "https://music.apple.com/in/album/yede-yedeydey-drill-mix-single/1878358166"
+              },
+              "sources": [
+                "https://open.spotify.com/album/2UZbSu69g6yV5AhHrX5E0I"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Kadhal Sadugudu - Unplugged",
+              "year": 2026,
+              "date": "11-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/19PNCzRKAmsBIGXAcFfOqc"
+              },
+              "sources": [
+                "https://open.spotify.com/album/19PNCzRKAmsBIGXAcFfOqc"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Anbae Idhu Nejam – Lofi",
+              "year": 2026,
+              "date": "06-03-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/43VtuNLj1RS4gmV8pJrURq",
+                "appleMusic": "https://music.apple.com/in/album/anbae-idhu-nejam-lofi-single/1883276468"
+              },
+              "sources": [
+                "https://open.spotify.com/album/43VtuNLj1RS4gmV8pJrURq"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            },
+            {
+              "type": "work",
+              "title": "Nisa Risa (Re Imagined)",
+              "year": 2026,
+              "date": "14-02-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5jWwVQuy1Ft0U7UKiWXHg8",
+                "appleMusic": "https://music.apple.com/in/album/nisa-risa-re-imagined-single/1876146882"
+              },
+              "sources": [
+                "https://open.spotify.com/album/5jWwVQuy1Ft0U7UKiWXHg8"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ]
+            }
+          ]
+        }
+      ],
+      "blurb": "Recent releases discovered automatically from the Spotify artist catalog, pending curation into the main sections."
     }
   ],
   "quality": {
