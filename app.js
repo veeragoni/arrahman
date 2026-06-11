@@ -300,7 +300,6 @@
       return `<div class="entry-version" data-language="${escapeHtml(languageKey(versionLanguage))}" data-year="${escapeHtml(versionYear)}" data-search="${escapeHtml(versionSearch)}">
         <span class="lang ${escapeHtml(langClass(versionLanguage))}">${escapeHtml(versionLanguage)}</span>
         <span class="version-title">${highlight(title)}</span>
-        ${date ? `<span class="version-date">${highlight(formatDisplayDate(date))}</span>` : ''}
         <span class="version-actions">${renderProviderLinks(filmProviderQuery(title, version.language), version.links, version.providers || film.providers || subsectionProviders)}</span>
       </div>`;
     }).join('');
@@ -327,7 +326,7 @@
     const date = item.date || '';
     const year = item.year || item.y || '';
     const note = item.note || '';
-    const meta = formatDisplayDate(date) || year || '—';
+    const meta = year || releaseYear(date, '') || '—';
     const searchText = (title + ' ' + date + ' ' + formatDisplayDate(date) + ' ' + year + ' ' + note).toLowerCase();
     const noteHtml = note ? ` <em style="color:var(--ink-faint);font-style:italic;">· ${highlight(note)}</em>` : '';
     const q = title;
@@ -777,7 +776,7 @@
     if (!query) return;
     const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const re = new RegExp('(' + escaped + ')', 'gi');
-    const selectors = '.entry:not(.hidden) .entry-title, .entry:not(.hidden) .entry-note, .entry:not(.hidden) .entry-version:not(.hidden) .version-title, .entry:not(.hidden) .entry-version:not(.hidden) .version-date, .entry:not(.hidden) .missing-list';
+    const selectors = '.entry:not(.hidden) .entry-title, .entry:not(.hidden) .entry-note, .entry:not(.hidden) .entry-version:not(.hidden) .version-title, .entry:not(.hidden) .missing-list';
     document.querySelectorAll(selectors).forEach(el => {
       // skip if already highlighted
       if (el.querySelector('mark')) return;
