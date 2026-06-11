@@ -306,15 +306,18 @@
     }).join('');
 
     const art = versions.map(version => version.art || '').find(Boolean) || film.art || '';
-    return `<div class="entry" data-search="${escapeHtml(searchText)}" data-entry-meta="${escapeHtml(entryMeta)}" data-languages="${escapeHtml(uniqueLanguageKeys.join(' '))}"${art ? ` data-art="${escapeHtml(art)}"` : ''}>
-      <div class="entry-top">
-        <div class="entry-title">${highlight(primaryTitle)}</div>
-        <div class="entry-year">${yearStr}</div>
+    return `<div class="entry" data-search="${escapeHtml(searchText)}" data-entry-meta="${escapeHtml(entryMeta)}" data-languages="${escapeHtml(uniqueLanguageKeys.join(' '))}">
+      ${art ? `<img class="entry-art" loading="lazy" alt="" src="${escapeHtml(art)}">` : ''}
+      <div class="entry-body">
+        <div class="entry-top">
+          <div class="entry-title">${highlight(primaryTitle)}</div>
+          <div class="entry-year">${yearStr}</div>
+        </div>
+        <div class="entry-versions">
+          ${versionsHtml}
+        </div>
+        ${noteHtml}
       </div>
-      <div class="entry-versions">
-        ${versionsHtml}
-      </div>
-      ${noteHtml}
     </div>`;
   }
 
@@ -330,13 +333,16 @@
     const q = title;
     const entryYear = releaseYear(date, year);
     const art = item.art || '';
-    return `<div class="entry" data-year="${escapeHtml(entryYear)}" data-search="${escapeHtml(searchText)}"${art ? ` data-art="${escapeHtml(art)}"` : ''}>
-      <div class="entry-top">
-        <div class="entry-title">${highlight(title)}${noteHtml}</div>
-        <div class="entry-year">${meta}</div>
-      </div>
-      <div class="entry-actions">
-        ${renderProviderLinks(q, item.links, item.providers || subsectionProviders)}
+    return `<div class="entry" data-year="${escapeHtml(entryYear)}" data-search="${escapeHtml(searchText)}">
+      ${art ? `<img class="entry-art" loading="lazy" alt="" src="${escapeHtml(art)}">` : ''}
+      <div class="entry-body">
+        <div class="entry-top">
+          <div class="entry-title">${highlight(title)}${noteHtml}</div>
+          <div class="entry-year">${meta}</div>
+        </div>
+        <div class="entry-actions">
+          ${renderProviderLinks(q, item.links, item.providers || subsectionProviders)}
+        </div>
       </div>
     </div>`;
   }
@@ -605,27 +611,6 @@
   let activeYear = 'all';
   let activeResultIndex = -1;
   let visibleResults = [];
-
-  // ---------- Lazy album-art backgrounds ----------
-  // Covers load only as entries approach the viewport, from URLs cached
-  // at build time in the data (no runtime provider lookups).
-  function applyArt(el) {
-    el.style.setProperty('--art', `url("${el.getAttribute('data-art')}")`);
-    el.classList.add('has-art');
-  }
-  const artObserver = 'IntersectionObserver' in window
-    ? new IntersectionObserver((observed) => {
-        observed.forEach(obsEntry => {
-          if (!obsEntry.isIntersecting) return;
-          applyArt(obsEntry.target);
-          artObserver.unobserve(obsEntry.target);
-        });
-      }, { rootMargin: '400px' })
-    : null;
-  document.querySelectorAll('.entry[data-art]').forEach(el => {
-    if (artObserver) artObserver.observe(el);
-    else applyArt(el);
-  });
 
   // Cache entries and subsections for fast filtering
   const allEntries = Array.from(document.querySelectorAll('.entry'));
