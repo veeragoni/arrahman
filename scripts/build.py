@@ -31,6 +31,7 @@ DATA_DIR = ROOT / "data"
 SOURCE_DIR = DATA_DIR / "source"
 DATA_JSON = DATA_DIR / "discography.json"
 LINK_CACHE = DATA_DIR / "provider-links.json"
+ARTWORK_CACHE = DATA_DIR / "artwork.json"
 APP_JS = ROOT / "app.js"
 INDEX_HTML = ROOT / "index.html"
 DEFAULT_OUT = ROOT / "dist" / "arrahman-discography.html"
@@ -529,6 +530,24 @@ def apply_cached_links(categories, cache):
             links = target.get("links", {})
             if provider in subject["providers"] and url and provider_url_allowed(provider, url, subject) and not links.get(provider):
                 target.setdefault("links", {})[provider] = url
+
+
+def apply_artwork(categories, path=ARTWORK_CACHE):
+    """Attach cached album cover URLs to entries by their provider links."""
+    if not path.exists():
+        return
+    cache = json.loads(path.read_text(encoding="utf-8"))
+    by_url = cache.get("byUrl", {}) if isinstance(cache, dict) else {}
+    if not by_url:
+        return
+    for subject, target in iter_link_targets(categories):
+        links = target.get("links", {})
+        art = (
+            by_url.get((links.get("spotify") or "").split("?")[0])
+            or by_url.get(links.get("appleMusic", ""))
+        )
+        if art:
+            target["art"] = art
 
 
 def provider_search_query(provider, subject):
@@ -1080,6 +1099,7 @@ def build_discography(
         if resolved:
             print(f"✓ Resolved {resolved} Spotify album links into {SOURCE_DIR}")
     apply_cached_links(categories, cache)
+    apply_artwork(categories)
     if resolve_links:
         resolved = resolve_missing_links(
             categories,

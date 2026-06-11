@@ -51,6 +51,7 @@ from build import (
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE_PATH = ROOT / "data" / "discovery-state.json"
+ARTWORK_PATH = ROOT / "data" / "artwork.json"
 NEW_RELEASES_PATH = SOURCE_DIR / "06-new-releases.json"
 SPOTIFY_API = "https://api.spotify.com/v1"
 ITUNES_SEARCH_ENDPOINT = "https://itunes.apple.com/search"
@@ -905,6 +906,95 @@ def backfill_ytmusic_links(ytmusic, limit, dry_run=False):
     return resolved
 
 
+def spotify_album_image(album, preferred=300):
+    images = album.get("images") if isinstance(album, dict) else []
+    if not isinstance(images, list) or not images:
+        return ""
+    best = min(
+        (image for image in images if isinstance(image, dict) and image.get("url")),
+        key=lambda image: abs((image.get("width") or preferred) - preferred),
+        default=None,
+    )
+    return best.get("url", "") if best else ""
+
+
+def apple_lookup_params(url):
+    """(collectionId, storefront) parsed from a music.apple.com album URL."""
+    match = re.search(r"music\.apple\.com/(\w\w)/album/[^/]+/(?:id)?(\d+)", url or "")
+    if not match:
+        return "", ""
+    return match.group(2), match.group(1).upper()
+
+
+def load_artwork_cache(path=ARTWORK_PATH):
+    if path.exists():
+        cache = json.loads(path.read_text(encoding="utf-8"))
+        cache.setdefault("schemaVersion", 1)
+        cache.setdefault("byUrl", {})
+        return cache
+    return {"schemaVersion": 1, "byUrl": {}}
+
+
+def save_artwork_cache(cache, path=ARTWORK_PATH):
+    path.write_text(json.dumps(cache, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def backfill_artwork(spotify, itunes, dry_run=False):
+    """Cache album cover URLs (Spotify first, iTunes for Apple-only links)
+    into data/artwork.json, keyed by the entry's provider link."""
+    categories = load_source_categories()
+    cache = load_artwork_cache()
+    by_url = cache["byUrl"]
+
+    spotify_urls_by_id = {}
+    apple_urls = []
+    for subject, target in iter_link_targets(categories):
+        links = target.get("links", {})
+        spotify_url = (links.get("spotify") or "").split("?")[0]
+        album_id = spotify_album_id_from_url(spotify_url)
+        if album_id and spotify_url not in by_url:
+            spotify_urls_by_id[album_id] = spotify_url
+        elif not album_id and links.get("appleMusic") and links["appleMusic"] not in by_url:
+            apple_urls.append(links["appleMusic"])
+
+    print(
+        f"Artwork backfill: {len(spotify_urls_by_id)} Spotify albums, "
+        f"{len(apple_urls)} Apple-only albums to fetch.",
+        file=sys.stderr,
+    )
+    added = 0
+    for album in spotify.full_albums(sorted(spotify_urls_by_id)):
+        image = spotify_album_image(album)
+        url = spotify_urls_by_id.get(album.get("id", ""))
+        if url and image:
+            by_url[url] = image
+            added += 1
+
+    for apple_url in apple_urls:
+        collection_id, storefront = apple_lookup_params(apple_url)
+        if not collection_id:
+            continue
+        try:
+            payload = itunes._get(ITUNES_LOOKUP_ENDPOINT, {
+                "id": collection_id,
+                "entity": "album",
+                "country": storefront or "IN",
+            })
+        except Exception as exc:
+            print(f"      WARNING: iTunes artwork lookup failed: {exc}", file=sys.stderr)
+            continue
+        collections = itunes_collections(payload)
+        artwork = collections[0].get("artworkUrl100", "") if collections else ""
+        if artwork:
+            by_url[apple_url] = artwork.replace("100x100", "300x300")
+            added += 1
+
+    if not dry_run and added:
+        save_artwork_cache(cache)
+    print(f"Artwork backfill: cached {added} new covers ({len(by_url)} total).", file=sys.stderr)
+    return added
+
+
 def backfill_release_dates(spotify, dry_run=False):
     """Fill missing dates from the linked Spotify album's release date so
     newest-first ordering reflects actual release days."""
@@ -1221,6 +1311,8 @@ def main():
                         help="Resolve missing youtubeMusic links via YouTube Music search")
     parser.add_argument("--backfill-dates", action="store_true",
                         help="Fill missing release dates from linked Spotify albums")
+    parser.add_argument("--backfill-artwork", action="store_true",
+                        help="Cache album cover URLs for linked albums into data/artwork.json")
     parser.add_argument("--backfill-limit", type=int, default=25,
                         help="Maximum existing entries to backfill per run; 0 for no limit")
     parser.add_argument("--itunes-delay", type=float, default=ITUNES_REQUEST_DELAY,
@@ -1248,6 +1340,8 @@ def main():
         backfill_ytmusic_links(YouTubeMusicClient(), args.backfill_limit, dry_run=args.dry_run)
     if args.backfill_dates:
         backfill_release_dates(spotify, dry_run=args.dry_run)
+    if args.backfill_artwork:
+        backfill_artwork(spotify, itunes, dry_run=args.dry_run)
     return 0
 
 

@@ -439,6 +439,26 @@ class YouTubeMusicTests(unittest.TestCase):
         self.assertEqual(discover_albums.ytmusic_query(subject), "Roja Tamil A.R. Rahman")
 
 
+class ArtworkTests(unittest.TestCase):
+    def test_apple_lookup_params(self) -> None:
+        self.assertEqual(
+            discover_albums.apple_lookup_params(
+                "https://music.apple.com/in/album/roja-original-motion-picture-soundtrack/1842069592"
+            ),
+            ("1842069592", "IN"),
+        )
+        self.assertEqual(discover_albums.apple_lookup_params("https://example.com/x"), ("", ""))
+
+    def test_spotify_album_image_prefers_300px(self) -> None:
+        album = {"images": [
+            {"url": "https://i.scdn.co/image/big", "width": 640},
+            {"url": "https://i.scdn.co/image/medium", "width": 300},
+            {"url": "https://i.scdn.co/image/small", "width": 64},
+        ]}
+        self.assertEqual(discover_albums.spotify_album_image(album), "https://i.scdn.co/image/medium")
+        self.assertEqual(discover_albums.spotify_album_image({"images": []}), "")
+
+
 class SpotifyHelpersTests(unittest.TestCase):
     def test_album_id_from_url(self) -> None:
         self.assertEqual(

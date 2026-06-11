@@ -597,6 +597,21 @@
     min-height: 110px;
   }
 
+  /* Album cover behind the cell, dimmed hard so text stays readable. */
+  .entry.has-art {
+    background-image:
+      linear-gradient(to right, rgba(15, 16, 20, 0.86), rgba(15, 16, 20, 0.94) 55%, rgba(15, 16, 20, 0.97)),
+      var(--art);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .entry.has-art:hover {
+    background-image:
+      linear-gradient(to right, rgba(15, 16, 20, 0.78), rgba(15, 16, 20, 0.9) 55%, rgba(15, 16, 20, 0.95)),
+      var(--art);
+  }
+
   .entry.hidden { display: none; }
 
   .entry:hover {
