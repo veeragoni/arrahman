@@ -322,13 +322,43 @@
   }
 
   // ---------- Render whole sections ----------
+  const FULL_DATE_PATTERN = /^(\d{2})-(\d{2})-(\d{4})$/;
+
+  function entrySortKey(item, isFilm) {
+    // Comparable release key: yyyymmdd when a full date exists, yyyy0000
+    // otherwise. Films sort by their displayed year (the original release),
+    // refined by the original release day when a version provides one.
+    if (isFilm) {
+      const versions = Array.isArray(item.versions) ? item.versions : legacyVersions(item);
+      let baseYear = parseInt(item.year || item.y, 10) || 0;
+      if (!baseYear) {
+        versions.forEach(version => {
+          baseYear = Math.max(baseYear, parseInt(releaseYear(version.date, 0), 10) || 0);
+        });
+      }
+      let monthDay = 0;
+      versions.forEach(version => {
+        const full = FULL_DATE_PATTERN.exec((version.date || '').toString().trim());
+        if (full && +full[3] === baseYear) {
+          monthDay = Math.max(monthDay, (+full[2]) * 100 + (+full[1]));
+        }
+      });
+      return baseYear * 10000 + monthDay;
+    }
+    const full = FULL_DATE_PATTERN.exec((item.date || '').toString().trim());
+    if (full) return (+full[3]) * 10000 + (+full[2]) * 100 + (+full[1]);
+    return (parseInt(releaseYear(item.date, item.year || item.y), 10) || 0) * 10000;
+  }
+
   function renderSubsection(sub) {
     if (!sub.items || sub.items.length === 0) return '';
+    const isFilm = (item) => item.type === 'film' || sub.type === 'films';
+    const sortedItems = sub.items.slice().sort((a, b) => entrySortKey(b, isFilm(b)) - entrySortKey(a, isFilm(a)));
     let entriesHtml = '';
     if (sub.type === 'films') {
-      entriesHtml = sub.items.map(item => renderFilmEntry(item, null, sub.providers)).join('');
+      entriesHtml = sortedItems.map(item => renderFilmEntry(item, null, sub.providers)).join('');
     } else {
-      entriesHtml = sub.items.map(item => renderListItem(item, sub.providers)).join('');
+      entriesHtml = sortedItems.map(item => renderListItem(item, sub.providers)).join('');
     }
     return `<div class="subsection" data-sub-id="${sub.id}">
       <div class="sub-head">
