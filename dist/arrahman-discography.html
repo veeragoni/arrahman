@@ -1371,6 +1371,24 @@
     return priorityLanguages.concat(remainingLanguages);
   }
 
+  const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  function ordinal(day) {
+    if (day % 100 >= 11 && day % 100 <= 13) return `${day}th`;
+    const suffix = { 1: 'st', 2: 'nd', 3: 'rd' }[day % 10] || 'th';
+    return `${day}${suffix}`;
+  }
+
+  // Source dates are dd-mm-yyyy; display them as "May 1st 2026".
+  function formatDisplayDate(date) {
+    const match = /^(\d{2})-(\d{2})-(\d{4})$/.exec((date || '').toString().trim());
+    if (!match) return date || '';
+    const day = parseInt(match[1], 10);
+    const month = parseInt(match[2], 10);
+    if (!day || day > 31 || !month || month > 12) return date;
+    return `${MONTH_NAMES[month - 1]} ${ordinal(day)} ${match[3]}`;
+  }
+
   function releaseYear(date, fallback) {
     const match = /(19|20)\d{2}/.exec((date || '').toString());
     if (match) return match[0];
@@ -1425,12 +1443,12 @@
       const title = version.title || '';
       const date = version.date || '';
       const versionLanguage = version.language || 'Version';
-      const versionSearch = [versionLanguage, title, date].join(' ').toLowerCase();
+      const versionSearch = [versionLanguage, title, date, formatDisplayDate(date)].join(' ').toLowerCase();
       const versionYear = releaseYear(date, film.year || film.y);
       return `<div class="entry-version" data-language="${escapeHtml(languageKey(versionLanguage))}" data-year="${escapeHtml(versionYear)}" data-search="${escapeHtml(versionSearch)}">
         <span class="lang ${escapeHtml(langClass(versionLanguage))}">${escapeHtml(versionLanguage)}</span>
         <span class="version-title">${highlight(title)}</span>
-        ${date ? `<span class="version-date">${highlight(date)}</span>` : ''}
+        ${date ? `<span class="version-date">${highlight(formatDisplayDate(date))}</span>` : ''}
         <span class="version-actions">${renderProviderLinks(filmProviderQuery(title, version.language), version.links, version.providers || film.providers || subsectionProviders)}</span>
       </div>`;
     }).join('');
@@ -1453,8 +1471,8 @@
     const date = item.date || '';
     const year = item.year || item.y || '';
     const note = item.note || '';
-    const meta = date || year || '—';
-    const searchText = (title + ' ' + date + ' ' + year + ' ' + note).toLowerCase();
+    const meta = formatDisplayDate(date) || year || '—';
+    const searchText = (title + ' ' + date + ' ' + formatDisplayDate(date) + ' ' + year + ' ' + note).toLowerCase();
     const noteHtml = note ? ` <em style="color:var(--ink-faint);font-style:italic;">· ${highlight(note)}</em>` : '';
     const q = title;
     const entryYear = releaseYear(date, year);
