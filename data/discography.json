@@ -6157,6 +6157,7 @@
                 {
                   "language": "Hindi",
                   "title": "Main Vaapas Aaunga",
+                  "date": "10-06-2026",
                   "links": {
                     "spotify": "https://open.spotify.com/album/3JZBsPrhhT1qYdEzZfSsog",
                     "appleMusic": "https://music.apple.com/in/album/main-vaapas-aaunga-original-motion-picture-soundtrack/6778782199"
@@ -6191,6 +6192,7 @@
               "type": "work",
               "title": "Fire",
               "year": 1996,
+              "date": "20-11-2022",
               "note": "OST",
               "links": {
                 "spotify": "https://open.spotify.com/album/55PO9HphOaC7SNduWk91OD",
@@ -6207,6 +6209,7 @@
               "type": "work",
               "title": "Earth",
               "year": 1998,
+              "date": "24-07-1999",
               "note": "OST",
               "links": {
                 "spotify": "https://open.spotify.com/album/0oq0AombofB0CYEvpUsIdH",
@@ -6235,6 +6238,7 @@
               "type": "work",
               "title": "Water",
               "year": 2006,
+              "date": "01-01-2005",
               "note": "OST",
               "links": {
                 "spotify": "https://open.spotify.com/album/7eV9XTMCIF7zjmI4USXeCt",
@@ -6496,6 +6500,7 @@
               "type": "work",
               "title": "Al-Risalah",
               "year": 2008,
+              "date": "21-10-2009",
               "links": {
                 "spotify": "https://open.spotify.com/album/0rbMkAPvbkwmPRjwFeVtJl",
                 "appleMusic": "https://music.apple.com/in/album/al-risalah-original-motion-picture-soundtrack/1456413152"
@@ -6525,6 +6530,7 @@
               "type": "work",
               "title": "Roja [Tamil, 1992]",
               "year": 1992,
+              "date": "03-03-1992",
               "links": {
                 "spotify": "https://open.spotify.com/album/1CfGCFiwkTcAVOJFOeDS6M",
                 "appleMusic": "https://music.apple.com/in/album/roja-original-motion-picture-soundtrack-ep/1842069592"
@@ -6540,6 +6546,7 @@
               "type": "work",
               "title": "Roja [Telugu, 1992]",
               "year": 1992,
+              "date": "31-08-2014",
               "links": {
                 "spotify": "https://open.spotify.com/album/700R0gU93Jal21rivBK7EA",
                 "appleMusic": "https://music.apple.com/in/album/roja-original-motion-picture-soundtrack-ep/1837669635"
@@ -6555,6 +6562,7 @@
               "type": "work",
               "title": "Roja [Hindi, 1994]",
               "year": 1994,
+              "date": "12-03-1994",
               "links": {
                 "spotify": "https://open.spotify.com/album/2lORIs7BAIYVH7xxcXsUn7",
                 "appleMusic": "https://music.apple.com/in/album/roja-original-motion-picture-soundtrack/587000927"
@@ -6570,6 +6578,7 @@
               "type": "work",
               "title": "Gentleman [Tamil, 1993]",
               "year": 1993,
+              "date": "13-07-1993",
               "links": {
                 "spotify": "https://open.spotify.com/album/6aO84HI1Psa48OLXJMZLRM",
                 "appleMusic": "https://music.apple.com/in/album/gentleman-original-motion-picture-soundtrack/1578226992"
@@ -6585,6 +6594,7 @@
               "type": "work",
               "title": "Gentleman [Telugu, 1993]",
               "year": 1993,
+              "date": "13-07-1993",
               "links": {
                 "spotify": "https://open.spotify.com/album/6aO84HI1Psa48OLXJMZLRM",
                 "appleMusic": "https://music.apple.com/in/album/gentleman-original-motion-picture-soundtrack/1578226992"
@@ -6600,6 +6610,7 @@
               "type": "work",
               "title": "May Madham [Tamil, 1994]",
               "year": 1994,
+              "date": "09-09-1994",
               "links": {
                 "spotify": "https://open.spotify.com/album/2cr3fCKkiDYE2lsZL2GoOc",
                 "appleMusic": "https://music.apple.com/in/album/may-madham-original-motion-picture-soundtrack/1577790601"
@@ -6735,6 +6746,7 @@
             {
               "type": "work",
               "title": "Kadhalikka Neramillai",
+              "date": "19-06-2025",
               "links": {
                 "spotify": "https://open.spotify.com/album/6bjgX7zQlQv9mmmtOJAMuM",
                 "appleMusic": "https://music.apple.com/in/album/kadhalikka-neramillai-ost-original-motion-picture-soundtrack/1828930313",
@@ -6761,6 +6773,7 @@
             {
               "type": "work",
               "title": "Gandhi Talks Score",
+              "date": "30-01-2026",
               "links": {
                 "spotify": "https://open.spotify.com/album/5qgZc1IJvWcjZmq4WCVCSq",
                 "appleMusic": "https://music.apple.com/in/album/gandhi-talks-original-motion-picture-soundtrack/1873236253"
@@ -6799,6 +6812,7 @@
             {
               "type": "work",
               "title": "Dilkashi",
+              "date": "06-10-2024",
               "note": "Lijo Jose Pellissery / Hansal Mehta",
               "links": {
                 "spotify": "https://open.spotify.com/album/5WKUoM4pPUiuM0SzDbJuvm",
@@ -6881,6 +6895,7 @@
             {
               "type": "work",
               "title": "KHOJ",
+              "date": "01-05-2024",
               "note": "Previously Mahasangam / Bharat Bala",
               "links": {
                 "spotify": "https://open.spotify.com/album/75mhxrVTNXrnmiY1z3n9DC",
@@ -6896,6 +6911,7 @@
             {
               "type": "work",
               "title": "Killer",
+              "date": "29-07-1991",
               "note": "SJ Suriya",
               "links": {
                 "spotify": "https://open.spotify.com/album/28bd96tbsfh7ii02qKsvaY"
@@ -7008,6 +7024,7 @@
             {
               "type": "work",
               "title": "Karna",
+              "date": "20-02-1995",
               "links": {
                 "spotify": "https://open.spotify.com/album/3V6h9vZSyGMOjVGyy5APRy",
                 "appleMusic": "https://music.apple.com/in/album/karna-ep/603997815"
@@ -7115,6 +7132,7 @@
             {
               "type": "work",
               "title": "Confessions",
+              "date": "25-05-2025",
               "note": "VR film",
               "links": {
                 "spotify": "https://open.spotify.com/album/2MPiNEaNM1apvpRzYHFVm8",
@@ -7151,6 +7169,7 @@
             {
               "type": "work",
               "title": "Slumdog Millionaire [Sequel]",
+              "date": "12-01-2009",
               "links": {
                 "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM",
                 "appleMusic": "https://music.apple.com/in/album/slumdog-millionaire-original-motion-picture-soundtrack/1358474686"
@@ -7165,6 +7184,7 @@
             {
               "type": "work",
               "title": "Slumdog Millionaire [Musical]",
+              "date": "12-01-2009",
               "links": {
                 "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM",
                 "appleMusic": "https://music.apple.com/in/album/slumdog-millionaire-original-motion-picture-soundtrack/1358474686"
@@ -7179,6 +7199,7 @@
             {
               "type": "work",
               "title": "Slumdog Millionaire [TV Series]",
+              "date": "12-01-2009",
               "links": {
                 "spotify": "https://open.spotify.com/album/28tUf89XzjZ5O5yOnvVTqM",
                 "appleMusic": "https://music.apple.com/in/album/slumdog-millionaire-original-motion-picture-soundtrack/1358474686"
@@ -7193,6 +7214,7 @@
             {
               "type": "work",
               "title": "Elevate",
+              "date": "30-09-2021",
               "note": "Nexa Music Album",
               "links": {
                 "spotify": "https://open.spotify.com/album/5VzYpgYHw1J7XU1Kiwpq46",
@@ -7278,6 +7300,7 @@
               "type": "work",
               "title": "Disco Disco",
               "year": 1988,
+              "date": "20-07-2017",
               "links": {
                 "spotify": "https://open.spotify.com/album/0S9uIbAgLGVS7CtUTEelLh"
               },
@@ -7355,6 +7378,7 @@
               "type": "work",
               "title": "Vande Mataram",
               "year": 1997,
+              "date": "26-09-1997",
               "links": {
                 "spotify": "https://open.spotify.com/album/7zFbzmYGeZeIoplDTADF0Z",
                 "appleMusic": "https://music.apple.com/in/album/vande-mataram/274118901"
@@ -7385,6 +7409,7 @@
               "type": "work",
               "title": "Jana Gana Mana",
               "year": 2001,
+              "date": "31-03-2022",
               "links": {
                 "spotify": "https://open.spotify.com/album/1xJ8ELXcHDe3lxPBPzhQS9",
                 "appleMusic": "https://music.apple.com/in/album/jana-gana-mana-original-motion-picture-soundtrack-ep/1716866989"
@@ -7445,6 +7470,7 @@
               "type": "work",
               "title": "Between Heaven and Earth",
               "year": 2004,
+              "date": "30-04-2004",
               "links": {
                 "spotify": "https://open.spotify.com/album/0KamQrzULf70cvIHSgCQhE",
                 "appleMusic": "https://music.apple.com/in/album/between-heaven-and-earth/193893646"
@@ -7567,6 +7593,7 @@
               "type": "work",
               "title": "Raunaq",
               "year": 2014,
+              "date": "01-10-2014",
               "links": {
                 "spotify": "https://open.spotify.com/album/2wHREyXh7vcGze8Ghl8DPh",
                 "appleMusic": "https://music.apple.com/in/album/raunaq/921556820"
@@ -7606,6 +7633,7 @@
               "type": "work",
               "title": "The Flying Lotus",
               "year": 2017,
+              "date": "06-10-2017",
               "links": {
                 "spotify": "https://open.spotify.com/album/1FXEThpTUjegsaxGqpKKGA",
                 "appleMusic": "https://music.apple.com/in/album/the-flying-lotus/1442877186"
@@ -7656,6 +7684,7 @@
             {
               "type": "work",
               "title": "A. R. Rahman — Firdaus Orchestra Album",
+              "date": "28-09-2023",
               "links": {
                 "spotify": "https://open.spotify.com/album/4WXQQBBQsr1sKMp2I3IPGB",
                 "appleMusic": "https://music.apple.com/in/album/beethoven-moonlight-sonata-i-adagio-sostenuto-arr-a/1603660422"
@@ -8052,6 +8081,7 @@
               "type": "work",
               "title": "Pray For Me Brother",
               "year": 2007,
+              "date": "01-01-2007",
               "links": {
                 "spotify": "https://open.spotify.com/album/01MafpUAXHh4x9Go2rxsbp",
                 "appleMusic": "https://music.apple.com/in/album/pray-for-me-brother-single/1444055097"
@@ -8067,6 +8097,7 @@
               "type": "work",
               "title": "One Love",
               "year": 2007,
+              "date": "07-04-2026",
               "links": {
                 "spotify": "https://open.spotify.com/album/1nIYXeHYYgAlBMHvf7LZPT"
               },
@@ -8095,6 +8126,7 @@
               "type": "work",
               "title": "Jai Ho — You Are My Destiny",
               "year": 2009,
+              "date": "01-01-2009",
               "links": {
                 "spotify": "https://open.spotify.com/album/5WxZ2oI2zrNVQfZUaGHowC",
                 "appleMusic": "https://music.apple.com/in/album/jai-ho-you-are-my-destiny-feat-nicole-scherzinger-single/1445277968"
@@ -8179,6 +8211,7 @@
               "type": "work",
               "title": "Dhun",
               "year": 2014,
+              "date": "01-08-2023",
               "links": {
                 "spotify": "https://open.spotify.com/album/4XqmsWF4AOUyP5h46pbevN",
                 "appleMusic": "https://music.apple.com/in/album/muharram-tajiya-jharni-marsiya-dhun-muharram-dhun-single/1700412701"
@@ -8194,6 +8227,7 @@
               "type": "work",
               "title": "Light Upon Light",
               "year": 2019,
+              "date": "10-11-2019",
               "links": {
                 "spotify": "https://open.spotify.com/album/65TIUGEBhVOY2vtZR5Q66t",
                 "appleMusic": "https://music.apple.com/in/album/light-upon-light-feat-sami-yusuf-single/1487391864"
@@ -8209,6 +8243,7 @@
               "type": "work",
               "title": "Ahimsa",
               "year": 2019,
+              "date": "01-01-1982",
               "links": {
                 "spotify": "https://open.spotify.com/album/5RCOgQin5tvfn4K5zz2qQ6",
                 "appleMusic": "https://music.apple.com/in/album/ahimsa-original-motion-picture-soundtrack-ep/1829922691"
@@ -8224,6 +8259,7 @@
               "type": "work",
               "title": "Hum Haar Nahi Manange",
               "year": 2020,
+              "date": "07-07-2021",
               "links": {
                 "spotify": "https://open.spotify.com/album/5Zbi9yKM7NfkGcc8j9WWBA",
                 "appleMusic": "https://music.apple.com/in/album/hum-haar-nahi-maanenge-single/1817149012"
@@ -8275,6 +8311,7 @@
               "type": "work",
               "title": "Meri Pukaar Suno",
               "year": 2021,
+              "date": "25-06-2021",
               "links": {
                 "spotify": "https://open.spotify.com/album/7J9aBFYf5mcY8QttUYpjgW",
                 "appleMusic": "https://music.apple.com/in/album/meri-pukaar-suno-single/1572815247"
@@ -8345,6 +8382,7 @@
               "type": "work",
               "title": "Bheegi Bheegi",
               "year": 2026,
+              "date": "02-02-2026",
               "links": {
                 "spotify": "https://open.spotify.com/album/3gSamGzuaJypB6V9z6CvrX",
                 "appleMusic": "https://music.apple.com/in/album/bheegi-bheegi-single/1869221424"

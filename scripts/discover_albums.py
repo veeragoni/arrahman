@@ -420,36 +420,55 @@ def find_curated_match(album, link_targets):
     return best if best_score >= PROMOTION_MINIMUM_SCORE else None
 
 
-def write_provider_link_replacing(source_dir, subject, provider, url):
-    """Like build.write_provider_link_to_source, but may replace an existing
-    link (used when a full album supersedes a pre-release single link)."""
+def locate_source_target(source_dir, subject):
+    """Find the raw source-file dict a subject points at. Returns
+    (path, category, target) or (None, None, None)."""
     path, category = build.find_source_category(source_dir, subject.get("categoryId", ""))
     if not path or not category:
-        return False
+        return None, None, None
     subsection = next(
         (c for c in category.get("subsections", []) if c.get("id") == subject.get("subsectionId")),
         None,
     )
     if not subsection:
-        return False
+        return None, None, None
     item_index = int(subject.get("entryIndex") or 0) - 1
     items = subsection.get("items", [])
     if not (0 <= item_index < len(items)):
-        return False
+        return None, None, None
     item = items[item_index]
     if subject.get("type") == "filmVersion":
         version_index = int(subject.get("versionIndex") or 0) - 1
         versions = item.get("versions", [])
         if not (0 <= version_index < len(versions)):
-            return False
+            return None, None, None
         target = versions[version_index]
     else:
         target = item
     if not build.source_target_matches(target, subject):
+        return None, None, None
+    return path, category, target
+
+
+def write_provider_link_replacing(source_dir, subject, provider, url):
+    """Like build.write_provider_link_to_source, but may replace an existing
+    link (used when a full album supersedes a pre-release single link)."""
+    path, category, target = locate_source_target(source_dir, subject)
+    if not path or not target:
         return False
     if target.get("links", {}).get(provider) == url:
         return False
     target.setdefault("links", {})[provider] = url
+    path.write_text(json.dumps(category, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return True
+
+
+def write_release_date_to_source(source_dir, subject, release_date):
+    """Fill in a missing release date so date-based sorting works."""
+    path, category, target = locate_source_target(source_dir, subject)
+    if not path or not target or not release_date or target.get("date"):
+        return False
+    target["date"] = release_date
     path.write_text(json.dumps(category, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return True
 
@@ -494,6 +513,12 @@ def promote_album_to_curated(spotify, album, links, link_targets, dry_run=False)
             if url and provider in subject.get("providers", []):
                 write_provider_link_replacing(SOURCE_DIR, subject, provider, url)
         target.setdefault("links", {})["spotify"] = album_url
+        # Fill in the album release date when the curated entry lacks one so
+        # the newest-first ordering reflects the actual release day.
+        _, release_date = spotify_release_date_parts(album)
+        if release_date and not target.get("date"):
+            write_release_date_to_source(SOURCE_DIR, subject, release_date)
+            target["date"] = release_date
     return True, subject, ""
 
 
@@ -880,6 +905,42 @@ def backfill_ytmusic_links(ytmusic, limit, dry_run=False):
     return resolved
 
 
+def backfill_release_dates(spotify, dry_run=False):
+    """Fill missing dates from the linked Spotify album's release date so
+    newest-first ordering reflects actual release days."""
+    categories = load_source_categories()
+    targets = []
+    for subject, target in iter_link_targets(categories):
+        if target.get("date") or subject.get("date"):
+            continue
+        album_id = spotify_album_id_from_url((target.get("links") or {}).get("spotify", ""))
+        if album_id:
+            targets.append((subject, album_id))
+    print(f"Date backfill: {len(targets)} entries with Spotify links but no release date.", file=sys.stderr)
+    if not targets:
+        return 0
+
+    dates_by_id = {}
+    for album in spotify.full_albums(sorted({album_id for _, album_id in targets})):
+        _, release_date = spotify_release_date_parts(album)
+        if album.get("id") and release_date:
+            dates_by_id[album["id"]] = release_date
+
+    written = 0
+    for subject, album_id in targets:
+        release_date = dates_by_id.get(album_id, "")
+        if not release_date:
+            continue
+        if dry_run:
+            print(f"  would set {subject['label']}{subject_context_suffix(subject)} -> {release_date}", file=sys.stderr)
+            written += 1
+            continue
+        if write_release_date_to_source(SOURCE_DIR, subject, release_date):
+            written += 1
+    print(f"Date backfill: set {written} release dates.", file=sys.stderr)
+    return written
+
+
 def resolve_apple_link(itunes, subject, upc=""):
     """Exact UPC match first, scored term search second."""
     if upc:
@@ -1158,6 +1219,8 @@ def main():
                         help="Retry Spotify album search for entries still missing a direct link")
     parser.add_argument("--backfill-youtube-music", action="store_true",
                         help="Resolve missing youtubeMusic links via YouTube Music search")
+    parser.add_argument("--backfill-dates", action="store_true",
+                        help="Fill missing release dates from linked Spotify albums")
     parser.add_argument("--backfill-limit", type=int, default=25,
                         help="Maximum existing entries to backfill per run; 0 for no limit")
     parser.add_argument("--itunes-delay", type=float, default=ITUNES_REQUEST_DELAY,
@@ -1183,6 +1246,8 @@ def main():
         backfill_apple_links(spotify, itunes, args.backfill_limit, dry_run=args.dry_run)
     if args.backfill_youtube_music:
         backfill_ytmusic_links(YouTubeMusicClient(), args.backfill_limit, dry_run=args.dry_run)
+    if args.backfill_dates:
+        backfill_release_dates(spotify, dry_run=args.dry_run)
     return 0
 
 

@@ -24,7 +24,8 @@
           "year": 1988,
           "links": {
             "spotify": "https://open.spotify.com/album/0S9uIbAgLGVS7CtUTEelLh"
-          }
+          },
+          "date": "20-07-2017"
         },
         {
           "type": "work",
@@ -66,7 +67,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/7zFbzmYGeZeIoplDTADF0Z",
             "appleMusic": "https://music.apple.com/in/album/vande-mataram/274118901"
-          }
+          },
+          "date": "26-09-1997"
         },
         {
           "type": "work",
@@ -84,7 +86,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/1xJ8ELXcHDe3lxPBPzhQS9",
             "appleMusic": "https://music.apple.com/in/album/jana-gana-mana-original-motion-picture-soundtrack-ep/1716866989"
-          }
+          },
+          "date": "31-03-2022"
         },
         {
           "type": "work",
@@ -120,7 +123,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/0KamQrzULf70cvIHSgCQhE",
             "appleMusic": "https://music.apple.com/in/album/between-heaven-and-earth/193893646"
-          }
+          },
+          "date": "30-04-2004"
         },
         {
           "type": "work",
@@ -182,7 +186,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/2wHREyXh7vcGze8Ghl8DPh",
             "appleMusic": "https://music.apple.com/in/album/raunaq/921556820"
-          }
+          },
+          "date": "01-10-2014"
         },
         {
           "type": "work",
@@ -203,7 +208,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/1FXEThpTUjegsaxGqpKKGA",
             "appleMusic": "https://music.apple.com/in/album/the-flying-lotus/1442877186"
-          }
+          },
+          "date": "06-10-2017"
         },
         {
           "type": "work",
@@ -229,7 +235,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/4WXQQBBQsr1sKMp2I3IPGB",
             "appleMusic": "https://music.apple.com/in/album/beethoven-moonlight-sonata-i-adagio-sostenuto-arr-a/1603660422"
-          }
+          },
+          "date": "28-09-2023"
         },
         {
           "type": "work",
@@ -421,7 +428,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/01MafpUAXHh4x9Go2rxsbp",
             "appleMusic": "https://music.apple.com/in/album/pray-for-me-brother-single/1444055097"
-          }
+          },
+          "date": "01-01-2007"
         },
         {
           "type": "work",
@@ -429,7 +437,8 @@
           "year": 2007,
           "links": {
             "spotify": "https://open.spotify.com/album/1nIYXeHYYgAlBMHvf7LZPT"
-          }
+          },
+          "date": "07-04-2026"
         },
         {
           "type": "work",
@@ -446,7 +455,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/5WxZ2oI2zrNVQfZUaGHowC",
             "appleMusic": "https://music.apple.com/in/album/jai-ho-you-are-my-destiny-feat-nicole-scherzinger-single/1445277968"
-          }
+          },
+          "date": "01-01-2009"
         },
         {
           "type": "work",
@@ -488,7 +498,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/4XqmsWF4AOUyP5h46pbevN",
             "appleMusic": "https://music.apple.com/in/album/muharram-tajiya-jharni-marsiya-dhun-muharram-dhun-single/1700412701"
-          }
+          },
+          "date": "01-08-2023"
         },
         {
           "type": "work",
@@ -497,7 +508,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/65TIUGEBhVOY2vtZR5Q66t",
             "appleMusic": "https://music.apple.com/in/album/light-upon-light-feat-sami-yusuf-single/1487391864"
-          }
+          },
+          "date": "10-11-2019"
         },
         {
           "type": "work",
@@ -506,7 +518,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/5RCOgQin5tvfn4K5zz2qQ6",
             "appleMusic": "https://music.apple.com/in/album/ahimsa-original-motion-picture-soundtrack-ep/1829922691"
-          }
+          },
+          "date": "01-01-1982"
         },
         {
           "type": "work",
@@ -515,7 +528,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/5Zbi9yKM7NfkGcc8j9WWBA",
             "appleMusic": "https://music.apple.com/in/album/hum-haar-nahi-maanenge-single/1817149012"
-          }
+          },
+          "date": "07-07-2021"
         },
         {
           "type": "work",
@@ -542,7 +556,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/7J9aBFYf5mcY8QttUYpjgW",
             "appleMusic": "https://music.apple.com/in/album/meri-pukaar-suno-single/1572815247"
-          }
+          },
+          "date": "25-06-2021"
         },
         {
           "type": "work",
@@ -576,7 +591,8 @@
           "links": {
             "spotify": "https://open.spotify.com/album/3gSamGzuaJypB6V9z6CvrX",
             "appleMusic": "https://music.apple.com/in/album/bheegi-bheegi-single/1869221424"
-          }
+          },
+          "date": "02-02-2026"
         }
       ]
     },
