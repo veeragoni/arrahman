@@ -274,6 +274,114 @@ class SubsumptionTests(unittest.TestCase):
         self.assertIn("tere-ishk-mein", discover_albums.from_hint_slugs(single))
 
 
+class StubSpotify:
+    def __init__(self, albums_by_id):
+        self.albums_by_id = albums_by_id
+
+    def full_albums(self, ids):
+        return [self.albums_by_id[i] for i in ids if i in self.albums_by_id]
+
+
+def curated_target(label, current_spotify=""):
+    subject = {
+        "categoryId": "films",
+        "category": "Film Compositions",
+        "subsectionId": "hindi-undubbed",
+        "subsection": "Hindi films",
+        "entryIndex": 1,
+        "type": "work",
+        "label": label,
+        "language": "",
+        "year": None,
+        "date": "",
+        "versionYear": None,
+        "providers": ["spotify", "youtubeMusic", "appleMusic", "youtube"],
+    }
+    target = {"links": {"spotify": current_spotify} if current_spotify else {}}
+    return subject, target
+
+
+class PromotionTests(unittest.TestCase):
+    def _full_album(self):
+        return spotify_album(
+            id="album1",
+            name="Main Vaapas Aaunga (Original Motion Picture Soundtrack)",
+            artists=[{"name": "A.R. Rahman"}],
+            total_tracks=8,
+            external_urls={"spotify": "https://open.spotify.com/album/album1"},
+            tracks={"items": [
+                {"name": n, "artists": [{"name": "A.R. Rahman"}]}
+                for n in ["Vo Nahin", "Kya Kamaal Hai", "Title Track"]
+            ]},
+        )
+
+    def _single(self, track_names):
+        return spotify_album(
+            id="single1",
+            name='Vo Nahin (From "Main Vaapas Aaunga")',
+            album_type="single",
+            tracks={"items": [{"name": n, "artists": [{"name": "A.R. Rahman"}]} for n in track_names]},
+        )
+
+    def _promote(self, current_spotify, stub_albums):
+        album = self._full_album()
+        targets = [curated_target("Main Vaapas Aaunga", current_spotify)]
+        return discover_albums.promote_album_to_curated(
+            StubSpotify(stub_albums), album,
+            {"spotify": "https://open.spotify.com/album/album1"},
+            targets, dry_run=True,
+        )
+
+    def test_promotes_when_curated_entry_has_no_link(self) -> None:
+        promoted, subject, reason = self._promote("", {})
+        self.assertTrue(promoted, reason)
+        self.assertEqual(subject["label"], "Main Vaapas Aaunga")
+
+    def test_replaces_pre_release_single_link(self) -> None:
+        single = self._single(['Vo Nahin (From "Main Vaapas Aaunga")'])
+        promoted, _, reason = self._promote(
+            "https://open.spotify.com/album/single1", {"single1": single}
+        )
+        self.assertTrue(promoted, reason)
+
+    def test_keeps_single_with_unreleased_song(self) -> None:
+        single = self._single(["Unreleased Bonus Song"])
+        promoted, _, reason = self._promote(
+            "https://open.spotify.com/album/single1", {"single1": single}
+        )
+        self.assertFalse(promoted)
+        self.assertIn("songs not on the album", reason)
+
+    def test_never_replaces_existing_album_link(self) -> None:
+        other_album = spotify_album(id="other", album_type="album")
+        promoted, _, reason = self._promote(
+            "https://open.spotify.com/album/other", {"other": other_album}
+        )
+        self.assertFalse(promoted)
+        self.assertIn("already links a full album", reason)
+
+    def test_unrelated_album_does_not_match(self) -> None:
+        album = self._full_album()
+        targets = [curated_target("Completely Different Film")]
+        promoted, subject, _ = discover_albums.promote_album_to_curated(
+            StubSpotify({}), album,
+            {"spotify": "https://open.spotify.com/album/album1"},
+            targets, dry_run=True,
+        )
+        self.assertFalse(promoted)
+        self.assertIsNone(subject)
+
+    def test_alternate_versions_and_singles_never_promote(self) -> None:
+        remix = spotify_album(name="Main Vaapas Aaunga (Lofi Remix)", artists=[{"name": "A.R. Rahman"}])
+        single = spotify_album(album_type="single", artists=[{"name": "A.R. Rahman"}])
+        targets = [curated_target("Main Vaapas Aaunga")]
+        for album in (remix, single):
+            promoted, _, _ = discover_albums.promote_album_to_curated(
+                StubSpotify({}), album, {"spotify": "https://open.spotify.com/album/x"}, targets, dry_run=True,
+            )
+            self.assertFalse(promoted)
+
+
 class SpotifyHelpersTests(unittest.TestCase):
     def test_album_id_from_url(self) -> None:
         self.assertEqual(

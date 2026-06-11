@@ -312,6 +312,104 @@ class SubsumptionChecker:
         return None
 
 
+# Same confidence floor build.py uses for accepting Spotify album matches.
+PROMOTION_MINIMUM_SCORE = 80
+
+
+def find_curated_match(album, link_targets):
+    """Best curated entry for a discovered album, scored like build.py's
+    Spotify album resolver (title tokens, language, soundtrack markers)."""
+    best = None
+    best_score = -1
+    for subject, target in link_targets:
+        if subject.get("categoryId") == "new-releases":
+            continue
+        if "spotify" not in subject.get("providers", []):
+            continue
+        score = build.spotify_album_score(subject, album)
+        if score > best_score:
+            best = (subject, target)
+            best_score = score
+    return best if best_score >= PROMOTION_MINIMUM_SCORE else None
+
+
+def write_provider_link_replacing(source_dir, subject, provider, url):
+    """Like build.write_provider_link_to_source, but may replace an existing
+    link (used when a full album supersedes a pre-release single link)."""
+    path, category = build.find_source_category(source_dir, subject.get("categoryId", ""))
+    if not path or not category:
+        return False
+    subsection = next(
+        (c for c in category.get("subsections", []) if c.get("id") == subject.get("subsectionId")),
+        None,
+    )
+    if not subsection:
+        return False
+    item_index = int(subject.get("entryIndex") or 0) - 1
+    items = subsection.get("items", [])
+    if not (0 <= item_index < len(items)):
+        return False
+    item = items[item_index]
+    if subject.get("type") == "filmVersion":
+        version_index = int(subject.get("versionIndex") or 0) - 1
+        versions = item.get("versions", [])
+        if not (0 <= version_index < len(versions)):
+            return False
+        target = versions[version_index]
+    else:
+        target = item
+    if not build.source_target_matches(target, subject):
+        return False
+    if target.get("links", {}).get(provider) == url:
+        return False
+    target.setdefault("links", {})[provider] = url
+    path.write_text(json.dumps(category, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return True
+
+
+def promote_album_to_curated(spotify, album, links, link_targets, dry_run=False):
+    """Point a matching curated entry (e.g. a film awaiting its soundtrack) at
+    a newly released full album. A curated link to a pre-release single is
+    replaced only when every song of that single is on the album; an existing
+    album link is never touched. Returns (promoted, subject, reason)."""
+    if is_single(album) or is_alternate_version_title(album.get("name", "")):
+        return False, None, ""
+    match = find_curated_match(album, link_targets)
+    if not match:
+        return False, None, ""
+    subject, target = match
+    album_url = (links or {}).get("spotify", "")
+    if not album_url:
+        return False, None, ""
+
+    current = ((target.get("links") or {}).get("spotify", "")).split("?")[0]
+    if current and current != album_url:
+        current_id = spotify_album_id_from_url(current)
+        if not current_id:
+            return False, subject, "curated entry has a non-album Spotify link"
+        try:
+            fetched = spotify.full_albums([current_id])
+        except Exception as exc:
+            return False, subject, f"could not inspect curated link: {exc}"
+        current_album = fetched[0] if fetched else None
+        if not current_album:
+            return False, subject, "could not inspect curated link"
+        if not is_single(current_album):
+            return False, subject, "curated entry already links a full album"
+        if not single_subsumed_by_album(current_album, album):
+            return False, subject, (
+                f"curated single {current_album.get('name', '')!r} has songs not on the album"
+            )
+
+    if not dry_run:
+        for provider in ("spotify", "appleMusic"):
+            url = (links or {}).get(provider, "")
+            if url and provider in subject.get("providers", []):
+                write_provider_link_replacing(SOURCE_DIR, subject, provider, url)
+        target.setdefault("links", {})["spotify"] = album_url
+    return True, subject, ""
+
+
 def existing_release_index(categories):
     """Collect spotify URLs and (slug, year) labels already curated."""
     spotify_urls = set()
@@ -638,6 +736,7 @@ def discover_new_releases(spotify, itunes, state, max_age_days,
 
     checker = SubsumptionChecker(spotify, curated_album_ids_by_slug(categories))
     batch_albums = [album for album in accepted if not is_single(album)]
+    link_targets = list(iter_link_targets(categories))
 
     category = load_new_releases_category()
     added = 0
@@ -652,6 +751,19 @@ def discover_new_releases(spotify, itunes, state, max_age_days,
         upc = (album.get("external_ids") or {}).get("upc", "")
         apple_url, method = resolve_apple_link(itunes, album_subject(album), upc=upc)
         entry = build_release_entry(album, apple_url=apple_url)
+        promoted, subject, reason = promote_album_to_curated(
+            spotify, album, entry.get("links", {}), link_targets, dry_run=dry_run,
+        )
+        if promoted:
+            print(
+                f"  promote (linked curated entry {subject['label']!r} in "
+                f"{subject['categoryId']}/{subject['subsectionId']}): {name}",
+                file=sys.stderr,
+            )
+            seen_ids.add(album_id)
+            continue
+        if reason:
+            print(f"      promotion skipped: {reason}", file=sys.stderr)
         bucket = target_subsection_id(name)
         detail = f"apple via {method}" if apple_url else "no Apple match yet"
         print(f"  + [{bucket}] {name} ({entry.get('year', '?')}) [{detail}]", file=sys.stderr)
@@ -693,6 +805,7 @@ def reaudit_new_releases(spotify, min_track_share=RAHMAN_TRACK_SHARE_MINIMUM, dr
 
     categories = load_source_categories()
     checker = SubsumptionChecker(spotify, curated_album_ids_by_slug(categories))
+    link_targets = list(iter_link_targets(categories))
     batch_albums = [
         album for album in albums_by_id.values()
         if not is_single(album) and classify_album(album, min_track_share=min_track_share)[0]
@@ -716,6 +829,19 @@ def reaudit_new_releases(spotify, min_track_share=RAHMAN_TRACK_SHARE_MINIMUM, dr
             print(f"  remove (single contained in album {container.get('name', '')!r}): {title}", file=sys.stderr)
             removed += 1
             continue
+        promoted, subject, reason = promote_album_to_curated(
+            spotify, album, entry.get("links", {}), link_targets, dry_run=dry_run,
+        )
+        if promoted:
+            print(
+                f"  promote (moved into curated entry {subject['label']!r} in "
+                f"{subject['categoryId']}/{subject['subsectionId']}): {title}",
+                file=sys.stderr,
+            )
+            removed += 1
+            continue
+        if reason:
+            print(f"      promotion skipped: {reason}", file=sys.stderr)
         subsection_items(category, target_subsection_id(album.get("name", title))).append(entry)
 
     if dry_run:
