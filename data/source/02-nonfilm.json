@@ -21,7 +21,10 @@
         {
           "type": "work",
           "title": "Disco Disco",
-          "year": 1988
+          "year": 1988,
+          "links": {
+            "spotify": "https://open.spotify.com/album/0S9uIbAgLGVS7CtUTEelLh"
+          }
         },
         {
           "type": "work",
@@ -77,7 +80,11 @@
         {
           "type": "work",
           "title": "Jana Gana Mana",
-          "year": 2001
+          "year": 2001,
+          "links": {
+            "spotify": "https://open.spotify.com/album/1xJ8ELXcHDe3lxPBPzhQS9",
+            "appleMusic": "https://music.apple.com/in/album/jana-gana-mana-original-motion-picture-soundtrack-ep/1716866989"
+          }
         },
         {
           "type": "work",
@@ -109,7 +116,11 @@
         {
           "type": "work",
           "title": "Between Heaven and Earth",
-          "year": 2004
+          "year": 2004,
+          "links": {
+            "spotify": "https://open.spotify.com/album/0KamQrzULf70cvIHSgCQhE",
+            "appleMusic": "https://music.apple.com/in/album/between-heaven-and-earth/193893646"
+          }
         },
         {
           "type": "work",
@@ -167,7 +178,11 @@
         {
           "type": "work",
           "title": "Raunaq",
-          "year": 2014
+          "year": 2014,
+          "links": {
+            "spotify": "https://open.spotify.com/album/2wHREyXh7vcGze8Ghl8DPh",
+            "appleMusic": "https://music.apple.com/in/album/raunaq/921556820"
+          }
         },
         {
           "type": "work",
@@ -184,7 +199,11 @@
         {
           "type": "work",
           "title": "The Flying Lotus",
-          "year": 2017
+          "year": 2017,
+          "links": {
+            "spotify": "https://open.spotify.com/album/1FXEThpTUjegsaxGqpKKGA",
+            "appleMusic": "https://music.apple.com/in/album/the-flying-lotus/1442877186"
+          }
         },
         {
           "type": "work",
@@ -206,7 +225,11 @@
         },
         {
           "type": "work",
-          "title": "A. R. Rahman — Firdaus Orchestra Album"
+          "title": "A. R. Rahman — Firdaus Orchestra Album",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4WXQQBBQsr1sKMp2I3IPGB",
+            "appleMusic": "https://music.apple.com/in/album/beethoven-moonlight-sonata-i-adagio-sostenuto-arr-a/1603660422"
+          }
         },
         {
           "type": "work",
@@ -394,12 +417,19 @@
         {
           "type": "work",
           "title": "Pray For Me Brother",
-          "year": 2007
+          "year": 2007,
+          "links": {
+            "spotify": "https://open.spotify.com/album/01MafpUAXHh4x9Go2rxsbp",
+            "appleMusic": "https://music.apple.com/in/album/pray-for-me-brother-single/1444055097"
+          }
         },
         {
           "type": "work",
           "title": "One Love",
-          "year": 2007
+          "year": 2007,
+          "links": {
+            "spotify": "https://open.spotify.com/album/1nIYXeHYYgAlBMHvf7LZPT"
+          }
         },
         {
           "type": "work",
@@ -412,7 +442,11 @@
         {
           "type": "work",
           "title": "Jai Ho — You Are My Destiny",
-          "year": 2009
+          "year": 2009,
+          "links": {
+            "spotify": "https://open.spotify.com/album/5WxZ2oI2zrNVQfZUaGHowC",
+            "appleMusic": "https://music.apple.com/in/album/jai-ho-you-are-my-destiny-feat-nicole-scherzinger-single/1445277968"
+          }
         },
         {
           "type": "work",
@@ -450,22 +484,38 @@
         {
           "type": "work",
           "title": "Dhun",
-          "year": 2014
+          "year": 2014,
+          "links": {
+            "spotify": "https://open.spotify.com/album/4XqmsWF4AOUyP5h46pbevN",
+            "appleMusic": "https://music.apple.com/in/album/muharram-tajiya-jharni-marsiya-dhun-muharram-dhun-single/1700412701"
+          }
         },
         {
           "type": "work",
           "title": "Light Upon Light",
-          "year": 2019
+          "year": 2019,
+          "links": {
+            "spotify": "https://open.spotify.com/album/65TIUGEBhVOY2vtZR5Q66t",
+            "appleMusic": "https://music.apple.com/in/album/light-upon-light-feat-sami-yusuf-single/1487391864"
+          }
         },
         {
           "type": "work",
           "title": "Ahimsa",
-          "year": 2019
+          "year": 2019,
+          "links": {
+            "spotify": "https://open.spotify.com/album/5RCOgQin5tvfn4K5zz2qQ6",
+            "appleMusic": "https://music.apple.com/in/album/ahimsa-original-motion-picture-soundtrack-ep/1829922691"
+          }
         },
         {
           "type": "work",
           "title": "Hum Haar Nahi Manange",
-          "year": 2020
+          "year": 2020,
+          "links": {
+            "spotify": "https://open.spotify.com/album/5Zbi9yKM7NfkGcc8j9WWBA",
+            "appleMusic": "https://music.apple.com/in/album/hum-haar-nahi-maanenge-single/1817149012"
+          }
         },
         {
           "type": "work",
@@ -488,7 +538,11 @@
         {
           "type": "work",
           "title": "Meri Pukaar Suno",
-          "year": 2021
+          "year": 2021,
+          "links": {
+            "spotify": "https://open.spotify.com/album/7J9aBFYf5mcY8QttUYpjgW",
+            "appleMusic": "https://music.apple.com/in/album/meri-pukaar-suno-single/1572815247"
+          }
         },
         {
           "type": "work",
@@ -518,7 +572,11 @@
         {
           "type": "work",
           "title": "Bheegi Bheegi",
-          "year": 2026
+          "year": 2026,
+          "links": {
+            "spotify": "https://open.spotify.com/album/3gSamGzuaJypB6V9z6CvrX",
+            "appleMusic": "https://music.apple.com/in/album/bheegi-bheegi-single/1869221424"
+          }
         }
       ]
     },
