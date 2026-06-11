@@ -5,8 +5,6 @@ from __future__ import annotations
 
 import json
 import re
-import subprocess
-import sys
 from pathlib import Path
 
 
@@ -17,7 +15,6 @@ LINK_CACHE = ROOT / "data" / "provider-links.json"
 INDEX_HTML = ROOT / "index.html"
 DIST_HTML = ROOT / "dist" / "arrahman-discography.html"
 WORKFLOW = ROOT / ".github" / "workflows" / "pages.yml"
-PDF_AUDIT = ROOT / "scripts" / "audit_pdf_sources.py"
 PROVIDERS = {"spotify", "youtubeMusic", "appleMusic", "youtube", "web"}
 ANALYTICS_MEASUREMENT_ID = "G-BCFG606ELC"
 OLD_ANALYTICS_MEASUREMENT_IDS = {"G-6VD8ZYDD5J"}
@@ -318,9 +315,6 @@ def main() -> None:
     require("'https://open.spotify.com/search/' + encodeURIComponent('A R Rahman ' + q)" in dist_html, "dist HTML must use Spotify search fallback")
     require("'https://music.apple.com/us/search?term=' + encodeURIComponent('A R Rahman ' + q)" in dist_html, "dist HTML must use a storefront-scoped Apple Music search fallback")
     require("'https://music.apple.com/search?term=' + encodeURIComponent('A R Rahman ' + q)" not in dist_html, "dist HTML must not use the no-storefront Apple Music search fallback")
-
-    audit = subprocess.run([sys.executable, str(PDF_AUDIT)], cwd=ROOT, text=True, capture_output=True)
-    require(audit.returncode == 0, (audit.stderr or audit.stdout).strip())
 
     print(f"OK: {len(categories)} categories, {total} entries")
 

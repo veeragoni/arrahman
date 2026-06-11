@@ -475,6 +475,45 @@
     `<option value="${escapeHtml(year)}">${year === 'all' ? 'All Years' : escapeHtml(year)}</option>`
   ).join('');
 
+  // ---------- Collapsible sections ----------
+  function setCollapsed(box, collapsed) {
+    box.classList.toggle('collapsed', collapsed);
+    const head = box.querySelector(':scope > .section-head, :scope > .sub-head');
+    if (head) head.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+  }
+
+  function expandAncestors(el) {
+    const subsection = el.closest('.subsection');
+    if (subsection) setCollapsed(subsection, false);
+    const section = el.closest('.section');
+    if (section) setCollapsed(section, false);
+  }
+
+  document.querySelectorAll('.section-head, .sub-head').forEach(head => {
+    head.setAttribute('role', 'button');
+    head.setAttribute('tabindex', '0');
+    head.setAttribute('aria-expanded', 'true');
+  });
+
+  function toggleCollapseFromEvent(e) {
+    const head = e.target.closest('.section-head, .sub-head');
+    if (!head || !main.contains(head)) return false;
+    const box = head.closest('.section, .subsection');
+    if (!box) return false;
+    setCollapsed(box, !box.classList.contains('collapsed'));
+    return true;
+  }
+
+  main.addEventListener('click', (e) => {
+    toggleCollapseFromEvent(e);
+  });
+  main.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    if (e.target.closest('.section-head, .sub-head') && toggleCollapseFromEvent(e)) {
+      e.preventDefault();
+    }
+  });
+
   function setActiveCategoryButton(categoryId) {
     document.querySelectorAll('.cat-pill').forEach(pill => {
       const isActive = pill.getAttribute('data-cat') === categoryId;
@@ -610,6 +649,7 @@
     syncResultNav();
 
     if (shouldScroll) {
+      expandAncestors(activeResult);
       activeResult.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }
@@ -683,6 +723,16 @@
     const allHidden = !Array.from(document.querySelectorAll('.section')).some(s => !s.classList.contains('hidden'));
     empty.classList.toggle('show', allHidden && (query || activeCat !== 'all' || activeLang !== 'all' || activeYear !== 'all'));
 
+    // While searching, surface matches hidden inside collapsed boxes.
+    if (query) {
+      allSections.forEach(sec => {
+        if (!sec.classList.contains('hidden') && sec.querySelector('.entry:not(.hidden)')) setCollapsed(sec, false);
+      });
+      allSubsections.forEach(sub => {
+        if (!sub.classList.contains('hidden') && sub.querySelector('.entry:not(.hidden)')) setCollapsed(sub, false);
+      });
+    }
+
     // re-highlight: requires re-render of visible matches. For perf, only highlight on query change.
     if (query) {
       reHighlight(query);
@@ -753,6 +803,7 @@
     if (cat !== 'all') {
       const target = document.getElementById('section-' + cat);
       if (target) {
+        setCollapsed(target, false);
         const stickyOffset = stickyBar ? stickyBar.offsetHeight + 24 : 120;
         const top = target.getBoundingClientRect().top + window.pageYOffset - stickyOffset;
         window.scrollTo({ top, behavior: 'smooth' });

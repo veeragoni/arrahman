@@ -28,7 +28,7 @@ A searchable web archive of A. R. Rahman's film scores, dubs, singles, albums, a
 ├── scripts/
 │   ├── build.py            # generates data/discography.json and dist HTML
 │   ├── discover_albums.py  # weekly release discovery + Apple Music link resolution
-│   ├── audit_pdf_sources.py # checks source JSON against the source PDFs
+│   ├── audit_pdf_sources.py # historical: checked source JSON against the source PDFs
 │   ├── migrate_legacy_data.py
 │   └── validate.py         # validates source data, generated data, and page wiring
 ├── dist/
@@ -58,7 +58,7 @@ After editing source data, run the build and refresh the page. Search, filters, 
 
 The homepage stat cards are also computed from the generated data. Their scopes are declared in `index.html` with `data-stat-categories`, `data-stat-subsections`, or `data-stat-total`.
 
-The PDFs in `data/source/` are the source of truth for the original tables. The validator reads the film PDF and checks that the multilingual film table is aligned to the PDF language columns.
+The PDFs in `data/source/` were the original source for the tables. Their content has been fully captured into the source JSON, so the PDF audit is retired: the Films list is now a single unified subsection where each film carries one or many language versions, and it grows beyond the PDFs through weekly discovery. `audit_pdf_sources.py` is kept for historical reference only — do not run `--sync-film-main`, as it would overwrite films added since.
 
 ### Source Files
 
@@ -350,14 +350,6 @@ Run the unit tests:
 
 ```bash
 cd scripts && python3 -m unittest test_build_links test_discover_albums
-```
-
-Re-sync the main multilingual film table from the film PDF after the source PDF changes:
-
-```bash
-python3 scripts/audit_pdf_sources.py --sync-film-main
-python3 scripts/build.py
-python3 scripts/validate.py
 ```
 
 ---

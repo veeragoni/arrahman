@@ -453,6 +453,36 @@
     color: var(--ink);
   }
 
+  /* ===== COLLAPSIBLE SECTIONS ===== */
+  .section-head,
+  .sub-head {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .section-head::after,
+  .sub-head::after {
+    content: "▾";
+    color: var(--ink-faint);
+    font-size: 13px;
+    margin-left: 12px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .section.collapsed .section-head::after,
+  .subsection.collapsed .sub-head::after {
+    transform: rotate(-90deg);
+  }
+
+  .section.collapsed > *:not(.section-head) {
+    display: none;
+  }
+
+  .subsection.collapsed > *:not(.sub-head) {
+    display: none;
+  }
+
   /* ===== MAIN ===== */
   main {
     padding: 80px 8vw 120px;
