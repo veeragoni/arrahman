@@ -16,6 +16,7 @@
     return {
       categories,
       quality: data.quality || { missingLinks: [], missingSources: [] },
+      generatedAt: (data && data.generatedAt) || '',
     };
   }
 
