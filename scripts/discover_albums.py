@@ -57,6 +57,10 @@ ITUNES_SEARCH_ENDPOINT = "https://itunes.apple.com/search"
 ITUNES_LOOKUP_ENDPOINT = "https://itunes.apple.com/lookup"
 ITUNES_COUNTRIES = ["IN", "US"]
 ITUNES_REQUEST_DELAY = 3.2  # public API allows ~20 requests/minute
+YTMUSIC_SEARCH_ENDPOINT = "https://music.youtube.com/youtubei/v1/search?prettyPrint=false"
+YTMUSIC_CONTEXT = {"client": {"clientName": "WEB_REMIX", "clientVersion": "1.20250101.00.00", "hl": "en", "gl": "IN"}}
+YTMUSIC_REQUEST_DELAY = 1.0
+YTMUSIC_MINIMUM_SCORE = 60
 ARTIST_NAME = "A.R. Rahman"
 APPLE_TERM_SEARCH_MINIMUM_SCORE = 60
 # Rahman must be credited on at least this share of tracks for a release to
@@ -145,6 +149,89 @@ def pick_apple_term_search_link(subject, results, minimum_score=APPLE_TERM_SEARC
         if score > best_score:
             best_score = score
             best_url = clean_apple_url(result.get("collectionViewUrl", ""))
+    return best_url if best_url and best_score >= minimum_score else ""
+
+
+def ytmusic_albums_from_payload(payload):
+    """Pull album results (MPREb… browse ids) out of an InnerTube search
+    response, tolerating the deeply nested renderer structure."""
+    renderers = []
+
+    def walk(node):
+        if isinstance(node, dict):
+            renderer = node.get("musicResponsiveListItemRenderer")
+            if isinstance(renderer, dict):
+                renderers.append(renderer)
+            for value in node.values():
+                walk(value)
+        elif isinstance(node, list):
+            for value in node:
+                walk(value)
+
+    walk(payload)
+    albums = []
+    seen = set()
+    for renderer in renderers:
+        browse_id = ((renderer.get("navigationEndpoint") or {}).get("browseEndpoint") or {}).get("browseId", "")
+        if not browse_id.startswith("MPRE") or browse_id in seen:
+            continue
+        seen.add(browse_id)
+        texts = []
+        for column in renderer.get("flexColumns", []):
+            runs = ((column.get("musicResponsiveListItemFlexColumnRenderer") or {}).get("text") or {}).get("runs", [])
+            texts.append("".join(run.get("text", "") for run in runs if isinstance(run, dict)))
+        albums.append({
+            "browseId": browse_id,
+            "title": texts[0] if texts else "",
+            "subtitle": " ".join(texts[1:]),
+            "url": f"https://music.youtube.com/browse/{browse_id}",
+        })
+    return albums
+
+
+def ytmusic_candidate_score(subject, album):
+    haystack = " ".join([album.get("title", ""), album.get("subtitle", "")])
+    normalized_haystack = normalize_search_text(haystack)
+    if "rahman" not in normalized_haystack:
+        return -1
+
+    expected_language = build.spotify_expected_language(subject)
+    detected_languages = detected_spotify_languages(haystack)
+    if expected_language and detected_languages and expected_language not in detected_languages:
+        return -1
+
+    score = title_token_match_score(subject.get("label", ""), haystack)
+    if score < 0:
+        return -1
+
+    normalized_label = normalize_search_text(subject.get("label", ""))
+    if normalized_label and normalized_label in normalize_search_text(album.get("title", "")):
+        score += 40
+    if any(term in normalized_haystack for term in ("soundtrack", "motion picture", "original score", "ost")):
+        score += 15
+
+    release_year = extract_year(album.get("subtitle", ""))
+    subject_year = subject.get("versionYear") or extract_year(subject.get("date", "")) or subject.get("year")
+    if release_year and subject_year:
+        delta = abs(int(release_year) - int(subject_year))
+        if delta == 0:
+            score += 15
+        elif delta <= 1:
+            score += 8
+
+    if expected_language and expected_language in detected_languages:
+        score += 20
+    return score
+
+
+def pick_ytmusic_link(subject, albums, minimum_score=YTMUSIC_MINIMUM_SCORE):
+    best_url = ""
+    best_score = -1
+    for album in albums:
+        score = ytmusic_candidate_score(subject, album)
+        if score > best_score:
+            best_score = score
+            best_url = album.get("url", "")
     return best_url if best_url and best_score >= minimum_score else ""
 
 
@@ -648,6 +735,151 @@ class ItunesClient:
         return itunes_collections(payload)
 
 
+class YouTubeMusicClient:
+    """Unauthenticated search against YouTube Music's own InnerTube endpoint —
+    the same API the web player uses; no API key or account required."""
+
+    def __init__(self, delay=YTMUSIC_REQUEST_DELAY):
+        self.delay = delay
+        self._last_request = 0.0
+
+    def search_albums(self, query):
+        wait = self.delay - (time.monotonic() - self._last_request)
+        if wait > 0:
+            time.sleep(wait)
+        body = json.dumps({"context": YTMUSIC_CONTEXT, "query": query}).encode("utf-8")
+        request = urllib.request.Request(
+            YTMUSIC_SEARCH_ENDPOINT,
+            data=body,
+            headers={
+                "Content-Type": "application/json",
+                "Origin": "https://music.youtube.com",
+                "Referer": "https://music.youtube.com/",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=15) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+        finally:
+            self._last_request = time.monotonic()
+        return ytmusic_albums_from_payload(payload)
+
+
+def provider_backfill_targets(provider, require_provider=None):
+    """Subjects missing a direct link for the provider. Limited to the audited
+    subsections (released films and non-film albums/singles) so forthcoming or
+    unreleased entries never get speculative links."""
+    categories = load_source_categories()
+    targets = []
+    for subject, target in iter_link_targets(categories):
+        links = target.get("links", {})
+        if provider not in subject.get("providers", []) or links.get(provider):
+            continue
+        if require_provider and not links.get(require_provider):
+            continue
+        if not build.should_audit_missing_direct_links(subject):
+            continue
+        targets.append((subject, target))
+    return targets
+
+
+def subject_context_suffix(subject):
+    context = ", ".join(
+        str(part)
+        for part in (subject.get("language"), subject.get("versionYear") or subject.get("year"))
+        if part
+    )
+    return f" ({context})" if context else ""
+
+
+def backfill_spotify_links(spotify, limit, dry_run=False):
+    """Retry Spotify album search for every entry still missing a direct link."""
+    targets = provider_backfill_targets("spotify")
+    total = len(targets)
+    if limit:
+        targets = targets[:limit]
+    print(f"Spotify backfill: checking {len(targets)} of {total} entries missing Spotify links.", file=sys.stderr)
+
+    resolved = 0
+    failures = 0
+    for index, (subject, target) in enumerate(targets, start=1):
+        print(f"  [{index}/{len(targets)}] {subject['label']}{subject_context_suffix(subject)}", file=sys.stderr)
+        try:
+            result = spotify.resolve_album(subject)
+        except Exception as exc:
+            print(f"      WARNING: Spotify search failed: {exc}", file=sys.stderr)
+            failures += 1
+            if failures >= 5:
+                print("Stopping Spotify backfill after repeated failures.", file=sys.stderr)
+                break
+            continue
+        failures = 0
+        if not result.url:
+            detail = "no confident match"
+            if result.best_name:
+                detail += f"; best rejected: {result.best_name} (score {result.best_score})"
+            print(f"      {detail}", file=sys.stderr)
+            continue
+        print(f"      resolved {result.url}", file=sys.stderr)
+        if dry_run:
+            resolved += 1
+            continue
+        if write_provider_link_to_source(SOURCE_DIR, subject, "spotify", result.url):
+            resolved += 1
+        else:
+            print("      source JSON not updated; entry already linked or not found", file=sys.stderr)
+    print(f"Spotify backfill: resolved {resolved} of {len(targets)} checked entries.", file=sys.stderr)
+    return resolved
+
+
+def ytmusic_query(subject):
+    parts = [subject.get("label", "")]
+    language = subject.get("language", "")
+    if language and language not in {"Other", "Version"}:
+        parts.append(language)
+    parts.append(ARTIST_NAME)
+    return " ".join(part for part in parts if part)
+
+
+def backfill_ytmusic_links(ytmusic, limit, dry_run=False):
+    """Resolve missing YouTube Music album links via InnerTube search."""
+    targets = provider_backfill_targets("youtubeMusic")
+    total = len(targets)
+    if limit:
+        targets = targets[:limit]
+    print(f"YouTube Music backfill: checking {len(targets)} of {total} entries missing links.", file=sys.stderr)
+
+    resolved = 0
+    failures = 0
+    for index, (subject, target) in enumerate(targets, start=1):
+        print(f"  [{index}/{len(targets)}] {subject['label']}{subject_context_suffix(subject)}", file=sys.stderr)
+        try:
+            albums = ytmusic.search_albums(ytmusic_query(subject))
+        except Exception as exc:
+            print(f"      WARNING: YouTube Music search failed: {exc}", file=sys.stderr)
+            failures += 1
+            if failures >= 5:
+                print("Stopping YouTube Music backfill after repeated failures.", file=sys.stderr)
+                break
+            continue
+        failures = 0
+        url = pick_ytmusic_link(subject, albums)
+        if not url:
+            print(f"      no confident match ({len(albums)} candidates)", file=sys.stderr)
+            continue
+        print(f"      resolved {url}", file=sys.stderr)
+        if dry_run:
+            resolved += 1
+            continue
+        if write_provider_link_to_source(SOURCE_DIR, subject, "youtubeMusic", url):
+            resolved += 1
+        else:
+            print("      source JSON not updated; entry already linked or not found", file=sys.stderr)
+    print(f"YouTube Music backfill: resolved {resolved} of {len(targets)} checked entries.", file=sys.stderr)
+    return resolved
+
+
 def resolve_apple_link(itunes, subject, upc=""):
     """Exact UPC match first, scored term search second."""
     if upc:
@@ -922,6 +1154,10 @@ def main():
                         help="Minimum share of tracks crediting Rahman for a release to qualify as his own")
     parser.add_argument("--backfill-apple", action="store_true",
                         help="Also resolve missing appleMusic links on existing entries")
+    parser.add_argument("--backfill-spotify", action="store_true",
+                        help="Retry Spotify album search for entries still missing a direct link")
+    parser.add_argument("--backfill-youtube-music", action="store_true",
+                        help="Resolve missing youtubeMusic links via YouTube Music search")
     parser.add_argument("--backfill-limit", type=int, default=25,
                         help="Maximum existing entries to backfill per run; 0 for no limit")
     parser.add_argument("--itunes-delay", type=float, default=ITUNES_REQUEST_DELAY,
@@ -941,8 +1177,12 @@ def main():
                               min_track_share=args.min_track_share, dry_run=args.dry_run)
     if args.reaudit:
         reaudit_new_releases(spotify, min_track_share=args.min_track_share, dry_run=args.dry_run)
+    if args.backfill_spotify:
+        backfill_spotify_links(spotify, args.backfill_limit, dry_run=args.dry_run)
     if args.backfill_apple:
         backfill_apple_links(spotify, itunes, args.backfill_limit, dry_run=args.dry_run)
+    if args.backfill_youtube_music:
+        backfill_ytmusic_links(YouTubeMusicClient(), args.backfill_limit, dry_run=args.dry_run)
     return 0
 
 

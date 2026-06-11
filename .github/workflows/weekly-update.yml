@@ -35,7 +35,9 @@ jobs:
           python3 scripts/discover_albums.py
           --max-age-days "${{ github.event.inputs.max_age_days || '90' }}"
           --reaudit
+          --backfill-spotify
           --backfill-apple
+          --backfill-youtube-music
           --backfill-limit "${{ github.event.inputs.backfill_limit || '25' }}"
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}

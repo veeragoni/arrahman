@@ -382,6 +382,63 @@ class PromotionTests(unittest.TestCase):
             self.assertFalse(promoted)
 
 
+class YouTubeMusicTests(unittest.TestCase):
+    def _payload(self):
+        def item(browse_id, title, subtitle_runs):
+            return {"musicResponsiveListItemRenderer": {
+                "navigationEndpoint": {"browseEndpoint": {"browseId": browse_id}},
+                "flexColumns": [
+                    {"musicResponsiveListItemFlexColumnRenderer": {"text": {"runs": [{"text": title}]}}},
+                    {"musicResponsiveListItemFlexColumnRenderer": {"text": {"runs": [{"text": t} for t in subtitle_runs]}}},
+                ],
+            }}
+        return {"contents": {"sectionListRenderer": {"contents": [
+            {"musicShelfRenderer": {"contents": [
+                item("MPREb_roja", "Roja (Tamil)", ["EP", " • ", "A.R. Rahman", " • ", "1992"]),
+                item("VLPLnotanalbum", "Some Playlist", ["Playlist"]),
+                item("MPREb_other", "Unrelated Hits", ["Album", " • ", "Someone Else", " • ", "2010"]),
+            ]}},
+        ]}}}
+
+    def test_extracts_only_album_browse_ids(self) -> None:
+        albums = discover_albums.ytmusic_albums_from_payload(self._payload())
+        self.assertEqual([a["browseId"] for a in albums], ["MPREb_roja", "MPREb_other"])
+        self.assertEqual(albums[0]["url"], "https://music.youtube.com/browse/MPREb_roja")
+        self.assertIn("1992", albums[0]["subtitle"])
+
+    def test_picks_matching_album(self) -> None:
+        subject = {
+            "categoryId": "films",
+            "type": "filmVersion",
+            "label": "Roja",
+            "language": "Tamil",
+            "year": 1992,
+            "versionYear": 1992,
+        }
+        albums = discover_albums.ytmusic_albums_from_payload(self._payload())
+        self.assertEqual(
+            discover_albums.pick_ytmusic_link(subject, albums),
+            "https://music.youtube.com/browse/MPREb_roja",
+        )
+
+    def test_rejects_wrong_language_and_non_rahman(self) -> None:
+        subject = {
+            "categoryId": "films",
+            "type": "filmVersion",
+            "label": "Roja",
+            "language": "Hindi",
+            "year": 1992,
+            "versionYear": 1992,
+        }
+        albums = discover_albums.ytmusic_albums_from_payload(self._payload())
+        # Tamil-tagged album must not satisfy the Hindi version.
+        self.assertEqual(discover_albums.pick_ytmusic_link(subject, albums), "")
+
+    def test_query_includes_language(self) -> None:
+        subject = {"label": "Roja", "language": "Tamil"}
+        self.assertEqual(discover_albums.ytmusic_query(subject), "Roja Tamil A.R. Rahman")
+
+
 class SpotifyHelpersTests(unittest.TestCase):
     def test_album_id_from_url(self) -> None:
         self.assertEqual(
