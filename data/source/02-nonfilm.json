@@ -81,11 +81,11 @@
         },
         {
           "type": "work",
-          "title": "Jana Gana Mana",
+          "title": "Jan Gan Man",
           "year": 2001,
           "links": {
-            "spotify": "https://open.spotify.com/album/1xJ8ELXcHDe3lxPBPzhQS9",
-            "appleMusic": "https://music.apple.com/in/album/jana-gana-mana-original-motion-picture-soundtrack-ep/1716866989"
+            "spotify": "https://open.spotify.com/album/6YeaASV5en38KT1RsGSH7g",
+            "appleMusic": "https://music.apple.com/in/album/jan-gan-man/455937911"
           },
           "date": "31-03-2022"
         },
@@ -94,12 +94,18 @@
           "title": "Indian Mantra",
           "year": 2001,
           "note": "1 song"
+          "links": {
+            "spotify": "https://open.spotify.com/track/3pIKVXqUpRzP9xTU4wP3zB",
+          }
         },
         {
           "type": "work",
           "title": "Harem",
           "year": 2003,
           "note": "The Journey Home; 1 of 14 tracks on Sarah Brightman's Harem album",
+          "links": {
+            "spotify": "https://open.spotify.com/track/5jGlNVJZ2CEpm4XufnoJN4"
+          },
           "sources": [
             "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
           ]
@@ -222,6 +228,10 @@
           "title": "Waves of India",
           "year": 2025,
           "note": "1 song"
+          "links":
+          {
+            "spotify": "https://open.spotify.com/track/6CPUQ3k5OrorKCwDP2dhuf"
+          }
         },
         {
           "type": "work",
