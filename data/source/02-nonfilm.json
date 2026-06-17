@@ -93,9 +93,9 @@
           "type": "work",
           "title": "Indian Mantra",
           "year": 2001,
-          "note": "1 song"
+          "note": "1 song",
           "links": {
-            "spotify": "https://open.spotify.com/track/3pIKVXqUpRzP9xTU4wP3zB",
+            "spotify": "https://open.spotify.com/track/3pIKVXqUpRzP9xTU4wP3zB"
           }
         },
         {
@@ -227,7 +227,7 @@
           "type": "work",
           "title": "Waves of India",
           "year": 2025,
-          "note": "1 song"
+          "note": "1 song",
           "links":
           {
             "spotify": "https://open.spotify.com/track/6CPUQ3k5OrorKCwDP2dhuf"
