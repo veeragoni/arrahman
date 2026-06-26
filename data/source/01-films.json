@@ -4448,7 +4448,12 @@
         {
           "type": "work",
           "title": "BAAB",
-          "note": "UAE — Nayla Al Khaja"
+          "note": "UAE — Nayla Al Khaja",
+          "links": {
+            "spotify": "https://open.spotify.com/album/48KYYLfFQJ9hkV1sBYalrr",
+            "appleMusic": "https://music.apple.com/in/album/baab-original-soundtrack/6780555795"
+          },
+          "date": "19-06-2026"
         },
         {
           "type": "work",

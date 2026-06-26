@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "11-06-2026",
+  "generatedAt": "26-06-2026",
   "categories": [
     {
       "id": "films",
@@ -7155,13 +7155,19 @@
             {
               "type": "work",
               "title": "BAAB",
+              "date": "19-06-2026",
               "note": "UAE — Nayla Al Khaja",
+              "links": {
+                "spotify": "https://open.spotify.com/album/48KYYLfFQJ9hkV1sBYalrr",
+                "appleMusic": "https://music.apple.com/in/album/baab-original-soundtrack/6780555795"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02f3fa1419c952e9947275bcc4"
             },
             {
               "type": "work",
@@ -7744,12 +7750,12 @@
             },
             {
               "type": "work",
-              "title": "Jana Gana Mana",
+              "title": "Jan Gan Man",
               "year": 2001,
               "date": "31-03-2022",
               "links": {
-                "spotify": "https://open.spotify.com/album/1xJ8ELXcHDe3lxPBPzhQS9",
-                "appleMusic": "https://music.apple.com/in/album/jana-gana-mana-original-motion-picture-soundtrack-ep/1716866989"
+                "spotify": "https://open.spotify.com/album/6YeaASV5en38KT1RsGSH7g",
+                "appleMusic": "https://music.apple.com/in/album/jan-gan-man/455937911"
               },
               "providers": [
                 "spotify",
@@ -7757,13 +7763,16 @@
                 "appleMusic",
                 "youtube"
               ],
-              "art": "https://i.scdn.co/image/ab67616d00001e02e8f0eefed246de2f8d0f2675"
+              "art": "https://i.scdn.co/image/ab67616d00001e0251f41f9e0c9e96bd5bb50cd5"
             },
             {
               "type": "work",
               "title": "Indian Mantra",
               "year": 2001,
               "note": "1 song",
+              "links": {
+                "spotify": "https://open.spotify.com/track/3pIKVXqUpRzP9xTU4wP3zB"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
@@ -7776,6 +7785,9 @@
               "title": "Harem",
               "year": 2003,
               "note": "The Journey Home; 1 of 14 tracks on Sarah Brightman's Harem album",
+              "links": {
+                "spotify": "https://open.spotify.com/track/5jGlNVJZ2CEpm4XufnoJN4"
+              },
               "sources": [
                 "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
               ],
@@ -8003,6 +8015,9 @@
               "title": "Waves of India",
               "year": 2025,
               "note": "1 song",
+              "links": {
+                "spotify": "https://open.spotify.com/track/6CPUQ3k5OrorKCwDP2dhuf"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
@@ -14029,7 +14044,6 @@
         "label": "Waves of India",
         "year": 2025,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -18162,7 +18176,6 @@
         "label": "Harem",
         "year": 2003,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -18499,7 +18512,7 @@
         "subsection": "Albums / Collaborations",
         "entryIndex": 10,
         "type": "work",
-        "label": "Jana Gana Mana",
+        "label": "Jan Gan Man",
         "year": 2001,
         "missing": [
           "youtubeMusic",
@@ -18516,7 +18529,6 @@
         "label": "Indian Mantra",
         "year": 2001,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -27510,7 +27522,7 @@
         "subsection": "Albums / Collaborations",
         "entryIndex": 10,
         "type": "work",
-        "label": "Jana Gana Mana",
+        "label": "Jan Gan Man",
         "year": 2001
       },
       {
