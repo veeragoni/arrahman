@@ -58,6 +58,41 @@ ITUNES_SEARCH_ENDPOINT = "https://itunes.apple.com/search"
 ITUNES_LOOKUP_ENDPOINT = "https://itunes.apple.com/lookup"
 ITUNES_COUNTRIES = ["IN", "US"]
 ITUNES_REQUEST_DELAY = 3.2  # public API allows ~20 requests/minute
+# Transient HTTP statuses worth retrying: rate limiting (429) and the
+# upstream's own hiccups (5xx). Apple's public API also returns 403 when it
+# throttles shared CI IPs, so treat that as transient too.
+RETRYABLE_HTTP_STATUSES = frozenset({403, 429, 500, 502, 503, 504})
+HTTP_MAX_ATTEMPTS = 4
+HTTP_RETRY_BASE_DELAY = 2.0  # seconds; doubled on each successive retry
+
+
+def urlopen_json_with_retry(request, timeout=15, attempts=HTTP_MAX_ATTEMPTS):
+    """Fetch JSON, retrying transient HTTP and network errors with backoff.
+
+    A single 503/429 from Spotify or Apple should not abort the whole weekly
+    job, so retryable failures back off exponentially before re-raising.
+    """
+    for attempt in range(1, attempts + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            retryable = exc.code in RETRYABLE_HTTP_STATUSES
+            if not retryable or attempt == attempts:
+                raise
+            reason = f"HTTP {exc.code}"
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt == attempts:
+                raise
+            reason = getattr(exc, "reason", exc)
+        delay = HTTP_RETRY_BASE_DELAY * (2 ** (attempt - 1))
+        print(
+            f"  transient fetch error ({reason}); retry {attempt}/{attempts - 1} "
+            f"in {delay:.0f}s",
+            file=sys.stderr,
+        )
+        time.sleep(delay)
+    raise RuntimeError("urlopen_json_with_retry exhausted attempts without raising")
 YTMUSIC_SEARCH_ENDPOINT = "https://music.youtube.com/youtubei/v1/search?prettyPrint=false"
 YTMUSIC_CONTEXT = {"client": {"clientName": "WEB_REMIX", "clientVersion": "1.20250101.00.00", "hl": "en", "gl": "IN"}}
 YTMUSIC_REQUEST_DELAY = 1.0
@@ -682,8 +717,7 @@ class SpotifyCatalogClient(SpotifyAlbumResolver):
                 "User-Agent": "arrahman-discography-discovery/1.0",
             },
         )
-        with urllib.request.urlopen(request, timeout=15) as response:
-            return json.loads(response.read().decode("utf-8"))
+        return urlopen_json_with_retry(request)
 
     def resolve_artist_id(self):
         params = urllib.parse.urlencode({"q": ARTIST_NAME, "type": "artist", "limit": 10})
@@ -737,11 +771,9 @@ class ItunesClient:
             headers={"User-Agent": "arrahman-discography-discovery/1.0"},
         )
         try:
-            with urllib.request.urlopen(request, timeout=15) as response:
-                payload = json.loads(response.read().decode("utf-8"))
+            return urlopen_json_with_retry(request)
         finally:
             self._last_request = time.monotonic()
-        return payload
 
     def lookup_by_upc(self, upc):
         for country in ITUNES_COUNTRIES:
@@ -785,8 +817,7 @@ class YouTubeMusicClient:
             },
         )
         try:
-            with urllib.request.urlopen(request, timeout=15) as response:
-                payload = json.loads(response.read().decode("utf-8"))
+            payload = urlopen_json_with_retry(request)
         finally:
             self._last_request = time.monotonic()
         return ytmusic_albums_from_payload(payload)
