@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "26-06-2026",
+  "generatedAt": "27-06-2026",
   "categories": [
     {
       "id": "films",
@@ -6426,6 +6426,20 @@
                     "youtube"
                   ],
                   "art": "https://i.scdn.co/image/ab67616d00001e026a329f5e9840b9f3950db29c"
+                },
+                {
+                  "language": "Telugu",
+                  "title": "Peddi (Dialogues)",
+                  "date": "25-06-2026",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/3plilxzablS7gW0MQpbQuF"
+                  },
+                  "providers": [
+                    "spotify",
+                    "youtubeMusic",
+                    "appleMusic",
+                    "youtube"
+                  ]
                 }
               ]
             },
@@ -6741,6 +6755,24 @@
                 "youtube"
               ],
               "art": "https://i.scdn.co/image/ab67616d00001e02ae8c034dfefbc7f1ea1db72f"
+            },
+            {
+              "type": "work",
+              "title": "BAAB",
+              "year": 2026,
+              "date": "19-06-2026",
+              "note": "UAE — Nayla Al Khaja",
+              "links": {
+                "spotify": "https://open.spotify.com/album/48KYYLfFQJ9hkV1sBYalrr",
+                "appleMusic": "https://music.apple.com/in/album/baab-original-soundtrack/6780555795"
+              },
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02f3fa1419c952e9947275bcc4"
             }
           ]
         },
@@ -7151,23 +7183,6 @@
                 "youtube"
               ],
               "art": "https://i.scdn.co/image/ab67616d00001e0273d768bda86527d4ed614824"
-            },
-            {
-              "type": "work",
-              "title": "BAAB",
-              "date": "19-06-2026",
-              "note": "UAE — Nayla Al Khaja",
-              "links": {
-                "spotify": "https://open.spotify.com/album/48KYYLfFQJ9hkV1sBYalrr",
-                "appleMusic": "https://music.apple.com/in/album/baab-original-soundtrack/6780555795"
-              },
-              "providers": [
-                "spotify",
-                "youtubeMusic",
-                "appleMusic",
-                "youtube"
-              ],
-              "art": "https://i.scdn.co/image/ab67616d00001e02f3fa1419c952e9947275bcc4"
             },
             {
               "type": "work",
@@ -13739,6 +13754,23 @@
         "category": "Film Compositions",
         "subsectionId": "films-main",
         "subsection": "Films",
+        "entryIndex": 163,
+        "versionIndex": 6,
+        "type": "filmVersion",
+        "label": "Peddi (Dialogues)",
+        "language": "Telugu",
+        "year": 2026,
+        "missing": [
+          "youtubeMusic",
+          "appleMusic",
+          "youtube"
+        ]
+      },
+      {
+        "categoryId": "films",
+        "category": "Film Compositions",
+        "subsectionId": "films-main",
+        "subsection": "Films",
         "entryIndex": 164,
         "versionIndex": 1,
         "type": "filmVersion",
@@ -13760,6 +13792,20 @@
         "type": "filmVersion",
         "label": "Main Vaapas Aaunga",
         "language": "Hindi",
+        "year": 2026,
+        "missing": [
+          "youtubeMusic",
+          "youtube"
+        ]
+      },
+      {
+        "categoryId": "films",
+        "category": "Film Compositions",
+        "subsectionId": "foreign-ost",
+        "subsection": "Foreign Language OST",
+        "entryIndex": 18,
+        "type": "work",
+        "label": "BAAB",
         "year": 2026,
         "missing": [
           "youtubeMusic",
@@ -20896,11 +20942,33 @@
         "category": "Film Compositions",
         "subsectionId": "films-main",
         "subsection": "Films",
+        "entryIndex": 163,
+        "versionIndex": 6,
+        "type": "filmVersion",
+        "label": "Peddi (Dialogues)",
+        "language": "Telugu",
+        "year": 2026
+      },
+      {
+        "categoryId": "films",
+        "category": "Film Compositions",
+        "subsectionId": "films-main",
+        "subsection": "Films",
         "entryIndex": 164,
         "versionIndex": 1,
         "type": "filmVersion",
         "label": "MoonWalk",
         "language": "Tamil",
+        "year": 2026
+      },
+      {
+        "categoryId": "films",
+        "category": "Film Compositions",
+        "subsectionId": "foreign-ost",
+        "subsection": "Foreign Language OST",
+        "entryIndex": 18,
+        "type": "work",
+        "label": "BAAB",
         "year": 2026
       },
       {
@@ -29627,15 +29695,6 @@
         "subsection": "Forthcoming — In Progress",
         "entryIndex": 3,
         "type": "work",
-        "label": "BAAB"
-      },
-      {
-        "categoryId": "films",
-        "category": "Film Compositions",
-        "subsectionId": "forthcoming",
-        "subsection": "Forthcoming — In Progress",
-        "entryIndex": 4,
-        "type": "work",
         "label": "Lahore 1947"
       },
       {
@@ -29643,7 +29702,7 @@
         "category": "Film Compositions",
         "subsectionId": "forthcoming",
         "subsection": "Forthcoming — In Progress",
-        "entryIndex": 6,
+        "entryIndex": 5,
         "type": "work",
         "label": "Gandhi — Web Series"
       },
@@ -29652,7 +29711,7 @@
         "category": "Film Compositions",
         "subsectionId": "forthcoming",
         "subsection": "Forthcoming — In Progress",
-        "entryIndex": 7,
+        "entryIndex": 6,
         "type": "work",
         "label": "Ramayana 1"
       },
@@ -29661,7 +29720,7 @@
         "category": "Film Compositions",
         "subsectionId": "forthcoming",
         "subsection": "Forthcoming — In Progress",
-        "entryIndex": 8,
+        "entryIndex": 7,
         "type": "work",
         "label": "Ramayana 2"
       },
@@ -29670,7 +29729,7 @@
         "category": "Film Compositions",
         "subsectionId": "forthcoming",
         "subsection": "Forthcoming — In Progress",
-        "entryIndex": 9,
+        "entryIndex": 8,
         "type": "work",
         "label": "KHOJ"
       },
@@ -29679,7 +29738,7 @@
         "category": "Film Compositions",
         "subsectionId": "forthcoming",
         "subsection": "Forthcoming — In Progress",
-        "entryIndex": 10,
+        "entryIndex": 9,
         "type": "work",
         "label": "Killer"
       },
@@ -29688,7 +29747,7 @@
         "category": "Film Compositions",
         "subsectionId": "forthcoming",
         "subsection": "Forthcoming — In Progress",
-        "entryIndex": 11,
+        "entryIndex": 10,
         "type": "work",
         "label": "No Land's Man"
       },
@@ -29697,7 +29756,7 @@
         "category": "Film Compositions",
         "subsectionId": "forthcoming",
         "subsection": "Forthcoming — In Progress",
-        "entryIndex": 15,
+        "entryIndex": 14,
         "type": "work",
         "label": "Kamal aur Meena"
       },
