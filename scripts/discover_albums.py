@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 import re
 import sys
 import time
@@ -107,6 +108,23 @@ ALTERNATE_VERSION_TOKENS = {
     "reimagined", "imagined", "sped", "slowed", "drill", "dnb", "acoustic",
     "synthwave", "rendition", "reprise", "rework", "redux",
 }
+# Filler words that distinguish a Spotify album title from a shorter curated
+# label without making it a *different* release (e.g. "Tere Ishk Mein (Original
+# Motion Picture Soundtrack)" is still the curated "Tere Ishk Mein"). Content
+# words NOT in this set (e.g. "dialogues", "score") mark a distinct companion
+# release that must not be collapsed into an existing entry.
+OST_NOISE_TOKENS = {
+    "original", "motion", "picture", "soundtrack", "ost", "ep", "single",
+    "from", "the", "deluxe", "edition", "version", "vol", "volume", "feat",
+    "featuring", "music", "of",
+    # language tags that often appear in Spotify titles
+    "tamil", "telugu", "hindi", "kannada", "malayalam", "english", "marathi",
+    "bengali", "punjabi", "arabic", "mandarin", "chinese", "persian", "urdu",
+}
+# Distinct companion albums of an existing film (spoken-word, etc.) that should
+# be attached as a new version under the matching film rather than skipped or
+# routed to New Releases.
+COMPANION_MARKERS = {"dialogues"}
 
 
 # ---------------------------------------------------------------------------
@@ -329,6 +347,27 @@ def rahman_track_share(album):
 def is_alternate_version_title(name):
     tokens = set(normalize_search_text(name).split())
     return bool(tokens & ALTERNATE_VERSION_TOKENS)
+
+
+def is_companion_album(album):
+    """A distinct spoken-word/companion album (e.g. "<Film> (Dialogues)") that
+    belongs under an existing film rather than as a standalone release."""
+    tokens = set(normalize_search_text(album.get("name", "")).split())
+    return bool(tokens & COMPANION_MARKERS)
+
+
+def companion_version_title(name):
+    """Clean a Spotify companion-album title into a film version title:
+    "Peddi (Dialogues) [TELUGU]" -> "Peddi (Dialogues)"."""
+    cleaned = re.sub(r"\s*\[[^\]]*\]", "", name)  # drop "[TELUGU]" language tags
+    # Trim trailing OST descriptors that aren't the companion marker itself.
+    cleaned = re.sub(
+        r"\s*\((?:original )?(?:motion picture )?soundtrack[^)]*\)",
+        "",
+        cleaned,
+        flags=re.IGNORECASE,
+    )
+    return cleaned.strip()
 
 
 def classify_album(album, min_track_share=RAHMAN_TRACK_SHARE_MINIMUM):
@@ -558,6 +597,55 @@ def promote_album_to_curated(spotify, album, links, link_targets, dry_run=False)
     return True, subject, ""
 
 
+def attach_companion_to_film(album, links, link_targets, dry_run=False):
+    """Attach a companion album (e.g. a Dialogues release) as a new version
+    under the matching film entry. Returns (attached, subject, reason)."""
+    match = find_curated_match(album, link_targets)
+    if not match:
+        return False, None, "no matching film"
+    subject, _ = match
+
+    path, category = build.find_source_category(SOURCE_DIR, subject.get("categoryId", ""))
+    if not path or not category:
+        return False, subject, "source category not found"
+    subsection = next(
+        (s for s in category.get("subsections", []) if s.get("id") == subject.get("subsectionId")),
+        None,
+    )
+    if not subsection:
+        return False, subject, "source subsection not found"
+    item_index = int(subject.get("entryIndex") or 0) - 1
+    items = subsection.get("items", [])
+    if not (0 <= item_index < len(items)):
+        return False, subject, "film item out of range"
+    film = items[item_index]
+    versions = film.get("versions")
+    if not isinstance(versions, list):
+        return False, subject, "matched entry has no versions array"
+
+    language = subject.get("language", "") or ""
+    title = companion_version_title(album.get("name", ""))
+    spotify_url = (links or {}).get("spotify", "")
+    for version in versions:
+        same_link = spotify_url and (version.get("links") or {}).get("spotify", "").split("?")[0] == spotify_url
+        same_titled = version.get("title") == title and version.get("language") == language
+        if same_link or same_titled:
+            return False, subject, "companion version already attached"
+
+    _, release_date = spotify_release_date_parts(album)
+    new_links = {k: v for k, v in (links or {}).items() if v}
+    new_version = {"language": language, "title": title}
+    if release_date:
+        new_version["date"] = release_date
+    if new_links:
+        new_version["links"] = new_links
+
+    if not dry_run:
+        versions.append(new_version)
+        path.write_text(json.dumps(category, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return True, subject, ""
+
+
 def existing_release_index(categories):
     """Collect spotify URLs and (slug, year) labels already curated."""
     spotify_urls = set()
@@ -579,6 +667,10 @@ def is_existing_release(album, spotify_urls, labels):
     name = album.get("name", "")
     album_year = extract_year(album.get("release_date", ""))
     album_slug = slugify(name)
+    # Content words in the album title beyond the curated label and benign OST
+    # filler — if any remain (e.g. "dialogues", "score"), this is a distinct
+    # companion release, not the curated entry.
+    name_tokens = set(normalize_search_text(name).split())
     for label, label_year in labels:
         if album_year and label_year and abs(int(album_year) - int(label_year)) > 1:
             continue
@@ -586,8 +678,11 @@ def is_existing_release(album, spotify_urls, labels):
             return True
         # Curated titles are usually shorter ("Tere Ishk Mein") than Spotify
         # album names ("Tere Ishk Mein (Original Motion Picture Soundtrack)").
+        # Only collapse when the album adds no new content words.
         if title_token_match_score(label, name) >= 0 and album_year and label_year:
-            return True
+            extra = name_tokens - set(build.title_tokens(label)) - OST_NOISE_TOKENS
+            if not extra:
+                return True
     return False
 
 
@@ -854,6 +949,9 @@ def backfill_spotify_links(spotify, limit, dry_run=False):
     """Retry Spotify album search for every entry still missing a direct link."""
     targets = provider_backfill_targets("spotify")
     total = len(targets)
+    # Rotate which entries we attempt each run so the same unresolved titles at
+    # the top of the catalog don't monopolise every run's limited budget.
+    random.shuffle(targets)
     if limit:
         targets = targets[:limit]
     print(f"Spotify backfill: checking {len(targets)} of {total} entries missing Spotify links.", file=sys.stderr)
@@ -903,6 +1001,7 @@ def backfill_ytmusic_links(ytmusic, limit, dry_run=False):
     """Resolve missing YouTube Music album links via InnerTube search."""
     targets = provider_backfill_targets("youtubeMusic")
     total = len(targets)
+    random.shuffle(targets)
     if limit:
         targets = targets[:limit]
     print(f"YouTube Music backfill: checking {len(targets)} of {total} entries missing links.", file=sys.stderr)
@@ -1141,11 +1240,15 @@ def discover_new_releases(spotify, itunes, state, max_age_days,
             print(f"  skip (already curated): {name}", file=sys.stderr)
             seen_ids.add(album_id)
             continue
-        ok, reason = classify_album(album, min_track_share=min_track_share)
-        if not ok:
-            print(f"  skip ({reason}): {name}", file=sys.stderr)
-            seen_ids.add(album_id)
-            continue
+        # Companion albums (e.g. spoken Dialogues) often carry no Rahman-credited
+        # tracks; they're tied to a real film by the match step below, so they
+        # bypass the multi-composer compilation gate.
+        if not is_companion_album(album):
+            ok, reason = classify_album(album, min_track_share=min_track_share)
+            if not ok:
+                print(f"  skip ({reason}): {name}", file=sys.stderr)
+                seen_ids.add(album_id)
+                continue
         accepted.append(album)
 
     checker = SubsumptionChecker(spotify, curated_album_ids_by_slug(categories))
@@ -1165,6 +1268,21 @@ def discover_new_releases(spotify, itunes, state, max_age_days,
         upc = (album.get("external_ids") or {}).get("upc", "")
         apple_url, method = resolve_apple_link(itunes, album_subject(album), upc=upc)
         entry = build_release_entry(album, apple_url=apple_url)
+        if is_companion_album(album):
+            attached, subject, reason = attach_companion_to_film(
+                album, entry.get("links", {}), link_targets, dry_run=dry_run,
+            )
+            if attached:
+                print(
+                    f"  attach (companion version under {subject['label']!r} in "
+                    f"{subject['categoryId']}/{subject['subsectionId']}): {name}",
+                    file=sys.stderr,
+                )
+                seen_ids.add(album_id)
+                continue
+            if reason:
+                print(f"      companion attach skipped: {reason}", file=sys.stderr)
+            # Fall through: no film matched, treat as an ordinary new release.
         promoted, subject, reason = promote_album_to_curated(
             spotify, album, entry.get("links", {}), link_targets, dry_run=dry_run,
         )
@@ -1194,6 +1312,74 @@ def discover_new_releases(spotify, itunes, state, max_age_days,
     save_state(state)
     print(f"Discovery: added {added} new releases to {NEW_RELEASES_PATH.name}.", file=sys.stderr)
     return added
+
+
+FORTHCOMING_SUBSECTION_ID = "forthcoming"
+
+
+def relocate_released_forthcoming(dry_run=False):
+    """Move forthcoming entries whose soundtrack has now released into the
+    destination subsection named by their ``releaseTarget`` field. A forthcoming
+    item is considered released once it has a past ``date`` and at least one
+    direct provider link. Returns the number of entries moved."""
+    path, category = build.find_source_category(SOURCE_DIR, "films")
+    if not path or not category:
+        print("Relocate: films source not found.", file=sys.stderr)
+        return 0
+    subsections = category.get("subsections", [])
+    forthcoming = next((s for s in subsections if s.get("id") == FORTHCOMING_SUBSECTION_ID), None)
+    if not forthcoming:
+        print("Relocate: no forthcoming subsection.", file=sys.stderr)
+        return 0
+
+    today = date.today()
+    moved = 0
+    remaining = []
+    for item in forthcoming.get("items", []):
+        target_id = item.get("releaseTarget")
+        date_str = item.get("date", "")
+        links = item.get("links") or {}
+        has_link = bool(links.get("spotify") or links.get("appleMusic"))
+        released = False
+        if date_str:
+            try:
+                released = datetime.strptime(date_str, "%d-%m-%Y").date() <= today
+            except ValueError:
+                released = False
+        if not (target_id and released and has_link):
+            if target_id and has_link and not released:
+                print(
+                    f"  forthcoming {item.get('title', '')!r} not yet released ({date_str}); left in place",
+                    file=sys.stderr,
+                )
+            remaining.append(item)
+            continue
+        destination = next((s for s in subsections if s.get("id") == target_id), None)
+        if not destination:
+            print(
+                f"  WARNING: releaseTarget {target_id!r} for {item.get('title', '')!r} not found; left in place",
+                file=sys.stderr,
+            )
+            remaining.append(item)
+            continue
+        item.pop("releaseTarget", None)
+        if not item.get("year"):
+            year = extract_year(date_str)
+            if year:
+                item["year"] = int(year)
+        destination.setdefault("items", []).append(item)
+        moved += 1
+        print(
+            f"  relocate (forthcoming -> {target_id}): {item.get('title', '')}",
+            file=sys.stderr,
+        )
+
+    if moved:
+        forthcoming["items"] = remaining
+        if not dry_run:
+            path.write_text(json.dumps(category, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Relocate: moved {moved} released forthcoming entr{'y' if moved == 1 else 'ies'}.", file=sys.stderr)
+    return moved
 
 
 def reaudit_new_releases(spotify, min_track_share=RAHMAN_TRACK_SHARE_MINIMUM, dry_run=False):
@@ -1288,6 +1474,7 @@ def backfill_apple_links(spotify, itunes, limit, dry_run=False):
         targets.append((subject, album_id))
 
     total = len(targets)
+    random.shuffle(targets)
     if limit:
         targets = targets[:limit]
     print(f"Apple backfill: checking {len(targets)} of {total} entries missing Apple Music links.", file=sys.stderr)
@@ -1346,6 +1533,8 @@ def main():
                         help="Cache album cover URLs for linked albums into data/artwork.json")
     parser.add_argument("--backfill-limit", type=int, default=25,
                         help="Maximum existing entries to backfill per run; 0 for no limit")
+    parser.add_argument("--relocate-forthcoming", action="store_true",
+                        help="Move released forthcoming entries into their releaseTarget subsection")
     parser.add_argument("--itunes-delay", type=float, default=ITUNES_REQUEST_DELAY,
                         help="Seconds between iTunes API requests")
     parser.add_argument("--dry-run", action="store_true",
@@ -1361,6 +1550,8 @@ def main():
     if not args.skip_discovery:
         discover_new_releases(spotify, itunes, load_state(), args.max_age_days,
                               min_track_share=args.min_track_share, dry_run=args.dry_run)
+    if args.relocate_forthcoming:
+        relocate_released_forthcoming(dry_run=args.dry_run)
     if args.reaudit:
         reaudit_new_releases(spotify, min_track_share=args.min_track_share, dry_run=args.dry_run)
     if args.backfill_spotify:

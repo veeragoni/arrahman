@@ -41,6 +41,7 @@ jobs:
           --backfill-dates
           --backfill-artwork
           --backfill-limit "${{ github.event.inputs.backfill_limit || '25' }}"
+          --relocate-forthcoming
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}

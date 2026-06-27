@@ -4027,6 +4027,14 @@
                 "spotify": "https://open.spotify.com/album/3SbI1MObA50O36ab1Sg6IK",
                 "appleMusic": "https://music.apple.com/in/album/peddi-original-motion-picture-soundtrack-malayalam-ep/6774105649"
               }
+            },
+            {
+              "language": "Telugu",
+              "title": "Peddi (Dialogues)",
+              "date": "25-06-2026",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3plilxzablS7gW0MQpbQuF"
+              }
             }
           ]
         },
@@ -4211,6 +4219,17 @@
             "spotify": "https://open.spotify.com/album/31xnft6hKf7Rt5AbB2YGYR",
             "appleMusic": "https://music.apple.com/in/album/le-musk-original-soundtrack/1762627690"
           }
+        },
+        {
+          "type": "work",
+          "title": "BAAB",
+          "note": "UAE — Nayla Al Khaja",
+          "links": {
+            "spotify": "https://open.spotify.com/album/48KYYLfFQJ9hkV1sBYalrr",
+            "appleMusic": "https://music.apple.com/in/album/baab-original-soundtrack/6780555795"
+          },
+          "date": "19-06-2026",
+          "year": 2026
         }
       ]
     },
@@ -4444,16 +4463,6 @@
             "appleMusic": "https://music.apple.com/in/album/ummeed-global-ki-dilkashi-wali-rahmani-single/1772610404"
           },
           "date": "06-10-2024"
-        },
-        {
-          "type": "work",
-          "title": "BAAB",
-          "note": "UAE — Nayla Al Khaja",
-          "links": {
-            "spotify": "https://open.spotify.com/album/48KYYLfFQJ9hkV1sBYalrr",
-            "appleMusic": "https://music.apple.com/in/album/baab-original-soundtrack/6780555795"
-          },
-          "date": "19-06-2026"
         },
         {
           "type": "work",
