@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "29-06-2026",
+  "generatedAt": "06-07-2026",
   "categories": [
     {
       "id": "films",
@@ -4513,7 +4513,8 @@
                   "date": "08-10-2017",
                   "links": {
                     "spotify": "https://open.spotify.com/album/0MDh58cA1cxQVOK5G7o2J5",
-                    "appleMusic": "https://music.apple.com/in/album/mersal-original-motion-picture-soundtrack/1273602653"
+                    "appleMusic": "https://music.apple.com/in/album/mersal-original-motion-picture-soundtrack/1273602653",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_K3laZtTflQO"
                   },
                   "providers": [
                     "spotify",
@@ -5231,7 +5232,8 @@
                   "date": "2022",
                   "links": {
                     "spotify": "https://open.spotify.com/album/6vm8qVdc7lkP6eJZDs38Fp",
-                    "appleMusic": "https://music.apple.com/in/album/ps-1-telugu-original-motion-picture-soundtrack-ep/1736019705"
+                    "appleMusic": "https://music.apple.com/in/album/ps-1-telugu-original-motion-picture-soundtrack-ep/1736019705",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_aIbkuf9DJBm"
                   },
                   "providers": [
                     "spotify",
@@ -14811,7 +14813,6 @@
         "language": "Telugu",
         "year": 2022,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -15899,7 +15900,6 @@
         "language": "Tamil",
         "year": 2017,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
