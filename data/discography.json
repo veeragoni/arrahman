@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "06-07-2026",
+  "generatedAt": "13-07-2026",
   "categories": [
     {
       "id": "films",
@@ -973,7 +973,8 @@
                   "date": "1995",
                   "links": {
                     "spotify": "https://open.spotify.com/album/2WqYqafDXsCSy9q5DFJZ27",
-                    "appleMusic": "https://music.apple.com/in/album/muthu-original-motion-picture-soundtrack/1577942841"
+                    "appleMusic": "https://music.apple.com/in/album/muthu-original-motion-picture-soundtrack/1577942841",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_k5UeFC2gUE3"
                   },
                   "providers": [
                     "spotify",
@@ -1589,7 +1590,8 @@
                   "date": "1999",
                   "links": {
                     "spotify": "https://open.spotify.com/album/530Ue2hZyDFcgiDubkR5FY",
-                    "appleMusic": "https://music.apple.com/in/album/jodi-original-motion-picture-soundtrack/686349847"
+                    "appleMusic": "https://music.apple.com/in/album/jodi-original-motion-picture-soundtrack/686349847",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_LgAVDewk799"
                   },
                   "providers": [
                     "spotify",
@@ -3663,7 +3665,8 @@
                   "date": "31-12-2010",
                   "links": {
                     "spotify": "https://open.spotify.com/album/6cRQxAiA06NgYECbuSVuOe",
-                    "appleMusic": "https://music.apple.com/in/album/ada-original-motion-picture-soundtrack/1131050877"
+                    "appleMusic": "https://music.apple.com/in/album/ada-original-motion-picture-soundtrack/1131050877",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_x9gvHNgRl4s"
                   },
                   "providers": [
                     "spotify",
@@ -5178,7 +5181,8 @@
                   "date": "2022",
                   "links": {
                     "spotify": "https://open.spotify.com/album/4nyx5HRA6OL5BR6HtAJPM0",
-                    "appleMusic": "https://music.apple.com/in/album/cobra-malayalam-original-motion-picture-soundtrack/1643173469"
+                    "appleMusic": "https://music.apple.com/in/album/cobra-malayalam-original-motion-picture-soundtrack/1643173469",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_m8lRuZ35bcm"
                   },
                   "providers": [
                     "spotify",
@@ -5319,7 +5323,8 @@
                   "date": "2022",
                   "links": {
                     "spotify": "https://open.spotify.com/album/72dzyOkLrt83l7G3znCn97",
-                    "appleMusic": "https://music.apple.com/in/album/the-life-of-muthu-original-motion-picture-soundtrack/1645357913"
+                    "appleMusic": "https://music.apple.com/in/album/the-life-of-muthu-original-motion-picture-soundtrack/1645357913",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_k5UeFC2gUE3"
                   },
                   "providers": [
                     "spotify",
@@ -5814,7 +5819,8 @@
                   "date": "12-06-2024",
                   "links": {
                     "spotify": "https://open.spotify.com/album/39znQhf1dN9clozTnKlPGY",
-                    "appleMusic": "https://music.apple.com/in/album/maidaan-original-motion-picture-soundtrack/1751289424"
+                    "appleMusic": "https://music.apple.com/in/album/maidaan-original-motion-picture-soundtrack/1751289424",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_5U8nnoNQJjx"
                   },
                   "providers": [
                     "spotify",
@@ -6696,6 +6702,9 @@
               "title": "Viceroy's House",
               "year": 2017,
               "date": "18-08-2017",
+              "links": {
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_3DP7RNn7AjR"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
@@ -7775,7 +7784,8 @@
               "date": "31-03-2022",
               "links": {
                 "spotify": "https://open.spotify.com/album/6YeaASV5en38KT1RsGSH7g",
-                "appleMusic": "https://music.apple.com/in/album/jan-gan-man/455937911"
+                "appleMusic": "https://music.apple.com/in/album/jan-gan-man/455937911",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_VHQLdxzKbPK"
               },
               "providers": [
                 "spotify",
@@ -13162,6 +13172,48 @@
           "items": [
             {
               "type": "work",
+              "title": "A.R. Rahman Telugu Classics",
+              "year": 2026,
+              "date": "11-07-2026",
+              "note": "Telugu · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2dCjVPj9aRucs0O00bpQrt",
+                "appleMusic": "https://music.apple.com/in/album/a-r-rahman-telugu-classics/6789198948"
+              },
+              "sources": [
+                "https://open.spotify.com/album/2dCjVPj9aRucs0O00bpQrt"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02bb7b4449440e32803b83e67b"
+            },
+            {
+              "type": "work",
+              "title": "The Rahman Experience",
+              "year": 2026,
+              "date": "04-07-2026",
+              "note": "Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7ltdBVft4fg1OyFrBBBPkD",
+                "appleMusic": "https://music.apple.com/in/album/the-rahman-experience/6787035319"
+              },
+              "sources": [
+                "https://open.spotify.com/album/7ltdBVft4fg1OyFrBBBPkD"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02264af450aced6c80b57f3ee5"
+            },
+            {
+              "type": "work",
               "title": "Kuchi Kuchi Rakkamma",
               "year": 2026,
               "date": "13-05-2026",
@@ -14340,7 +14392,6 @@
         "language": "Telugu",
         "year": 2024,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -14765,7 +14816,6 @@
         "language": "Malayalam",
         "year": 2022,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -14892,7 +14942,6 @@
         "language": "Telugu",
         "year": 2022,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -16011,7 +16060,6 @@
         "year": 2017,
         "missing": [
           "spotify",
-          "youtubeMusic",
           "appleMusic",
           "youtube"
         ]
@@ -17069,7 +17117,6 @@
         "language": "Hindi",
         "year": 2010,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -18562,7 +18609,6 @@
         "label": "Jan Gan Man",
         "year": 2001,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -18776,7 +18822,6 @@
         "language": "Tamil",
         "year": 1999,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -19955,7 +20000,6 @@
         "language": "Telugu",
         "year": 1995,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },

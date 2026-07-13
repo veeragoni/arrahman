@@ -85,7 +85,8 @@
           "year": 2001,
           "links": {
             "spotify": "https://open.spotify.com/album/6YeaASV5en38KT1RsGSH7g",
-            "appleMusic": "https://music.apple.com/in/album/jan-gan-man/455937911"
+            "appleMusic": "https://music.apple.com/in/album/jan-gan-man/455937911",
+            "youtubeMusic": "https://music.youtube.com/browse/MPREb_VHQLdxzKbPK"
           },
           "date": "31-03-2022"
         },
@@ -228,8 +229,7 @@
           "title": "Waves of India",
           "year": 2025,
           "note": "1 song",
-          "links":
-          {
+          "links": {
             "spotify": "https://open.spotify.com/track/6CPUQ3k5OrorKCwDP2dhuf"
           }
         },

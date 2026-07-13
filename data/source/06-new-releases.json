@@ -18,6 +18,34 @@
       "items": [
         {
           "type": "work",
+          "title": "A.R. Rahman Telugu Classics",
+          "note": "Telugu · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/2dCjVPj9aRucs0O00bpQrt",
+            "appleMusic": "https://music.apple.com/in/album/a-r-rahman-telugu-classics/6789198948"
+          },
+          "sources": [
+            "https://open.spotify.com/album/2dCjVPj9aRucs0O00bpQrt"
+          ],
+          "year": 2026,
+          "date": "11-07-2026"
+        },
+        {
+          "type": "work",
+          "title": "The Rahman Experience",
+          "note": "Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/7ltdBVft4fg1OyFrBBBPkD",
+            "appleMusic": "https://music.apple.com/in/album/the-rahman-experience/6787035319"
+          },
+          "sources": [
+            "https://open.spotify.com/album/7ltdBVft4fg1OyFrBBBPkD"
+          ],
+          "year": 2026,
+          "date": "04-07-2026"
+        },
+        {
+          "type": "work",
           "title": "Kuchi Kuchi Rakkamma",
           "note": "Single · Auto-added via weekly Spotify discovery",
           "links": {

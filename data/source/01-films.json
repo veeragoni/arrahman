@@ -602,7 +602,8 @@
               "date": "1995",
               "links": {
                 "spotify": "https://open.spotify.com/album/2WqYqafDXsCSy9q5DFJZ27",
-                "appleMusic": "https://music.apple.com/in/album/muthu-original-motion-picture-soundtrack/1577942841"
+                "appleMusic": "https://music.apple.com/in/album/muthu-original-motion-picture-soundtrack/1577942841",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_k5UeFC2gUE3"
               }
             },
             {
@@ -984,7 +985,8 @@
               "date": "1999",
               "links": {
                 "spotify": "https://open.spotify.com/album/530Ue2hZyDFcgiDubkR5FY",
-                "appleMusic": "https://music.apple.com/in/album/jodi-original-motion-picture-soundtrack/686349847"
+                "appleMusic": "https://music.apple.com/in/album/jodi-original-motion-picture-soundtrack/686349847",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_LgAVDewk799"
               }
             },
             {
@@ -2304,7 +2306,8 @@
               "date": "31-12-2010",
               "links": {
                 "spotify": "https://open.spotify.com/album/6cRQxAiA06NgYECbuSVuOe",
-                "appleMusic": "https://music.apple.com/in/album/ada-original-motion-picture-soundtrack/1131050877"
+                "appleMusic": "https://music.apple.com/in/album/ada-original-motion-picture-soundtrack/1131050877",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_x9gvHNgRl4s"
               }
             }
           ]
@@ -3254,7 +3257,8 @@
               "date": "2022",
               "links": {
                 "spotify": "https://open.spotify.com/album/4nyx5HRA6OL5BR6HtAJPM0",
-                "appleMusic": "https://music.apple.com/in/album/cobra-malayalam-original-motion-picture-soundtrack/1643173469"
+                "appleMusic": "https://music.apple.com/in/album/cobra-malayalam-original-motion-picture-soundtrack/1643173469",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_m8lRuZ35bcm"
               }
             },
             {
@@ -3339,7 +3343,8 @@
               "date": "2022",
               "links": {
                 "spotify": "https://open.spotify.com/album/72dzyOkLrt83l7G3znCn97",
-                "appleMusic": "https://music.apple.com/in/album/the-life-of-muthu-original-motion-picture-soundtrack/1645357913"
+                "appleMusic": "https://music.apple.com/in/album/the-life-of-muthu-original-motion-picture-soundtrack/1645357913",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_k5UeFC2gUE3"
               }
             }
           ]
@@ -3648,7 +3653,8 @@
               "date": "12-06-2024",
               "links": {
                 "spotify": "https://open.spotify.com/album/39znQhf1dN9clozTnKlPGY",
-                "appleMusic": "https://music.apple.com/in/album/maidaan-original-motion-picture-soundtrack/1751289424"
+                "appleMusic": "https://music.apple.com/in/album/maidaan-original-motion-picture-soundtrack/1751289424",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_5U8nnoNQJjx"
               }
             },
             {
@@ -4190,7 +4196,10 @@
           "type": "work",
           "title": "Viceroy's House",
           "year": 2017,
-          "date": "18-08-2017"
+          "date": "18-08-2017",
+          "links": {
+            "youtubeMusic": "https://music.youtube.com/browse/MPREb_3DP7RNn7AjR"
+          }
         },
         {
           "type": "work",
