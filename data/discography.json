@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "13-07-2026",
+  "generatedAt": "20-07-2026",
   "categories": [
     {
       "id": "films",
@@ -288,7 +288,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/2AyPAOZiMql7JOQikIZQ2c"
+                  }
                 }
               ]
             },
@@ -2038,7 +2041,8 @@
                   "date": "15-09-2000",
                   "links": {
                     "spotify": "https://open.spotify.com/album/1g4wry4ULxJGiSMlV1RAsC",
-                    "appleMusic": "https://music.apple.com/in/album/rhythm-original-motion-picture-soundtrack/1391653853"
+                    "appleMusic": "https://music.apple.com/in/album/rhythm-original-motion-picture-soundtrack/1391653853",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_2gD2F98IfSw"
                   },
                   "providers": [
                     "spotify",
@@ -2090,7 +2094,10 @@
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/24eFWOcTlyhl5ulIQ3aOfP"
+                  }
                 }
               ]
             },
@@ -5346,7 +5353,8 @@
                   "date": "15-07-2022",
                   "links": {
                     "spotify": "https://open.spotify.com/album/1EaRNMcvcSXULmMpPbHoCY",
-                    "appleMusic": "https://music.apple.com/in/album/iravin-nizhal-original-motion-picture-soundtrack-ep/1706137125"
+                    "appleMusic": "https://music.apple.com/in/album/iravin-nizhal-original-motion-picture-soundtrack-ep/1706137125",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_AVFmSergUrC"
                   },
                   "providers": [
                     "spotify",
@@ -5445,7 +5453,8 @@
                   "date": "2023",
                   "links": {
                     "spotify": "https://open.spotify.com/album/6XC1UegPd9g3s31Y9wW8dC",
-                    "appleMusic": "https://music.apple.com/in/album/ps-2-telugu-original-motion-picture-soundtrack/1734625326"
+                    "appleMusic": "https://music.apple.com/in/album/ps-2-telugu-original-motion-picture-soundtrack/1734625326",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_aIbkuf9DJBm"
                   },
                   "providers": [
                     "spotify",
@@ -5929,12 +5938,17 @@
                   "language": "Other",
                   "title": "Kaathavaraayan (Kannada)",
                   "date": "27-08-2024",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/48IEuVs0O4o365vyd2q1vz",
+                    "appleMusic": "https://music.apple.com/in/album/kaathavaraayan-original-motion-picture-soundtrack-ep/1765069760"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
-                  ]
+                  ],
+                  "art": "https://i.scdn.co/image/ab67616d00001e023309166fe5fcf2e3e2c3f032"
                 }
               ]
             },
@@ -6735,12 +6749,17 @@
               "title": "Blinded By The Light",
               "year": 2019,
               "date": "09-08-2019",
+              "links": {
+                "spotify": "https://open.spotify.com/album/62b7aKrZ7QOjK2hAJylp9Y",
+                "appleMusic": "https://music.apple.com/in/album/blinded-by-the-light-original-motion-picture-soundtrack/1471237203"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e024ad5c31a53eeec10973767ea"
             },
             {
               "type": "work",
@@ -7040,7 +7059,10 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/09Un27eHPNYFc79MV3ZtV9"
+              }
             },
             {
               "type": "work",
@@ -7067,7 +7089,8 @@
               "date": "12-02-2023",
               "links": {
                 "spotify": "https://open.spotify.com/album/5N3d00pvonn9vvse6TI42m",
-                "appleMusic": "https://music.apple.com/in/album/vendhu-thanindhathu-kaadu-original-score/1670414172"
+                "appleMusic": "https://music.apple.com/in/album/vendhu-thanindhathu-kaadu-original-score/1670414172",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_SEW0qfFPfdB"
               },
               "providers": [
                 "spotify",
@@ -13193,6 +13216,27 @@
             },
             {
               "type": "work",
+              "title": "Malayankunju",
+              "year": 2026,
+              "date": "09-07-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0l8DnMlIkvUFWKECnj3Irv",
+                "appleMusic": "https://music.apple.com/in/album/malayankunju-original-motion-picture-soundtrack-single/6789017108"
+              },
+              "sources": [
+                "https://open.spotify.com/album/0l8DnMlIkvUFWKECnj3Irv"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e0289584df632855a6af900d824"
+            },
+            {
+              "type": "work",
               "title": "The Rahman Experience",
               "year": 2026,
               "date": "04-07-2026",
@@ -13211,6 +13255,128 @@
                 "youtube"
               ],
               "art": "https://i.scdn.co/image/ab67616d00001e02264af450aced6c80b57f3ee5"
+            },
+            {
+              "type": "work",
+              "title": "Pookum Malargalai – Dream Pop",
+              "year": 2026,
+              "date": "03-07-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/26e1mpeXCcpS0CIT7xQJ4C"
+              },
+              "sources": [
+                "https://open.spotify.com/album/26e1mpeXCcpS0CIT7xQJ4C"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e023836af33b916d2940ca3e1e2"
+            },
+            {
+              "type": "work",
+              "title": "Thiruvallikeni - R&B",
+              "year": 2026,
+              "date": "02-07-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5OM4Fn4XxDK0e4k3gj4hzR"
+              },
+              "sources": [
+                "https://open.spotify.com/album/5OM4Fn4XxDK0e4k3gj4hzR"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02fc631020872402b0e66bd038"
+            },
+            {
+              "type": "work",
+              "title": "Porkalam Ange - Cover",
+              "year": 2026,
+              "date": "01-07-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6qmj7cZGe9vvK6UHrAAsjl"
+              },
+              "sources": [
+                "https://open.spotify.com/album/6qmj7cZGe9vvK6UHrAAsjl"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e021fa4b43b170c1bc3430c37b8"
+            },
+            {
+              "type": "work",
+              "title": "Village Rocker (From \"Peddi\")",
+              "year": 2026,
+              "date": "24-06-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7FrPq7FDPvx5zVKTIURMqt",
+                "appleMusic": "https://music.apple.com/in/album/village-rocker-from-peddi-single/6783857449"
+              },
+              "sources": [
+                "https://open.spotify.com/album/7FrPq7FDPvx5zVKTIURMqt"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e023792292faad9dbe5e471fea0"
+            },
+            {
+              "type": "work",
+              "title": "Deewaana Deewaana (E-Sitar Version)",
+              "year": 2026,
+              "date": "24-06-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0AKOEM8GipDmnsBezNHQIl",
+                "appleMusic": "https://music.apple.com/in/album/deewaana-deewaana-e-sitar-version-single/6783645750"
+              },
+              "sources": [
+                "https://open.spotify.com/album/0AKOEM8GipDmnsBezNHQIl"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02205df31e702e88e36a94cd5d"
+            },
+            {
+              "type": "work",
+              "title": "Alaipayudhey - Chill Trap",
+              "year": 2026,
+              "date": "17-06-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4Kv22mpu38yctDAtIruvRX"
+              },
+              "sources": [
+                "https://open.spotify.com/album/4Kv22mpu38yctDAtIruvRX"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e023f0d299c41a3e916e7dfd7d8"
             },
             {
               "type": "work",
@@ -13417,6 +13583,89 @@
           "items": [
             {
               "type": "work",
+              "title": "Enna Solla Pogirai - Classical Instrumental",
+              "year": 2026,
+              "date": "10-07-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/75ESBHs37hUru6ezYW1j5W",
+                "appleMusic": "https://music.apple.com/in/album/enna-solla-pogirai-electronic-mix-single/1869826639"
+              },
+              "sources": [
+                "https://open.spotify.com/album/75ESBHs37hUru6ezYW1j5W"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e022f5de986e67a897fe2a6ae1a"
+            },
+            {
+              "type": "work",
+              "title": "Snehidhane - Chill Lofi",
+              "year": 2026,
+              "date": "17-06-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6zH6TMnmSObhT6tF6FMU70"
+              },
+              "sources": [
+                "https://open.spotify.com/album/6zH6TMnmSObhT6tF6FMU70"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e029ec4dbecb22c8352db23097b"
+            },
+            {
+              "type": "work",
+              "title": "Kaatre En Vaasal - Trap Mix",
+              "year": 2026,
+              "date": "15-06-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7lHJ7S1mH3GXDXI4YiylnP",
+                "appleMusic": "https://music.apple.com/in/album/kaatre-en-vaasal-vandhaai-from-rhythm-afro-mix-single/1694885765"
+              },
+              "sources": [
+                "https://open.spotify.com/album/7lHJ7S1mH3GXDXI4YiylnP"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02054b6124e722125940fcfe8c"
+            },
+            {
+              "type": "work",
+              "title": "Jiya Jale (Remix)",
+              "year": 2026,
+              "date": "29-05-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4mYXb2LShhKxMf3GOHSEfe",
+                "appleMusic": "https://music.apple.com/in/album/jiya-jale-remix-single/6771803148"
+              },
+              "sources": [
+                "https://open.spotify.com/album/4mYXb2LShhKxMf3GOHSEfe"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e0242783c384428326820d37754"
+            },
+            {
+              "type": "work",
               "title": "Kay Sera Sera (Remix)",
               "year": 2026,
               "date": "22-05-2026",
@@ -13477,6 +13726,26 @@
                 "youtube"
               ],
               "art": "https://i.scdn.co/image/ab67616d00001e0235c17c31e5fb6abb2b34935e"
+            },
+            {
+              "type": "work",
+              "title": "Kikku Yekkule (Trap Mix)",
+              "year": 2026,
+              "date": "01-05-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/2bst329HzygmyqAEsM2qTv"
+              },
+              "sources": [
+                "https://open.spotify.com/album/2bst329HzygmyqAEsM2qTv"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e022d70ee434dd1ffaec7901ec2"
             },
             {
               "type": "work",
@@ -14505,9 +14774,7 @@
         "language": "Other",
         "year": 2024,
         "missing": [
-          "spotify",
           "youtubeMusic",
-          "appleMusic",
           "youtube"
         ]
       },
@@ -14550,7 +14817,6 @@
         "label": "Vendhu Thanindhathu Kaadu",
         "year": 2023,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -14583,7 +14849,6 @@
         "language": "Telugu",
         "year": 2023,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -14957,7 +15222,6 @@
         "language": "Tamil",
         "year": 2022,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -15345,7 +15609,6 @@
         "label": "Shikara",
         "year": 2020,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -15633,9 +15896,7 @@
         "label": "Blinded By The Light",
         "year": 2019,
         "missing": [
-          "spotify",
           "youtubeMusic",
-          "appleMusic",
           "youtube"
         ]
       },
@@ -18722,7 +18983,6 @@
         "language": "Tamil",
         "year": 2000,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -18772,7 +19032,6 @@
         "language": "Telugu",
         "year": 2000,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"
@@ -20669,7 +20928,6 @@
         "language": "Telugu",
         "year": 1993,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"

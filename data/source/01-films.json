@@ -174,7 +174,10 @@
               "title": "Nippu Ravva",
               "sources": [
                 "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Original_scores"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/2AyPAOZiMql7JOQikIZQ2c"
+              }
             }
           ]
         },
@@ -1264,7 +1267,8 @@
               "date": "15-09-2000",
               "links": {
                 "spotify": "https://open.spotify.com/album/1g4wry4ULxJGiSMlV1RAsC",
-                "appleMusic": "https://music.apple.com/in/album/rhythm-original-motion-picture-soundtrack/1391653853"
+                "appleMusic": "https://music.apple.com/in/album/rhythm-original-motion-picture-soundtrack/1391653853",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_2gD2F98IfSw"
               }
             },
             {
@@ -1290,7 +1294,10 @@
             {
               "language": "Telugu",
               "title": "Tenali",
-              "date": "2000"
+              "date": "2000",
+              "links": {
+                "spotify": "https://open.spotify.com/album/24eFWOcTlyhl5ulIQ3aOfP"
+              }
             }
           ]
         },
@@ -3359,7 +3366,8 @@
               "date": "15-07-2022",
               "links": {
                 "spotify": "https://open.spotify.com/album/1EaRNMcvcSXULmMpPbHoCY",
-                "appleMusic": "https://music.apple.com/in/album/iravin-nizhal-original-motion-picture-soundtrack-ep/1706137125"
+                "appleMusic": "https://music.apple.com/in/album/iravin-nizhal-original-motion-picture-soundtrack-ep/1706137125",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_AVFmSergUrC"
               }
             }
           ]
@@ -3425,7 +3433,8 @@
               "date": "2023",
               "links": {
                 "spotify": "https://open.spotify.com/album/6XC1UegPd9g3s31Y9wW8dC",
-                "appleMusic": "https://music.apple.com/in/album/ps-2-telugu-original-motion-picture-soundtrack/1734625326"
+                "appleMusic": "https://music.apple.com/in/album/ps-2-telugu-original-motion-picture-soundtrack/1734625326",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_aIbkuf9DJBm"
               }
             },
             {
@@ -3716,7 +3725,11 @@
             {
               "language": "Other",
               "title": "Kaathavaraayan (Kannada)",
-              "date": "27-08-2024"
+              "date": "27-08-2024",
+              "links": {
+                "spotify": "https://open.spotify.com/album/48IEuVs0O4o365vyd2q1vz",
+                "appleMusic": "https://music.apple.com/in/album/kaathavaraayan-original-motion-picture-soundtrack-ep/1765069760"
+              }
             }
           ]
         },
@@ -4216,7 +4229,11 @@
           "type": "work",
           "title": "Blinded By The Light",
           "year": 2019,
-          "date": "09-08-2019"
+          "date": "09-08-2019",
+          "links": {
+            "spotify": "https://open.spotify.com/album/62b7aKrZ7QOjK2hAJylp9Y",
+            "appleMusic": "https://music.apple.com/in/album/blinded-by-the-light-original-motion-picture-soundtrack/1471237203"
+          }
         },
         {
           "type": "work",
@@ -4386,7 +4403,10 @@
           "type": "work",
           "title": "Shikara",
           "year": 2020,
-          "date": "07-02-2020"
+          "date": "07-02-2020",
+          "links": {
+            "spotify": "https://open.spotify.com/album/09Un27eHPNYFc79MV3ZtV9"
+          }
         },
         {
           "type": "work",
@@ -4406,7 +4426,8 @@
           "date": "12-02-2023",
           "links": {
             "spotify": "https://open.spotify.com/album/5N3d00pvonn9vvse6TI42m",
-            "appleMusic": "https://music.apple.com/in/album/vendhu-thanindhathu-kaadu-original-score/1670414172"
+            "appleMusic": "https://music.apple.com/in/album/vendhu-thanindhathu-kaadu-original-score/1670414172",
+            "youtubeMusic": "https://music.youtube.com/browse/MPREb_SEW0qfFPfdB"
           }
         },
         {
