@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "20-07-2026",
+  "generatedAt": "27-07-2026",
   "categories": [
     {
       "id": "films",
@@ -280,6 +280,11 @@
                 {
                   "language": "Telugu",
                   "title": "Nippu Ravva",
+                  "date": "31-08-2014",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/2AyPAOZiMql7JOQikIZQ2c",
+                    "appleMusic": "https://music.apple.com/in/album/nippu-ravva-original-motion-picture-soundtrack/1836855149"
+                  },
                   "sources": [
                     "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Original_scores"
                   ],
@@ -289,9 +294,7 @@
                     "appleMusic",
                     "youtube"
                   ],
-                  "links": {
-                    "spotify": "https://open.spotify.com/album/2AyPAOZiMql7JOQikIZQ2c"
-                  }
+                  "art": "https://i.scdn.co/image/ab67616d00001e02ee2fbc7f4a20e081f1a35092"
                 }
               ]
             },
@@ -2089,15 +2092,17 @@
                   "language": "Telugu",
                   "title": "Tenali",
                   "date": "2000",
+                  "links": {
+                    "spotify": "https://open.spotify.com/album/24eFWOcTlyhl5ulIQ3aOfP",
+                    "appleMusic": "https://music.apple.com/in/album/tenali-raman-original-motion-picture-soundtrack/848910971"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
                     "appleMusic",
                     "youtube"
                   ],
-                  "links": {
-                    "spotify": "https://open.spotify.com/album/24eFWOcTlyhl5ulIQ3aOfP"
-                  }
+                  "art": "https://i.scdn.co/image/ab67616d00001e028867541e68459170e0eecf03"
                 }
               ]
             },
@@ -2385,7 +2390,8 @@
                   "date": "14-01-2002",
                   "links": {
                     "spotify": "https://open.spotify.com/album/3UzsMnTTD2eBo7Xhs1KiWn",
-                    "appleMusic": "https://music.apple.com/in/album/alli-arjuna-original-motion-picture-soundtrack-ep/1838903820"
+                    "appleMusic": "https://music.apple.com/in/album/alli-arjuna-original-motion-picture-soundtrack-ep/1838903820",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_wsucXpdT4pB"
                   },
                   "providers": [
                     "spotify",
@@ -4562,7 +4568,8 @@
                   "date": "29-11-2017",
                   "links": {
                     "spotify": "https://open.spotify.com/album/5fM5j2lslrO9AhkjsmGABU",
-                    "appleMusic": "https://music.apple.com/in/album/2-0-tamil-original-motion-picture-soundtrack-single/1702921733"
+                    "appleMusic": "https://music.apple.com/in/album/2-0-tamil-original-motion-picture-soundtrack-single/1702921733",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_s6ZmdTKCsWX"
                   },
                   "providers": [
                     "spotify",
@@ -4787,7 +4794,8 @@
                   "date": "25-10-2019",
                   "links": {
                     "spotify": "https://open.spotify.com/album/2G7JyChJHrZYCBb0jL2N5t",
-                    "appleMusic": "https://music.apple.com/in/album/bigil-original-motion-picture-soundtrack/1480710136"
+                    "appleMusic": "https://music.apple.com/in/album/bigil-original-motion-picture-soundtrack/1480710136",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_vEYVHWxbCCR"
                   },
                   "providers": [
                     "spotify",
@@ -7054,15 +7062,17 @@
               "title": "Shikara",
               "year": 2020,
               "date": "07-02-2020",
+              "links": {
+                "spotify": "https://open.spotify.com/album/09Un27eHPNYFc79MV3ZtV9",
+                "appleMusic": "https://music.apple.com/in/album/shikara/1529463575"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
               ],
-              "links": {
-                "spotify": "https://open.spotify.com/album/09Un27eHPNYFc79MV3ZtV9"
-              }
+              "art": "https://i.scdn.co/image/ab67616d00001e020da4e11ee2d1e72c5b0732df"
             },
             {
               "type": "work",
@@ -7242,7 +7252,11 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "links": {
+                "spotify": "https://open.spotify.com/album/6FzFkAuOhw3EOpSPrnOfna"
+              },
+              "art": "https://i.scdn.co/image/ab67616d00001e02650198524db1bdf8657cc39f"
             },
             {
               "type": "work",
@@ -13195,6 +13209,27 @@
           "items": [
             {
               "type": "work",
+              "title": "Kahaan Chale Gaye Ho Ram (From \"Batwara 1947\")",
+              "year": 2026,
+              "date": "22-07-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6FzFkAuOhw3EOpSPrnOfna",
+                "appleMusic": "https://music.apple.com/in/album/kahaan-chale-gaye-ho-ram-from-batwara-1947-single/6793186514"
+              },
+              "sources": [
+                "https://open.spotify.com/album/6FzFkAuOhw3EOpSPrnOfna"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02650198524db1bdf8657cc39f"
+            },
+            {
+              "type": "work",
               "title": "A.R. Rahman Telugu Classics",
               "year": 2026,
               "date": "11-07-2026",
@@ -15610,7 +15645,6 @@
         "year": 2020,
         "missing": [
           "youtubeMusic",
-          "appleMusic",
           "youtube"
         ]
       },
@@ -15766,7 +15800,6 @@
         "language": "Tamil",
         "year": 2019,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -16241,7 +16274,6 @@
         "language": "Tamil",
         "year": 2017,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -18629,7 +18661,6 @@
         "language": "Tamil",
         "year": 2002,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -19033,7 +19064,6 @@
         "year": 2000,
         "missing": [
           "youtubeMusic",
-          "appleMusic",
           "youtube"
         ]
       },
@@ -20929,7 +20959,6 @@
         "year": 1993,
         "missing": [
           "youtubeMusic",
-          "appleMusic",
           "youtube"
         ]
       },

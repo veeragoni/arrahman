@@ -18,6 +18,20 @@
       "items": [
         {
           "type": "work",
+          "title": "Kahaan Chale Gaye Ho Ram (From \"Batwara 1947\")",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6FzFkAuOhw3EOpSPrnOfna",
+            "appleMusic": "https://music.apple.com/in/album/kahaan-chale-gaye-ho-ram-from-batwara-1947-single/6793186514"
+          },
+          "sources": [
+            "https://open.spotify.com/album/6FzFkAuOhw3EOpSPrnOfna"
+          ],
+          "year": 2026,
+          "date": "22-07-2026"
+        },
+        {
+          "type": "work",
           "title": "A.R. Rahman Telugu Classics",
           "note": "Telugu · Auto-added via weekly Spotify discovery",
           "links": {
