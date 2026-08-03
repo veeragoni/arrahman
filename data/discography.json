@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "27-07-2026",
+  "generatedAt": "03-08-2026",
   "categories": [
     {
       "id": "films",
@@ -6201,7 +6201,8 @@
                   "date": "12-11-2025",
                   "links": {
                     "spotify": "https://open.spotify.com/album/3U6JvK5ij3bbhBmdotoNJ1",
-                    "appleMusic": "https://music.apple.com/in/album/tere-ishk-mein-original-motion-picture-soundtrack/1852500176"
+                    "appleMusic": "https://music.apple.com/in/album/tere-ishk-mein-original-motion-picture-soundtrack/1852500176",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_Uz24Q3AcJV6"
                   },
                   "providers": [
                     "spotify",
@@ -6970,7 +6971,8 @@
               "date": "13-07-1993",
               "links": {
                 "spotify": "https://open.spotify.com/album/6aO84HI1Psa48OLXJMZLRM",
-                "appleMusic": "https://music.apple.com/in/album/gentleman-original-motion-picture-soundtrack/1578226992"
+                "appleMusic": "https://music.apple.com/in/album/gentleman-original-motion-picture-soundtrack/1578226992",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_XIDgBEVDN9K"
               },
               "providers": [
                 "spotify",
@@ -7244,6 +7246,11 @@
             {
               "type": "work",
               "title": "Batwara 1947",
+              "date": "22-07-2026",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6FzFkAuOhw3EOpSPrnOfna",
+                "appleMusic": "https://music.apple.com/in/album/kahaan-chale-gaye-ho-ram-from-batwara-1947-single/6793186514"
+              },
               "sources": [
                 "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
               ],
@@ -7253,9 +7260,6 @@
                 "appleMusic",
                 "youtube"
               ],
-              "links": {
-                "spotify": "https://open.spotify.com/album/6FzFkAuOhw3EOpSPrnOfna"
-              },
               "art": "https://i.scdn.co/image/ab67616d00001e02650198524db1bdf8657cc39f"
             },
             {
@@ -13209,6 +13213,68 @@
           "items": [
             {
               "type": "work",
+              "title": "Snehidhane - String Version",
+              "year": 2026,
+              "date": "03-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0ybQqp29DWmNr8rdHnxJ8Q"
+              },
+              "sources": [
+                "https://open.spotify.com/album/0ybQqp29DWmNr8rdHnxJ8Q"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02bdc2410e74fe9e9f5e98bde5"
+            },
+            {
+              "type": "work",
+              "title": "Ramayana Trailer Theme",
+              "year": 2026,
+              "date": "02-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4fSTozHnzO9gKmxtoVNayc",
+                "appleMusic": "https://music.apple.com/in/album/ramayana-trailer-theme-from-ramayana-single/6797398143"
+              },
+              "sources": [
+                "https://open.spotify.com/album/4fSTozHnzO9gKmxtoVNayc"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e029ba424307fc1e41e400f0eba"
+            },
+            {
+              "type": "work",
+              "title": "Ramayana (The Introduction Theme)",
+              "year": 2026,
+              "date": "31-07-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1gPQt7tuC3OCboIv1oxWLj",
+                "appleMusic": "https://music.apple.com/in/album/ramayana-the-introduction-theme-single/6796798789"
+              },
+              "sources": [
+                "https://open.spotify.com/album/1gPQt7tuC3OCboIv1oxWLj"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02c3ce5f12318a74ff1a8103dd"
+            },
+            {
+              "type": "work",
               "title": "Kahaan Chale Gaye Ho Ram (From \"Batwara 1947\")",
               "year": 2026,
               "date": "22-07-2026",
@@ -13616,6 +13682,26 @@
             "youtube"
           ],
           "items": [
+            {
+              "type": "work",
+              "title": "Enge Enathu Kavithai - Hip Hop Trap Mix",
+              "year": 2026,
+              "date": "03-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4zHwxzGImRg5h7JyUTN9rF"
+              },
+              "sources": [
+                "https://open.spotify.com/album/4zHwxzGImRg5h7JyUTN9rF"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e0266c857088221b944dc91dafb"
+            },
             {
               "type": "work",
               "title": "Enna Solla Pogirai - Classical Instrumental",
@@ -14390,7 +14476,6 @@
         "language": "Hindi",
         "year": 2025,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -20782,7 +20867,6 @@
         "label": "Gentleman [Tamil, 1993]",
         "year": 1993,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },

@@ -3890,7 +3890,8 @@
               "date": "12-11-2025",
               "links": {
                 "spotify": "https://open.spotify.com/album/3U6JvK5ij3bbhBmdotoNJ1",
-                "appleMusic": "https://music.apple.com/in/album/tere-ishk-mein-original-motion-picture-soundtrack/1852500176"
+                "appleMusic": "https://music.apple.com/in/album/tere-ishk-mein-original-motion-picture-soundtrack/1852500176",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_Uz24Q3AcJV6"
               }
             }
           ]
@@ -4357,7 +4358,8 @@
           "year": 1993,
           "links": {
             "spotify": "https://open.spotify.com/album/6aO84HI1Psa48OLXJMZLRM",
-            "appleMusic": "https://music.apple.com/in/album/gentleman-original-motion-picture-soundtrack/1578226992"
+            "appleMusic": "https://music.apple.com/in/album/gentleman-original-motion-picture-soundtrack/1578226992",
+            "youtubeMusic": "https://music.youtube.com/browse/MPREb_XIDgBEVDN9K"
           },
           "date": "13-07-1993"
         },
@@ -4516,8 +4518,10 @@
             "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Upcoming"
           ],
           "links": {
-            "spotify": "https://open.spotify.com/album/6FzFkAuOhw3EOpSPrnOfna"
-          }
+            "spotify": "https://open.spotify.com/album/6FzFkAuOhw3EOpSPrnOfna",
+            "appleMusic": "https://music.apple.com/in/album/kahaan-chale-gaye-ho-ram-from-batwara-1947-single/6793186514"
+          },
+          "date": "22-07-2026"
         },
         {
           "type": "work",

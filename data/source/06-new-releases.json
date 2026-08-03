@@ -18,6 +18,47 @@
       "items": [
         {
           "type": "work",
+          "title": "Snehidhane - String Version",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/0ybQqp29DWmNr8rdHnxJ8Q"
+          },
+          "sources": [
+            "https://open.spotify.com/album/0ybQqp29DWmNr8rdHnxJ8Q"
+          ],
+          "year": 2026,
+          "date": "03-08-2026"
+        },
+        {
+          "type": "work",
+          "title": "Ramayana Trailer Theme",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4fSTozHnzO9gKmxtoVNayc",
+            "appleMusic": "https://music.apple.com/in/album/ramayana-trailer-theme-from-ramayana-single/6797398143"
+          },
+          "sources": [
+            "https://open.spotify.com/album/4fSTozHnzO9gKmxtoVNayc"
+          ],
+          "year": 2026,
+          "date": "02-08-2026"
+        },
+        {
+          "type": "work",
+          "title": "Ramayana (The Introduction Theme)",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/1gPQt7tuC3OCboIv1oxWLj",
+            "appleMusic": "https://music.apple.com/in/album/ramayana-the-introduction-theme-single/6796798789"
+          },
+          "sources": [
+            "https://open.spotify.com/album/1gPQt7tuC3OCboIv1oxWLj"
+          ],
+          "year": 2026,
+          "date": "31-07-2026"
+        },
+        {
+          "type": "work",
           "title": "Kahaan Chale Gaye Ho Ram (From \"Batwara 1947\")",
           "note": "Single · Auto-added via weekly Spotify discovery",
           "links": {
@@ -286,6 +327,19 @@
       "title": "Remixes, Instrumentals & Alternate Versions",
       "type": "list",
       "items": [
+        {
+          "type": "work",
+          "title": "Enge Enathu Kavithai - Hip Hop Trap Mix",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4zHwxzGImRg5h7JyUTN9rF"
+          },
+          "sources": [
+            "https://open.spotify.com/album/4zHwxzGImRg5h7JyUTN9rF"
+          ],
+          "year": 2026,
+          "date": "03-08-2026"
+        },
         {
           "type": "work",
           "title": "Enna Solla Pogirai - Classical Instrumental",
