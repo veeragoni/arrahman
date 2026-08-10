@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "03-08-2026",
+  "generatedAt": "10-08-2026",
   "categories": [
     {
       "id": "films",
@@ -4064,7 +4064,8 @@
                   "date": "2014",
                   "links": {
                     "spotify": "https://open.spotify.com/album/6p5KqHoNl9CjRHxHdpTOkt",
-                    "appleMusic": "https://music.apple.com/in/album/lingaa-hindi-original-motion-picture-soundtrack-ep/1842072449"
+                    "appleMusic": "https://music.apple.com/in/album/lingaa-hindi-original-motion-picture-soundtrack-ep/1842072449",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_Eu2u91yasKO"
                   },
                   "providers": [
                     "spotify",
@@ -5679,7 +5680,8 @@
                   "date": "10-12-2024",
                   "links": {
                     "spotify": "https://open.spotify.com/album/7JwmwrPrK41jqWB75PdzRz",
-                    "appleMusic": "https://music.apple.com/in/album/ayalaan-telugu-original-motion-picture-soundtrack-ep/1727338901"
+                    "appleMusic": "https://music.apple.com/in/album/ayalaan-telugu-original-motion-picture-soundtrack-ep/1727338901",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_nX7hLYyiIEC"
                   },
                   "providers": [
                     "spotify",
@@ -6406,7 +6408,8 @@
                   "date": "04-06-2026",
                   "links": {
                     "spotify": "https://open.spotify.com/album/6tWoIDMjOu8viFbRRgcQQ5",
-                    "appleMusic": "https://music.apple.com/in/album/peddi-original-motion-picture-soundtrack-tamil-ep/6774104985"
+                    "appleMusic": "https://music.apple.com/in/album/peddi-original-motion-picture-soundtrack-tamil-ep/6774104985",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_j6qj9E77F7a"
                   },
                   "sources": [
                     "https://peddimovie.vercel.app/",
@@ -8559,7 +8562,8 @@
               "date": "01-01-2009",
               "links": {
                 "spotify": "https://open.spotify.com/album/5WxZ2oI2zrNVQfZUaGHowC",
-                "appleMusic": "https://music.apple.com/in/album/jai-ho-you-are-my-destiny-feat-nicole-scherzinger-single/1445277968"
+                "appleMusic": "https://music.apple.com/in/album/jai-ho-you-are-my-destiny-feat-nicole-scherzinger-single/1445277968",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_NiAHp5HTpDV"
               },
               "providers": [
                 "spotify",
@@ -13213,6 +13217,27 @@
           "items": [
             {
               "type": "work",
+              "title": "Tabassum (From \"Batwara 1947\")",
+              "year": 2026,
+              "date": "07-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6xYYlhqRtQKkxMLUaLZysw",
+                "appleMusic": "https://music.apple.com/in/album/tabassum-from-batwara-1947-single/6798680358"
+              },
+              "sources": [
+                "https://open.spotify.com/album/6xYYlhqRtQKkxMLUaLZysw"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02ecbf83534226f2c1b953267a"
+            },
+            {
+              "type": "work",
               "title": "Snehidhane - String Version",
               "year": 2026,
               "date": "03-08-2026",
@@ -13682,6 +13707,68 @@
             "youtube"
           ],
           "items": [
+            {
+              "type": "work",
+              "title": "Kandukondain Kandukondain - Lofi Mix",
+              "year": 2026,
+              "date": "10-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6U91aWUNGiwnz4AhfnVC1B"
+              },
+              "sources": [
+                "https://open.spotify.com/album/6U91aWUNGiwnz4AhfnVC1B"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02354f90b5162f24b8f7305867"
+            },
+            {
+              "type": "work",
+              "title": "Tu Hi Re - Reimagined",
+              "year": 2026,
+              "date": "05-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3EZm7FpjtE9qgiExUwWbiy",
+                "appleMusic": "https://music.apple.com/in/album/tu-hi-re-reimagined-single/6795541919"
+              },
+              "sources": [
+                "https://open.spotify.com/album/3EZm7FpjtE9qgiExUwWbiy"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02ced76dd665178b02367f4b53"
+            },
+            {
+              "type": "work",
+              "title": "Tu Hi Re (Chill Mix)",
+              "year": 2026,
+              "date": "03-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7zhpvjo7gmJuw1pmLduc9F",
+                "appleMusic": "https://music.apple.com/in/album/tu-hi-re-chill-mix-single/6797503541"
+              },
+              "sources": [
+                "https://open.spotify.com/album/7zhpvjo7gmJuw1pmLduc9F"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02a75bc667dce0d3e6d963ffc0"
+            },
             {
               "type": "work",
               "title": "Enge Enathu Kavithai - Hip Hop Trap Mix",
@@ -14160,7 +14247,6 @@
         "language": "Tamil",
         "year": 2026,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -14613,7 +14699,6 @@
         "language": "Telugu",
         "year": 2024,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -16867,7 +16952,6 @@
         "language": "Hindi",
         "year": 2014,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -17570,7 +17654,6 @@
         "label": "Jai Ho — You Are My Destiny",
         "year": 2009,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },

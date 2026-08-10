@@ -18,6 +18,20 @@
       "items": [
         {
           "type": "work",
+          "title": "Tabassum (From \"Batwara 1947\")",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6xYYlhqRtQKkxMLUaLZysw",
+            "appleMusic": "https://music.apple.com/in/album/tabassum-from-batwara-1947-single/6798680358"
+          },
+          "sources": [
+            "https://open.spotify.com/album/6xYYlhqRtQKkxMLUaLZysw"
+          ],
+          "year": 2026,
+          "date": "07-08-2026"
+        },
+        {
+          "type": "work",
           "title": "Snehidhane - String Version",
           "note": "Single · Auto-added via weekly Spotify discovery",
           "links": {
@@ -327,6 +341,47 @@
       "title": "Remixes, Instrumentals & Alternate Versions",
       "type": "list",
       "items": [
+        {
+          "type": "work",
+          "title": "Kandukondain Kandukondain - Lofi Mix",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6U91aWUNGiwnz4AhfnVC1B"
+          },
+          "sources": [
+            "https://open.spotify.com/album/6U91aWUNGiwnz4AhfnVC1B"
+          ],
+          "year": 2026,
+          "date": "10-08-2026"
+        },
+        {
+          "type": "work",
+          "title": "Tu Hi Re - Reimagined",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/3EZm7FpjtE9qgiExUwWbiy",
+            "appleMusic": "https://music.apple.com/in/album/tu-hi-re-reimagined-single/6795541919"
+          },
+          "sources": [
+            "https://open.spotify.com/album/3EZm7FpjtE9qgiExUwWbiy"
+          ],
+          "year": 2026,
+          "date": "05-08-2026"
+        },
+        {
+          "type": "work",
+          "title": "Tu Hi Re (Chill Mix)",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/7zhpvjo7gmJuw1pmLduc9F",
+            "appleMusic": "https://music.apple.com/in/album/tu-hi-re-chill-mix-single/6797503541"
+          },
+          "sources": [
+            "https://open.spotify.com/album/7zhpvjo7gmJuw1pmLduc9F"
+          ],
+          "year": 2026,
+          "date": "03-08-2026"
+        },
         {
           "type": "work",
           "title": "Enge Enathu Kavithai - Hip Hop Trap Mix",
