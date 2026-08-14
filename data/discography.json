@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "10-08-2026",
+  "generatedAt": "14-08-2026",
   "categories": [
     {
       "id": "films",
@@ -5285,7 +5285,8 @@
                   "date": "2022",
                   "links": {
                     "spotify": "https://open.spotify.com/album/0aKkwn0Vq6oW8XmmcY8ouE",
-                    "appleMusic": "https://music.apple.com/in/album/ponniyin-selvan/1689558578"
+                    "appleMusic": "https://music.apple.com/in/album/ponniyin-selvan/1689558578",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_6RrbTQ7RW0Q"
                   },
                   "providers": [
                     "spotify",
@@ -5301,7 +5302,8 @@
                   "date": "2022",
                   "links": {
                     "spotify": "https://open.spotify.com/album/49suOMXRb3AJIseI97Qu1J",
-                    "appleMusic": "https://music.apple.com/in/album/ponniyin-selvan/1689558578"
+                    "appleMusic": "https://music.apple.com/in/album/ponniyin-selvan/1689558578",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_aIbkuf9DJBm"
                   },
                   "providers": [
                     "spotify",
@@ -5853,6 +5855,9 @@
                   "language": "Hindi",
                   "title": "Maidaan",
                   "date": "08-04-2024",
+                  "links": {
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_5U8nnoNQJjx"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -6468,7 +6473,8 @@
                   "title": "Peddi (Dialogues)",
                   "date": "25-06-2026",
                   "links": {
-                    "spotify": "https://open.spotify.com/album/3plilxzablS7gW0MQpbQuF"
+                    "spotify": "https://open.spotify.com/album/3plilxzablS7gW0MQpbQuF",
+                    "appleMusic": "https://music.apple.com/in/album/peddi-dialogues-original-motion-picture-soundtrack/6801460459"
                   },
                   "providers": [
                     "spotify",
@@ -8047,13 +8053,19 @@
               "type": "work",
               "title": "Navaratna",
               "year": 2015,
+              "date": "11-03-2020",
               "note": "1 song",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7Ixbmg25LPiYoKRa8jpKVj",
+                "appleMusic": "https://music.apple.com/in/album/navaratna-malika-dasara-pada/1508286507"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e0236f5823f05dd6c8ed2299e35"
             },
             {
               "type": "work",
@@ -13709,6 +13721,48 @@
           "items": [
             {
               "type": "work",
+              "title": "Ponni Nadhi (Lofi Mix)",
+              "year": 2026,
+              "date": "14-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3wUAZVP2Hi84SYEXQuAeN4",
+                "appleMusic": "https://music.apple.com/in/album/ponni-nadhi-lofi-mix-single/6797981730"
+              },
+              "sources": [
+                "https://open.spotify.com/album/3wUAZVP2Hi84SYEXQuAeN4"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02f3874e8eacbc4fa273777ac4"
+            },
+            {
+              "type": "work",
+              "title": "Des Mere Des (Lofi Mix)",
+              "year": 2026,
+              "date": "14-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4Gni3ZrqVO7mJ3KxUffCHW",
+                "appleMusic": "https://music.apple.com/in/album/des-mere-des-lofi-mix-single/6796354528"
+              },
+              "sources": [
+                "https://open.spotify.com/album/4Gni3ZrqVO7mJ3KxUffCHW"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02f43d21ae90e57fc8f7be7aa9"
+            },
+            {
+              "type": "work",
               "title": "Kandukondain Kandukondain - Lofi Mix",
               "year": 2026,
               "date": "10-08-2026",
@@ -14295,7 +14349,6 @@
         "year": 2026,
         "missing": [
           "youtubeMusic",
-          "appleMusic",
           "youtube"
         ]
       },
@@ -14882,7 +14935,6 @@
         "year": 2024,
         "missing": [
           "spotify",
-          "youtubeMusic",
           "appleMusic",
           "youtube"
         ]
@@ -15364,7 +15416,6 @@
         "language": "Malayalam",
         "year": 2022,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -15380,7 +15431,6 @@
         "language": "Other",
         "year": 2022,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -16807,9 +16857,7 @@
         "label": "Navaratna",
         "year": 2015,
         "missing": [
-          "spotify",
           "youtubeMusic",
-          "appleMusic",
           "youtube"
         ]
       },

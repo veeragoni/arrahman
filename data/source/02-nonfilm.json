@@ -206,7 +206,12 @@
           "type": "work",
           "title": "Navaratna",
           "year": 2015,
-          "note": "1 song"
+          "note": "1 song",
+          "links": {
+            "spotify": "https://open.spotify.com/album/7Ixbmg25LPiYoKRa8jpKVj",
+            "appleMusic": "https://music.apple.com/in/album/navaratna-malika-dasara-pada/1508286507"
+          },
+          "date": "11-03-2020"
         },
         {
           "type": "work",

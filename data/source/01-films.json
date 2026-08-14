@@ -3324,7 +3324,8 @@
               "date": "2022",
               "links": {
                 "spotify": "https://open.spotify.com/album/0aKkwn0Vq6oW8XmmcY8ouE",
-                "appleMusic": "https://music.apple.com/in/album/ponniyin-selvan/1689558578"
+                "appleMusic": "https://music.apple.com/in/album/ponniyin-selvan/1689558578",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_6RrbTQ7RW0Q"
               }
             },
             {
@@ -3333,7 +3334,8 @@
               "date": "2022",
               "links": {
                 "spotify": "https://open.spotify.com/album/49suOMXRb3AJIseI97Qu1J",
-                "appleMusic": "https://music.apple.com/in/album/ponniyin-selvan/1689558578"
+                "appleMusic": "https://music.apple.com/in/album/ponniyin-selvan/1689558578",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_aIbkuf9DJBm"
               }
             }
           ]
@@ -3677,7 +3679,10 @@
             {
               "language": "Hindi",
               "title": "Maidaan",
-              "date": "08-04-2024"
+              "date": "08-04-2024",
+              "links": {
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_5U8nnoNQJjx"
+              }
             },
             {
               "language": "Malayalam",
@@ -4066,7 +4071,8 @@
               "title": "Peddi (Dialogues)",
               "date": "25-06-2026",
               "links": {
-                "spotify": "https://open.spotify.com/album/3plilxzablS7gW0MQpbQuF"
+                "spotify": "https://open.spotify.com/album/3plilxzablS7gW0MQpbQuF",
+                "appleMusic": "https://music.apple.com/in/album/peddi-dialogues-original-motion-picture-soundtrack/6801460459"
               }
             }
           ]

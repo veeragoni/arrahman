@@ -343,6 +343,34 @@
       "items": [
         {
           "type": "work",
+          "title": "Ponni Nadhi (Lofi Mix)",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/3wUAZVP2Hi84SYEXQuAeN4",
+            "appleMusic": "https://music.apple.com/in/album/ponni-nadhi-lofi-mix-single/6797981730"
+          },
+          "sources": [
+            "https://open.spotify.com/album/3wUAZVP2Hi84SYEXQuAeN4"
+          ],
+          "year": 2026,
+          "date": "14-08-2026"
+        },
+        {
+          "type": "work",
+          "title": "Des Mere Des (Lofi Mix)",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4Gni3ZrqVO7mJ3KxUffCHW",
+            "appleMusic": "https://music.apple.com/in/album/des-mere-des-lofi-mix-single/6796354528"
+          },
+          "sources": [
+            "https://open.spotify.com/album/4Gni3ZrqVO7mJ3KxUffCHW"
+          ],
+          "year": 2026,
+          "date": "14-08-2026"
+        },
+        {
+          "type": "work",
           "title": "Kandukondain Kandukondain - Lofi Mix",
           "note": "Single · Auto-added via weekly Spotify discovery",
           "links": {
