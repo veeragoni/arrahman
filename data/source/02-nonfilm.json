@@ -44,7 +44,12 @@
           "note": "Background score only",
           "sources": [
             "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
-          ]
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/album/1250c94A0chl6KuGZu3iwS",
+            "appleMusic": "https://music.apple.com/in/album/colours-original-motion-picture-soundtrack-single/1753417048"
+          },
+          "date": "25-01-2009"
         },
         {
           "type": "work",

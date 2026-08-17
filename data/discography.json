@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "14-08-2026",
+  "generatedAt": "17-08-2026",
   "categories": [
     {
       "id": "films",
@@ -4547,7 +4547,8 @@
                   "date": "2017",
                   "links": {
                     "spotify": "https://open.spotify.com/album/2sZ7TxoVW4krpe6Flm4EEj",
-                    "appleMusic": "https://music.apple.com/in/album/adirindhi-original-motion-picture-soundtrack-ep/1297220775"
+                    "appleMusic": "https://music.apple.com/in/album/adirindhi-original-motion-picture-soundtrack-ep/1297220775",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_LkT23qrbQD3"
                   },
                   "providers": [
                     "spotify",
@@ -7758,7 +7759,12 @@
               "type": "work",
               "title": "Colours",
               "year": 1992,
+              "date": "25-01-2009",
               "note": "Background score only",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1250c94A0chl6KuGZu3iwS",
+                "appleMusic": "https://music.apple.com/in/album/colours-original-motion-picture-soundtrack-single/1753417048"
+              },
               "sources": [
                 "https://en.wikipedia.org/wiki/A._R._Rahman_discography#Studio_albums"
               ],
@@ -7767,7 +7773,8 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02a80e37f5fa5ae5d34e3adc4b"
             },
             {
               "type": "work",
@@ -16478,7 +16485,6 @@
         "language": "Telugu",
         "year": 2017,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -21292,9 +21298,7 @@
         "label": "Colours",
         "year": 1992,
         "missing": [
-          "spotify",
           "youtubeMusic",
-          "appleMusic",
           "youtube"
         ]
       },
