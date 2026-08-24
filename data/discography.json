@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "17-08-2026",
+  "generatedAt": "24-08-2026",
   "categories": [
     {
       "id": "films",
@@ -3316,7 +3316,8 @@
                   "date": "15-02-2008",
                   "links": {
                     "spotify": "https://open.spotify.com/album/3s9f4Tuzbvt2dvzY4UUgU7",
-                    "appleMusic": "https://music.apple.com/in/album/jodhaa-akbar-tamil-original-motion-picture-soundtrack/1545573043"
+                    "appleMusic": "https://music.apple.com/in/album/jodhaa-akbar-tamil-original-motion-picture-soundtrack/1545573043",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_oKizPFN9Vdf"
                   },
                   "providers": [
                     "spotify",
@@ -5717,7 +5718,8 @@
                   "date": "15-02-2024",
                   "links": {
                     "spotify": "https://open.spotify.com/album/06WsEYnFZMI2uk6GTnPfHx",
-                    "appleMusic": "https://music.apple.com/in/album/lal-salaam-telugu-original-motion-picture-soundtrack-ep/1729599385"
+                    "appleMusic": "https://music.apple.com/in/album/lal-salaam-telugu-original-motion-picture-soundtrack-ep/1729599385",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_MaPa3AkCch5"
                   },
                   "providers": [
                     "spotify",
@@ -6084,7 +6086,8 @@
                   "date": "12-02-2025",
                   "links": {
                     "spotify": "https://open.spotify.com/album/5VufKHhqZdhNWyGfmfWrOB",
-                    "appleMusic": "https://music.apple.com/in/album/chhaava-telugu-original-motion-picture-soundtrack/1804908746"
+                    "appleMusic": "https://music.apple.com/in/album/chhaava-telugu-original-motion-picture-soundtrack/1804908746",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_rkYKfBKorsj"
                   },
                   "providers": [
                     "spotify",
@@ -13236,6 +13239,66 @@
           "items": [
             {
               "type": "work",
+              "title": "Vinveli Nayaga Eclipsa Audio",
+              "year": 2026,
+              "date": "20-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6zRQajLRirrvKJROBueSjQ"
+              },
+              "sources": [
+                "https://open.spotify.com/album/6zRQajLRirrvKJROBueSjQ"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02ebd3937a364ce9b31ff69f7f"
+            },
+            {
+              "type": "work",
+              "title": "Sugar Baby Eclipsa Audio",
+              "year": 2026,
+              "date": "20-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/4bQEjhKdZuwufYlX30nCHE"
+              },
+              "sources": [
+                "https://open.spotify.com/album/4bQEjhKdZuwufYlX30nCHE"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e0298a99244d274419b7ee07713"
+            },
+            {
+              "type": "work",
+              "title": "O Maara Eclipsa Audio",
+              "year": 2026,
+              "date": "20-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1Am6z37uXkjKvBj5agIJ7s"
+              },
+              "sources": [
+                "https://open.spotify.com/album/1Am6z37uXkjKvBj5agIJ7s"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02435b5083aaad20a0f47406e9"
+            },
+            {
+              "type": "work",
               "title": "Tabassum (From \"Batwara 1947\")",
               "year": 2026,
               "date": "07-08-2026",
@@ -14511,7 +14574,6 @@
         "language": "Telugu",
         "year": 2025,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -14792,7 +14854,6 @@
         "language": "Telugu",
         "year": 2024,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -17753,7 +17814,6 @@
         "language": "Hindi",
         "year": 2008,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },

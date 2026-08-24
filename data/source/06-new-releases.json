@@ -18,6 +18,45 @@
       "items": [
         {
           "type": "work",
+          "title": "Vinveli Nayaga Eclipsa Audio",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6zRQajLRirrvKJROBueSjQ"
+          },
+          "sources": [
+            "https://open.spotify.com/album/6zRQajLRirrvKJROBueSjQ"
+          ],
+          "year": 2026,
+          "date": "20-08-2026"
+        },
+        {
+          "type": "work",
+          "title": "Sugar Baby Eclipsa Audio",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/4bQEjhKdZuwufYlX30nCHE"
+          },
+          "sources": [
+            "https://open.spotify.com/album/4bQEjhKdZuwufYlX30nCHE"
+          ],
+          "year": 2026,
+          "date": "20-08-2026"
+        },
+        {
+          "type": "work",
+          "title": "O Maara Eclipsa Audio",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/1Am6z37uXkjKvBj5agIJ7s"
+          },
+          "sources": [
+            "https://open.spotify.com/album/1Am6z37uXkjKvBj5agIJ7s"
+          ],
+          "year": 2026,
+          "date": "20-08-2026"
+        },
+        {
+          "type": "work",
           "title": "Tabassum (From \"Batwara 1947\")",
           "note": "Single · Auto-added via weekly Spotify discovery",
           "links": {
