@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "24-08-2026",
+  "generatedAt": "31-08-2026",
   "categories": [
     {
       "id": "films",
@@ -1137,7 +1137,8 @@
                   "date": "1996",
                   "links": {
                     "spotify": "https://open.spotify.com/album/3Tb8euaGrKQtutY0rvgnqv",
-                    "appleMusic": "https://music.apple.com/in/album/prema-desam-original-motion-picture-soundtrack/1387112726"
+                    "appleMusic": "https://music.apple.com/in/album/prema-desam-original-motion-picture-soundtrack/1387112726",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_coMsp2Rg0CR"
                   },
                   "providers": [
                     "spotify",
@@ -3580,7 +3581,8 @@
                   "date": "18-06-2010",
                   "links": {
                     "spotify": "https://open.spotify.com/album/5VZBNteoMladEq8McyODLx",
-                    "appleMusic": "https://music.apple.com/in/album/raavan-original-motion-picture-soundtrack/1129369150"
+                    "appleMusic": "https://music.apple.com/in/album/raavan-original-motion-picture-soundtrack/1129369150",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_PcyKco274hM"
                   },
                   "providers": [
                     "spotify",
@@ -4737,7 +4739,8 @@
                   "date": "29-06-2018",
                   "links": {
                     "spotify": "https://open.spotify.com/album/2uZYzAlfetvbdWlpSfeNk0",
-                    "appleMusic": "https://music.apple.com/in/album/sanju-original-motion-picture-soundtrack/1405546157"
+                    "appleMusic": "https://music.apple.com/in/album/sanju-original-motion-picture-soundtrack/1405546157",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_IJIyyMindws"
                   },
                   "providers": [
                     "spotify",
@@ -8758,6 +8761,10 @@
               "type": "work",
               "title": "Allipoola Vennela",
               "year": 2021,
+              "links": {
+                "spotify": "https://open.spotify.com/album/2YyGYXU2G2W9Vdncpog275",
+                "appleMusic": "https://music.apple.com/in/album/allipoola-vennela-telangana-jagruthi-bathukamma-song/1687600854"
+              },
               "sources": [
                 "https://en.wikipedia.org/wiki/A._R._Rahman_discography#As_lead_artist"
               ],
@@ -8766,7 +8773,8 @@
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e023a634973ded515ebb555f726"
             },
             {
               "type": "work",
@@ -13239,6 +13247,126 @@
           "items": [
             {
               "type": "work",
+              "title": "Jinguchaa Eclipsa Audio",
+              "year": 2026,
+              "date": "28-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/6M7MlqCrudE4UdUnAUt4iL"
+              },
+              "sources": [
+                "https://open.spotify.com/album/6M7MlqCrudE4UdUnAUt4iL"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e026906048fa4f007ed484c5025"
+            },
+            {
+              "type": "work",
+              "title": "Vida Karo Eclipsa Audio",
+              "year": 2026,
+              "date": "25-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7tmXvHXYWG7snfT3Ep3Zz7"
+              },
+              "sources": [
+                "https://open.spotify.com/album/7tmXvHXYWG7snfT3Ep3Zz7"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02d62b81190f75a1fcb0c95f0f"
+            },
+            {
+              "type": "work",
+              "title": "Tu Kya Jaane Eclipsa Audio",
+              "year": 2026,
+              "date": "25-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/1WPFb6vREdHYVn4b93skZj"
+              },
+              "sources": [
+                "https://open.spotify.com/album/1WPFb6vREdHYVn4b93skZj"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e028e1384a4d7a6ae910fa8e57b"
+            },
+            {
+              "type": "work",
+              "title": "Naram Kaalja Eclipsa Audio",
+              "year": 2026,
+              "date": "25-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/7MSCfLq8Kh8c58rut4YbHD"
+              },
+              "sources": [
+                "https://open.spotify.com/album/7MSCfLq8Kh8c58rut4YbHD"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e02aebd65d319b9bbdf280a95b2"
+            },
+            {
+              "type": "work",
+              "title": "Bol Mohabbat Eclipsa Audio",
+              "year": 2026,
+              "date": "25-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/5PerhZlnBa1zQaxuZU9o35"
+              },
+              "sources": [
+                "https://open.spotify.com/album/5PerhZlnBa1zQaxuZU9o35"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e0222db47e72bcf65545af7674c"
+            },
+            {
+              "type": "work",
+              "title": "Baaja Eclipsa Audio",
+              "year": 2026,
+              "date": "25-08-2026",
+              "note": "Single · Auto-added via weekly Spotify discovery",
+              "links": {
+                "spotify": "https://open.spotify.com/album/3YPTEYo1os1Kw0n8ftxCLA"
+              },
+              "sources": [
+                "https://open.spotify.com/album/3YPTEYo1os1Kw0n8ftxCLA"
+              ],
+              "providers": [
+                "spotify",
+                "youtubeMusic",
+                "appleMusic",
+                "youtube"
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e0272e03bdb84e7faab05b01722"
+            },
+            {
+              "type": "work",
               "title": "Vinveli Nayaga Eclipsa Audio",
               "year": 2026,
               "date": "20-08-2026",
@@ -15870,9 +15998,7 @@
         "label": "Allipoola Vennela",
         "year": 2021,
         "missing": [
-          "spotify",
           "youtubeMusic",
-          "appleMusic",
           "youtube"
         ]
       },
@@ -16341,7 +16467,6 @@
         "language": "Hindi",
         "year": 2018,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -17615,7 +17740,6 @@
         "language": "Hindi",
         "year": 2010,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -20207,7 +20331,6 @@
         "language": "Telugu",
         "year": 1996,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },

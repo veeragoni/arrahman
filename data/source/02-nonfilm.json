@@ -568,7 +568,11 @@
           "year": 2021,
           "sources": [
             "https://en.wikipedia.org/wiki/A._R._Rahman_discography#As_lead_artist"
-          ]
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/album/2YyGYXU2G2W9Vdncpog275",
+            "appleMusic": "https://music.apple.com/in/album/allipoola-vennela-telangana-jagruthi-bathukamma-song/1687600854"
+          }
         },
         {
           "type": "work",
