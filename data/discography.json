@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "07-09-2026",
+  "generatedAt": "14-09-2026",
   "categories": [
     {
       "id": "films",
@@ -5810,7 +5810,8 @@
                   "date": "18-03-2024",
                   "links": {
                     "spotify": "https://open.spotify.com/album/4xh8b46TsysD9SK9QtD29k",
-                    "appleMusic": "https://music.apple.com/in/album/the-goat-life-aadujeevitham-original-motion-picture/1737015189"
+                    "appleMusic": "https://music.apple.com/in/album/the-goat-life-aadujeevitham-original-motion-picture/1737015189",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_jUF0pIWGm0j"
                   },
                   "providers": [
                     "spotify",
@@ -6053,7 +6054,8 @@
                   "date": "11-02-2025",
                   "links": {
                     "spotify": "https://open.spotify.com/album/0EqWxQF5wAfvqeEyEobTc3",
-                    "appleMusic": "https://music.apple.com/in/album/kadhalikka-neramillai-original-motion-picture-soundtrack/1812439297"
+                    "appleMusic": "https://music.apple.com/in/album/kadhalikka-neramillai-original-motion-picture-soundtrack/1812439297",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_gqZsPdPDkom"
                   },
                   "providers": [
                     "spotify",
@@ -14674,7 +14676,6 @@
         "language": "Malayalam",
         "year": 2025,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -15087,7 +15088,6 @@
         "language": "Other",
         "year": 2024,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
