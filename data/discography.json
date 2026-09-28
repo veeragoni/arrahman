@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "21-09-2026",
+  "generatedAt": "28-09-2026",
   "categories": [
     {
       "id": "films",
@@ -6590,7 +6590,8 @@
               "note": "OST",
               "links": {
                 "spotify": "https://open.spotify.com/album/0oq0AombofB0CYEvpUsIdH",
-                "appleMusic": "https://music.apple.com/in/album/1947-earth-original-motion-picture-soundtrack/1120993682"
+                "appleMusic": "https://music.apple.com/in/album/1947-earth-original-motion-picture-soundtrack/1120993682",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_6IVoS7fWna6"
               },
               "providers": [
                 "spotify",
@@ -7031,7 +7032,8 @@
               "date": "09-09-1994",
               "links": {
                 "spotify": "https://open.spotify.com/album/2cr3fCKkiDYE2lsZL2GoOc",
-                "appleMusic": "https://music.apple.com/in/album/may-madham-original-motion-picture-soundtrack/1577790601"
+                "appleMusic": "https://music.apple.com/in/album/may-madham-original-motion-picture-soundtrack/1577790601",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_G1PyaYT6126"
               },
               "providers": [
                 "spotify",
@@ -7763,12 +7765,17 @@
               "type": "work",
               "title": "Set Me Free",
               "year": 1991,
+              "date": "12-10-2025",
+              "links": {
+                "spotify": "https://open.spotify.com/album/0h6Ej0S4eUBB4ilvlPC7Nd"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
                 "appleMusic",
                 "youtube"
-              ]
+              ],
+              "art": "https://i.scdn.co/image/ab67616d00001e0222982e5f59f6acfaa9a50e24"
             },
             {
               "type": "work",
@@ -19982,7 +19989,6 @@
         "label": "Earth",
         "year": 1998,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -20786,7 +20792,6 @@
         "label": "May Madham [Tamil, 1994]",
         "year": 1994,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -21495,7 +21500,6 @@
         "label": "Set Me Free",
         "year": 1991,
         "missing": [
-          "spotify",
           "youtubeMusic",
           "appleMusic",
           "youtube"

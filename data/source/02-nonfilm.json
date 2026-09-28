@@ -35,7 +35,11 @@
         {
           "type": "work",
           "title": "Set Me Free",
-          "year": 1991
+          "year": 1991,
+          "links": {
+            "spotify": "https://open.spotify.com/album/0h6Ej0S4eUBB4ilvlPC7Nd"
+          },
+          "date": "12-10-2025"
         },
         {
           "type": "work",
