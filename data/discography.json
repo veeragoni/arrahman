@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "28-09-2026",
+  "generatedAt": "05-10-2026",
   "categories": [
     {
       "id": "films",
@@ -1854,7 +1854,8 @@
                   "date": "2001",
                   "links": {
                     "spotify": "https://open.spotify.com/album/5W1ubgKFekZLnfy7lZ5H2w",
-                    "appleMusic": "https://music.apple.com/in/album/nayak-original-motion-picture-soundtrack/1138977853"
+                    "appleMusic": "https://music.apple.com/in/album/nayak-original-motion-picture-soundtrack/1138977853",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_NokgiHN9uxu"
                   },
                   "providers": [
                     "spotify",
@@ -2461,7 +2462,8 @@
                   "date": "30-05-2003",
                   "links": {
                     "spotify": "https://open.spotify.com/album/4CaKR69oPK9dqb0CSqqt9O",
-                    "appleMusic": "https://music.apple.com/in/album/parasuram-original-motion-picture-soundtrack-ep/1705947263"
+                    "appleMusic": "https://music.apple.com/in/album/parasuram-original-motion-picture-soundtrack-ep/1705947263",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_3eFG5l7I5IT"
                   },
                   "providers": [
                     "spotify",
@@ -4204,7 +4206,8 @@
                   "date": "2015",
                   "links": {
                     "spotify": "https://open.spotify.com/album/2ACTCMr0Zb8h2AsqjpFUPF",
-                    "appleMusic": "https://music.apple.com/in/album/ok-bangaram-original-motion-picture-soundtrack/980179177"
+                    "appleMusic": "https://music.apple.com/in/album/ok-bangaram-original-motion-picture-soundtrack/980179177",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_EQo6CLuIKMA"
                   },
                   "providers": [
                     "spotify",
@@ -5560,7 +5563,8 @@
                   "date": "2023",
                   "links": {
                     "spotify": "https://open.spotify.com/album/48sa3XtM7QQBabRMLYqtgZ",
-                    "appleMusic": "https://music.apple.com/in/album/nayakudu-original-motion-picture-soundtrack/1697345036"
+                    "appleMusic": "https://music.apple.com/in/album/nayakudu-original-motion-picture-soundtrack/1697345036",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_FSioe1YdMU6"
                   },
                   "providers": [
                     "spotify",
@@ -7767,7 +7771,8 @@
               "year": 1991,
               "date": "12-10-2025",
               "links": {
-                "spotify": "https://open.spotify.com/album/0h6Ej0S4eUBB4ilvlPC7Nd"
+                "spotify": "https://open.spotify.com/album/0h6Ej0S4eUBB4ilvlPC7Nd",
+                "appleMusic": "https://music.apple.com/in/album/set-me-free-single/1845719942"
               },
               "providers": [
                 "spotify",
@@ -15396,7 +15401,6 @@
         "language": "Telugu",
         "year": 2023,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -16984,7 +16988,6 @@
         "language": "Telugu",
         "year": 2015,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -18852,7 +18855,6 @@
         "language": "Tamil",
         "year": 2003,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -19771,7 +19773,6 @@
         "language": "Hindi",
         "year": 1999,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -21501,7 +21502,6 @@
         "year": 1991,
         "missing": [
           "youtubeMusic",
-          "appleMusic",
           "youtube"
         ]
       },
