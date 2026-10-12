@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "05-10-2026",
+  "generatedAt": "12-10-2026",
   "categories": [
     {
       "id": "films",
@@ -999,7 +999,8 @@
                   "date": "1998",
                   "links": {
                     "spotify": "https://open.spotify.com/album/01oKgx0W1I1w1z4FatNlK5",
-                    "appleMusic": "https://music.apple.com/in/album/muthu-maharaja-original-motion-picture-soundtrack/1344830825"
+                    "appleMusic": "https://music.apple.com/in/album/muthu-maharaja-original-motion-picture-soundtrack/1344830825",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_pqI3KUy7ghy"
                   },
                   "providers": [
                     "spotify",
@@ -1300,7 +1301,8 @@
                   "date": "14-01-1997",
                   "links": {
                     "spotify": "https://open.spotify.com/album/09p4icXnEyH39Ud41pbTel",
-                    "appleMusic": "https://music.apple.com/in/album/iruvar-original-soundtrack/1720714567"
+                    "appleMusic": "https://music.apple.com/in/album/iruvar-original-soundtrack/1720714567",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_t8dLf6JlS5E"
                   },
                   "providers": [
                     "spotify",
@@ -3457,7 +3459,8 @@
                   "date": "21-11-2008",
                   "links": {
                     "spotify": "https://open.spotify.com/album/2fUOkCayofd6txiAS9AyLu",
-                    "appleMusic": "https://music.apple.com/in/album/yuvvraaj-original-motion-picture-soundtrack/1544243088"
+                    "appleMusic": "https://music.apple.com/in/album/yuvvraaj-original-motion-picture-soundtrack/1544243088",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_hJtVbERvlbE"
                   },
                   "providers": [
                     "spotify",
@@ -3555,7 +3558,8 @@
                   "date": "2010",
                   "links": {
                     "spotify": "https://open.spotify.com/album/7ywJmodDrksHrxbnqHSDuT",
-                    "appleMusic": "https://music.apple.com/in/album/raavanan-original-motion-picture-soundtrack/400323683"
+                    "appleMusic": "https://music.apple.com/in/album/raavanan-original-motion-picture-soundtrack/400323683",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_nUnzK6zgNQp"
                   },
                   "providers": [
                     "spotify",
@@ -3774,7 +3778,8 @@
                   "date": "11-11-2011",
                   "links": {
                     "spotify": "https://open.spotify.com/album/3RZxrS2dDZlbsYtMRM89v8",
-                    "appleMusic": "https://music.apple.com/in/album/rockstar-original-motion-picture-soundtrack/1123241840"
+                    "appleMusic": "https://music.apple.com/in/album/rockstar-original-motion-picture-soundtrack/1123241840",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_E9Diy6kXmlV"
                   },
                   "providers": [
                     "spotify",
@@ -4323,7 +4328,8 @@
                   "date": "2016",
                   "links": {
                     "spotify": "https://open.spotify.com/album/2AVXf1Pdi3oud8FQ6NcC2S",
-                    "appleMusic": "https://music.apple.com/in/album/saahasam-swaasaga-saagipo-original-motion-picture-soundtrack/1123522256"
+                    "appleMusic": "https://music.apple.com/in/album/saahasam-swaasaga-saagipo-original-motion-picture-soundtrack/1123522256",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_Zop9BoIN5Uf"
                   },
                   "providers": [
                     "spotify",
@@ -5780,6 +5786,9 @@
                   "language": "Telugu",
                   "title": "Aadujeevitham-The Goat Life",
                   "date": "18-03-2024",
+                  "links": {
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_jUF0pIWGm0j"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -6711,7 +6720,8 @@
               "date": "16-05-2014",
               "links": {
                 "spotify": "https://open.spotify.com/album/60nBYKeZ1MMH0oNdYiir0I",
-                "appleMusic": "https://music.apple.com/in/album/million-dollar-arm-original-motion-picture-soundtrack/1442836898"
+                "appleMusic": "https://music.apple.com/in/album/million-dollar-arm-original-motion-picture-soundtrack/1442836898",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_pn8D7zgo6Wc"
               },
               "providers": [
                 "spotify",
@@ -15052,7 +15062,6 @@
         "year": 2024,
         "missing": [
           "spotify",
-          "youtubeMusic",
           "appleMusic",
           "youtube"
         ]
@@ -16874,7 +16883,6 @@
         "language": "Telugu",
         "year": 2016,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -17252,7 +17260,6 @@
         "label": "Million Dollar Arm",
         "year": 2014,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -17515,7 +17522,6 @@
         "language": "Hindi",
         "year": 2011,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -17723,7 +17729,6 @@
         "language": "Tamil",
         "year": 2010,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -18066,7 +18071,6 @@
         "language": "Hindi",
         "year": 2008,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -20101,7 +20105,6 @@
         "language": "Tamil",
         "year": 1997,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -20717,7 +20720,6 @@
         "language": "Hindi",
         "year": 1995,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
