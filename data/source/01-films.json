@@ -365,7 +365,8 @@
               "date": "1994",
               "links": {
                 "spotify": "https://open.spotify.com/album/68k7QMGYN8eiEY1CAl5sEy",
-                "appleMusic": "https://music.apple.com/in/album/premikudu-original-motion-picture-soundtrack/1383226770"
+                "appleMusic": "https://music.apple.com/in/album/premikudu-original-motion-picture-soundtrack/1383226770",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_acLqp80K29N"
               }
             },
             {
@@ -389,7 +390,8 @@
               "date": "03-11-1994",
               "links": {
                 "spotify": "https://open.spotify.com/album/6rUXwGOZ2Znsav84TwAMOu",
-                "appleMusic": "https://music.apple.com/in/album/karuthamma-original-motion-picture-soundtrack/1577790847"
+                "appleMusic": "https://music.apple.com/in/album/karuthamma-original-motion-picture-soundtrack/1577790847",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_qXGrmwC1Dho"
               }
             },
             {
@@ -1823,7 +1825,8 @@
               "date": "09-09-2005",
               "links": {
                 "spotify": "https://open.spotify.com/album/1BxShjICZ0e5AsWhdTNIM8",
-                "appleMusic": "https://music.apple.com/in/album/anbe-aaruyire-original-motion-picture-soundtrack/1874980297"
+                "appleMusic": "https://music.apple.com/in/album/anbe-aaruyire-original-motion-picture-soundtrack/1874980297",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_Q3eEMoLxHvN"
               }
             }
           ]
@@ -2858,7 +2861,8 @@
               "date": "2017",
               "links": {
                 "spotify": "https://open.spotify.com/album/6rN8gFUuvMkw9yyKInqyOx",
-                "appleMusic": "https://music.apple.com/in/album/mom-original-motion-picture-soundtrack/1252985363"
+                "appleMusic": "https://music.apple.com/in/album/mom-original-motion-picture-soundtrack/1252985363",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_ICD30yLmOju"
               }
             }
           ]
@@ -3054,7 +3058,8 @@
               "date": "2019",
               "links": {
                 "spotify": "https://open.spotify.com/album/0Iuw5VaeWw9GX9Z76C9gq8",
-                "appleMusic": "https://music.apple.com/in/album/whistle-original-motion-picture-soundtrack/1484937004"
+                "appleMusic": "https://music.apple.com/in/album/whistle-original-motion-picture-soundtrack/1484937004",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_tr5X0eJf1gR"
               }
             },
             {
@@ -3371,7 +3376,8 @@
               "date": "15-09-2022",
               "links": {
                 "spotify": "https://open.spotify.com/album/5N3d00pvonn9vvse6TI42m",
-                "appleMusic": "https://music.apple.com/in/album/vendhu-thanindhathu-kaadu-original-score/1670414172"
+                "appleMusic": "https://music.apple.com/in/album/vendhu-thanindhathu-kaadu-original-score/1670414172",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_VjduTPETZ7f"
               }
             },
             {
@@ -4213,7 +4219,10 @@
           "type": "work",
           "title": "127 Hours",
           "year": 2010,
-          "date": "02-11-2010"
+          "date": "02-11-2010",
+          "links": {
+            "youtubeMusic": "https://music.youtube.com/browse/MPREb_Yr94TlDCQAi"
+          }
         },
         {
           "type": "work",
