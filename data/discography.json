@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "19-10-2026",
+  "generatedAt": "26-10-2026",
   "categories": [
     {
       "id": "films",
@@ -4165,7 +4165,8 @@
                   "date": "2014",
                   "links": {
                     "spotify": "https://open.spotify.com/album/0PqDwbg5QiH6S0uZTPWJR8",
-                    "appleMusic": "https://music.apple.com/in/album/i-manoharudu-original-motion-picture-soundtrack/953411595"
+                    "appleMusic": "https://music.apple.com/in/album/i-manoharudu-original-motion-picture-soundtrack/953411595",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_c988mKAwUUt"
                   },
                   "providers": [
                     "spotify",
@@ -5003,7 +5004,8 @@
                   "date": "2021",
                   "links": {
                     "spotify": "https://open.spotify.com/album/35GdOmCjKeyiMcJVtpAwoG",
-                    "appleMusic": "https://music.apple.com/in/album/99-songs-telugu-original-motion-picture-soundtrack/1560093285"
+                    "appleMusic": "https://music.apple.com/in/album/99-songs-telugu-original-motion-picture-soundtrack/1560093285",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_LCntrZdNyy6"
                   },
                   "providers": [
                     "spotify",
@@ -5167,7 +5169,8 @@
                   "date": "26-07-2021",
                   "links": {
                     "spotify": "https://open.spotify.com/album/0DUOcMjmHGVLqFkWqfNC0z",
-                    "appleMusic": "https://music.apple.com/in/album/mimi-original-motion-picture-soundtrack/1576395277"
+                    "appleMusic": "https://music.apple.com/in/album/mimi-original-motion-picture-soundtrack/1576395277",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_doS44VHW7LN"
                   },
                   "providers": [
                     "spotify",
@@ -5262,7 +5265,8 @@
                   "date": "30-09-2022",
                   "links": {
                     "spotify": "https://open.spotify.com/album/0aKkwn0Vq6oW8XmmcY8ouE",
-                    "appleMusic": "https://music.apple.com/in/album/ponniyin-selvan/1689558578"
+                    "appleMusic": "https://music.apple.com/in/album/ponniyin-selvan/1689558578",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_aIbkuf9DJBm"
                   },
                   "providers": [
                     "spotify",
@@ -15601,7 +15605,6 @@
         "language": "Tamil",
         "year": 2022,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -15834,7 +15837,6 @@
         "language": "Telugu",
         "year": 2021,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -16002,7 +16004,6 @@
         "language": "Hindi",
         "year": 2021,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -16952,7 +16953,6 @@
         "language": "Telugu",
         "year": 2015,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
