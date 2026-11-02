@@ -515,7 +515,10 @@
         {
           "type": "work",
           "title": "Infinite Love",
-          "year": 2012
+          "year": 2012,
+          "links": {
+            "youtubeMusic": "https://music.youtube.com/browse/MPREb_MdG0x5fhUfV"
+          }
         },
         {
           "type": "work",

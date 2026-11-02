@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "26-10-2026",
+  "generatedAt": "02-11-2026",
   "categories": [
     {
       "id": "films",
@@ -81,7 +81,8 @@
                   "date": "1995",
                   "links": {
                     "spotify": "https://open.spotify.com/album/2ou4GeN2fDNV8DEoSSJyc7",
-                    "appleMusic": "https://music.apple.com/in/album/roja-malayalam-original-motion-picture-soundtrack/586988586"
+                    "appleMusic": "https://music.apple.com/in/album/roja-malayalam-original-motion-picture-soundtrack/586988586",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_N1ScMueNUcK"
                   },
                   "providers": [
                     "spotify",
@@ -1926,7 +1927,8 @@
                   "date": "10-09-1999",
                   "links": {
                     "spotify": "https://open.spotify.com/album/0oq0AombofB0CYEvpUsIdH",
-                    "appleMusic": "https://music.apple.com/in/album/1947-earth-original-motion-picture-soundtrack/1120993682"
+                    "appleMusic": "https://music.apple.com/in/album/1947-earth-original-motion-picture-soundtrack/1120993682",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_yht7v19ogw4"
                   },
                   "providers": [
                     "spotify",
@@ -5810,6 +5812,9 @@
                   "language": "Hindi",
                   "title": "Aadujeevitham-The Goat Life",
                   "date": "18-03-2024",
+                  "links": {
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_jUF0pIWGm0j"
+                  },
                   "providers": [
                     "spotify",
                     "youtubeMusic",
@@ -8704,6 +8709,9 @@
               "type": "work",
               "title": "Infinite Love",
               "year": 2012,
+              "links": {
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_MdG0x5fhUfV"
+              },
               "providers": [
                 "spotify",
                 "youtubeMusic",
@@ -15092,7 +15100,6 @@
         "year": 2024,
         "missing": [
           "spotify",
-          "youtubeMusic",
           "appleMusic",
           "youtube"
         ]
@@ -17479,7 +17486,6 @@
         "year": 2012,
         "missing": [
           "spotify",
-          "youtubeMusic",
           "appleMusic",
           "youtube"
         ]
@@ -19827,7 +19833,6 @@
         "language": "Hindi",
         "year": 1999,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -21461,7 +21466,6 @@
         "language": "Malayalam",
         "year": 1992,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
