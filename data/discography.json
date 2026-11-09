@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "02-11-2026",
+  "generatedAt": "09-11-2026",
   "categories": [
     {
       "id": "films",
@@ -1250,7 +1250,8 @@
                   "date": "14-01-1997",
                   "links": {
                     "spotify": "https://open.spotify.com/album/79sIQEpPymbRpykImP7u2e",
-                    "appleMusic": "https://music.apple.com/in/album/minsara-kanavu-original-motion-picture-soundtrack/1705056444"
+                    "appleMusic": "https://music.apple.com/in/album/minsara-kanavu-original-motion-picture-soundtrack/1705056444",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_q2abtd5wGLn"
                   },
                   "providers": [
                     "spotify",
@@ -1266,7 +1267,8 @@
                   "date": "1997",
                   "links": {
                     "spotify": "https://open.spotify.com/album/3DyGSfAWdkNgUA5CbSWPel",
-                    "appleMusic": "https://music.apple.com/in/album/merupu-kalalu-original-motion-picture-soundtrack/1175817935"
+                    "appleMusic": "https://music.apple.com/in/album/merupu-kalalu-original-motion-picture-soundtrack/1175817935",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_WxONnANwQWg"
                   },
                   "providers": [
                     "spotify",
@@ -8589,7 +8591,8 @@
               "date": "01-01-2007",
               "links": {
                 "spotify": "https://open.spotify.com/album/01MafpUAXHh4x9Go2rxsbp",
-                "appleMusic": "https://music.apple.com/in/album/pray-for-me-brother-single/1444055097"
+                "appleMusic": "https://music.apple.com/in/album/pray-for-me-brother-single/1444055097",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_1JZMyqAIBPm"
               },
               "providers": [
                 "spotify",
@@ -18401,7 +18404,6 @@
         "label": "Pray For Me Brother",
         "year": 2007,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -20066,7 +20068,6 @@
         "language": "Tamil",
         "year": 1997,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -20082,7 +20083,6 @@
         "language": "Telugu",
         "year": 1997,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
