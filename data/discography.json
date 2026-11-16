@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "data/source/*.json",
-  "generatedAt": "09-11-2026",
+  "generatedAt": "16-11-2026",
   "categories": [
     {
       "id": "films",
@@ -725,7 +725,8 @@
                   "date": "23-06-1994",
                   "links": {
                     "spotify": "https://open.spotify.com/album/2C1fpjDU4U8YLswJbslWFU",
-                    "appleMusic": "https://music.apple.com/in/album/super-police-ep/586966189"
+                    "appleMusic": "https://music.apple.com/in/album/super-police-ep/586966189",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_C0BYQJJbmA3"
                   },
                   "providers": [
                     "spotify",
@@ -1414,7 +1415,8 @@
                   "date": "1998",
                   "links": {
                     "spotify": "https://open.spotify.com/album/0xTyeKjVLy5in9t548ofXR",
-                    "appleMusic": "https://music.apple.com/in/album/rakshakudu-original-motion-picture-soundtrack/1383240689"
+                    "appleMusic": "https://music.apple.com/in/album/rakshakudu-original-motion-picture-soundtrack/1383240689",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_4cVXKKaBptu"
                   },
                   "providers": [
                     "spotify",
@@ -2151,7 +2153,8 @@
                   "date": "08-09-2000",
                   "links": {
                     "spotify": "https://open.spotify.com/album/70pmpUOtbnOc5YtuH20ehU",
-                    "appleMusic": "https://music.apple.com/in/album/fiza-original-motion-picture-soundtrack/1550865778"
+                    "appleMusic": "https://music.apple.com/in/album/fiza-original-motion-picture-soundtrack/1550865778",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_oUwf9dUf1NO"
                   },
                   "providers": [
                     "spotify",
@@ -2426,7 +2429,8 @@
                   "date": "20-11-2002",
                   "links": {
                     "spotify": "https://open.spotify.com/album/30eHEL91DRBP6JJ1nNjZs5",
-                    "appleMusic": "https://music.apple.com/in/album/kaadhal-virus-original-motion-picture-soundtrack/302388200"
+                    "appleMusic": "https://music.apple.com/in/album/kaadhal-virus-original-motion-picture-soundtrack/302388200",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_FAK6qUoodqB"
                   },
                   "providers": [
                     "spotify",
@@ -3808,7 +3812,8 @@
                   "date": "01-02-2012",
                   "links": {
                     "spotify": "https://open.spotify.com/album/3j8iyHi0RxqLLV97ZGOCPm",
-                    "appleMusic": "https://music.apple.com/in/album/kadal-original-motion-picture-soundtrack/585713899"
+                    "appleMusic": "https://music.apple.com/in/album/kadal-original-motion-picture-soundtrack/585713899",
+                    "youtubeMusic": "https://music.youtube.com/browse/MPREb_HQNecxJvQOT"
                   },
                   "providers": [
                     "spotify",
@@ -6980,7 +6985,8 @@
               "date": "03-03-1992",
               "links": {
                 "spotify": "https://open.spotify.com/album/1CfGCFiwkTcAVOJFOeDS6M",
-                "appleMusic": "https://music.apple.com/in/album/roja-original-motion-picture-soundtrack-ep/1842069592"
+                "appleMusic": "https://music.apple.com/in/album/roja-original-motion-picture-soundtrack-ep/1842069592",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_1X1w2p5pgW0"
               },
               "providers": [
                 "spotify",
@@ -7967,7 +7973,8 @@
               "date": "30-04-2004",
               "links": {
                 "spotify": "https://open.spotify.com/album/0KamQrzULf70cvIHSgCQhE",
-                "appleMusic": "https://music.apple.com/in/album/between-heaven-and-earth/193893646"
+                "appleMusic": "https://music.apple.com/in/album/between-heaven-and-earth/193893646",
+                "youtubeMusic": "https://music.youtube.com/browse/MPREb_6IVoS7fWna6"
               },
               "providers": [
                 "spotify",
@@ -17396,7 +17403,6 @@
         "language": "Tamil",
         "year": 2012,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -18839,7 +18845,6 @@
         "label": "Between Heaven and Earth",
         "year": 2004,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -19110,7 +19115,6 @@
         "language": "Tamil",
         "year": 2002,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -19529,7 +19533,6 @@
         "language": "Hindi",
         "year": 2000,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -20209,7 +20212,6 @@
         "language": "Telugu",
         "year": 1997,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -20496,7 +20498,6 @@
         "language": "Telugu",
         "year": 1995,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
@@ -21391,7 +21392,6 @@
         "label": "Roja [Tamil, 1992]",
         "year": 1992,
         "missing": [
-          "youtubeMusic",
           "youtube"
         ]
       },
