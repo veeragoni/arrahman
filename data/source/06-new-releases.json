@@ -18,6 +18,47 @@
       "items": [
         {
           "type": "work",
+          "title": "Muththa Mazhai Eclipsa Audio",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/1zu7AsPs34sjovKjo5dULI"
+          },
+          "sources": [
+            "https://open.spotify.com/album/1zu7AsPs34sjovKjo5dULI"
+          ],
+          "year": 2026,
+          "date": "10-09-2026"
+        },
+        {
+          "type": "work",
+          "title": "Asha Forever",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/61ToZYnDCszMR9m9JNoDZF",
+            "appleMusic": "https://music.apple.com/in/album/asha-forever-single/6808538539"
+          },
+          "sources": [
+            "https://open.spotify.com/album/61ToZYnDCszMR9m9JNoDZF"
+          ],
+          "year": 2026,
+          "date": "08-09-2026"
+        },
+        {
+          "type": "work",
+          "title": "Title Teaser (From \"Inji Vellam\")",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6VF7vrBrq7exXFJqu9t5M5",
+            "appleMusic": "https://music.apple.com/in/album/title-teaser-from-inji-vellam-single/6808661764"
+          },
+          "sources": [
+            "https://open.spotify.com/album/6VF7vrBrq7exXFJqu9t5M5"
+          ],
+          "year": 2026,
+          "date": "04-09-2026"
+        },
+        {
+          "type": "work",
           "title": "Jinguchaa Eclipsa Audio",
           "note": "Single · Auto-added via weekly Spotify discovery",
           "links": {
@@ -458,6 +499,46 @@
       "title": "Remixes, Instrumentals & Alternate Versions",
       "type": "list",
       "items": [
+        {
+          "type": "work",
+          "title": "Kailove Chedugudu - Synthwave Mix",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/5FBzzmuCe802RTN9VefBLv"
+          },
+          "sources": [
+            "https://open.spotify.com/album/5FBzzmuCe802RTN9VefBLv"
+          ],
+          "year": 2026,
+          "date": "08-09-2026"
+        },
+        {
+          "type": "work",
+          "title": "Kehna Hi Kya (Instrumental)",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/7cn9nEfWtT6KFDddfBymeP",
+            "appleMusic": "https://music.apple.com/in/album/kehna-hi-kya-instrumental-single/6808570429"
+          },
+          "sources": [
+            "https://open.spotify.com/album/7cn9nEfWtT6KFDddfBymeP"
+          ],
+          "year": 2026,
+          "date": "07-09-2026"
+        },
+        {
+          "type": "work",
+          "title": "Snehithuda X Snehithane - Mashup",
+          "note": "Single · Auto-added via weekly Spotify discovery",
+          "links": {
+            "spotify": "https://open.spotify.com/album/6sbJRrzdyaYlnRMZ2ZuiPL"
+          },
+          "sources": [
+            "https://open.spotify.com/album/6sbJRrzdyaYlnRMZ2ZuiPL"
+          ],
+          "year": 2026,
+          "date": "04-09-2026"
+        },
         {
           "type": "work",
           "title": "Ponni Nadhi (Lofi Mix)",
